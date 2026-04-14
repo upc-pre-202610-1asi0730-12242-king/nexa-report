@@ -7,4 +7,4 @@
 |---------------------|---------------------|--------------|
 |                     |                     |              |
 
-> *Nota*. Se detallan las acciones específicas realizadas por cada integrante del equipo para cumplir con los criterios del Student Outcome ABET (…), junto con las conclusiones grupales sobre el desarrollo de competencias. *Elaboración propia.*
+*Nota.* Se detallan las acciones específicas realizadas por cada integrante del equipo para cumplir con los criterios del Student Outcome ABET (…), junto con las conclusiones grupales sobre el desarrollo de competencias. *Elaboración propia.*
