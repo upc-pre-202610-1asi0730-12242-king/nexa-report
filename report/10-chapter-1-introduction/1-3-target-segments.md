@@ -2,7 +2,7 @@
 <p align = "justify">
 La solución Nexa se orienta a un ecosistema B2B en el que intervienen actores con objetivos, responsabilidades y niveles de decisión distintos. Para evitar ambigüedad metodológica, en esta etapa del proyecto se han delimitado tres segmentos objetivo independientes. Cada uno representa un patrón de usuario con necesidades, restricciones operativas y criterios de valor diferenciados; por ello, su identificación separada permitirá diseñar entrevistas más precisas, construir arquetipos con mayor trazabilidad y formular decisiones de producto alineadas con la realidad del dominio.
 En lugar de agrupar a todo el personal interno de la empresa distribuidora en un único bloque, el proyecto distingue entre el personal que participa directamente en la coordinación comercial de pedidos y el personal que posee una visión más amplia de logística, abastecimiento y operación. Esta separación responde a que ambos perfiles viven el mismo problema desde ángulos distintos: uno desde la fricción diaria del flujo de pedidos y otro desde la gestión integral del proceso. El tercer segmento corresponde a los clientes comerciales de la empresa distribuidora, quienes representan la contraparte transaccional del ecosistema y permiten evaluar la viabilidad del portal B2B desde la demanda.
-<p>
+</p>
 
 **Tabla 10**
 

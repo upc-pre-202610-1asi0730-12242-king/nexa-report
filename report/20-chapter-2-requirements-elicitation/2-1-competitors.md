@@ -26,7 +26,7 @@ Para una pyme distribuidora de productos refrigerados, esta fragmentación signi
 
 </p>
 
-### 2.1.1.	Análisis competitivo (Landscapte & SWOT)
+### 2.1.1.	Análisis competitivo (Landscape & SWOT)
 <p align = "justify">
 
 El análisis competitivo estructurado a continuación emplea una matriz de variables del mercado (Landscape) y un análisis FODA cruzado (SWOT) para evaluar nuestro posicionamiento estratégico frente a las plataformas establecidas. Las dimensiones evaluadas no solo contemplan la arquitectura de software, sino también la fricción de adopción, el mercado objetivo y el modelo de monetización; factores críticos para la supervivencia de un SaaS en el canal comercial peruano. 

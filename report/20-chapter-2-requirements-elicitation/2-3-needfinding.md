@@ -3,16 +3,13 @@
 
 
 Segmento 1 Valeria Sanchez
-![User Persona 1](assets/images/user-persona-1.png)
+![User Persona 1](../assets/images/user-persona-1.png)
 
 Segmento 2 Hilda Litiano
-![User Persona 2](assets/images/user-persona-2.png)
+![User Persona 2](../assets/images/user-persona-2.png)
 
 Segmento 3 Pedro Garcia
-![User Persona 3](assets/images/user-persona-3.png)
-
-
-### 
+![User Persona 3](../assets/images/user-persona-3.png)
 
 ### 2.3.2.	User Task Matrix
 | Tareas Identificadas (Tasks) | S1: Valeria (Frecuencia) | S1: Valeria (Importancia) | S2: Hilda (Frecuencia) | S2: Hilda (Importancia) | S3: Pedro (Frecuencia) | S3: Pedro (Importancia) |

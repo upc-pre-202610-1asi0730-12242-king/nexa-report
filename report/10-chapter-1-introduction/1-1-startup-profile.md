@@ -14,7 +14,7 @@ En términos estratégicos, la startup compite por especialización más que por
 Por ello, la primera apuesta se concentra en un **MVP web** que permita estructurar el flujo principal del sistema —catálogo, pedido, disponibilidad y seguimiento— y que, sobre una base validada, pueda evolucionar en fases posteriores hacia componentes móviles, integraciones con soluciones logísticas complementarias y funcionalidades de trazabilidad térmica apoyadas en tecnologías IoT.  
 
 Síntesis de posicionamiento. Como se desprende de la problemática previamente desarrollada, Nexa no se presenta como una plataforma horizontal para cualquier tipo de abastecimiento, sino como una solución SaaS B2B especializada en ordenar el flujo de pedidos y la coordinación operativa en empresas que distribuyen productos refrigerados y congelados.
-<p>
+</p>
 
 ## 1.1.1. Descripción del startup
 
