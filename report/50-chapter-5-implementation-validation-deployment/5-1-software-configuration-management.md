@@ -16,7 +16,7 @@ Para estandarizar el desarrollo y asegurar la compatibilidad entre las estacione
 
 - **Jira Software:** Utilizado para la gestión estricta del Product Backlog, seguimiento de los Sprints y asignación de responsabilidades bajo el marco de trabajo ágil Scrum.
 
-- **Markdown / Microsoft Word:** Empleados para la redacción de la documentación académica oficial y la estructuración del repositorio.
+- **Markdown:** Empleado para la redacción de la documentación académica oficial bajo el estándar Docs-as-Code de la UPC.
 
 **Diseño y Experiencia de Usuario (UX/UI):**
 
@@ -26,56 +26,65 @@ Para estandarizar el desarrollo y asegurar la compatibilidad entre las estacione
 
 **Desarrollo Integrado (IDE) y Arquitectura:**
 
-- **Visual Studio 2022:** Entorno de desarrollo principal para la construcción del Backend y el API RESTful utilizando C# y ASP.NET Core.
+- **Visual Studio Code:** Editor de código estandarizado para la maquetación de la Landing Page (HTML/CSS/JS) y el desarrollo del Frontend (Vue.js).
 
-- **Visual Studio Code:** Editor de código ligero estandarizado para la maquetación de la Landing Page (HTML/CSS/JS) y el desarrollo del Frontend (Vue.js).
+- **Rider (JetBrains):** Entorno de desarrollo principal para la construcción del Backend y el API RESTful utilizando C# y ASP.NET Core.
 
-- **Structurizr / Lucidchart / Miro:** Empleados para la diagramación de la arquitectura de software bajo el modelo C4, diagramas de base de datos y modelado de dominio (EventStorming).
+- **Visual Paradigm:** Empleado para la diagramación de la arquitectura de software bajo el modelo C4 (Context, Container, Component, Code), diagramas de clases, diagramas de base de datos y modelado de dominio (EventStorming).
 
 ### 5.1.2. Source Code Management
 
 <p align="justify">
-Para garantizar la mantenibilidad y legibilidad del código fuente, el equipo obedece convenciones de codificación estandarizadas por la industria:
+El equipo aplica el flujo de trabajo GitFlow para garantizar trazabilidad, integración continua y separación de entornos en todos los repositorios del proyecto:
 </p>
 
-- **Rama main (Principal):** Contiene el código en estado de producción. Cada confirmación de cambios (commit) en esta rama representa una versión estable y validada.
+- **Rama `main` (Principal):** Contiene el código en estado de producción. Cada confirmación en esta rama representa una versión estable y validada.
 
-- **Rama develop (Desarrollo):** Rama de integración principal donde se consolida el trabajo de todos los desarrolladores del equipo.
+- **Rama `develop` (Desarrollo):** Rama de integración principal donde se consolida el trabajo de todos los desarrolladores del equipo.
 
-- **Ramas feature/ (Características):** Ramas efímeras creadas a partir de develop para trabajar en Historias de Usuario específicas (ej. feature/US05-login-b2b).
+- **Ramas `feature/*` (Características):** Ramas efímeras creadas a partir de `develop` para trabajar en Historias de Usuario específicas (ej. `feature/US05-b2b-catalog`).
 
-- **Ramas hotfix/ (Correcciones):** Ramas de contingencia utilizadas para solucionar errores críticos detectados en el entorno de producción.
+- **Ramas `release/*` (Versiones):** Ramas de preparación de entrega creadas desde `develop` cuando el sprint alcanza los criterios de aceptación (ej. `release/v1.0.0`).
+
+- **Ramas `hotfix/*` (Correcciones):** Ramas de contingencia utilizadas para solucionar errores críticos detectados en producción.
 
 <p align="justify">
-Todas las integraciones hacia las ramas principales se realizan estrictamente mediante solicitudes de extracción (Pull Requests), requiriendo la revisión y aprobación (Code Review) de al menos un miembro distinto al autor del código.
+Todas las integraciones hacia las ramas principales se realizan mediante Pull Requests, requiriendo la revisión y aprobación de al menos un miembro distinto al autor.
 </p>
 
 ### 5.1.3. Source Code Style Guide & Conventions
 
 <p align="justify">
-Para garantizar la mantenibilidad y legibilidad del código fuente, el equipo obedece convenciones de codificación estandarizadas por la industria:
+Para garantizar la mantenibilidad y legibilidad del código fuente, el equipo aplica convenciones de codificación estandarizadas por la industria:
 </p>
 
-**Convención de Confirmaciones (Conventional Commits):** Todos los mensajes enviados al repositorio deben seguir un formato semántico que facilite la trazabilidad:
+**Convención de Confirmaciones (Conventional Commits):** Todos los mensajes de commit siguen un formato semántico que facilita la trazabilidad:
 
 - **feat:** para nuevas características o Historias de Usuario.
-
 - **fix:** para la corrección de errores funcionales.
+- **docs:** para actualizaciones exclusivas en documentación.
+- **refactor:** para cambios de estructura sin modificar comportamiento.
+- **ci:** para configuración de integración continua.
 
-- **docs:** para actualizaciones exclusivas en la documentación (ej. archivos de reporte Markdown).
+**Convenciones REST API:** Los endpoints del API RESTful siguen el estándar de recursos en plural y sustantivos (sin verbos en la URL):
 
-- **design:** para ajustes en estilos CSS o estructuración de interfaces.
+- `GET /orders` — listado de pedidos
+- `GET /orders/{id}` — detalle de un pedido
+- `POST /orders` — creación de pedido
+- `GET /products` — catálogo de productos
+- `GET /products/{id}` — detalle de producto
+- `GET /inventory` — estado del inventario
 
-**Convenciones de Programación (C# / Backend):** Se aplica estrictamente PascalCase para el nombramiento de Clases, Interfaces y Métodos, y camelCase para variables locales y parámetros.
+**Convenciones Backend (C# / ASP.NET Core):** PascalCase para Clases, Interfaces y Métodos; camelCase para variables locales y parámetros.
 
-**Convenciones de Programación (Frontend):** Los nombres de los componentes y archivos deben ser descriptivos. Para los componentes de la interfaz gráfica en Vue.js, se utiliza nomenclatura de múltiples palabras (ej. OrderList.vue) para evitar colisiones con elementos nativos.
+**Convenciones Frontend (Vue.js):** Nombres de componentes en PascalCase con múltiples palabras para evitar colisiones con elementos HTML nativos (ej. `OrderList.vue`, `ProductCard.vue`).
 
 ### 5.1.4. Software Deployment Configuration
 
 <p align="justify">
-El despliegue de los artefactos de software se dividirá en diferentes entornos en la nube (Cloud) para asegurar escalabilidad y separación de responsabilidades funcionales:
+El despliegue de los artefactos de software se realiza en entornos separados para garantizar escalabilidad y trazabilidad por ambiente:
 </p>
 
-**Landing Page y Documentación:** Se utilizará GitHub Pages (o alternativas de alojamiento estático como Vercel) para garantizar alta disponibilidad y bajo costo de mantenimiento.
+- **Landing Page:** Desplegada en GitHub Pages con CI/CD automatizado desde la rama `main` del repositorio `nexa-website`.
 
-**Backend (API RESTful) y Base de Datos:** Serán alojados en plataformas de grado empresarial en la nube, garantizando el procesamiento seguro de las transacciones B2B y la persistencia relacional.
+- **Backend (API RESTful) y Base de Datos:** Alojados en plataformas cloud de grado empresarial, garantizando procesamiento seguro de transacciones B2B y persistencia relacional.
