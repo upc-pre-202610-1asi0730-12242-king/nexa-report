@@ -3,8 +3,18 @@
 ### 4.2.1. Organization Systems
 
 <p align="justify">
-El sistema de organización de Nexa es jerárquico y temático. La información se agrupa según el perfil del usuario (distribuidor vs. cliente comercial) y la funcionalidad de la plataforma B2B.
+El sistema de organización de Nexa es jerárquico y temático. La información se agrupa según el perfil del usuario (distribuidor vs. cliente comercial) y la funcionalidad de la plataforma B2B. Desde una perspectiva de Domain-Driven Design (DDD), cada módulo de la aplicación corresponde a un Bounded Context independiente con su propio modelo de dominio, lenguaje ubicuo y responsabilidades delimitadas.
 </p>
+
+**Bounded Contexts de la plataforma Nexa:**
+
+| Bounded Context | Responsabilidad | Recursos REST (plural) |
+|-----------------|-----------------|------------------------|
+| **Catalog** | Gestión del catálogo de productos (SKU, lotes, rangos térmicos) | `/products`, `/products/{id}` |
+| **Inventory** | Control de stock en tiempo real con política FEFO | `/inventory`, `/inventory/{skuId}` |
+| **Orders** | Ciclo de vida del pedido B2B (creación, confirmación, despacho) | `/orders`, `/orders/{id}` |
+| **Traceability** | Seguimiento térmico y logístico del pedido hasta entrega | `/shipments`, `/shipments/{id}/events` |
+| **Identity** | Autenticación y autorización de distribuidores y clientes | `/users`, `/users/{id}` |
 
 **Organización del Sitio Web (Ecosistema B2B):**
 
@@ -19,11 +29,11 @@ El sistema de organización de Nexa es jerárquico y temático. La información 
 **Organización de la Aplicación Web (Dashboard B2B):**
 
 <p align="justify">
-El dashboard está organizado en torno a cinco módulos principales:
+El dashboard está organizado en torno a cinco módulos que reflejan directamente los Bounded Contexts del dominio:
 </p>
 
 1. **Technical Catalog** — Catálogo especializado con SKU, lote y condiciones de temperatura.
-2. **Live Inventory** — Control de stock en tiempo real con rotación por fecha de vencimiento (FEFO).
+2. **Live Inventory** — Control de stock en tiempo real con rotación FEFO.
 3. **B2B Portal** — Portal de pedidos para clientes comerciales.
 4. **Mobile Telemetry** — Telemetría de temperatura en campo (fase posterior).
 5. **End-to-End Traceability** — Seguimiento completo del pedido desde la toma hasta el despacho.
@@ -82,7 +92,7 @@ El sistema de búsqueda está diseñado para operar tanto a nivel de adquisició
 
 **En el sitio web informativo (FAQ):**
 
-- Se utiliza un patrón de **Jump Nav** (navegación por anclas) y un sidebar pegajoso (*sticky*) en desktop (`faq-layout: 220px / 1fr`) para que el usuario pueda saltar directamente entre categorías de preguntas frecuentes (ej. Pricing, Integrations, Security) sin necesidad de una barra de búsqueda compleja.
+- Se utiliza un patrón de **Jump Nav** (navegación por anclas) y un sidebar pegajoso (*sticky*) en desktop para saltar directamente entre categorías de preguntas frecuentes sin necesidad de una barra de búsqueda compleja.
 
 ---
 
