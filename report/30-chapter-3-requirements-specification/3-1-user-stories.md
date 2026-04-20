@@ -1,5 +1,5 @@
 # Capítulo III: Requirements Specification
-## 3.1.	User Stories
+## 3.1. User Stories
 
 # Tabla 12 – User Stories
 ## Épicas y User Stories

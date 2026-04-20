@@ -10,10 +10,10 @@ Muñoz, D. S. B., Guerrero, W. P. B., Barrero, A. A. C., & Calvo, G. H. (2022). 
 
 Rivas Tucto, J., & Castillo Talexio, N. (2020). Plataforma tecnológica para el seguimiento de transporte logístico de alimentos en la cadena de frío. Universidad Peruana de Ciencias Aplicadas (UPC). https://doi.org/10.19083/tesis/653134
 
-Taipe, N. (2025). *Pagos digitales y la competitividad de bodegas tradicionales en la ciudad de Huancavelica del 2023* [Informe de investigación, Universidad Nacional de Huancavelica]. https://hdl.handle.net/20.500.14597/9616
+Taipe, N. (2025). *Pagos digitales y la competitividad de bodegas tradicionales en la ciudad de Huancavelica del 2023*[Informe de investigación, Universidad Nacional de Huancavelica]. https://hdl.handle.net/20.500.14597/9616
 
 Torres, J., & Tardillo, M. (2020). Propuesta de proceso de distribución física mediante la cadena en frio para la conservación y la exportación de frambuesas orgánicas. Universidad Peruana de Ciencias Aplicadas (UPC). https://doi.org/10.19083/tesis/653617
 
-Tutiven, B. J. G., Martínez, A. Á., Arcentales, A. A., & Paredes, J. P. (2026). Evaluación de la cadena de frío en la comercialización de queso criollo en el cantón Lomas de Sargentillo. *Ecuacientífica, 4*(8), 96–110. https://doi.org/10.56519/abv9ea41
+Tutiven, B. J. G., Martínez, A. Á., Arcentales, A. A., & Paredes, J. P. (2026). Evaluación de la cadena de frío en la comercialización de queso criollo en el cantón Lomas de Sargentillo.*Ecuacientífica, 4*(8), 96–110. https://doi.org/10.56519/abv9ea41
 
 Vértiz, Ú. (2011). *La cadena de frío en la industria farmacéutica: Del fabricante al paciente.* https://hdl.handle.net/20.500.12724/2575

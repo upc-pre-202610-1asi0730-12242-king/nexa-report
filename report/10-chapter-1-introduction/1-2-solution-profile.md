@@ -9,9 +9,7 @@ La cadena de frío cumple un rol crítico en sectores como alimentos, productos 
 
 
 **Tabla 5**
-*Temperaturas promedio (°C) en cortes de carne de res*
-
-<table border="1" cellspacing="0" cellpadding="5" align="center">
+*Temperaturas promedio (°C) en cortes de carne de res*<table border="1" cellspacing="0" cellpadding="5" align="center">
   <tr>
     <th>Supermercado</th>
     <th>Enero</th>
@@ -25,9 +23,7 @@ La cadena de frío cumple un rol crítico en sectores como alimentos, productos 
   <tr><td>Supermercado 2</td><td>4.83</td><td>3.31</td><td>3.59</td><td>3.38</td><td>4.11</td><td>3.84</td></tr>
   <tr><td>Supermercado 3</td><td>6.81</td><td>7.18</td><td>12.84</td><td>8.36</td><td>9.37</td><td>8.91</td></tr>
   <tr><td>Supermercado 4</td><td>2.99</td><td>3.78</td><td>4.24</td><td>5.63</td><td>4.45</td><td>4.22</td></tr>
-</table>
-
-*Nota.* La normativa para productos cárnicos refrigerados estipula una temperatura máxima de 4 °C. Los datos muestran abusos severos y constantes en la cadena de frío, particularmente en los supermercados 1 y 3. Adaptado de "Evaluación de la cadena de frío en cortes de res vendida en supermercados" por P. Arriaga-Lorenzo et al., 2023, Revista Chapingo Serie Agricultura Tropical, 3(1), p. 20.
+</table>*Nota.*La normativa para productos cárnicos refrigerados estipula una temperatura máxima de 4 °C. Los datos muestran abusos severos y constantes en la cadena de frío, particularmente en los supermercados 1 y 3. Adaptado de "Evaluación de la cadena de frío en cortes de res vendida en supermercados" por P. Arriaga-Lorenzo et al., 2023, Revista Chapingo Serie Agricultura Tropical, 3(1), p. 20.
 
 ---
 
@@ -35,12 +31,8 @@ La cadena de frío cumple un rol crítico en sectores como alimentos, productos 
 En el contexto peruano, investigaciones en salud y logística evidencian que las rupturas de cadena de frío no son un fenómeno aislado: por ejemplo, un estudio en establecimientos de salud de la Microred Río Negro registró múltiples excursiones térmicas por encima y por debajo de los rangos aceptables, con implicancias directas en la calidad de biológicos. Como se observa en la Tabla 6, los incidentes de pérdida de temperatura son una constante mensual, evidenciando la alta vulnerabilidad operativa del ecosistema logístico del frío en el país.
 </p>
 
----
-
-**Tabla 6**
-*Rupturas de cadena de frío por meses según tipo de desviación térmica en establecimientos de salud (Microred Río Negro)*
-
-<table border="1" cellspacing="0" cellpadding="5" align="center">
+---**Tabla 6**
+*Rupturas de cadena de frío por meses según tipo de desviación térmica en establecimientos de salud (Microred Río Negro)*<table border="1" cellspacing="0" cellpadding="5" align="center">
   <tr>
     <th>Mes</th>
     <th>&lt; 0°C (Congelación)</th>
@@ -60,9 +52,7 @@ En el contexto peruano, investigaciones en salud y logística evidencian que las
   <tr><td>Noviembre</td><td>1</td><td>11</td><td>12</td></tr>
   <tr><td>Diciembre</td><td>1</td><td>2</td><td>3</td></tr>
   <tr><td><b>Total</b></td><td><b>14</b></td><td><b>50</b></td><td><b>64</b></td></tr>
-</table>
-
-*Nota.* La tabla evidencia la recurrencia mensual de fallas en la cadena de frío, siendo el sobrecalentamiento (>8°C) la principal causa de riesgo. Adaptado de "Rupturas de cadena de frío en los establecimientos de salud de una Microred de salud - Perú" por R. Bravo De la Cruz, L. Orihuela De Santana y M. Huaman Huaman, 2025, Advances in Science and Innovation, 4(1), p. 59.
+</table>*Nota.*La tabla evidencia la recurrencia mensual de fallas en la cadena de frío, siendo el sobrecalentamiento (>8°C) la principal causa de riesgo. Adaptado de "Rupturas de cadena de frío en los establecimientos de salud de una Microred de salud - Perú" por R. Bravo De la Cruz, L. Orihuela De Santana y M. Huaman Huaman, 2025, Advances in Science and Innovation, 4(1), p. 59.
 
 
 <p align="justify">
@@ -95,12 +85,8 @@ A partir de este contexto, el proyecto Nexa se plantea como respuesta a una prob
 El problema identificado puede estructurarse mediante la técnica 5W2H, lo que permite explicitar actores, alcance, contexto, causas, forma de manifestación y magnitud aproximada del riesgo operativo asociado a la gestión manual de pedidos B2B de productos refrigerados.
 </p>
 
----
-
-**Tabla 7**
-*5W2H*
-
-<table border="1" cellspacing="0" cellpadding="5" align="center">
+---**Tabla 7**
+*5W2H*<table border="1" cellspacing="0" cellpadding="5" align="center">
   <tr>
     <th>Elemento</th>
     <th>Descripción aplicada al proyecto</th>
@@ -147,9 +133,7 @@ El problema identificado puede estructurarse mediante la técnica 5W2H, lo que p
       No se han identificado estudios que cuantifiquen de forma específica, para importadoras y distribuidoras de productos refrigerados en Perú, el costo total de los errores de pedido y la ineficiencia derivada de procesos manuales. Sin embargo, la evidencia disponible permite aproximar la magnitud del riesgo: se reportaron 64 rupturas de cadena de frío en una sola microred de salud en un año, estudios regionales documentan pérdidas logísticas significativas en perecederos, y alrededor del 83% de bodegas se ubica todavía en un nivel principiante de transformación digital. En conjunto, estos datos sugieren que el impacto económico y operativo potencial de mantener procesos manuales y no trazables es considerable, aunque todavía poco medido de forma sistemática.
     </td>
   </tr>
-</table>
-
-*Nota.* La matriz resume el problema ya desarrollado en los antecedentes y la problemática, pero conserva los datos e indicadores más relevantes para evitar que la síntesis reduzca el valor analítico del apartado.
+</table>*Nota.*La matriz resume el problema ya desarrollado en los antecedentes y la problemática, pero conserva los datos e indicadores más relevantes para evitar que la síntesis reduzca el valor analítico del apartado.
 
 ### 1.2.2. Lean UX Process
 <p align = "justify">
@@ -162,12 +146,8 @@ En este proyecto, el uso de Lean UX resulta pertinente porque el dominio combina
 <p align="justify">
 Nexa soporta un modelo de negocio SaaS B2B especializado en la gestión del flujo principal de pedidos para empresas importadoras y distribuidoras de productos refrigerados y congelados. La lógica del negocio no se basa en vender un marketplace horizontal ni en reemplazar de inmediato todo el ecosistema logístico, sino en ofrecer una plataforma web que ordene el tramo donde hoy se concentran mayores fricciones: catálogo, registro de pedido, disponibilidad, control básico de inventario y seguimiento operativo.
 En este modelo, la empresa distribuidora es el cliente pagador de la solución y el entorno donde se produce la primera validación de valor. Sin embargo, el producto solo resulta sostenible si también genera beneficios claros para los usuarios internos que coordinan la operación y para el cliente comercial B2B que compra y hace seguimiento. Por ello, el software debe demostrar valor tanto hacia dentro de la operación —reduciendo retrabajo, errores y descoordinación— como hacia fuera —ofreciendo más claridad, autonomía y predictibilidad al comprador comercial—.
-</p>
-
-**Tabla 8**
-*Tabla de visión*
-
-<p align="justify">
+</p>**Tabla 8**
+*Tabla de visión*<p align="justify">
 
 <table>
   <thead>
@@ -208,9 +188,7 @@ En este modelo, la empresa distribuidora es el cliente pagador de la solución y
   </tbody>
 </table>
 
-</p>
-
-*Nota.* La visión del modelo de negocio muestra quién paga, quién usa, qué valor se entrega y sobre qué alcance inicial se justifica el producto.
+</p>*Nota.*La visión del modelo de negocio muestra quién paga, quién usa, qué valor se entrega y sobre qué alcance inicial se justifica el producto.
 
 #### 1.2.2.2. Lean UX Problem Statements
 
@@ -220,61 +198,37 @@ Los problem statements expresan la brecha entre la situación actual del dominio
 
 #### 1.2.2.2. Lean UX Problem Statements
 <p align = "justify">
-Los problem statements expresan la brecha entre la situación actual del dominio y el resultado que el proyecto busca habilitar. En esta versión se alinean con los tres segmentos objetivo del informe, pero sin repetir su perfil completo; el foco está en formular el problema de producto y el aprendizaje esperado para cada actor.
-
-
-
-**Problem Statement 1 — Coordinación comercial de pedidos**
-
-- **Domain:** Captura, interpretación y canalización inicial de pedidos B2B dentro de la empresa distribuidora.  
-- **Customer segment:** Mercaderistas, asistentes comerciales y personal que recibe, interpreta y traslada pedidos hacia facturación, almacén o despacho.  
-- **Pain points:** La información llega por audios, mensajes o llamadas; existen ambigüedades en cantidades y productos; se repiten validaciones y se generan retrabajos cuando el pedido registrado no coincide con lo que operación puede preparar.  
-- **Gap actual:** El flujo depende de canales informales y registros paralelos, por lo que la información del pedido no nace estructurada ni compartida entre áreas.  
-- **Vision / strategy:** Nexa debe reducir la fricción en el punto de captura del pedido, logrando que la información llegue más clara, completa y visible para todos los actores internos que participan después.  
-- **Initial segment priority:** Es el segmento inicial prioritario para validar usabilidad, captura de datos y simplificación del trabajo operativo-comercial.  
-- **Outcome esperado:** La plataforma demuestra valor si disminuye el retrabajo, el tiempo de aclaración y los errores de interpretación en la recepción de pedidos.
-
-
-**Problem Statement 2 — Gestión logística y visibilidad operativa**
-
-- **Domain:** Supervisión del flujo de pedidos, inventario y despacho dentro de la empresa distribuidora.  
-- **Customer segment:** Jefatura y responsables de logística, abastecimiento, almacén, operaciones o coordinación de despacho.  
-- **Pain points:** La información se fragmenta entre áreas, archivos y conversaciones; las decisiones sobre prioridad o disponibilidad se toman con datos incompletos; y los errores comerciales se trasladan a almacén y despacho.  
-- **Gap actual:** Aunque la operación exige coordinación continua entre demanda, stock y ejecución, la visibilidad del proceso sigue dispersa y poco trazable.  
-- **Vision / strategy:** Nexa debe aportar estructura operativa y visibilidad compartida para que este segmento pueda supervisar, corregir y decidir con menor incertidumbre.  
-- **Initial segment priority:** No es el primer segmento para validar interfaz, pero sí es crítico para definir reglas de negocio, estados del pedido, seguimiento y necesidades de control operativo.  
-- **Outcome esperado:** La solución demuestra valor si mejora la visibilidad del proceso y facilita decisiones más consistentes sobre disponibilidad, prioridad y estado del pedido.
-
-
-
-**Problem Statement 3 — Abastecimiento del cliente comercial B2B**
-
-- **Domain:** Proceso de compra y reabastecimiento de productos refrigerados desde la perspectiva del cliente comercial.  
-- **Customer segment:** Bodegas, minimarkets, pequeños mayoristas y negocios HORECA que compran al distribuidor.  
-- **Pain points:** Dependen de tiempos de respuesta variables; compran con poca visibilidad de disponibilidad real; y deben coordinar pedidos mediante llamadas o mensajes que no les ofrecen confirmación ni seguimiento claro.  
-- **Gap actual:** El cliente comercial no cuenta con un entorno estructurado donde pueda revisar catálogo, registrar su pedido y dar seguimiento sin depender por completo de una conversación informal.  
-- **Vision / strategy:** Nexa debe ofrecer un portal B2B suficientemente claro y simple para que el proceso de abastecimiento gane autonomía, predictibilidad y menor fricción.  
-- **Initial segment priority:** Es un segmento clave para validar adopción del portal y percepción de valor desde la demanda, aunque su aprendizaje depende también de que el flujo interno esté ordenado.  
-- **Outcome esperado:** La propuesta demuestra valor si el cliente comercial percibe más claridad, rapidez y control en su ciclo de reabastecimiento.
+Los problem statements expresan la brecha entre la situación actual del dominio y el resultado que el proyecto busca habilitar. En esta versión se alinean con los tres segmentos objetivo del informe, pero sin repetir su perfil completo; el foco está en formular el problema de producto y el aprendizaje esperado para cada actor.**Problem Statement 1 — Coordinación comercial de pedidos**-**Domain:**Captura, interpretación y canalización inicial de pedidos B2B dentro de la empresa distribuidora.  
+-**Customer segment:**Mercaderistas, asistentes comerciales y personal que recibe, interpreta y traslada pedidos hacia facturación, almacén o despacho.  
+-**Pain points:**La información llega por audios, mensajes o llamadas; existen ambigüedades en cantidades y productos; se repiten validaciones y se generan retrabajos cuando el pedido registrado no coincide con lo que operación puede preparar.  
+-**Gap actual:**El flujo depende de canales informales y registros paralelos, por lo que la información del pedido no nace estructurada ni compartida entre áreas.  
+-**Vision / strategy:**Nexa debe reducir la fricción en el punto de captura del pedido, logrando que la información llegue más clara, completa y visible para todos los actores internos que participan después.  
+-**Initial segment priority:**Es el segmento inicial prioritario para validar usabilidad, captura de datos y simplificación del trabajo operativo-comercial.  
+-**Outcome esperado:**La plataforma demuestra valor si disminuye el retrabajo, el tiempo de aclaración y los errores de interpretación en la recepción de pedidos.**Problem Statement 2 — Gestión logística y visibilidad operativa**-**Domain:**Supervisión del flujo de pedidos, inventario y despacho dentro de la empresa distribuidora.  
+-**Customer segment:**Jefatura y responsables de logística, abastecimiento, almacén, operaciones o coordinación de despacho.  
+-**Pain points:**La información se fragmenta entre áreas, archivos y conversaciones; las decisiones sobre prioridad o disponibilidad se toman con datos incompletos; y los errores comerciales se trasladan a almacén y despacho.  
+-**Gap actual:**Aunque la operación exige coordinación continua entre demanda, stock y ejecución, la visibilidad del proceso sigue dispersa y poco trazable.  
+-**Vision / strategy:**Nexa debe aportar estructura operativa y visibilidad compartida para que este segmento pueda supervisar, corregir y decidir con menor incertidumbre.  
+-**Initial segment priority:**No es el primer segmento para validar interfaz, pero sí es crítico para definir reglas de negocio, estados del pedido, seguimiento y necesidades de control operativo.  
+-**Outcome esperado:**La solución demuestra valor si mejora la visibilidad del proceso y facilita decisiones más consistentes sobre disponibilidad, prioridad y estado del pedido.**Problem Statement 3 — Abastecimiento del cliente comercial B2B**-**Domain:**Proceso de compra y reabastecimiento de productos refrigerados desde la perspectiva del cliente comercial.  
+-**Customer segment:**Bodegas, minimarkets, pequeños mayoristas y negocios HORECA que compran al distribuidor.  
+-**Pain points:**Dependen de tiempos de respuesta variables; compran con poca visibilidad de disponibilidad real; y deben coordinar pedidos mediante llamadas o mensajes que no les ofrecen confirmación ni seguimiento claro.  
+-**Gap actual:**El cliente comercial no cuenta con un entorno estructurado donde pueda revisar catálogo, registrar su pedido y dar seguimiento sin depender por completo de una conversación informal.  
+-**Vision / strategy:**Nexa debe ofrecer un portal B2B suficientemente claro y simple para que el proceso de abastecimiento gane autonomía, predictibilidad y menor fricción.  
+-**Initial segment priority:**Es un segmento clave para validar adopción del portal y percepción de valor desde la demanda, aunque su aprendizaje depende también de que el flujo interno esté ordenado.  
+-**Outcome esperado:**La propuesta demuestra valor si el cliente comercial percibe más claridad, rapidez y control en su ciclo de reabastecimiento.
 <p>
 
 
 #### 1.2.2.3 Lean UX Assumptions
 <p align = "justify">
-Las assumptions representan creencias críticas del proyecto que aún deben ser contrastadas. No se presentan como verdades cerradas, sino como riesgos del modelo de negocio, del comportamiento del usuario y de la solución propuesta que el equipo deberá validar mediante entrevistas, prototipos y evidencia de uso.
-**Suposiciones de negocio y viabilidad**
-- Las empresas distribuidoras percibirán suficiente valor en ordenar el flujo de pedidos como para considerar viable una solución SaaS especializada.
+Las assumptions representan creencias críticas del proyecto que aún deben ser contrastadas. No se presentan como verdades cerradas, sino como riesgos del modelo de negocio, del comportamiento del usuario y de la solución propuesta que el equipo deberá validar mediante entrevistas, prototipos y evidencia de uso.**Suposiciones de negocio y viabilidad**- Las empresas distribuidoras percibirán suficiente valor en ordenar el flujo de pedidos como para considerar viable una solución SaaS especializada.
 
 - La especialización en cadena de frío B2B aportará una diferenciación más relevante que competir como plataforma horizontal de abastecimiento.
 
-- Validar primero el núcleo del proceso comercial-operativo generará una base de valor más sólida que intentar incorporar desde el inicio todas las capas del ecosistema logístico.
-
-**Suposiciones sobre usuarios y comportamiento**
-- El personal de coordinación comercial adoptará una herramienta nueva si esta reduce ambigüedad, retrabajo y dependencia de mensajes informales.
+- Validar primero el núcleo del proceso comercial-operativo generará una base de valor más sólida que intentar incorporar desde el inicio todas las capas del ecosistema logístico.**Suposiciones sobre usuarios y comportamiento**- El personal de coordinación comercial adoptará una herramienta nueva si esta reduce ambigüedad, retrabajo y dependencia de mensajes informales.
 - La jefatura logística valorará una visibilidad integrada del flujo aunque la solución inicial no cubra todavía toda la complejidad del ecosistema logístico.
-- Los clientes comerciales B2B estarán dispuestos a migrar parte de su proceso de compra a un portal si este les ofrece más claridad, rapidez y predictibilidad que el canal informal actual.
-**Suposiciones de solución y alcance**
-- Una web application responsiva es suficiente para validar el valor principal del producto en esta etapa inicial.
+- Los clientes comerciales B2B estarán dispuestos a migrar parte de su proceso de compra a un portal si este les ofrece más claridad, rapidez y predictibilidad que el canal informal actual.**Suposiciones de solución y alcance**- Una web application responsiva es suficiente para validar el valor principal del producto en esta etapa inicial.
 - El alcance del MVP debe concentrarse en catálogo, pedido, inventario básico y seguimiento, dejando mobile e IoT como evolución posterior del producto.
 - La simplicidad de uso y la claridad del flujo son más determinantes para la adopción inicial que una alta cantidad de funcionalidades avanzadas
 <p>
@@ -292,28 +246,22 @@ A partir de las assumptions anteriores, el equipo formula hipótesis de aprendiz
 #### 1.2.2.5. Lean UX Canvas
 <p align = "justify">
 El Lean UX Canvas sintetiza la lógica del producto en una sola vista: problema, usuarios, propuesta de valor, outcomes y aprendizaje prioritario. Se presenta como artefacto de cierre del bloque Lean UX y como base de conexión con entrevistas, needfinding y backlog inicial
-<p>
+<p>**Tabla 9**
 
-**Tabla 9**
-
-*Lean UX Canvas*
-
-| **Problema de Negocio** | **Ideas de Solución** | **Resultados de Negocio (Outcomes)** |
+*Lean UX Canvas*|**Problema de Negocio**|**Ideas de Solución**|**Resultados de Negocio (Outcomes)**|
 |--------------------------|-----------------------|--------------------------------------|
 | Las empresas distribuidoras y sus clientes B2B coordinan pedidos de productos refrigerados con información fragmentada, baja trazabilidad y alta dependencia de canales informales, lo que incrementa errores, retrabajo y descoordinación operativa. | Portal web para cliente comercial, flujo estructurado de captura de pedido, visibilidad compartida del estado del pedido, control básico de inventario y seguimiento operativo. | Menor retrabajo en captura de pedidos, mayor visibilidad operativa interna, más claridad y autonomía para el cliente comercial, y validación del valor del MVP web. |
 
 ---
 
-| **Usuarios y Clientes** | **Segmentos priorizados** |
+|**Usuarios y Clientes**|**Segmentos priorizados**|
 |--------------------------|---------------------------|
 | Cliente pagador: empresa distribuidora. <br> Usuarios internos: coordinación comercial y responsables de logística/operación. <br> Usuario externo: cliente comercial B2B. | S1: mercaderistas y coordinación comercial <br> S2: logística y operación <br> S3: clientes comerciales B2B minoristas y mayoristas |
 
 ---
 
-| **Propuesta de valor** | **Riesgos clave a validar** | **Prioridad de Aprendizaje** |
+|**Propuesta de valor**|**Riesgos clave a validar**|**Prioridad de Aprendizaje**|
 |-------------------------|-----------------------------|------------------------------|
 | Ordenar el flujo principal del pedido en una plataforma web especializada que aporte más claridad, visibilidad y consistencia entre catálogo, pedido, disponibilidad y seguimiento. | Adopción real del flujo estructurado por parte del personal interno, utilidad operativa percibida por logística, disposición del cliente comercial a usar un portal y suficiencia del alcance inicial del MVP. | Comprobar si el producto resuelve una fricción real en el flujo del pedido antes de ampliar el alcance hacia componentes móviles, integraciones avanzadas o trazabilidad IoT. |
 
----
-
-*Nota.* El Lean UX Canvas resume los pilares estratégicos del proyecto, conectando el problema del usuario, la solución propuesta y los resultados de negocio, e incluye una matriz de hipótesis clave que serán el foco de la validación inicial. Elaboración propia.
+---*Nota.* El Lean UX Canvas resume los pilares estratégicos del proyecto, conectando el problema del usuario, la solución propuesta y los resultados de negocio, e incluye una matriz de hipótesis clave que serán el foco de la validación inicial. Elaboración propia.

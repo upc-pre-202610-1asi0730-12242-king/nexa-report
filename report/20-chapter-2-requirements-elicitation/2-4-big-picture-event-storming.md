@@ -1,1 +1,1 @@
-## 2.4.	Big Picture Eventstorming
+## 2.4. Big Picture Eventstorming

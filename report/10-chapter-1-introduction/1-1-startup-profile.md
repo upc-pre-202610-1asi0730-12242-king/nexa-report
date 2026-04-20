@@ -11,7 +11,7 @@ El modelo de negocio propuesto se basa en **Software as a Service (SaaS)**, ya q
 Bajo este enfoque, Nexa no pretende reemplazar de inmediato todas las herramientas del ecosistema logístico ni prometer una automatización total del negocio, sino posicionarse como la capa principal de organización comercial y operativa del proceso de pedidos, capaz de ordenar el flujo central de información mientras la empresa avanza en su madurez digital.  
 
 En términos estratégicos, la startup compite por especialización más que por amplitud funcional. Su diferenciación radica en abordar de manera concreta un dominio donde convergen exigencias comerciales, operativas y de control propias de productos refrigerados y congelados.  
-Por ello, la primera apuesta se concentra en un **MVP web** que permita estructurar el flujo principal del sistema —catálogo, pedido, disponibilidad y seguimiento— y que, sobre una base validada, pueda evolucionar en fases posteriores hacia componentes móviles, integraciones con soluciones logísticas complementarias y funcionalidades de trazabilidad térmica apoyadas en tecnologías IoT.  
+Por ello, la primera apuesta se concentra en un **MVP web**que permita estructurar el flujo principal del sistema —catálogo, pedido, disponibilidad y seguimiento— y que, sobre una base validada, pueda evolucionar en fases posteriores hacia componentes móviles, integraciones con soluciones logísticas complementarias y funcionalidades de trazabilidad térmica apoyadas en tecnologías IoT.  
 
 Síntesis de posicionamiento. Como se desprende de la problemática previamente desarrollada, Nexa no se presenta como una plataforma horizontal para cualquier tipo de abastecimiento, sino como una solución SaaS B2B especializada en ordenar el flujo de pedidos y la coordinación operativa en empresas que distribuyen productos refrigerados y congelados.
 </p>
@@ -30,12 +30,9 @@ La lógica de construcción del producto responde a un criterio de viabilidad. E
 A partir de esa base, la startup proyecta una evolución futura coherente con las necesidades del dominio. En una fase posterior, el producto podrá ampliarse hacia funcionalidades de mayor profundidad operativa, como aplicaciones móviles para trabajo en campo, integraciones con herramientas del ecosistema logístico e incorporación progresiva de componentes de trazabilidad térmica apoyados en IoT. De este modo, Nexa mantiene una identidad clara: no busca abarcar todo el universo logístico desde el primer momento, sino construir una plataforma especializada cuya madurez crezca de forma progresiva y alineada con las necesidades reales del sector.
 </p>
 
----
+---**Tabla 3**
 
-**Tabla 3**
-
-*Misión, Visión y valores del equipo*
-<table border="1" cellspacing="0" cellpadding="5" align="center">
+*Misión, Visión y valores del equipo*<table border="1" cellspacing="0" cellpadding="5" align="center">
   <tr>
     <th>Misión</th>
     <th>Visión</th>
@@ -52,23 +49,13 @@ A partir de esa base, la startup proyecta una evolución futura coherente con la
       Especialización, claridad operativa, innovación y colaboración como principios que orientan el diseño del producto, la relación con clientes y la forma de trabajo de la startup.
     </td>
   </tr>
-</table>
-
-*Nota.* La tabla resume los pilares estratégicos que orientan la identidad, el propósito y la cultura de trabajo de la startup Nexa. *Elaboración propia.*
-
-## 1.1.2. Perfiles de integrantes del equipo
+</table>*Nota.*La tabla resume los pilares estratégicos que orientan la identidad, el propósito y la cultura de trabajo de la startup Nexa.*Elaboración propia.*## 1.1.2. Perfiles de integrantes del equipo
 
 <p align="justify">
 Para la correcta ejecución de este proyecto, se requiere un equipo de trabajo con perfiles complementarios que posean habilidades en análisis de sistemas, modelado de datos, programación y gestión de proyectos. A continuación, se presenta un formato estándar para la descripción de los miembros del equipo, el cual debe ser completado por cada integrante:
-</p>
+</p>**Tabla 4**
 
-
-
-**Tabla 4**
-
-*Perfiles de integrantes del equipo*
-
-<table border="1" cellspacing="0" cellpadding="5" align="center">
+*Perfiles de integrantes del equipo*<table border="1" cellspacing="0" cellpadding="5" align="center">
   <tr>
     <th>Código</th>
     <th>Nombre</th>
@@ -125,6 +112,4 @@ Para la correcta ejecución de este proyecto, se requiere un equipo de trabajo c
       </p>
     </td>
   </tr>
-</table>
-
-*Nota.* Se presentan los perfiles de los miembros del equipo, destacando sus habilidades y el rol que desempeñan dentro del proyecto para contextualizar las contribuciones individuales. *Elaboración propia.*
+</table>*Nota.*Se presentan los perfiles de los miembros del equipo, destacando sus habilidades y el rol que desempeñan dentro del proyecto para contextualizar las contribuciones individuales.*Elaboración propia.*

@@ -1,1 +1,1 @@
-## 3.2.	Impact Mapping
+## 3.2. Impact Mapping

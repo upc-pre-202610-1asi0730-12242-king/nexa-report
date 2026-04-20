@@ -6,10 +6,7 @@
 
 ## Ingeniería de Software
 
-**Periodo:** 2026-01  
-**Curso:** Aplicaciones Web  
-**NRC:** 12242  
-**Docente:** Velásquez Núñez, Ángel Augusto  
+**Periodo:**2026-01**Curso:**Aplicaciones Web**NRC:**12242**Docente:** Velásquez Núñez, Ángel Augusto  
 
 ---
 
