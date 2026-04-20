@@ -33,5 +33,6 @@
 | TB1 V0.27 | 20/04/2026 | Yucra Sandoval, Diego Sebastian | Desarrollo de la arquitectura de información con bounded contexts, organización multipágina, labeling bilingüe EN/ES, lineamientos SEO y sistemas de navegación por rol |
 | TB1 V0.28 | 20/04/2026 | Yucra Sandoval, Diego Sebastian | Corrección del stack tecnológico en el Capítulo V; eliminación de referencias incorrectas a Vue.js; documentación del stack real HTML5/CSS modular/JS vanilla con i18n propio; completar Student Outcome ABET 5 con acciones por integrante |
 | TB1 V0.29 | 20/04/2026 | Rojas Mancilla, Gerard Gianpier | Desarrollo de la sección de arquitectura de software (4.6) con modelo C4 completo: diagramas de contexto, contenedores y componentes con explicación por nivel y notas APA |
+| TB1 V1.0.0 | 21/04/2026 | Yucra Sandoval, Diego Sebastian | Versión final del informe AV1: Refactorización a Docs-as-Code, restauración de introducción de Cap IV y sincronización de arquitectura técnica |
 
 *Nota.* La tabla documenta los cambios significativos y las contribuciones individuales realizadas al informe a lo largo del ciclo del proyecto, asegurando la trazabilidad de su evolución. *Elaboración propia.*
