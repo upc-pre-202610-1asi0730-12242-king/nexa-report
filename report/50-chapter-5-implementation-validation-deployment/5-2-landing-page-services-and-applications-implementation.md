@@ -1,12 +1,12 @@
 ## 5.2. Landing Page, Services & Applications Implementation
 
-### 5.2.1. Sprint 0
+### 5.2.1. Sprint 1
 
 <p align="justify">
-El Sprint 0 representó la fase preparatoria del proyecto, enfocada en la definición del alcance, la estructuración del entorno de trabajo y el modelado conceptual del negocio.
+El Sprint 1 representó la fase preparatoria del proyecto, enfocada en la definición del alcance, la estructuración del entorno de trabajo y el modelado conceptual del negocio.
 </p>
 
-**Sprint Planning 0.**-**Meta del Sprint (Sprint Goal):**Establecer el marco de trabajo, delimitar el Producto Mínimo Viable (MVP) para la cadena de frío, definir las bases del Lean UX y crear el inventario inicial de requerimientos funcionales (Épicas y User Stories).
+**Sprint Planning 1.**-**Meta del Sprint (Sprint Goal):**Establecer el marco de trabajo, delimitar el Producto Mínimo Viable (MVP) para la cadena de frío, definir las bases del Lean UX y crear el inventario inicial de requerimientos funcionales (Épicas y User Stories).
 
 -**Duración:**1 semana.**Aspect Leaders and Collaborators.**-**Diego Yucra (Scrum Master):**Lideró la delimitación del MVP y redactó el inventario inicial de Historias de Usuario.
 
@@ -32,11 +32,11 @@ La ejecución de esta iteración se materializó en la documentación estratégi
 El equipo demostró una fuerte cohesión durante el Sprint 0. La principal dificultad radicó en acotar el alcance del proyecto para evitar desarrollar un ERP completo, lo cual se solucionó mediante sesiones de debate lideradas por el Scrum Master, logrando aislar las funciones exclusivas de la capa transaccional B2B.
 </p>
 
-### 5.2.2. Sprint 1
+### 5.2.2. Sprint 2
 
 <p align="justify">
-El Sprint 1 marca la transición oficial hacia el modelado arquitectónico técnico, la validación empírica con usuarios reales del sector y el diseño de alta fidelidad de la interfaz.
-</p>**Sprint Planning 1.**-**Meta del Sprint (Sprint Goal):**Ejecutar la investigación de campo (Needfinding), definir la arquitectura de software (C4 y BD), y elaborar los prototipos de la Landing Page y la Web Application.
+El Sprint 2 marca la transición oficial hacia el modelado arquitectónico técnico, la validación empírica con usuarios reales del sector y el diseño de alta fidelidad de la interfaz.
+</p>**Sprint Planning 2.**-**Meta del Sprint (Sprint Goal):**Ejecutar la investigación de campo (Needfinding), definir la arquitectura de software (C4 y BD), y elaborar los prototipos de la Landing Page y la Web Application.
 
 -**Duración:**2 semanas.**Aspect Leaders and Collaborators.**-**Diego Yucra (Scrum Master):**Lideró la maquetación y desarrollo en código de la Landing Page y participó en las entrevistas logísticas.
 

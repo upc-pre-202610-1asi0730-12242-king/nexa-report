@@ -24,7 +24,7 @@ El resultado del Design-Level EventStorming confirmó que el flujo central del p
 El diagrama de contexto representa el nivel más alto de abstracción del sistema C4. Muestra cómo el sistema Nexa interactúa con los actores externos y sistemas adyacentes, sin revelar detalles de su estructura interna. En este nivel se identifican tres tipos de actores: los usuarios humanos del sistema (coordinación comercial, cliente comercial B2B y personal de despacho), el sistema de software Nexa como caja negra, y los sistemas externos con los que se conecta o se prevé conectar en fases futuras.
 </p>
 
-**Ilustración 1**
+**Ilustración 10**
 
 *Diagrama de Contexto del Sistema Nexa (C4 — Nivel 1)*
 
@@ -42,7 +42,7 @@ Como se observa en el diagrama, Nexa opera como un sistema centralizado al que a
 El diagrama de contenedores descompone el sistema Nexa en sus unidades desplegables principales, mostrando qué tecnologías conforman cada contenedor y cómo se comunican entre sí. Este nivel de abstracción permite al equipo establecer los límites tecnológicos del sistema y validar que la arquitectura propuesta es coherente con las convenciones de desarrollo definidas en la sección 5.1.
 </p>
 
-**Ilustración 2**
+**Ilustración 11**
 
 *Diagrama de Contenedores del Sistema Nexa (C4 — Nivel 2)*
 
@@ -60,7 +60,7 @@ El diagrama evidencia una arquitectura de tres capas alineada con el alcance del
 El diagrama de componentes descompone el contenedor de mayor complejidad —el API RESTful— en sus módulos internos, mostrando cómo los bounded contexts se traducen en componentes de software discretos y cómo se relacionan entre sí dentro del backend. Este nivel permite validar que la estructura del código fuente respeta las delimitaciones del dominio identificadas durante el EventStorming.
 </p>
 
-**Ilustración 3**
+**Ilustración 12**
 
 *Diagrama de Componentes del Sistema Nexa (C4 — Nivel 3)*
 

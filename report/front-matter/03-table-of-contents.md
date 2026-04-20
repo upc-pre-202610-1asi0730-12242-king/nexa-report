@@ -46,6 +46,7 @@
   <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-2-information-architecture.md">4.2.2. Labeling Systems</a></td><td align="right">97</td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-2-information-architecture.md">4.2.3. SEO Tags and Meta Tags</a></td><td align="right">97</td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-2-information-architecture.md">4.2.4. Searching Systems</a></td><td align="right">97</td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-2-information-architecture.md">4.2.5. Navigation Systems</a></td><td align="right">97</td></tr>
   <tr><td><a href="../40-chapter-4-product-design/4-3-landing-page-ui-design.md">4.3. Landing Page UI Design</a></td><td align="right">97</td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-3-landing-page-ui-design.md">4.3.1. Landing Page Wireframe</a></td><td align="right">97</td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../40-chapter-4-product-design/4-3-landing-page-ui-design.md">4.3.2. Landing Page Mock-up</a></td><td align="right">97</td></tr>
@@ -71,7 +72,8 @@
   <tr><td>&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-1-software-configuration-management.md">5.1.3. Source Code Style Guide &amp; Conventions</a></td><td align="right">98</td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-1-software-configuration-management.md">5.1.4. Software Deployment Configuration</a></td><td align="right">98</td></tr>
   <tr><td><a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation.md">5.2. Landing Page, Services &amp; Applications Implementation</a></td><td align="right">98</td></tr>
-  <tr><td>&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation.md">5.2.1. Sprint n</a></td><td align="right">98</td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation.md">5.2.1. Sprint 1</a></td><td align="right">98</td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-2-landing-page-services-and-applications-implementation.md">5.2.2. Sprint 2</a></td><td align="right">98</td></tr>
   <tr><td><a href="../50-chapter-5-implementation-validation-deployment/5-3-validation-interviews.md">5.3. Validation Interviews</a></td><td align="right">98</td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-3-validation-interviews.md">5.3.1. Diseño de Entrevistas</a></td><td align="right">98</td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../50-chapter-5-implementation-validation-deployment/5-3-validation-interviews.md">5.3.2. Registro de Entrevistas</a></td><td align="right">98</td></tr>
