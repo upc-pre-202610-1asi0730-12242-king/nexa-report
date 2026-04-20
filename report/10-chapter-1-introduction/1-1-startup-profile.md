@@ -30,9 +30,13 @@ La lógica de construcción del producto responde a un criterio de viabilidad. E
 A partir de esa base, la startup proyecta una evolución futura coherente con las necesidades del dominio. En una fase posterior, el producto podrá ampliarse hacia funcionalidades de mayor profundidad operativa, como aplicaciones móviles para trabajo en campo, integraciones con herramientas del ecosistema logístico e incorporación progresiva de componentes de trazabilidad térmica apoyados en IoT. De este modo, Nexa mantiene una identidad clara: no busca abarcar todo el universo logístico desde el primer momento, sino construir una plataforma especializada cuya madurez crezca de forma progresiva y alineada con las necesidades reales del sector.
 </p>
 
----**Tabla 3**
+---
 
-*Misión, Visión y valores del equipo*<table border="1" cellspacing="0" cellpadding="5" align="center">
+**Tabla 3**
+
+*Misión, Visión y valores del equipo*
+
+<table border="1" cellspacing="0" cellpadding="5" align="center">
   <tr>
     <th>Misión</th>
     <th>Visión</th>
@@ -49,13 +53,21 @@ A partir de esa base, la startup proyecta una evolución futura coherente con la
       Especialización, claridad operativa, innovación y colaboración como principios que orientan el diseño del producto, la relación con clientes y la forma de trabajo de la startup.
     </td>
   </tr>
-</table>*Nota.*La tabla resume los pilares estratégicos que orientan la identidad, el propósito y la cultura de trabajo de la startup Nexa.*Elaboración propia.*## 1.1.2. Perfiles de integrantes del equipo
+</table>
+
+*Nota.* La tabla resume los pilares estratégicos que orientan la identidad, el propósito y la cultura de trabajo de la startup Nexa. *Elaboración propia.*
+
+## 1.1.2. Perfiles de integrantes del equipo
 
 <p align="justify">
 Para la correcta ejecución de este proyecto, se requiere un equipo de trabajo con perfiles complementarios que posean habilidades en análisis de sistemas, modelado de datos, programación y gestión de proyectos. A continuación, se presenta un formato estándar para la descripción de los miembros del equipo, el cual debe ser completado por cada integrante:
-</p>**Tabla 4**
+</p>
 
-*Perfiles de integrantes del equipo*<table border="1" cellspacing="0" cellpadding="5" align="center">
+**Tabla 4**
+
+*Perfiles de integrantes del equipo*
+
+<table border="1" cellspacing="0" cellpadding="5" align="center">
   <tr>
     <th>Código</th>
     <th>Nombre</th>
@@ -112,4 +124,6 @@ Para la correcta ejecución de este proyecto, se requiere un equipo de trabajo c
       </p>
     </td>
   </tr>
-</table>*Nota.*Se presentan los perfiles de los miembros del equipo, destacando sus habilidades y el rol que desempeñan dentro del proyecto para contextualizar las contribuciones individuales.*Elaboración propia.*
+</table>
+
+*Nota.* Se presentan los perfiles de los miembros del equipo, destacando sus habilidades y el rol que desempeñan dentro del proyecto para contextualizar las contribuciones individuales. *Elaboración propia.*

@@ -9,7 +9,9 @@ La cadena de frío cumple un rol crítico en sectores como alimentos, productos 
 
 
 **Tabla 5**
-*Temperaturas promedio (°C) en cortes de carne de res*<table border="1" cellspacing="0" cellpadding="5" align="center">
+*Temperaturas promedio (°C) en cortes de carne de res*
+
+<table border="1" cellspacing="0" cellpadding="5" align="center">
   <tr>
     <th>Supermercado</th>
     <th>Enero</th>
@@ -23,7 +25,9 @@ La cadena de frío cumple un rol crítico en sectores como alimentos, productos 
   <tr><td>Supermercado 2</td><td>4.83</td><td>3.31</td><td>3.59</td><td>3.38</td><td>4.11</td><td>3.84</td></tr>
   <tr><td>Supermercado 3</td><td>6.81</td><td>7.18</td><td>12.84</td><td>8.36</td><td>9.37</td><td>8.91</td></tr>
   <tr><td>Supermercado 4</td><td>2.99</td><td>3.78</td><td>4.24</td><td>5.63</td><td>4.45</td><td>4.22</td></tr>
-</table>*Nota.*La normativa para productos cárnicos refrigerados estipula una temperatura máxima de 4 °C. Los datos muestran abusos severos y constantes en la cadena de frío, particularmente en los supermercados 1 y 3. Adaptado de "Evaluación de la cadena de frío en cortes de res vendida en supermercados" por P. Arriaga-Lorenzo et al., 2023, Revista Chapingo Serie Agricultura Tropical, 3(1), p. 20.
+</table>
+
+*Nota.* La normativa para productos cárnicos refrigerados estipula una temperatura máxima de 4 °C. Los datos muestran abusos severos y constantes en la cadena de frío, particularmente en los supermercados 1 y 3. Adaptado de "Evaluación de la cadena de frío en cortes de res vendida en supermercados" por P. Arriaga-Lorenzo et al., 2023, Revista Chapingo Serie Agricultura Tropical, 3(1), p. 20.
 
 ---
 
@@ -31,8 +35,13 @@ La cadena de frío cumple un rol crítico en sectores como alimentos, productos 
 En el contexto peruano, investigaciones en salud y logística evidencian que las rupturas de cadena de frío no son un fenómeno aislado: por ejemplo, un estudio en establecimientos de salud de la Microred Río Negro registró múltiples excursiones térmicas por encima y por debajo de los rangos aceptables, con implicancias directas en la calidad de biológicos. Como se observa en la Tabla 6, los incidentes de pérdida de temperatura son una constante mensual, evidenciando la alta vulnerabilidad operativa del ecosistema logístico del frío en el país.
 </p>
 
----**Tabla 6**
-*Rupturas de cadena de frío por meses según tipo de desviación térmica en establecimientos de salud (Microred Río Negro)*<table border="1" cellspacing="0" cellpadding="5" align="center">
+---
+
+**Tabla 6**
+
+*Rupturas de cadena de frío por meses según tipo de desviación térmica en establecimientos de salud (Microred Río Negro)*
+
+<table border="1" cellspacing="0" cellpadding="5" align="center">
   <tr>
     <th>Mes</th>
     <th>&lt; 0°C (Congelación)</th>
@@ -52,7 +61,9 @@ En el contexto peruano, investigaciones en salud y logística evidencian que las
   <tr><td>Noviembre</td><td>1</td><td>11</td><td>12</td></tr>
   <tr><td>Diciembre</td><td>1</td><td>2</td><td>3</td></tr>
   <tr><td><b>Total</b></td><td><b>14</b></td><td><b>50</b></td><td><b>64</b></td></tr>
-</table>*Nota.*La tabla evidencia la recurrencia mensual de fallas en la cadena de frío, siendo el sobrecalentamiento (>8°C) la principal causa de riesgo. Adaptado de "Rupturas de cadena de frío en los establecimientos de salud de una Microred de salud - Perú" por R. Bravo De la Cruz, L. Orihuela De Santana y M. Huaman Huaman, 2025, Advances in Science and Innovation, 4(1), p. 59.
+</table>
+
+*Nota.* La tabla evidencia la recurrencia mensual de fallas en la cadena de frío, siendo el sobrecalentamiento (>8°C) la principal causa de riesgo. Adaptado de "Rupturas de cadena de frío en los establecimientos de salud de una Microred de salud - Perú" por R. Bravo De la Cruz, L. Orihuela De Santana y M. Huaman Huaman, 2025, Advances in Science and Innovation, 4(1), p. 59.
 
 
 <p align="justify">
@@ -85,8 +96,13 @@ A partir de este contexto, el proyecto Nexa se plantea como respuesta a una prob
 El problema identificado puede estructurarse mediante la técnica 5W2H, lo que permite explicitar actores, alcance, contexto, causas, forma de manifestación y magnitud aproximada del riesgo operativo asociado a la gestión manual de pedidos B2B de productos refrigerados.
 </p>
 
----**Tabla 7**
-*5W2H*<table border="1" cellspacing="0" cellpadding="5" align="center">
+---
+
+**Tabla 7**
+
+*5W2H*
+
+<table border="1" cellspacing="0" cellpadding="5" align="center">
   <tr>
     <th>Elemento</th>
     <th>Descripción aplicada al proyecto</th>
@@ -133,7 +149,9 @@ El problema identificado puede estructurarse mediante la técnica 5W2H, lo que p
       No se han identificado estudios que cuantifiquen de forma específica, para importadoras y distribuidoras de productos refrigerados en Perú, el costo total de los errores de pedido y la ineficiencia derivada de procesos manuales. Sin embargo, la evidencia disponible permite aproximar la magnitud del riesgo: se reportaron 64 rupturas de cadena de frío en una sola microred de salud en un año, estudios regionales documentan pérdidas logísticas significativas en perecederos, y alrededor del 83% de bodegas se ubica todavía en un nivel principiante de transformación digital. En conjunto, estos datos sugieren que el impacto económico y operativo potencial de mantener procesos manuales y no trazables es considerable, aunque todavía poco medido de forma sistemática.
     </td>
   </tr>
-</table>*Nota.*La matriz resume el problema ya desarrollado en los antecedentes y la problemática, pero conserva los datos e indicadores más relevantes para evitar que la síntesis reduzca el valor analítico del apartado.
+</table>
+
+*Nota.* La matriz resume el problema ya desarrollado en los antecedentes y la problemática, pero conserva los datos e indicadores más relevantes para evitar que la síntesis reduzca el valor analítico del apartado.
 
 ### 1.2.2. Lean UX Process
 <p align = "justify">
@@ -146,7 +164,10 @@ En este proyecto, el uso de Lean UX resulta pertinente porque el dominio combina
 <p align="justify">
 Nexa soporta un modelo de negocio SaaS B2B especializado en la gestión del flujo principal de pedidos para empresas importadoras y distribuidoras de productos refrigerados y congelados. La lógica del negocio no se basa en vender un marketplace horizontal ni en reemplazar de inmediato todo el ecosistema logístico, sino en ofrecer una plataforma web que ordene el tramo donde hoy se concentran mayores fricciones: catálogo, registro de pedido, disponibilidad, control básico de inventario y seguimiento operativo.
 En este modelo, la empresa distribuidora es el cliente pagador de la solución y el entorno donde se produce la primera validación de valor. Sin embargo, el producto solo resulta sostenible si también genera beneficios claros para los usuarios internos que coordinan la operación y para el cliente comercial B2B que compra y hace seguimiento. Por ello, el software debe demostrar valor tanto hacia dentro de la operación —reduciendo retrabajo, errores y descoordinación— como hacia fuera —ofreciendo más claridad, autonomía y predictibilidad al comprador comercial—.
-</p>**Tabla 8**
+</p>
+
+**Tabla 8**
+
 *Tabla de visión*
 
 <p align="justify">
