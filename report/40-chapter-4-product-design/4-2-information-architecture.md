@@ -1,4 +1,4 @@
-# Capítulo IV: Product Design
+## 4.2. Information Architecture
 
 ---
 

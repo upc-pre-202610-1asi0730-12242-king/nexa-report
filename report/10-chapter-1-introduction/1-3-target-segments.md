@@ -38,6 +38,18 @@ El personal dedicado a la coordinación comercial y captura de pedidos en empres
 El segmento de clientes comerciales B2B del canal tradicional peruano —bodegas, minimarkets, distribuidores pequeños y establecimientos HORECA— representa un universo de aproximadamente 414,000 bodegas activas a nivel nacional, con una concentración mayor en Lima Metropolitana (Asociación de Bodegueros del Perú, 2022). En términos de madurez digital, el Índice de Madurez Digital del Canal Tradicional elaborado por Xplora/Grupo Lucky reporta que solo alrededor del 28% de bodegas utiliza algún aplicativo para gestionar tareas del negocio, mientras que el 83% se ubica todavía en nivel "principiante" de transformación digital (Grupo Lucky, 2022). Complementariamente, un estudio sobre pagos digitales en pequeños comercios muestra que la adopción de herramientas digitales es incipiente y depende de la simplicidad percibida de la herramienta (Taipe Quispe, 2025). Esto confirma que la adopción del portal B2B de Nexa está condicionada a una experiencia de uso sin fricción que equipare o supere la velocidad percibida del canal informal.
 </p>
 
+**Ilustración 2**
+
+*Madurez Digital del Canal Tradicional en el Perú*
+
+```mermaid
+pie title Uso de Aplicativos en Bodegas (Canal Tradicional)
+    "Canal Tradicional Digitalizado (28%)" : 28
+    "Canal Tradicional Analógico (72%)" : 72
+```
+
+*Nota.* Fuente: Elaboración propia en base a datos de Grupo Lucky (2022).
+
 **Segmento 3 (S3) — Despacho, transporte y cierre de entrega**
 
 <p align="justify">
