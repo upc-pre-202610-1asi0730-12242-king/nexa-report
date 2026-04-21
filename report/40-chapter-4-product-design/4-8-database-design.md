@@ -14,13 +14,11 @@ El siguiente diagrama, desarrollado mediante la notación de ingeniería de soft
 
 ```mermaid
 erDiagram
-    %% MODULE 1: IDENTITY & RBAC
-    USER ||--o{ AUDIT_LOG : "generates"
-    USER ||--o{ LOGIN_HISTORY : "registers"
-    USER }|--|| ROLE : "assigned"
-    ROLE ||--o{ ROLE_PERMISSION : "contains"
-    ROLE_PERMISSION }|--|| PERMISSION : "defines"
-    
+    ROLE {
+        int id PK
+        string name
+        string description
+    }
     USER {
         int id PK
         int role_id FK
@@ -29,15 +27,14 @@ erDiagram
         string status
         datetime created_at
     }
-    ROLE {
-        int id PK
-        string name
-        string description
-    }
     PERMISSION {
         int id PK
         string code
         string description
+    }
+    ROLE_PERMISSION {
+        int role_id FK
+        int permission_id FK
     }
     AUDIT_LOG {
         int id PK
@@ -49,14 +46,17 @@ erDiagram
         json new_values
         datetime timestamp
     }
-
-    %% MODULE 2: COMMERCIAL MANAGEMENT
-    USER ||--o| COMMERCIAL_CLIENT : "accesses"
-    COMMERCIAL_CLIENT }|--|| ZONE : "belongs_to"
-    COMMERCIAL_CLIENT ||--|| COMMERCIAL_CONDITION : "has"
-    COMMERCIAL_CLIENT ||--o{ PRICE_LIST_ASSIGNMENT : "mapped_to"
-    PRICE_LIST_ASSIGNMENT }|--|| PRICE_LIST : "refs"
-    
+    LOGIN_HISTORY {
+        int id PK
+        int user_id FK
+        string ip_address
+        datetime login_at
+    }
+    ZONE {
+        int id PK
+        string name
+        string description
+    }
     COMMERCIAL_CLIENT {
         int id PK
         int user_id FK
@@ -65,11 +65,6 @@ erDiagram
         string business_name
         string legal_address
         string contact_phone
-    }
-    ZONE {
-        int id PK
-        string name
-        string description
     }
     COMMERCIAL_CONDITION {
         int id PK
@@ -85,15 +80,24 @@ erDiagram
         string currency
         boolean is_active
     }
-
-    %% MODULE 3: CATALOG & SPECIFICATIONS
-    PRODUCT }|--|| CATEGORY : "classified_in"
-    PRODUCT }|--|| BRAND : "branded_by"
-    PRODUCT ||--o{ PRODUCT_SPECIFICATION : "detailed_by"
-    PRODUCT }|--|| UOM : "measured_in"
-    PRICE_LIST ||--o{ PRICE_LIST_ITEM : "contains"
-    PRICE_LIST_ITEM }|--|| PRODUCT : "prices"
-
+    PRICE_LIST_ASSIGNMENT {
+        int id PK
+        int client_id FK
+        int price_list_id FK
+    }
+    CATEGORY {
+        int id PK
+        string name
+    }
+    BRAND {
+        int id PK
+        string name
+    }
+    UOM {
+        int id PK
+        string code
+        string name
+    }
     PRODUCT {
         int id PK
         int category_id FK
@@ -103,7 +107,7 @@ erDiagram
         string name
         decimal standard_price
     }
-    PRODUCT_SPECIFICATION {
+    PRODUCT_SPEC {
         int id PK
         int product_id FK
         string storage_temp_range
@@ -111,20 +115,6 @@ erDiagram
         string allergen_info
         string packaging_type
     }
-    UOM {
-        int id PK
-        string code
-        string name
-    }
-
-    %% MODULE 4: INVENTORY & WAREHOUSE
-    WAREHOUSE ||--o{ WAREHOUSE_LOCATION : "partitioned_into"
-    WAREHOUSE_LOCATION ||--o{ INVENTORY_STOCK : "holds"
-    INVENTORY_STOCK }|--|| PRODUCT : "item"
-    INVENTORY_STOCK ||--o{ INVENTORY_TRANSACTION : "logged_in"
-    BATCH }|--|| PRODUCT : "variant_of"
-    INVENTORY_STOCK }|--|| BATCH : "specific_lot"
-
     BATCH {
         int id PK
         int product_id FK
@@ -132,6 +122,15 @@ erDiagram
         date production_date
         date expiry_date
         string status
+    }
+    WAREHOUSE {
+        int id PK
+        string name
+    }
+    WAREHOUSE_LOCATION {
+        int id PK
+        int warehouse_id FK
+        string code
     }
     INVENTORY_STOCK {
         int id PK
@@ -141,23 +140,15 @@ erDiagram
         int quantity_on_hand
         int quantity_reserved
     }
-    INVENTORY_TRANSACTION {
+    INVENTORY_TRANS {
         int id PK
         int stock_id FK
         string type
         int quantity
-        string reference_type
-        int reference_id
-        datetime transaction_date
+        string ref_type
+        int ref_id
+        datetime trans_date
     }
-
-    %% MODULE 5: SALES & ORDER MANAGEMENT
-    ORDER }|--|| COMMERCIAL_CLIENT : "placed_by"
-    ORDER ||--o{ ORDER_ITEM : "comprised_of"
-    ORDER ||--o{ ORDER_STATUS_HISTORY : "tracked_by"
-    ORDER ||--o| BILLING_DOCUMENT : "invoiced_as"
-    ORDER_ITEM }|--|| PRODUCT : "refers"
-
     ORDER {
         int id PK
         int client_id FK
@@ -175,30 +166,22 @@ erDiagram
         int quantity
         decimal unit_price
         decimal discount
-        decimal row_total
     }
-    ORDER_STATUS_HISTORY {
+    ORDER_HISTORY {
         int id PK
         int order_id FK
         string status_code
-        string comments
         datetime changed_at
     }
-
-    %% MODULE 6: LOGISTICS & TRACEABILITY
-    DISPATCH }|--|| ORDER : "delivers"
-    DISPATCH }|--|| VEHICLE : "transported_by"
-    DISPATCH }|--|| DRIVER : "handled_by"
-    DISPATCH ||--o{ ROUTE_CHECKPOINT : "passes_through"
-    DISPATCH ||--o{ INCIDENT : "records"
-    DISPATCH ||--o| PROOF_OF_DELIVERY : "finalized_with"
-
     VEHICLE {
         int id PK
         string plate
         string model
-        decimal temp_capacity
-        datetime last_maintenance
+        decimal temp_cap
+    }
+    DRIVER {
+        int id PK
+        string name
     }
     DISPATCH {
         int id PK
@@ -206,25 +189,52 @@ erDiagram
         int vehicle_id FK
         int driver_id FK
         string status
-        datetime departure_time
-        datetime actual_arrival
+        datetime departure
     }
     INCIDENT {
         int id PK
         int dispatch_id FK
         string type
         string severity
-        string description
         datetime reported_at
     }
-    PROOF_OF_DELIVERY {
+    POD {
         int id PK
         int dispatch_id FK
         string received_by
-        string signature_url
-        string photo_url
         datetime timestamp
     }
+
+    USER ||--o{ AUDIT_LOG : "generates"
+    USER ||--o{ LOGIN_HISTORY : "registers"
+    USER }|--|| ROLE : "assigned"
+    ROLE ||--o{ ROLE_PERMISSION : "contains"
+    ROLE_PERMISSION }|--|| PERMISSION : "defines"
+    USER ||--o| COMMERCIAL_CLIENT : "accesses"
+    COMMERCIAL_CLIENT }|--|| ZONE : "belongs_to"
+    COMMERCIAL_CLIENT ||--|| COMMERCIAL_CONDITION : "has"
+    COMMERCIAL_CLIENT ||--o{ PRICE_LIST_ASSIGNMENT : "mapped_to"
+    PRICE_LIST_ASSIGNMENT }|--|| PRICE_LIST : "refs"
+    PRODUCT }|--|| CATEGORY : "classified_in"
+    PRODUCT }|--|| BRAND : "branded_by"
+    PRODUCT ||--o{ PRODUCT_SPEC : "detailed_by"
+    PRODUCT }|--|| UOM : "measured_in"
+    PRODUCT ||--o{ BATCH : "stored_in"
+    BATCH }|--|| PRODUCT : "variant_of"
+    WAREHOUSE ||--o{ WAREHOUSE_LOCATION : "partitions"
+    WAREHOUSE_LOCATION ||--o{ INVENTORY_STOCK : "holds"
+    INVENTORY_STOCK }|--|| PRODUCT : "item"
+    INVENTORY_STOCK }|--|| BATCH : "specific_lot"
+    INVENTORY_STOCK ||--o{ INVENTORY_TRANS : "logs"
+    ORDER }|--|| COMMERCIAL_CLIENT : "placed_by"
+    ORDER ||--o{ ORDER_ITEM : "comprises"
+    ORDER ||--o{ ORDER_HISTORY : "tracks"
+    ORDER_ITEM }|--|| PRODUCT : "item"
+    DISPATCH }|--|| ORDER : "delivers"
+    DISPATCH }|--|| VEHICLE : "transported_by"
+    DISPATCH }|--|| DRIVER : "handled_by"
+    DISPATCH ||--o{ INCIDENT : "records"
+    DISPATCH ||--o| POD : "completed_by"
 ```
 
 ### 4.8.2. Sustentación Técnica y Reglas de Negocio
