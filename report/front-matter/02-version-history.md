@@ -34,5 +34,10 @@
 | TB1 V0.28 | 20/04/2026 | Yucra Sandoval, Diego Sebastian | Corrección del stack tecnológico en el Capítulo V; eliminación de referencias incorrectas a Vue.js; documentación del stack real HTML5/CSS modular/JS vanilla con i18n propio; completar Student Outcome ABET 5 con acciones por integrante |
 | TB1 V0.29 | 20/04/2026 | Rojas Mancilla, Gerard Gianpier | Desarrollo de la sección de arquitectura de software (4.6) con modelo C4 completo: diagramas de contexto, contenedores y componentes con explicación por nivel y notas APA |
 | TB1 V1.0.0 | 21/04/2026 | Yucra Sandoval, Diego Sebastian | Versión final del informe AV1: Refactorización a Docs-as-Code, restauración de introducción de Cap IV y sincronización de arquitectura técnica |
+| TB1 V1.1.0 | 21/04/2026 | Yucra Sandoval, Diego Sebastian | Mega-refactor del Capítulo 4.1: Integración de estándares WCAG 2.1, Design Tokens, Motion Principles y matriz de accesibilidad técnica |
+| TB1 V1.2.0 | 21/04/2026 | Yucra Sandoval, Diego Sebastian | Expansión de Arquitectura de Información (4.2): Inserción de Sitemap jerárquico Mermaid y modelado de taxonomía de navegación por rol |
+| TB1 V1.3.0 | 21/04/2026 | Yucra Sandoval, Diego Sebastian | Nutrición estadística del Capítulo I: Transformación de datos de madurez digital (INEI/Lucky) en diagramas visuales de alto impacto |
+| TB1 V1.4.0 | 21/04/2026 | Yucra Sandoval, Diego Sebastian | Integración de evidencias visuales (pruebas) en el Capítulo II; fix de links rotos y normalización de activos en la sección de arquitectura DDD (4.6) |
+| TB1 V1.5.0 | 21/04/2026 | Yucra Sandoval, Diego Sebastian | Formalización académica de carátula (estilo UPC), expansión de Student Outcome (ABET 5) y actualización de perfiles con fotos integradas |
 
 *Nota.* La tabla documenta los cambios significativos y las contribuciones individuales realizadas al informe a lo largo del ciclo del proyecto, asegurando la trazabilidad de su evolución. *Elaboración propia.*
