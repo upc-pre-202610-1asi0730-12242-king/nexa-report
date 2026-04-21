@@ -25,7 +25,7 @@ erDiagram
         string email
         string password_hash
         string status
-        datetime created_at
+        string created_at
     }
     PERMISSION {
         int id PK
@@ -42,15 +42,15 @@ erDiagram
         string action
         string table_name
         string record_id
-        json old_values
-        json new_values
-        datetime timestamp
+        string old_values
+        string new_values
+        string timestamp
     }
     LOGIN_HISTORY {
         int id PK
         int user_id FK
         string ip_address
-        datetime login_at
+        string login_at
     }
     ZONE {
         int id PK
@@ -69,8 +69,8 @@ erDiagram
     COMMERCIAL_CONDITION {
         int id PK
         int client_id FK
-        decimal credit_limit
-        decimal current_balance
+        float credit_limit
+        float current_balance
         string payment_terms
         int grace_period_days
     }
@@ -103,15 +103,15 @@ erDiagram
         int category_id FK
         int brand_id FK
         int uom_id FK
-        string sku UNIQUE
+        string sku
         string name
-        decimal standard_price
+        float standard_price
     }
     PRODUCT_SPEC {
         int id PK
         int product_id FK
         string storage_temp_range
-        decimal storage_humidity
+        float storage_humidity
         string allergen_info
         string packaging_type
     }
@@ -119,8 +119,8 @@ erDiagram
         int id PK
         int product_id FK
         string batch_number
-        date production_date
-        date expiry_date
+        string production_date
+        string expiry_date
         string status
     }
     WAREHOUSE {
@@ -147,16 +147,16 @@ erDiagram
         int quantity
         string ref_type
         int ref_id
-        datetime trans_date
+        string trans_date
     }
     ORDER {
         int id PK
         int client_id FK
-        datetime order_date
+        string order_date
         string status
-        decimal subtotal
-        decimal tax_total
-        decimal total_amount
+        float subtotal
+        float tax_total
+        float total_amount
     }
     ORDER_ITEM {
         int id PK
@@ -164,20 +164,20 @@ erDiagram
         int product_id FK
         int batch_id FK
         int quantity
-        decimal unit_price
-        decimal discount
+        float unit_price
+        float discount
     }
     ORDER_HISTORY {
         int id PK
         int order_id FK
         string status_code
-        datetime changed_at
+        string changed_at
     }
     VEHICLE {
         int id PK
         string plate
         string model
-        decimal temp_cap
+        float temp_cap
     }
     DRIVER {
         int id PK
@@ -189,20 +189,20 @@ erDiagram
         int vehicle_id FK
         int driver_id FK
         string status
-        datetime departure
+        string departure
     }
     INCIDENT {
         int id PK
         int dispatch_id FK
         string type
         string severity
-        datetime reported_at
+        string reported_at
     }
     POD {
         int id PK
         int dispatch_id FK
         string received_by
-        datetime timestamp
+        string timestamp
     }
 
     USER ||--o{ AUDIT_LOG : "generates"
