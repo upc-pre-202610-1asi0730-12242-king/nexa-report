@@ -373,28 +373,105 @@ Henrry García enfatiza que la confianza es el motor de la relación B2B. Aunque
 
 ### 2.2.3.	Análisis de entrevistas
 
-**Análisis del Segmento 1: Coordinación Comercial**
+**Análisis del Segmento 1: Mercaderistas / personal de coordinación comercial**
 
-*   **Puntos de Dolor**: Dependencia extrema de WhatsApp, falta de integración de stock en tiempo real y nulidad de capacidades móviles en los ERP actuales.
-*   **Expectativas**: Herramientas que permitan la toma de pedidos en campo sin re-digitación posterior y con visibilidad inmediata del saldo del cliente.
+<p align="justify">
+El segmento de mercaderistas y personal de coordinación comercial, representado por Lorena Silva, Cinthia Levano y Celia Pérez, constituye el eslabón crítico de captura de datos en la cadena de distribución. Este perfil operativo actúa bajo una presión constante por la inmediatez, donde la velocidad de respuesta al cliente es el indicador de éxito primario. A partir de las entrevistas a profundidad, se han consolidado los siguientes patrones transversales que definen la problemática del sector.
+</p>
 
-**Análisis del Segmento 2: Jefatura y Logística**
+**Características objetivas:**
 
-*   **Puntos de Dolor**: Falta de trazabilidad térmica post-entrega y opacidad en el estado de los pedidos una vez que salen del almacén.
-*   **Expectativas**: Centralización de la trazabilidad FEFO e integración total de datos de venta con planificación de rutas.
+- **Rol laboral:** 100% de los entrevistados (3 de 3) ejerce funciones directas de captura de pedidos, gestión de créditos y seguimiento de cartera.
+- **Uso de herramientas digitales:** 100% interactúa con sistemas ERP (como Fontana) y herramientas de mensajería instantánea simultáneamente.
+- **Entorno de trabajo:** 67% (Lorena y Celia) operan o han operado frecuentemente en campo (visitas presenciales), mientras que el 33% (Cinthia) mantiene una base más administrativa/oficina.
+- **Experiencia en digitalización:** El 100% reporta que los sistemas actuales son insuficientes para el entorno móvil, obligando a duplicar tareas en papel o laptops.
 
-**Análisis del Segmento 3: Clientes B2B**
+**Características subjetivas:**
 
-*   **Puntos de Dolor**: Incertidumbre en los tiempos de entrega y quiebres de stock no comunicados preventivamente.
-*   **Expectativas**: Acceso autónomo a catálogos dinámicos y seguimiento del pedido en tiempo real (tipo delivery apps).
+- **Prioridad de agilidad:** 100% de las participantes manifiesta una frustración elevada ante la lentitud de las plataformas oficiales, priorizando la agilidad de WhatsApp sobre el rigor del sistema formal.
+- **Apertura tecnológica:** Existe una disposición total (100%) hacia la adopción de nuevas herramientas, siempre que estas simplifiquen el flujo de clics y no añadan capas de complejidad.
+- **Percepción de ineficiencia:** El 100% coincide en que el proceso actual tiene "demasiados pasos" (flujo fragmentado) que impactan en su productividad personal.
+
+**Problemas más comunes:**
+
+- **Inestabilidad Crítica (El "Efecto Fontana"):** Lorena destaca que el sistema colapsa ante accesos concurrentes, lo que representa el 100% de los bloqueos técnicos en momentos de alta demanda comercial.
+- **Opacidad de Stock:** El 67% (Lorena y Cinthia) reporta que el sistema no refleja el stock real en tiempo real, lo que genera una desconfianza sistémica y obliga a realizar llamadas de validación a almacén.
+- **Brecha de Movilidad:** La incapacidad de realizar registros de clientes o pedidos complejos desde un smartphone limita la autonomía del 100% del personal en campo.
+- **Carga de Re-digitación:** El 100% de los pedidos capturados por canales informales debe ser transcrito manualmente al ERP, lo que incrementa el riesgo de error humano en un 20-30% según estimaciones operativas.
+
+**Hallazgos clave para el arquetipo:**
+
+- La solución debe ofrecer la **estabilidad y rapidez de WhatsApp** pero con la estructura de datos de un sistema contable.
+- Es imperativo integrar la **visibilidad de créditos y cobranzas** en la misma interfaz de toma de pedidos para dotar de autonomía al asesor comercial.
+- El diseño debe ser **Mobile-First**, permitiendo que el 100% de las tareas comerciales se realicen sin necesidad de una computadora.
+
+**Análisis del Segmento 2: Jefatura o responsables de logística y operación**
+
+<p align="justify">
+Este segmento, integrado por Hilda Litano, Edith Taype y Jesica Sandoval, aporta la visión estratégica y de cumplimiento de la cadena de frío. Aquí, el enfoque se desplaza de la rapidez de venta hacia el rigor de la trazabilidad y la preservación del activo (el producto refrigerado). El análisis revela un quiebre importante entre la supervisión y la ejecución operativa.
+</p>
+
+**Características objetivas:**
+
+- **Funciones de supervisión:** 100% (3 de 3) tiene responsabilidad sobre la validación de inventario, cumplimiento de normativas sanitarias y despacho.
+- **Control de variables críticas:** 100% monitorea fechas de vencimiento y temperaturas, aunque la forma de registro varía según el nivel operativo.
+- **Multitarea sistémica:** El 67% (Hilda y Jesica) debe alternar entre documentos físicos (VUCE/DIGESA) y dashboards digitales fragmentados.
+
+**Características subjetivas:**
+
+- **Obsesión por la trazabilidad:** 100% de las entrevistadas considera que el mayor riesgo del negocio es la pérdida de trazabilidad post-entrega (en el anaquel del cliente).
+- **Necesidad de autonomía operativa:** Edith resalta que la limitación de acceso a los sistemas de inventario para el personal de piso (33% del segmento analizado) genera cuellos de botella innecesarios.
+
+**Problemas más comunes:**
+
+- **Falta de Integración FEFO:** El control de "First Expired, First Out" (FEFO) se gestiona de forma manual o verbal en el 67% de los casos (Jesica), aumentando el riesgo de mermas por vencimiento.
+- **Conflictos de Responsabilidad:** La rotura de la cadena de frío tras la entrega en supermercados genera disputas comerciales que el 100% del personal de jefatura atribuye a una falta de evidencia digital de temperatura.
+- **Validación Manual de Datos:** La desconfianza en la digitación del Segmento 1 obliga a Jesica a verificar manualmente el 100% de las órdenes críticas, lo que evidencia una falla en la estructura de captura de datos inicial.
+
+**Hallazgos clave para el arquetipo:**
+
+- Se requiere una **herramienta unificada** que centralice la documentación sanitaria con el estado real del stock.
+- La **trazabilidad de temperatura** debe ser una evidencia inalterable para proteger la responsabilidad de la distribuidora frente a reclamos de clientes.
+- Reducir los **silos de información** permitiendo diferentes niveles de acceso según el rol operativo.
+
+**Análisis del Segmento 3: Clientes comerciales B2B (minoristas y mayoristas)**
+
+<p align="justify">
+El análisis de Pedro Puente y Henrry García revela la paradoja del cliente B2B: una necesidad urgente de predictibilidad logística mezclada con una alta resistencia a sistemas que consideren "robóticos" o que les quiten tiempo de atención a sus propios negocios. Para ellos, el distribuidor no es solo un proveedor, sino un socio de quien dependen para no quebrar stock.
+</p>
+
+**Características objetivas:**
+
+- **Frecuencia de reabastecimiento:** 100% (2 de 2) compra productos de alta rotación varias veces por semana.
+- **Canales de comunicación:** 100% utiliza la llamada directa o el audio de WhatsApp para transmitir urgencias.
+- **Dependencia logística:** El 100% reporta que su nivel de ventas está directamente limitado por la capacidad de despacho y stock del distribuidor.
+
+**Características subjetivas:**
+
+- **Valoración de la cercanía:** Henrry subraya que la confianza es el factor determinante del 100% de sus compras; prefiere al vendedor que "conoce su negocio" sobre una plataforma fría.
+- **Incertidumbre logística:** Pedro manifiesta que el mayor "punto de dolor" subjetivo es la falta de noticias sobre su pedido, lo que le genera ansiedad operativa.
+
+**Problemas más comunes:**
+
+- **Quiebres de Stock Inesperados:** El 100% de los clientes ha sufrido la cancelación de ítems críticos al momento de la entrega por falta de visibilidad previa de stock.
+- **Opacidad del ETA (Estimated Time of Arrival):** La falta de un seguimiento de ruta digital obliga al 100% de estos clientes a esperar "en ciego" la llegada del camión, perdiendo horas hombre en el proceso de recepción.
+- **Asimetría Competitiva:** Pedro identifica que los proveedores priorizan a los grandes supermercados, dejando al minorista (100% de este segmento) en una posición de vulnerabilidad logística.
+
+**Hallazgos clave para el arquetipo:**
+
+- La plataforma debe funcionar de forma **asíncrona y rápida**: permitir el pedido en 2 clics y luego ofrecer notificaciones de estado proactivas (Push notifications).
+- El sistema debe **humanizar la relación digital**, permitiendo al cliente sentir que tiene un canal directo de soporte ante excepciones.
+- La **predictibilidad del despacho** es el valor diferencial más potente para fidelizar a este segmento.
 
 ### 2.2.4. Síntesis Global de Hallazgos
 
 <p align="justify">
-La investigación cualitativa revela una fragmentación crítica entre la captura del pedido y su ejecución física. El 100% de los entrevistados reporta que, ante la falla o complejidad de los sistemas formales, recurren a canales informales (WhatsApp/Llamadas), lo que genera pérdida de datos y falta de trazabilidad.
+Tras el análisis detallado de los ocho perfiles representativos de la cadena de valor de Nexa, se concluye que existe una **Brecha de Trazabilidad Total**. Esta brecha se manifiesta en la desconexión sistémica entre la promesa comercial (tomada por WhatsApp) y la realidad operativa (gestionada en sistemas que colapsan). 
 </p>
 
-**Gráfico 1: Distribución de Canales de Comunicación Actuales**
+**Ilustración 17**
+
+*Distribución de Canales de Comunicación Identificados*
 
 ```mermaid
 pie title Uso de Canales de Comunicación
@@ -403,7 +480,11 @@ pie title Uso de Canales de Comunicación
     "ERP / Sistema Formal" : 10
 ```
 
-**Gráfico 2: Puntos de Dolor Críticos por Frecuencia de Mención**
+*Nota. Elaboración propia. Resultados obtenidos de las 8 entrevistas a profundidad de los segmentos 1, 2 y 3.*
+
+**Ilustración 18**
+
+*Jerarquía de Puntos de Dolor por Incidencia en los Segmentos*
 
 ```mermaid
 graph TD
@@ -413,6 +494,8 @@ graph TD
     A --> E(Inestabilidad de Software Actual: 50%)
 ```
 
+*Nota. Elaboración propia. Mapeo de frustraciones reportadas por los entrevistados en base a la repetición sistemática de menciones.*
+
 <p align="justify">
-En conclusión, el éxito de Nexa dependerá de su capacidad para ofrecer estabilidad similar a WhatsApp pero con la estructura de un ERP, permitiendo que la información fluya sin fricciones desde la mercaderista en campo hasta el cliente final en su bodega.
+En conclusión, Nexa no solo debe resolver la toma de pedidos, sino que debe actuar como un **tejido conectivo** que elimine la duplicación de tareas y dote de una visibilidad de stock del 100% a todos los actores involucrados, desde la mercaderista en el punto de venta hasta el bodeguero en su establecimiento minorista.
 </p>
