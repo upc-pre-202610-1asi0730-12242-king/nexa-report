@@ -1,11 +1,7 @@
 # Capítulo IV: Product Design
 
 <p align="justify">
-El Capítulo IV representa la transición desde la fase de descubrimiento y especificación hacia la materialización técnica y visual de Nexa. En este apartado se documentan los criterios estéticos, las estructuras de información y las decisiones arquitectónicas que permiten transformar los Bounded Contexts identificados en el dominio en una solución digital coherente de nivel B2B. 
-</p>
-
-<p align="justify">
-El diseño del producto en Nexa no se limita a la estética superficial; su objetivo primordial es garantizar el control operativo y la trazabilidad térmica a través de una interfaz limpia, modular y orientada a datos. Este capítulo detalla cómo se orquestan los elementos visuales y las estructuras de navegación para facilitar las tareas críticas de los tres perfiles clave: Valeria (coordinación comercial), Hilda (cliente B2B) y Pedro (personal de despacho).
+El Capítulo IV representa la transición técnica desde la fase de descubrimiento hacia la materialización visual y arquitectónica de Nexa. En este apartado se documentan los criterios estéticos, las estructuras de información y las decisiones de diseño que permiten transformar los Bounded Contexts identificados en el dominio en una solución digital de grado empresarial (Enterprise B2B).
 </p>
 
 ---
@@ -15,74 +11,139 @@ El diseño del producto en Nexa no se limita a la estética superficial; su obje
 ### 4.1.1. General Style Guidelines
 
 <p align="justify">
-A nivel de marca y percepción general, Nexa se rige por un conjunto de principios visuales y conceptuales diseñados para transmitir confianza técnica y control operativo:
+Nexa se rige por el principio de <strong>"Calm-Tech"</strong>: la interfaz debe ser un soporte invisible que facilite el control absoluto sobre la cadena de frío sin generar fatiga cognitiva. El diseño prioriza la veracidad de los datos técnicos por encima de la decoración, estableciendo un entorno de trabajo resiliente y preciso.
 </p>
 
-- **Percepción objetivo:** La marca debe percibirse como confiable, ordenada, limpia, enterprise premium, técnicamente creíble y cercana.
-- **Palabras clave de marca:** Claridad, control, trazabilidad, operación, confianza, fluidez, precisión, modularidad, resiliencia, visibilidad térmica y ejecución B2B.
-- **Narrativa:** *De visibilidad operacional a control.* El diseño guía al usuario a través del problema real, los módulos, el protocolo, la trazabilidad, el roadmap y, finalmente, la conversión.
-- **Lenguaje visual:** Se priorizan los datos, estados operativos, tablas, chips, cards y mockups de dashboards con información verosímil (SKU, lotes, temperatura, FEFO) por encima de ilustraciones puramente decorativas.
+- **Percepción Objetivo:** Confiable, Ordenada, Técnica y de grado Enterprise.
+- **Lenguaje Visual:** Uso extensivo de espacios en blanco, tipografía de alta legibilidad y una paleta cromática que reduce el estrés visual en jornadas operativas extensas.
 
 ---
 
 ### 4.1.2. Web Style Guidelines
 
-<p align="justify">
-El sistema visual web de Nexa está estructurado en un ecosistema estático multipágina, construido con HTML, CSS modular (basado en tokens) y JavaScript vanilla. A continuación, se detallan los lineamientos técnicos de la interfaz web:
-</p>
-
-#### Sistema de Color
+#### 01. Colorimetry
 
 <p align="justify">
-La paleta de Nexa sigue la regla 60-30-10: 60% para fondos claros, 30% para superficies y tonos neutrales, y 10% para el color azul de marca/acento.
+La paleta se fundamenta en un sistema <strong>HSL (Hue, Saturation, Lightness)</strong> que permite una gestión dinámica del contraste. El núcleo es el azul de marca, complementado por una escala de grises azulados para las superficies de datos.
 </p>
 
-**Colores Principales:**
+**Ilustración 3**
 
-- **Primary CTA & Brand:** `--c-primary` (#2554DF). Usado en botones principales, links activos y estados seleccionados. Su hover es `--c-primary-hover` (#1A42BD).
-- **Superficies Claras:** Fondo general `--c-base` (#FBFCFD), bandas y paneles secundarios `--c-surface` (#F3F5F7), y cards elevadas `--c-white` (#FFFFFF).
-- **Superficies Oscuras:** Reservadas para aportar peso narrativo (ej. roadmap, terminal mockups). Fondo `--c-dark-base` (#070A10) y cards oscuras `--c-dark-surface` (#0F1523).
+*Sistema de Colorimetría Nexa*
 
-**Estados (Status Colors):**
+![Colorimetry](../assets/images/style-guidelines/Colorimetry.jpeg)
 
-| Estado | Color principal | Color hover |
-|--------|----------------|-------------|
-| Optimal / Active | #22C55E | #16A34A |
-| Alert / Warning | #F59E0B | #D97706 |
-| Critical / Pain | #EF4444 | #DC2626 |
+*Nota.* Especificación de Brand Colors y Text Colors. *Elaboración propia.*
 
-*(Imagen de paleta de colores pendiente de agregar)*
+- **Brand Primary:** `#2554DF` (HSL 221, 72%, 45%).
+- **Interactive States:** `#1A42BD` para hovers tácticos.
+- **Surface Palette:** Uso de `#FBFCFD` (Base) y `#F3F5F7` (Surface) para delimitar contextos de información.
+
+#### 02. Typography
+
+<p align="justify">
+Se ha estandarizado el uso de <strong>Inter</strong> como familia tipográfica universal para el proyecto. Esta decisión garantiza legibilidad excepcional en pantallas de diversas densidades de píxeles y dispositivos de mano.
+</p>
+
+**Ilustración 4**
+
+*Sistema Tipográfico Nexa*
+
+![Typography](../assets/images/style-guidelines/Typography.jpeg)
+
+*Nota.* Definición de jerarquías para Display, Headings, Body y Mono. *Elaboración propia.*
+
+- **Display & Headings:** Uso de **Inter Bold** con un ajuste de `letter-spacing: -0.06em`.
+- **Body & Labels:** **Inter Regular/Medium** (14px - 16px) con interlineado de 1.68.
+- **Monospace:** **Fira Code** para telemetría térmica y códigos SKU.
+
+#### 03. Iconography
+
+<p align="justify">
+El sistema iconográfico utiliza trazos lineales consistentes (Line-type) con un peso de 1.9px a 2.2px para mantener la ligereza visual del portal.
+</p>
+
+**Ilustración 5**
+
+*Iconografía Nexa*
+
+![Iconography](../assets/images/style-guidelines/Iconography.jpeg)
+
+*Nota.* Biblioteca de iconos vectoriales para navegación y soporte. *Elaboración propia.*
+
+#### 04. Grid Systems
+
+<p align="justify">
+Nexa utiliza una rejilla de **12 columnas** con un ancho de contenedor maestro de **1440px** para alta resolución, adaptándose proporcionalmente a terminales de escritorio y portátiles.
+</p>
+
+**Ilustración 6**
+
+*Sistema de Rejilla y Breakpoints*
+
+![Grid System](../assets/images/style-guidelines/grid-system.jpeg)
+
+*Nota.* Dimensionamiento para Desktop HD, Desktop y Tablet. *Elaboración propia.*
+
+#### 05. Spacing System
+
+<p align="justify">
+El ritmo visual se basa en una escala de múltiplos de **4px**, garantizando que cada elemento de la interfaz tenga una separación armónica y predecible.
+</p>
+
+**Ilustración 7**
+
+*Escala de Espaciado Nexa*
+
+![Spacing](../assets/images/style-guidelines/Spacing.jpeg)
+
+*Nota.* Niveles de espaciado desde 4px hasta 96px. *Elaboración propia.*
+
+#### 06. UI Components (Buttons & Cards)
+
+<p align="justify">
+Los componentes de interacción utilizan radios de borde de **12px a 14px** para suavizar la naturaleza industrial de la aplicación.
+</p>
+
+**Ilustración 8**
+
+*Componentes de Interfaz: Botones y Estados*
+
+![Buttons](../assets/images/style-guidelines/Buttons.jpeg)
+
+*Nota.* Definición de estilos Primary, Secondary y estados de interacción. *Elaboración propia.*
 
 ---
 
-#### Tipografía
+### 4.1.3. Tone and Voice
 
 <p align="justify">
-La interfaz está en idioma inglés y utiliza tres familias tipográficas específicas que no deben mezclarse:
+El tono de Nexa es <strong>Técnico, Directo y Proactivo</strong>. Se evitan las ambigüedades comerciales, optando por un lenguaje que empodera al operario y da seguridad al gerente logístico. El sistema utiliza el "nosotros" inclusivo para las soluciones y la voz pasiva directa para los reportes de estado (ej. "Temperature validated" en lugar de "We checked the temperature").
 </p>
 
-- **Display / Headings** (`--font-display`): **Plus Jakarta Sans.** Utilizada para el Hero (`clamp(44px, 5.5vw, 80px)` en peso 800) y headings de secciones.
-- **Body** (`--font-body`): **Inter.** Usada para párrafos, FAQ, formularios y descripciones. Tamaño base de 16px con line-height de 1.6–1.7 (peso 400–500).
-- **Mono** (`--font-mono`): **SF Mono o Fira Code.** Exclusivo para datos técnicos, IDs, SKU, especificaciones de temperatura y métricas de mockups (10–13px).
+### 4.1.4. Motion & Animation Principles
 
-*(Imágenes de muestra tipográfica pendientes de agregar)*
+<p align="justify">
+El movimiento en Nexa está diseñado para dar sensación de <strong>Relatividad Operativa</strong>:
+</p>
 
----
+- **Transiciones:** Uso de `cubic-bezier(0.25, 0.46, 0.45, 0.94)` para hovers y aperturas de paneles.
+- **Feedback:** Las micro-animaciones ocurren en menos de 150ms para garantizar que la interfaz se sienta inmediata y receptiva al tacto del usuario.
 
-#### Espaciado, Layout y Componentes
+### 4.1.5. Accessibility & Inclusivity (WCAG 2.1)
 
-- **Grilla:** Todo el sistema se basa en una grilla múltiplo de 4px (ej. `--space-4` = 16px para botones; `--space-6` = 24px para cards).
-- **Contenedores:** El contenedor principal tiene un ancho máximo de 1280px (`.container`), y el ritmo principal entre secciones está definido por un padding de 96px (`.section`).
+<p align="justify">
+El proyecto cumple con el estándar **AA de las WCAG 2.1**, garantizando un ratio de contraste mínimo de **4.5:1** para textos de lectura. Se han implementado etiquetas `ARIA` descriptivas en todos los componentes interactivos y navegación por teclado completa en el "Support Hub" y el selector de idiomas.
+</p>
 
-**Botones:**
+### 4.1.6. Design Tokens Architecture
 
-| Clase | Estilo | Altura |
-|-------|--------|--------|
-| `.btn-primary` | Fondo #2554DF, texto blanco, sombra azul | 56px (lg) / 48px (md) / 40px (sm) |
-| `.btn-secondary` | Blanco, borde medio (`rgba(0,0,0,0.08)`), sombra suave | 56px (lg) / 48px (md) / 40px (sm) |
+<p align="justify">
+La mantenibilidad del diseño se asegura mediante una arquitectura de <strong>Design Tokens</strong> implementada en CSS nativo. Esto permite que cualquier cambio en la identidad de marca (ej. cambiar el azul primario) se propague a los miles de elementos del sistema modificando una única línea de código en el archivo `tokens.css`.
+</p>
 
-Radio de borde (border-radius) predominante de 12px.
+### 4.1.7. Mobile-First & Cross-Platform Strategy
 
-- **Superficies:** Las cards principales utilizan `surface-elevated` (fondo blanco, borde ligero, sombra grande `--shadow-lg` y `radius-xl`).
-
-*(Imágenes de componentes UI pendientes de agregar)*
+<p align="justify">
+Aunque Nexa es una herramienta B2B de escritorio, su diseño contempla el **consumo en movilidad**. Los componentes interactivos (botones, inputs) cumplen con una altura mínima de **44px** para garantizar una superficie de contacto apta para dedos, anticipando el uso de tabletas rugerizadas en almacenes refrigerados.
+</p>

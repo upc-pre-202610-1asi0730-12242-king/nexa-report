@@ -1,3 +1,61 @@
+# Capítulo IV: Product Design
+
+<p align="justify">
+El Capítulo IV representa la transición técnica desde la fase de descubrimiento hacia la materialización visual y arquitectónica de Nexa. En este apartado se documentan los criterios estéticos, las estructuras de información y las decisiones de diseño que permiten transformar los Bounded Contexts identificados en el dominio en una solución digital de grado empresarial (Enterprise B2B).
+</p>
+
+---
+
+## 4.1. Style Guidelines
+
+### 4.1.1. General Style Guidelines
+
+<p align="justify">
+A nivel de marca, Nexa se rige por un conjunto de principios visuales diseñados para transmitir confianza técnica y control operativo. El sistema de diseño se basa en una estética "calm-tech", donde la información es la protagonista y la interfaz actúa como un soporte invisible pero robusto.
+</p>
+
+- **Percepción Objetivo:** Confiable, Ordenada, Enterprise Premium, Técnica y Resiliente.
+- **Palabras Clave:** Claridad, Control, Trazabilidad, Precisión, Modularidad y Ejecución B2B.
+- **Lenguaje Visual:** Priorización de datos crudos (SKU, lotes, grados de temperatura) sobre ilustraciones decorativas. Se utilizan micro-interacciones sutiles para reforzar la retroalimentación del sistema sin distraer al operario.
+
+### 4.1.2. Web Style Guidelines
+
+<p align="justify">
+El ecosistema digital de Nexa está construido bajo el estándar <strong>HTML5/CSS3 Modular</strong> y <strong>JavaScript Vanilla</strong>. El sistema utiliza una arquitectura de <strong>Tokens CSS</strong> para garantizar consistencia en todo el despliegue multipágina, incluyendo soporte nativo para <strong>i18n</strong> y una estructura de URLs basada en soluciones comerciales.
+</p>
+
+#### Sistema de Color (HSL Baseline)
+<p align="justify">
+La paleta se gestiona mediante variables HSL, permitiendo ajustes finos de contraste y legibilidad:
+</p>
+
+- **Primary & Brand:** `--c-primary` (`hsl(221 72% 45%)`). Es el núcleo de la marca, aplicado a acciones críticas y estados activos.
+- **Surface & Base:** `--c-base` (`hsl(221 72% 99%)`) y `--c-white` (`#FFFFFF`). Generan un entorno de lectura limpio y aireado.
+- **Chaos & Status:** Sistema semántico para alertas:
+  - **Optimal (Success):** `--c-success` (`hsl(160 80% 32%)`).
+  - **Alert (Warning):** `--c-warning` (`hsl(38 92% 50%)`).
+  - **Critical (Danger):** `--c-danger` (`hsl(2 70% 49%)`).
+
+#### Tipografía Académica y Técnica
+<p align="justify">
+Se ha estandarizado el uso de <strong>Inter</strong> como familia única para garantizar máxima legibilidad en entornos operativos y compatibilidad total con el hardware de campo.
+</p>
+
+- **Display / Headings:** **Inter Bold** (Weights 700-800). Con un `letter-spacing` negativo (`-0.06em`) para dar un aspecto compacto y profesional.
+- **Body:** **Inter Regular/Medium** (Weights 400-500). Tamaño base de `16px` con un interlineado generoso de `1.68` para reducir la fatiga visual.
+- **Mono:** **SF Mono / Fira Code.** Exclusivo para datos técnicos, códigos SKU y telemetría de temperatura.
+
+#### Sistema de Layout y Elevación
+- **Contenedores:** Se utiliza un ancho estándar de `1400px` (`--container-std`) para maximizar el aprovechamiento de pantallas de escritorio, con una variante de `1560px` para vistas de datos densos.
+- **Grilla:** Sistema basado en múltiplos de 4px. El ritmo entre secciones se define por un padding de `96px` (`--space-24`).
+- **Sombras (Elevation levels):**
+  - **Soft (Rest):** `--shadow-sm`.
+  - **Interactive (Hover):** `--shadow-md`.
+  - **Modal (Focus):** `--shadow-lg`.
+- **Radios:** Bordes suavizados desde `10px` (sm) hasta `28px` (xl) para suavizar la naturaleza industrial de la aplicación.
+
+---
+
 ## 4.2. Information Architecture
 
 ### 4.2.1. Organization Systems
