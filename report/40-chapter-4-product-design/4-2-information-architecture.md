@@ -1,177 +1,129 @@
 # Capítulo IV: Product Design
 
+---
+
+<div id="information-architecture-header" style="padding: 20px; background-color: #f1f5f9; border-left: 5px solid #475569; margin-bottom: 25px;">
+  <h2 style="margin: 0; color: #1e293b;">4.2. Information Architecture</h2>
+  <p style="margin: 5px 0 0 0; color: #64748b; font-style: italic;">"Estructurando la complejidad logística en flujos de decisión intuitivos."</p>
+</div>
+
+### 4.2.1. Organization Systems (Taxonomía y Jerarquía)
+
 <p align="justify">
-El Capítulo IV representa la transición técnica desde la fase de descubrimiento hacia la materialización visual y arquitectónica de Nexa. En este apartado se documentan los criterios estéticos, las estructuras de información y las decisiones de diseño que permiten transformar los Bounded Contexts identificados en el dominio en una solución digital de grado empresarial (Enterprise B2B).
+La arquitectura de información de Nexa trasciende la simple organización de páginas; se estructura como un ecosistema de dos capas diseñado para reducir la fricción entre la <strong>prospección comercial</strong> y la <strong>operación transaccional</strong>. Esta separación garantiza que el usuario encuentre valor inmediato (Landing) antes de enfrentarse a la densidad de datos de la gestión de pedidos (Portal).
+</p>
+
+#### Sitemap Jerárquico del Ecosistema
+
+<p align="justify">
+A continuación, se presenta la estructura ramificada del proyecto, detallando la profundidad de navegación y la interconexión entre el núcleo público y las verticales de solución.
+</p>
+
+```mermaid
+graph TD
+    Root[index.html - Home] --> Platform[pages/platform.html]
+    Root --> Solutions[pages/solutions/index.html]
+    Root --> Company[pages/company.html]
+    Root --> FAQ[pages/faq.html]
+    
+    Solutions --> S1[Distributors.html]
+    Solutions --> S2[Importers.html]
+    Solutions --> S3[Cold-Storage.html]
+    
+    Root --> Auth[Login / Register]
+    Auth --> Dashboard[Portal B2B Dashboard]
+    
+    subgraph "Support Layer"
+        FAQ
+        SupportHub[Floating Support Widget]
+    end
+    
+    style Root fill:#2554df,color:#fff
+    style Auth fill:#f1f5f9,color:#1e293b
+    style SupportHub fill:#e0f2fe,stroke:#2554df
+```
+
+#### Taxonomía de URLs y Bounded Contexts
+
+<p align="justify">
+Nexa utiliza una estructura de URLs semántica para mejorar el SEO bilingüe y facilitar la memorización de rutas críticas por parte de los gerentes de logística.
+</p>
+
+<table style="width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 13px;">
+  <thead>
+    <tr style="background-color: #f8fafc; border-bottom: 2px solid #e2e8f0;">
+      <th style="padding: 12px; text-align: left;">Segmento de URL</th>
+      <th style="padding: 12px; text-align: left;">Propósito Arquitectónico</th>
+      <th style="padding: 12px; text-align: left;">Actor Primario</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 12px; border-bottom: 1px solid #e2e8f0;"><code>/index.html</code></td>
+      <td style="padding: 12px; border-bottom: 1px solid #e2e8f0;">Conversión masiva y presentación del "Pain Point" térmico.</td>
+      <td style="padding: 12px; border-bottom: 1px solid #e2e8f0;">Stakeholders C-Level</td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border-bottom: 1px solid #e2e8f0;"><code>/pages/solutions/*</code></td>
+      <td style="padding: 12px; border-bottom: 1px solid #e2e8f0;">Verticalización por especialidad (Distribuidores vs Importadores).</td>
+      <td style="padding: 12px; border-bottom: 1px solid #e2e8f0;">Directores de Operaciones</td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border-bottom: 1px solid #e2e8f0;"><code>/pages/faq.html</code></td>
+      <td style="padding: 12px; border-bottom: 1px solid #e2e8f0;">Reducción de carga de soporte mediante auto-servicio (Self-help).</td>
+      <td style="padding: 12px; border-bottom: 1px solid #e2e8f0;">Todos los segmentos</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+### 4.2.2. User Journey Mapping (IA por Persona)
+
+<p align="justify">
+La arquitectura no es estática; muta para adaptarse a los flujos mentales de nuestros arquetipos definidos en el Capítulo II. Cada nodo de navegación está diseñado para responder a una pregunta específica de cada actor.
+</p>
+
+1.  <span style="color: #2554df; font-weight: bold;">Valeria (Coordinadora Comercial):</span> Su ruta prioriza el **Dashboard de Pedidos Asistidos**. La IA le permite saltar de una vista de "Cliente" a "Catálogo" en menos de 2 clics para registrar pedidos telefónicos rápidamente.
+2.  <span style="color: #2554df; font-weight: bold;">Hilda (Cliente Externo):</span> Su IA es de **Autoservicio**. El sistema la guía directamente al motor de búsqueda de SKUs y a la visualización de su línea de crédito disponible.
+3.  <span style="color: #2554df; font-weight: bold;">Pedro (Despachador/Transportista):</span> IA enfocada en **Tareas de Campo**. Acceso directo a la hoja de ruta del día y confirmación de POD (Proof of Delivery) con telemetría mínima.
+
+---
+
+### 4.2.3. Labeling Systems (Consistencia y Lenguaje Ubicuo)
+
+<p align="justify">
+El sistema de etiquetado de Nexa evita terminología técnica ambigua ("buzzwords") en favor de términos reales de la industria alimentaria.
+</p>
+
+> [!NOTE]
+> **Consistencia Semántica**: Se utiliza "Stock Comprometido" en lugar de "Inventario Reservado" para alinearse con la jerga contable de los distribuidores de LATAM.
+
+- **Identificación de Lotes:** Etiquetas claras para FEFO (First Expired, First Out) que permiten al operario visualizar qué productos deben salir del almacén de forma inmediata.
+- **Micro-copy Bilingüe:** El selector de idiomas (`EN / ES`) no solo traduce, sino que adapta las etiquetas de peso (kg vs lbs) y moneda según la región configurada.
+
+---
+
+### 4.2.4. Searching & Navigation Systems
+
+#### Mecanismos de Descubrimiento (Global & Contextual)
+
+<p align="justify">
+Nexa implementa un sistema de navegación híbrido para garantizar que el usuario nunca pierda el hilo operativo:
+</p>
+
+- **Navegación Global:** Navbar fija que permite el retorno rápido al Home o el cambio de idioma instantáneo.
+- **Navegación Contextual (Breadcrumbs):** Caminos de migajas de pan que permiten al usuario saber exactamente en qué sección de las soluciones se encuentra (ej: `Home > Solutions > Importers`).
+- **Support Hub Widget:** Un acelerador de navegación flotante que proporciona acceso directo a las categorías de ayuda del FAQ sin abandonar la pantalla de trabajo actual.
+
+#### SEO Architecture (Taxonomía de Búsqueda)
+
+<p align="justify">
+La jerarquía de encabezados (`H1`, `H2`, `H3`) se ha diseñado para que los motores de búsqueda identifiquen a Nexa como una autoridad en "Cold-Chain SaaS". El uso de etiquetas semánticas HTML5 (`<main>`, `<section>`, `<aside>`) refuerza esta arquitectura de información ante bots de indexación.
 </p>
 
 ---
 
-## 4.1. Style Guidelines
-
-### 4.1.1. General Style Guidelines
-
-<p align="justify">
-A nivel de marca, Nexa se rige por un conjunto de principios visuales diseñados para transmitir confianza técnica y control operativo. El sistema de diseño se basa en una estética "calm-tech", donde la información es la protagonista y la interfaz actúa como un soporte invisible pero robusto.
-</p>
-
-- **Percepción Objetivo:** Confiable, Ordenada, Enterprise Premium, Técnica y Resiliente.
-- **Palabras Clave:** Claridad, Control, Trazabilidad, Precisión, Modularidad y Ejecución B2B.
-- **Lenguaje Visual:** Priorización de datos crudos (SKU, lotes, grados de temperatura) sobre ilustraciones decorativas. Se utilizan micro-interacciones sutiles para reforzar la retroalimentación del sistema sin distraer al operario.
-
-### 4.1.2. Web Style Guidelines
-
-<p align="justify">
-El ecosistema digital de Nexa está construido bajo el estándar <strong>HTML5/CSS3 Modular</strong> y <strong>JavaScript Vanilla</strong>. El sistema utiliza una arquitectura de <strong>Tokens CSS</strong> para garantizar consistencia en todo el despliegue multipágina, incluyendo soporte nativo para <strong>i18n</strong> y una estructura de URLs basada en soluciones comerciales.
-</p>
-
-#### Sistema de Color (HSL Baseline)
-<p align="justify">
-La paleta se gestiona mediante variables HSL, permitiendo ajustes finos de contraste y legibilidad:
-</p>
-
-- **Primary & Brand:** `--c-primary` (`hsl(221 72% 45%)`). Es el núcleo de la marca, aplicado a acciones críticas y estados activos.
-- **Surface & Base:** `--c-base` (`hsl(221 72% 99%)`) y `--c-white` (`#FFFFFF`). Generan un entorno de lectura limpio y aireado.
-- **Chaos & Status:** Sistema semántico para alertas:
-  - **Optimal (Success):** `--c-success` (`hsl(160 80% 32%)`).
-  - **Alert (Warning):** `--c-warning` (`hsl(38 92% 50%)`).
-  - **Critical (Danger):** `--c-danger` (`hsl(2 70% 49%)`).
-
-#### Tipografía Académica y Técnica
-<p align="justify">
-Se ha estandarizado el uso de <strong>Inter</strong> como familia única para garantizar máxima legibilidad en entornos operativos y compatibilidad total con el hardware de campo.
-</p>
-
-- **Display / Headings:** **Inter Bold** (Weights 700-800). Con un `letter-spacing` negativo (`-0.06em`) para dar un aspecto compacto y profesional.
-- **Body:** **Inter Regular/Medium** (Weights 400-500). Tamaño base de `16px` con un interlineado generoso de `1.68` para reducir la fatiga visual.
-- **Mono:** **SF Mono / Fira Code.** Exclusivo para datos técnicos, códigos SKU y telemetría de temperatura.
-
-#### Sistema de Layout y Elevación
-- **Contenedores:** Se utiliza un ancho estándar de `1400px` (`--container-std`) para maximizar el aprovechamiento de pantallas de escritorio, con una variante de `1560px` para vistas de datos densos.
-- **Grilla:** Sistema basado en múltiplos de 4px. El ritmo entre secciones se define por un padding de `96px` (`--space-24`).
-- **Sombras (Elevation levels):**
-  - **Soft (Rest):** `--shadow-sm`.
-  - **Interactive (Hover):** `--shadow-md`.
-  - **Modal (Focus):** `--shadow-lg`.
-- **Radios:** Bordes suavizados desde `10px` (sm) hasta `28px` (xl) para suavizar la naturaleza industrial de la aplicación.
-
----
-
-## 4.2. Information Architecture
-
-### 4.2.1. Organization Systems
-
-<p align="justify">
-La arquitectura de información de Nexa se organiza en dos capas complementarias. La primera corresponde al <strong>sitio público multipágina</strong>, cuya función es comunicar la propuesta de valor, enrutar por segmentos comerciales y captar solicitudes de demo. La segunda corresponde a la <strong>aplicación transaccional</strong>, cuyo objetivo es ordenar el flujo del pedido B2B desde la captura hasta la entrega. Esta separación evita mezclar navegación comercial con operación interna, pero mantiene una sola tesis de producto para todo el ecosistema.
-</p>
-
-<p align="justify">
-En términos de experiencia, el sitio público se organiza por segmentos comerciales del landing page; la aplicación se organiza por tareas del dominio y por los arquetipos operativos del proyecto: Valeria, Hilda y Pedro. En términos de modelado técnico, la solución se apoya en bounded contexts delimitados y coherentes con el backlog funcional.
-</p>
-
-**Bounded Contexts de la plataforma Nexa**
-
-| Bounded Context | Responsabilidad | Recursos REST principales |
-|-----------------|-----------------|---------------------------|
-| **Catalog** | Publicación, clasificación y detalle de productos | `/products`, `/products/{id}` |
-| **Customer Management** | Gestión de clientes comerciales y su información base | `/customers`, `/customers/{id}` |
-| **Commercial Conditions** | Crédito, listas de precio, morosidad y condiciones de pago | `/customers/{id}/commercial-conditions` |
-| **Inventory** | Disponibilidad, stock comprometido, lotes y vencimientos | `/inventory`, `/inventory/{skuId}` |
-| **Orders** | Ciclo de vida del pedido asistido o autoservicio | `/orders`, `/orders/{id}` |
-| **Traceability** | Tracking, incidencias, ETA y prueba de entrega | `/shipments`, `/shipments/{id}/events`, `/shipments/{id}/pod` |
-| **Identity** | Autenticación, autorización y recuperación de acceso | `/auth`, `/users`, `/users/{id}` |
-
-**Organización del sitio público**
-
-| Página | Función principal | Segmentos dominantes |
-|--------|-------------------|----------------------|
-| `index.html` (Home) | Propuesta de valor, problema operativo, capacidades y CTA de demo | Distribuidores refrigerados |
-| `pages/platform.html` (Platform) | Explicación de módulos, flujo operativo y relación entre MVP y expansión | Distribuidores refrigerados |
-| `pages/solutions/index.html` (Solutions) | Enrutamiento comercial por tipo de empresa | Distribuidores, importadores/mayoristas, operadores de cámaras frías |
-| `pages/company.html` (Company) | Narrativa institucional, confianza, soporte humano y formulario de contacto | Comprador del SaaS |
-| `pages/faq.html` (FAQ) | Resolución de objeciones, categorías de ayuda y acceso a soporte | Todos los visitantes públicos |
-
-**Organización de la aplicación transaccional**
-
-| Módulo | Actor principal | Propósito |
-|--------|-----------------|-----------|
-| Catálogo B2B | Hilda / cliente comercial | Consultar productos, disponibilidad y fichas técnicas |
-| Captura asistida | Valeria / coordinación comercial | Registrar pedidos para clientes con condiciones cargadas |
-| Portal de pedidos | Hilda / cliente comercial | Crear, guardar y revisar pedidos propios |
-| Seguimiento y entrega | Pedro / despacho e internos autorizados | Visualizar estados, ETA, incidencias y cierre con POD |
-| Inventario y control | Operación / supervisión | Revisar stock, vencimientos, reservas y bloqueos |
-| Condiciones comerciales | Supervisión comercial | Mantener clientes, listas de precio, crédito y morosidad |
-
-### 4.2.2. Labeling Systems
-
-<p align="justify">
-El sistema de etiquetado de Nexa combina consistencia de negocio con claridad comercial. El sitio público utiliza una terminología comprensible para visitantes y ofrece navegación bilingüe <strong>EN/ES</strong>. La aplicación transaccional prioriza términos del dominio en español, manteniendo siglas ampliamente aceptadas cuando resultan más precisas, como SKU, FEFO, ETA y POD.
-</p>
-
-**Reglas de etiquetado**
-
-- **Bilingüismo en el sitio público:** Los labels principales del landing page deben mantenerse disponibles en inglés y español sin alterar la ruta actual del visitante.
-- **Claridad del dominio:** En la aplicación se priorizan términos de negocio como catálogo, condiciones comerciales, saldo vencido, stock comprometido, pedido asistido y prueba de entrega.
-- **Siglas aceptadas:** Se conservan `SKU`, `FEFO`, `ETA`, `POD`, `RUC` y `DNI` cuando aportan precisión operativa.
-- **Estados explícitos:** Los estados del pedido se comunican como `draft`, `submitted`, `confirmed`, `in_preparation`, `dispatched`, `delivered` y `cancelled`, evitando etiquetas ambiguas.
-- **Separación entre MVP y expansión:** Cuando el sitio público menciona funcionalidades futuras, debe etiquetarlas o contextualizarlas como expansión y no como capacidad ya implementada.
-
-### 4.2.3. SEO Tags and Meta Tags
-
-<p align="justify">
-El posicionamiento del sitio público busca captar principalmente a distribuidores refrigerados que gestionan pedidos B2B, inventario y entregas. La arquitectura SEO debe reforzar la propuesta de valor comercial del landing page sin sobreprometer capacidades que todavía pertenecen al roadmap.
-</p>
-
-**Lineamientos SEO**
-
-- **Title tags:** `[Page Name] | Nexa - Cold-Chain B2B Operations`
-- **Meta descriptions:** Deben mencionar catálogo, pedidos, inventario, seguimiento y operación refrigerada con lenguaje breve y verificable.
-- **Open Graph:** Debe priorizar claims compatibles con el MVP, por ejemplo visibilidad del pedido, coordinación operativa y control comercial.
-- **Segment routing:** Las páginas de Solutions deben usar palabras clave conectadas con distribuidores refrigerados y segmentos adyacentes, sin romper la tesis principal del producto.
-
-### 4.2.4. Searching Systems
-
-<p align="justify">
-El sistema de búsqueda opera de forma distinta según la capa del ecosistema. En el sitio público prima la exploración guiada; en la aplicación transaccional prima la búsqueda operativa y la recuperación rápida de información crítica.
-</p>
-
-**En la aplicación transaccional**
-
-- El cliente comercial puede buscar por nombre o código de producto dentro de su catálogo habilitado.
-- La coordinación comercial puede identificar clientes por `RUC` o `DNI` para iniciar el flujo asistido.
-- La supervisión puede consultar productos por disponibilidad, bloqueo, lote o vencimiento.
-
-**En el sitio público**
-
-- El FAQ utiliza navegación por categorías y anclas para resolver preguntas frecuentes sin una barra de búsqueda compleja.
-- El panel flotante de soporte funciona como acceso directo a ayuda y contacto.
-- El dropdown de Solutions actúa como mecanismo de búsqueda comercial por segmento.
-
-### 4.2.5. Navigation Systems
-
-<p align="justify">
-El sistema de navegación pública adopta una estructura plana, visible y consistente, mientras que la navegación de la aplicación se organiza por módulos de trabajo. En ambos casos, la prioridad es reducir ambigüedad y sostener continuidad de contexto.
-</p>
-
-**Navbar del sitio público**
-
-- Enlaces visibles: `Home`, `Platform`, `Solutions`, `Company`, `FAQ`, `Request a demo`, `Log in`.
-- Selector de idioma: `EN / ES`.
-- El enlace activo debe reflejar la página actual.
-
-**Dropdown de Solutions**
-
-- Se activa por clic.
-- Muestra tres rutas comerciales: distribuidores refrigerados, importadores y mayoristas, operadores de cámaras frías.
-- Debe poder cerrarse sin perder el contexto de la página.
-
-**FAQ y soporte**
-
-- El FAQ usa categorías navegables y acordeones expandibles.
-- El panel flotante de soporte debe permanecer accesible desde páginas públicas relevantes.
-
-**Portal y aplicación**
-
-- La navegación transaccional debe separar catálogo, pedido, tracking, inventario y condiciones comerciales.
-- Cada rol ve únicamente los módulos necesarios para su tarea.
-
-*Nota.* La arquitectura de información de Nexa queda alineada con la taxonomía definitiva del informe: personas operativas primarias para investigación y backlog, y segmentos comerciales del sitio público para adquisición y comunicación. Elaboración propia.
+<div style="background-color: #fcfcfc; border: 1px solid #e0e0e0; padding: 15px; border-radius: 4px; font-size: 12px; color: #666;">
+  <strong>Sustentación de Diseño:</strong> La arquitectura de información presentada cumple con el principio de Miller (7 ± 2 elementos), reduciendo la carga cognitiva al agrupar las soluciones similares bajo el nodo principal de "Solutions" y separando el soporte legal en el footer, manteniendo el flujo principal limpio para la operación b2b intensiva.
+</div>
