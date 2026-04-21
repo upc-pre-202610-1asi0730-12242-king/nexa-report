@@ -119,7 +119,7 @@ Nexa implementa un sistema de navegación híbrido para garantizar que el usuari
 #### SEO Architecture (Taxonomía de Búsqueda)
 
 <p align="justify">
-La jerarquía de encabezados (`H1`, `H2`, `H3`) se ha diseñado para que los motores de búsqueda identifiquen a Nexa como una autoridad en "Cold-Chain SaaS". El uso de etiquetas semánticas HTML5 (`<main>`, `<section>`, `<aside>`) refuerza esta arquitectura de información ante bots de indexación.
+La jerarquía de encabezados (<code>H1</code>, <code>H2</code>, <code>H3</code>) se ha diseñado para que los motores de búsqueda identifiquen a Nexa como una autoridad en "Cold-Chain SaaS". El uso de etiquetas semánticas HTML5 (<code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;aside&gt;</code>) refuerza esta arquitectura de información ante bots de indexación.
 </p>
 
 ---

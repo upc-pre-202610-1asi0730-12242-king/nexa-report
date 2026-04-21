@@ -197,6 +197,14 @@ No basta saber si usa apps; importa cómo decide confiar en una herramienta.
 
 - **Ubicación:** No especificado
 
+**Ilustración 9**
+
+*Evidencia de entrevista: Paola Levano*
+
+![Paola](../assets/images/pruebas-entrevistas/Paola.jpeg)
+
+*Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
+
 **Resumen de la Entrevista**
 
 <p align="justify">
@@ -228,6 +236,14 @@ Finalmente, muestra apertura a nuevas herramientas siempre que no aumenten la co
 - **Edad:** No especificado
 
 - **Ubicación:** No especificado
+
+**Ilustración 10**
+
+*Evidencia de entrevista: Cecilia Pérez*
+
+![Cecilia](../assets/images/pruebas-entrevistas/Celia.jpeg)
+
+*Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
 
 **Resumen de la Entrevista**
 
@@ -263,6 +279,14 @@ Finalmente, la entrevistada muestra una valoración muy positiva hacia el uso de
 
 - **Ubicación:** No especificado
 
+**Ilustración 11**
+
+*Evidencia de entrevista: Hilda Litano*
+
+![Hilda](../assets/images/pruebas-entrevistas/Hilda.jpeg)
+
+*Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
+
 **Resumen de la Entrevista**
 
 <p align="justify">
@@ -295,6 +319,14 @@ Finalmente, destaca la importancia del registro sanitario gestionado a través d
 
 - **Ubicación:** No especificado
 
+**Ilustración 12**
+
+*Evidencia de entrevista: Edith Taype*
+
+![Edith](../assets/images/pruebas-entrevistas/Edith.jpeg)
+
+*Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
+
 **Resumen de la Entrevista**
 
 <p align="justify">
@@ -322,6 +354,14 @@ Finalmente, Edith destaca limitaciones en el acceso a sistemas de información d
 - **Edad:** No especificado
 
 - **Ubicación:** No especificado
+
+**Ilustración 13**
+
+*Evidencia de entrevista: Jesica Sandoval*
+
+![Jesica](../assets/images/pruebas-entrevistas/Jesica.jpeg)
+
+*Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
 
 **Resumen de la Entrevista**
 
@@ -357,6 +397,14 @@ Finalmente, destaca oportunidades de mejora como la implementación de una pági
 
 - **Ubicación:** No especificado
 
+**Ilustración 14**
+
+*Evidencia de entrevista: Pedro Puente*
+
+![Pedro](../assets/images/pruebas-entrevistas/Pedro.jpeg)
+
+*Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
+
 **Resumen de la Entrevista**
 
 <p align="justify">
@@ -388,6 +436,14 @@ Finalmente, muestra resistencia al uso de nuevas plataformas tecnológicas, ya q
 - **Edad:** No especificado
 
 - **Ubicación:** No especificado
+
+**Ilustración 15**
+
+*Evidencia de entrevista: Henry García*
+
+![Henry](../assets/images/pruebas-entrevistas/Henry.jpeg)
+
+*Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
 
 **Resumen de la Entrevista**
 
