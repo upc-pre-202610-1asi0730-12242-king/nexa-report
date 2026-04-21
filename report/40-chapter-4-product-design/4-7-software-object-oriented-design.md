@@ -75,6 +75,7 @@ classDiagram
         +float totalAmount
         +calculateTotals()
         +validateCommercialTerms() bool
+        +updateStatus(newStatus)
         +authorize()
     }
     class OrderItem {
@@ -86,6 +87,7 @@ classDiagram
         +int id
         +string status
         +datetime departureTime
+        +calculateETA() datetime
         +verifyColdChain() bool
         +registerIncident(type)
         +finalizeDelivery(pod)
@@ -209,5 +211,15 @@ Para asegurar la integridad del sistema, se presenta la siguiente matriz que vin
 | **US42** | Registro de POD | `POD` / `Dispatch` | `finalizeDelivery(pod)`, `verifyIntegrity()` |
 | **US45** | Registro de Lotes | `Batch` / `ProductSpec` | `isExpired()`, `isOptimalConditions()` |
 | **US47** | Reserva de Stock | `InventoryStock` | `reserve(qty)`, `release(qty)` |
+| **US39** | Tracking & ETA | `Dispatch` | `calculateETA()` |
+| **US41** | Estados de Pedido | `Order` | `updateStatus(newStatus)` |
+| **US51** | Saldo y Morosidad | `CommercialCondition` | `currentBalance` |
+| **US54** | Login Interno | `User` | `login()` |
+| **US57** | Roles | `Role` / `Permission` | `hasPermission()`, `validateScope()` |
+| **US48** | Bloqueo Producto | `Product` | `status`, `validateStock()` |
+| **US44** | Monitor Inventario | `InventoryStock` | `quantityOnHand`, `quantityReserved` |
+| **US61** | API Registro Pedido| `Order` / `OrderItem` | `calculateTotals()`, `authorize()` |
+| **US46** | Alertas FEFO | `Batch` | `expiryDate`, `isExpired()` |
+| **US63** | API POD/Eventos | `POD` / `Incident` | `verifyIntegrity()`, `resolve()` |
 
 *Nota.* Se evidencia que cada funcionalidad crítica del negocio tiene un respaldo explícito en el diseño de clases, garantizando que el software sea una representación fiel de los requerimientos. Elaboración propia.
