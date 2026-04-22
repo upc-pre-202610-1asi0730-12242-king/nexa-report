@@ -112,6 +112,10 @@ La priorización no responde únicamente a facilidad de implementación. Se cons
 La secuencia del roadmap sigue una lógica deliberada. El <strong>Sprint 1</strong> concentra el frente público porque permite validar entendimiento del problema, foco de segmento y captación comercial sin bloquear todavía el núcleo transaccional. El <strong>Sprint 2</strong> incorpora el corazón del valor prometido a Valeria y Hilda: catálogo, condiciones y captura o registro del pedido. El <strong>Sprint 3</strong> extiende ese valor hacia seguimiento, despacho, inventario y cierre. El <strong>Sprint 4</strong> consolida datos comerciales y control de acceso, necesarios para operar con reglas mínimas y diferenciación por cuenta. Finalmente, el <strong>Sprint 5</strong> formaliza contratos técnicos del API como capa de integración consistente con los flujos ya definidos funcionalmente.
 </p>
 
+<p align="justify">
+Aunque varias historias de inventario y control recaen sobre supervisión operativa, ese frente no se modela como un segmento protagónico independiente dentro del backlog. Se trata, más bien, de un soporte transversal que habilita a Valeria, Hilda y Pedro a operar con reglas confiables. Mantener esa distinción mejora la coherencia del capítulo y evita que la priorización se disperse en actores adicionales sin justificación narrativa o metodológica.
+</p>
+
 **Tabla 20**
 
 *Relación entre incrementos, actor dominante y riesgo mitigado*
