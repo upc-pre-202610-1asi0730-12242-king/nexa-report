@@ -218,7 +218,7 @@ Además de las capturas integradas en el informe, el archivo audiovisual origina
 - **Edad:** 42 años
 - **Ubicación:** Chorrillos
 
-**Ilustración 9**
+**Ilustración 2**
 
 *Evidencia de entrevista: Lorena Silva*
 
@@ -245,7 +245,7 @@ A nivel técnico, reporta fricciones severas con el sistema actual (Fontana), el
 - **Edad:** 39 años
 - **Ubicación:** Lurín
 
-**Ilustración 10**
+**Ilustración 3**
 
 *Evidencia de entrevista: Cinthia Levano*
 
@@ -272,7 +272,7 @@ Cinthia enfatiza la necesidad de simplicidad. Describe su flujo actual como una 
 - **Edad:** 51 años
 - **Ubicación:** San Miguel
 
-**Ilustración 11**
+**Ilustración 4**
 
 *Evidencia de entrevista: Celia Pérez*
 
@@ -301,7 +301,7 @@ Su testimonio confirma que, para el personal en ruta, la estabilidad de la conex
 - **Edad:** 47 años
 - **Ubicación:** Villa El Salvador
 
-**Ilustración 12**
+**Ilustración 5**
 
 *Evidencia de entrevista: Hilda Litano*
 
@@ -324,7 +324,7 @@ Hilda Litano supervisa procesos de importación y cumplimiento sanitario. Su enf
 - **Edad:** 49 años
 - **Ubicación:** Callao
 
-**Ilustración 13**
+**Ilustración 6**
 
 *Evidencia de entrevista: Edith Taype*
 
@@ -347,7 +347,7 @@ Edith Taype opera en el punto de venta (supermercados), donde la manipulación y
 - **Edad:** 48 años
 - **Ubicación:** Jesus María
 
-**Ilustración 14**
+**Ilustración 7**
 
 *Evidencia de entrevista: Jesica Sandoval*
 
@@ -372,7 +372,7 @@ Jesica Sandoval, supervisora de ventas Horeca, subraya el riesgo de la transcrip
 - **Edad:** 56 años
 - **Ubicación:** San Isidro
 
-**Ilustración 15**
+**Ilustración 8**
 
 *Evidencia de entrevista: Pedro Puente*
 
@@ -395,7 +395,7 @@ Pedro Puente es un distribuidor cuya mayor frustración es la incertidumbre log�
 - **Edad:** 49 años
 - **Ubicación:** San Borja
 
-**Ilustración 16**
+**Ilustración 9**
 
 *Evidencia de entrevista: Henrry García*
 
@@ -615,7 +615,7 @@ El segmento canónico S3 no nace de un bloque independiente de entrevistas a cho
 Tras el análisis detallado de los ocho perfiles levantados y de la triangulación posterior hacia los segmentos canónicos del producto, se identifica una <strong>brecha de trazabilidad integral</strong>. Esta brecha se manifiesta en la desconexión entre la promesa comercial capturada por canales informales y la realidad operativa gestionada con sistemas fragmentados, validaciones manuales y visibilidad incompleta del despacho.
 </p>
 
-**Ilustración 17**
+**Ilustración 10**
 
 *Distribución de Canales de Comunicación Identificados*
 
@@ -628,7 +628,7 @@ pie title Uso de Canales de Comunicación
 
 *Nota. Elaboración propia. Resultados obtenidos de las 8 entrevistas a profundidad realizadas sobre coordinación comercial, cliente comercial B2B y stakeholder operativo de dominio.*
 
-**Ilustración 18**
+**Ilustración 11**
 
 *Jerarquía de Puntos de Dolor por Incidencia en los Segmentos*
 

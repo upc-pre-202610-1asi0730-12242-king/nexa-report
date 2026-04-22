@@ -33,7 +33,7 @@ Nexa se rige por el principio de <strong>"Calm-Tech"</strong>: la interfaz debe 
 La paleta se fundamenta en un sistema <strong>HSL (Hue, Saturation, Lightness)</strong> que permite una gestión dinámica del contraste y la adaptabilidad ante diversas condiciones lumínicas en centros logísticos.
 </p>
 
-**Ilustración 3**
+**Ilustración 22**
 
 *Sistema de Colorimetría Nexa*
 
@@ -74,7 +74,7 @@ La paleta se fundamenta en un sistema <strong>HSL (Hue, Saturation, Lightness)</
 Se ha estandarizado el uso de <strong>Inter</strong> como familia tipográfica universal. Esta decisión técnica (no solo estética) garantiza que la información se mantenga legible incluso en condiciones de baja resolución o alta fatiga ocular.
 </p>
 
-**Ilustración 4**
+**Ilustración 23**
 
 *Sistema Tipográfico Nexa*
 
@@ -98,7 +98,7 @@ Se ha estandarizado el uso de <strong>Inter</strong> como familia tipográfica u
 El sistema iconográfico utiliza trazos lineales consistentes para mantener la ligereza visual del portal, evitando que el peso de las imágenes compita con la lectura de los datos operativos.
 </p>
 
-**Ilustración 5**
+**Ilustración 24**
 
 *Iconografía Nexa*
 
@@ -112,7 +112,7 @@ El sistema iconográfico utiliza trazos lineales consistentes para mantener la l
 Nexa utiliza una rejilla de <strong>12 columnas</strong> con un ancho de contenedor maestro de <strong>1440px</strong>. El diseño responde a la necesidad de visualizar dashboards de control en monitores de almacén, mientras que los flujos de consumo rápido se adaptan a tablets y smartphones.
 </p>
 
-**Ilustración 6**
+**Ilustración 25**
 
 *Sistema de Rejilla y Breakpoints*
 
@@ -126,7 +126,7 @@ Nexa utiliza una rejilla de <strong>12 columnas</strong> con un ancho de contene
 El ritmo visual se basa en una escala de múltiplos de <strong>4px</strong>, un estándar de la industria que garantiza que cada elemento de la interfaz tenga una separación armónica y predecible.
 </p>
 
-**Ilustración 7**
+**Ilustración 26**
 
 *Escala de Espaciado Nexa*
 

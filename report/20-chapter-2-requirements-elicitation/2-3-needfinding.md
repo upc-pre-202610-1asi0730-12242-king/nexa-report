@@ -55,17 +55,17 @@ Las user personas no sustituyen a los entrevistados reales; funcionan como sínt
 
 *Nota.* La tabla resume la relación entre evidencia cualitativa, arquetipo sintetizado y función de diseño. Elaboración propia.
 
-**Ilustración 1**
+**Ilustración 12**
 *User Persona — Segmento 1: Valeria Sánchez*
 ![User Persona 1](../assets/images/user-persona-1.png)
 *Nota.* Representación del arquetipo de coordinación comercial, enfocado en reducir la carga administrativa y el retrabajo. Elaboración propia.
 
-**Ilustración 2**
+**Ilustración 13**
 *User Persona — Segmento 2: Hilda*
 ![User Persona 2](../assets/images/user-persona-2.png)
 *Nota.* Representación sintética del arquetipo de cliente comercial B2B, construida a partir de entrevistas a compradores minoristas y mayoristas, más evidencia de adopción digital del canal tradicional. Elaboración propia.
 
-**Ilustración 3**
+**Ilustración 14**
 *User Persona — Segmento 3: Pedro*
 ![User Persona 3](../assets/images/user-persona-3.png)
 *Nota.* Representación sintética del arquetipo de despacho y entrega, enfocada en la eficiencia de ruta y el cierre digital con evidencia. Su construcción se apoya en triangulación entre stakeholder operativo, pain points del seguimiento y modelado del flujo de dominio. Elaboración propia.
@@ -114,17 +114,17 @@ Los journey maps modelan la situación <em>as-is</em> de cada segmento. Su valor
 Leídos en conjunto, los tres journeys permiten reconstruir el recorrido completo del pedido desde perspectivas complementarias. El journey de S1 muestra el desgaste que produce convertir mensajes ambiguos en pedidos operables; el de S2 expone la ansiedad del cliente cuando no puede saber con certeza qué recibirá ni cuándo llegará; y el de S3 muestra cómo la falta de coordinación previa se traslada a la ruta, al contacto con el punto de entrega y al cierre final del servicio.
 </p>
 
-**Ilustración 4**
+**Ilustración 15**
 *Journey Map — Segmento 1: Coordinación Comercial*
 ![Journey Map 1](../assets/images/journey-map-1.png)
 *Nota.* Mapeo del proceso de captura y gestión de pedidos, identificando puntos de dolor en la transcripción manual. Elaboración propia.
 
-**Ilustración 5**
+**Ilustración 16**
 *Journey Map — Segmento 2: Cliente Comercial B2B*
 ![Journey Map 2](../assets/images/journey-map-2.png)
 *Nota.* Mapeo de la experiencia de abastecimiento del cliente, destacando la incertidumbre en el seguimiento de entrega. Elaboración propia.
 
-**Ilustración 6**
+**Ilustración 17**
 *Journey Map — Segmento 3: Despacho y Entrega*
 ![Journey Map 3](../assets/images/journey-map-3.png)
 *Nota.* Mapeo de la ruta logística, enfatizando los cuellos de botella en la comunicación de incidencias. Elaboración propia.
@@ -147,17 +147,17 @@ Los empathy maps complementan la lectura operativa con variables de percepción,
 En S1, el empathy map concentra emociones ligadas a presión, urgencia y desgaste por duplicación de tareas; en S2, predominan la desconfianza frente a la opacidad del abastecimiento y la necesidad de respaldo humano; y en S3, la carga emocional se asocia a interrupciones, reclamos y falta de evidencia al cierre. Estas diferencias son útiles porque muestran que la adopción no depende de un único argumento de valor para todos los actores.
 </p>
 
-**Ilustración 7**
+**Ilustración 18**
 *Empathy Map — Segmento 1: Coordinación Comercial*
 ![Empathy Map 1](../assets/images/empathy-map-1.png)
 *Nota.* Análisis de expectativas y temores del personal administrativo respecto a la adopción tecnológica. Elaboración propia.
 
-**Ilustración 8**
+**Ilustración 19**
 *Empathy Map — Segmento 2: Cliente Comercial B2B*
 ![Empathy Map 2](../assets/images/empathy-map-2.png)
 *Nota.* Identificación de motivadores extrínsecos e intrínsecos para la digitalización del bodeguero. Elaboración propia.
 
-**Ilustración 9**
+**Ilustración 20**
 *Empathy Map — Segmento 3: Despacho y Entrega*
 ![Empathy Map 3](../assets/images/empathy-map-3.png)
 *Nota.* Exploración del entorno laboral y necesidades de soporte del personal en ruta. Elaboración propia.

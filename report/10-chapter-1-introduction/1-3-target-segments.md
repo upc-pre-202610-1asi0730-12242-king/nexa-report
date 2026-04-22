@@ -12,7 +12,7 @@ Bajo esta lógica, los segmentos S1, S2 y S3 no representan tipos de empresa, si
 La construcción de estos segmentos no se basa en una única fuente de información. Por el contrario, responde a un criterio de triangulación entre literatura sectorial, datos de mercado e hipótesis operativas que luego serán contrastadas con el proceso de entrevistas y needfinding. Esta aclaración es metodológicamente importante: la caracterización estadística presentada en este capítulo cumple la función de justificar la relevancia del segmento dentro del dominio, mientras que el capítulo 2 se encargará de profundizar cómo esas características se manifiestan en comportamientos, pain points y expectativas concretas de uso.
 </p>
 
-**Tabla 10**
+**Tabla 12**
 
 *Resumen de segmentos operativos primarios*
 
@@ -83,7 +83,7 @@ El segmento de clientes comerciales B2B del canal tradicional peruano incluye bo
 En términos de comportamiento de compra, este segmento no evalúa la tecnología como un fin en sí mismo, sino como un medio para sostener la continuidad operativa del negocio. El cliente comercial B2B compra para no quedarse sin stock, para mantener margen y para evitar pérdida de ventas frente a sus propios clientes. En consecuencia, la herramienta digital solo será percibida como valiosa si reduce incertidumbre y tiempo de coordinación. Una interfaz extensa, lenta o impersonal puede resultar técnicamente completa y, aun así, fracasar en adopción si no se aproxima a la inmediatez y claridad operativa que hoy el usuario asocia con el canal informal.
 </p>
 
-**Ilustración 2**
+**Ilustración 1**
 
 *Madurez Digital del Canal Tradicional en el Perú*
 

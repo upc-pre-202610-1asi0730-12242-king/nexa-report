@@ -10,47 +10,47 @@ La arquitectura de software de Nexa sigue los principios del Domain-Driven Desig
 El Design-Level EventStorming profundiza en los bounded contexts identificados durante el Big Picture EventStorming, permitiendo al equipo descomponer cada dominio en agregados, comandos, eventos y políticas con mayor nivel de detalle. Este proceso tuvo como objetivo principal delimitar las responsabilidades de cada contexto y establecer los contratos de comunicación entre ellos, sentando las bases para la arquitectura técnica de la plataforma.
 </p>
 
-**Ilustración 10**
+**Ilustración 48**
 *Design-Level EventStorming — Paso 1: Exploración de eventos detallados*
 ![DDD Paso 1](../assets/images/ddd/PASO_1.jpeg)
 *Nota.* Identificación de eventos granulares dentro de los contextos de órdenes e inventario. Elaboración propia.
 
-**Ilustración 11**
+**Ilustración 49**
 *Design-Level EventStorming — Paso 2: Definición de comandos y actores*
 ![DDD Paso 2](../assets/images/ddd/PASO_2.jpeg)
 *Nota.* Asociación de acciones específicas con los roles responsables identified en el negocio. Elaboración propia.
 
-**Ilustración 12**
+**Ilustración 50**
 *Design-Level EventStorming — Paso 3: Identificación de agregados*
 ![DDD Paso 3](../assets/images/ddd/PASO_3.jpeg)
 *Nota.* Definición de los objetos de negocio que actúan como raíz de consistencia para el sistema. Elaboración propia.
 
-**Ilustración 13**
+**Ilustración 51**
 *Design-Level EventStorming — Paso 4: Modelado de políticas y reglas*
 ![DDD Paso 4](../assets/images/ddd/PASO_4.jpeg)
 *Nota.* Definición de triggers automáticos entre contextos, como la validación de crédito post-pedido. Elaboración propia.
 
-**Ilustración 14**
+**Ilustración 52**
 *Design-Level EventStorming — Paso 5: Refinamiento de Bounded Contexts*
 ![DDD Paso 5](../assets/images/ddd/PASO_5.jpeg)
 *Nota.* Ajuste de límites entre contextos comerciales y logísticos. Elaboración propia.
 
-**Ilustración 15**
+**Ilustración 53**
 *Design-Level EventStorming — Paso 6: Definición de servicios externos*
 ![DDD Paso 6](../assets/images/ddd/PASO_6.jpeg)
 *Nota.* Identificación de puntos de contacto con sistemas de terceros. Elaboración propia.
 
-**Ilustración 16**
+**Ilustración 54**
 *Design-Level EventStorming — Paso 7: Diseño de UI Flows preliminares*
 ![DDD Paso 7](../assets/images/ddd/PASO_7.jpeg)
 *Nota.* Conexión entre la lógica de dominio y la experiencia de usuario. Elaboración propia.
 
-**Ilustración 17**
+**Ilustración 55**
 *Design-Level EventStorming — Paso 9: Validación de consistencia*
 ![DDD Paso 9](../assets/images/ddd/PASO_9.jpeg)
 *Nota.* Revisión final de flujos transversales previo al diseño técnico. Elaboración propia.
 
-**Ilustración 18**
+**Ilustración 56**
 *Design-Level EventStorming — Paso 10: Salida hacia arquitectura técnica*
 ![DDD Paso 10](../assets/images/ddd/PASO_10.jpeg)
 *Nota.* Consolidación del modelo de dominio para su traducción a infraestructura. Elaboración propia.
@@ -69,7 +69,7 @@ El resultado del Design-Level EventStorming confirmó que el flujo central del p
 El diagrama de contexto representa el nivel más alto de abstracción del sistema C4. Muestra cómo el sistema Nexa interactúa con los actores externos y sistemas adyacentes, sin revelar detalles de su estructura interna. En este nivel se identifican tres tipos de actores: los usuarios humanos del sistema (coordinación comercial, cliente comercial B2B y personal de despacho), el sistema de software Nexa como caja negra, y los sistemas externos con los que se conecta o se prevé conectar en fases futuras.
 </p>
 
-**Ilustración 19**
+**Ilustración 57**
 
 *Diagrama de Contexto del Sistema Nexa (C4 — Nivel 1)*
 
@@ -87,7 +87,7 @@ Como se observa en el diagrama, Nexa opera como un sistema centralizado al que a
 El diagrama de contenedores descompone el sistema Nexa en sus unidades desplegables principales, mostrando qué tecnologías conforman cada contenedor y cómo se comunican entre sí. Este nivel de abstracción permite al equipo establecer los límites tecnológicos del sistema y validar que la arquitectura propuesta es coherente con las convenciones de desarrollo definidas en la sección 5.1.
 </p>
 
-**Ilustración 20**
+**Ilustración 58**
 
 *Diagrama de Contenedores del Sistema Nexa (C4 — Nivel 2)*
 
@@ -105,7 +105,7 @@ El diagrama evidencia una arquitectura de tres capas alineada con el alcance del
 El diagrama de componentes descompone el contenedor de mayor complejidad —el API RESTful— en sus módulos internos, mostrando cómo los bounded contexts se traducen en componentes de software discretos y cómo se relacionan entre sí dentro del backend. Este nivel permite validar que la estructura del código fuente respeta las delimitaciones del dominio identificadas durante el EventStorming.
 </p>
 
-**Ilustración 21**
+**Ilustración 59**
 
 *Diagrama de Componentes del Sistema Nexa (C4 — Nivel 3)*
 

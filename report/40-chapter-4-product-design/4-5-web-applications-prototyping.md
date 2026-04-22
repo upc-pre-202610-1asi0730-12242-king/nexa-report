@@ -24,7 +24,7 @@ La inspección del archivo Figma autenticado del equipo confirmó que la página
 | Proyecto Figma del equipo | [Nexa Landing Page / Project](https://www.figma.com/files/team/1586383034175281439/project/587167294) |
 | Archivo Figma de la web application | [Web App - Figma Design File](https://www.figma.com/design/buDa5VZmYjPNokbl4FEJqx/Web-App?node-id=0-1) |
 
-**Ilustración 40**
+**Ilustración 46**
 
 *Mapa funcional de los mockups de alta fidelidad verificados en Figma*
 
@@ -44,7 +44,7 @@ graph TD
 
 *Nota. Elaboración propia. El mapa resume la continuidad visual entre control operativo, captura del pedido, inventario, despacho, trazabilidad y cierre, tal como aparece organizada en el archivo Figma del equipo.*
 
-**Ilustración 41**
+**Ilustración 47**
 
 *Pantallas de alta fidelidad verificadas en el prototipo autenticado*
 
