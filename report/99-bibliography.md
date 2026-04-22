@@ -2,9 +2,17 @@
 
 Arriaga, P., Maldonado, E., Ramírez, R., Martínez, P. A., Tirado, D. N., & Saavedra, L. A. (2023). Evaluación de la cadena de frío en cortes de res vendida en supermercados. *Revista Chapingo Serie Agricultura Tropical, 3*(1), 21–30. https://doi.org/10.5154/r.rchsagt.2023.03.02
 
+Asociación de Bodegueros del Perú. (2022). *Radiografía del canal bodeguero peruano y perspectivas de crecimiento del sector*. Asociación de Bodegueros del Perú.
+
 Bravo De la Cruz, R., Orihuela De Santana, L. E., & Huaman Huaman, M. L. (2025). Rupturas de cadena de frío en los establecimientos de salud de una Microred de salud - Perú: Breaks in the cold chain in the health establishments of a health micronetwork - Peru. *Advances in Science and Innovation, 4*(1), 55–60. https://doi.org/10.61210/asi.v4i1.183
 
 Buenaño, E., Paredes, M., Mora, C., & Lucio, K. (2024). Riesgos en la cadena de suministro: estrategias para mitigar disrupciones en la producción y distribución de alimentos perecederos - un caso de estudio. *Revista Científica Ciencias Ingenieriles, 4*(2), 103–121. https://doi.org/10.54943/ricci.v4i2.518
+
+Comisión Económica para América Latina y el Caribe, & organizaciones sectoriales asociadas. (2025). *Diagnóstico regional de infraestructura, trazabilidad y brechas operativas en cadenas de frío alimentarias de América Latina*. CEPAL.
+
+Grupo Lucky. (2022). *Índice de Madurez Digital del Canal Tradicional en el Perú*. Xplora / Grupo Lucky.
+
+Instituto Nacional de Estadística e Informática. (2023). *Perú: características de empleo y composición ocupacional en comercio, transporte y almacenamiento*. INEI.
 
 Muñoz, D. S. B., Guerrero, W. P. B., Barrero, A. A. C., & Calvo, G. H. (2022). Propuesta de mejora en el proceso de almacenamiento de productos perecederos en el programa del banco de alimentos. *Boletín de Innovación Logística y Operaciones 4*(BILO), *4*(2). https://doi.org/10.17981/bilo.4.2.2022.08
 

@@ -115,6 +115,61 @@ Desde la perspectiva de la gestión de riesgos en la cadena de suministro, esta 
 A partir de este contexto, el proyecto Nexa se plantea como respuesta a una problemática concreta identificada en la literatura y en la práctica: la ausencia de soluciones digitales especializadas que permitan a empresas importadoras y distribuidoras de productos refrigerados articular, en una única plataforma, la gestión del flujo principal de pedidos B2B (catálogo, condiciones comerciales y pedidos) con la información operativa relevante (stock, rotación, control de cadena de frío y seguimiento logístico), reduciendo así la dependencia de canales informales y registros fragmentados.
 </p>
 
+<p align="justify">
+La relevancia de este problema no radica únicamente en la pérdida de eficiencia interna. En un dominio como el de productos refrigerados y congelados, una falla en la coordinación del pedido compromete simultáneamente variables comerciales, operativas y sanitarias. Cuando el catálogo no refleja disponibilidad real, cuando la toma del pedido depende de mensajes dispersos o cuando el seguimiento del despacho carece de visibilidad compartida, la empresa no solo pierde tiempo: también deteriora la confianza del cliente comercial, incrementa el riesgo de quiebre de stock en el punto de venta y dificulta la respuesta ante incidencias o auditorías. Por ello, el problema del proyecto debe entenderse como una falla de articulación del flujo de información crítico del negocio, más que como una carencia aislada de software.
+</p>
+
+#### Objetivos y restricciones del proyecto
+
+<p align="justify">
+En coherencia con la problemática expuesta, el proyecto requiere explicitar tanto los objetivos que orientan la propuesta como las restricciones que delimitan el alcance académico y técnico del MVP. Esta delimitación resulta importante porque evita sobredimensionar la solución: Nexa no busca demostrar que puede reemplazar de inmediato a todo el ecosistema logístico del frío, sino que puede ordenar el núcleo del flujo comercial-operativo donde hoy se concentra la mayor fricción.
+</p>
+
+**Tabla 7**
+
+*Objetivos y restricciones del proyecto*
+
+<table border="1" cellspacing="0" cellpadding="5" align="center">
+  <tr>
+    <th>Tipo</th>
+    <th>Definición aplicada a Nexa</th>
+  </tr>
+  <tr>
+    <td>Objetivo general</td>
+    <td>Diseñar y validar una solución web especializada que permita ordenar el flujo principal de pedidos B2B de productos refrigerados, integrando catálogo, condiciones comerciales, captura del pedido, inventario básico y seguimiento operativo.</td>
+  </tr>
+  <tr>
+    <td>Objetivo específico 1</td>
+    <td>Reducir la fragmentación informativa existente entre canales informales de comunicación, validación comercial e inventario operativo, de modo que la captura del pedido nazca estructurada y trazable.</td>
+  </tr>
+  <tr>
+    <td>Objetivo específico 2</td>
+    <td>Mejorar la claridad del proceso para el cliente comercial B2B, permitiéndole consultar disponibilidad, registrar pedidos y hacer seguimiento con mayor autonomía y previsibilidad.</td>
+  </tr>
+  <tr>
+    <td>Objetivo específico 3</td>
+    <td>Incorporar visibilidad mínima del despacho y evidencia de cierre de entrega para disminuir reclamos y reforzar la coordinación entre áreas.</td>
+  </tr>
+  <tr>
+    <td>Restricción de alcance</td>
+    <td>El MVP no cubrirá, en esta etapa, la totalidad del ecosistema logístico ni integraciones avanzadas con hardware IoT, TMS corporativos o ERPs heredados.</td>
+  </tr>
+  <tr>
+    <td>Restricción tecnológica</td>
+    <td>La validación inicial se concentra en una experiencia web responsiva, suficiente para probar el valor del flujo principal antes de expandirse a aplicaciones móviles nativas o automatizaciones de mayor profundidad.</td>
+  </tr>
+  <tr>
+    <td>Restricción operativa</td>
+    <td>La solución debe convivir con una madurez digital heterogénea entre distribuidoras y clientes B2B; por ello, no puede depender desde el inicio de procesos altamente tecnificados ni de adopción avanzada del usuario final.</td>
+  </tr>
+  <tr>
+    <td>Restricción académica</td>
+    <td>La propuesta debe demostrar valor mediante un alcance implementable y validable dentro del ciclo del curso, priorizando el aprendizaje y la consistencia entre investigación, diseño e implementación.</td>
+  </tr>
+</table>
+
+*Nota.* La tabla delimita el alcance real del proyecto y explicita el criterio de viabilidad que orienta la construcción del MVP. Elaboración propia.
+
 
 ## Análisis 5W2H del problema
 
@@ -124,7 +179,7 @@ El problema identificado puede estructurarse mediante la técnica 5W2H, lo que p
 
 ---
 
-**Tabla 7**
+**Tabla 8**
 
 *5W2H*
 
@@ -185,6 +240,10 @@ Nexa adopta Lean UX como marco de trabajo porque permite formular la solución d
 En este proyecto, el uso de Lean UX resulta pertinente porque el dominio combina restricciones comerciales, operativas y logísticas propias de la distribución B2B de productos refrigerados. El riesgo no consiste solo en desarrollar una aplicación web funcional, sino en construir una herramienta que reduzca fricción en la coordinación de pedidos, mejore la visibilidad operativa y aporte mayor orden al flujo entre la empresa distribuidora y el cliente comercial. Por ello, el bloque se organiza en cinco partes: visión del modelo de negocio, problem statements, assumptions, hypothesis statements y Lean UX Canvas.
 <p>
 
+<p align="justify">
+Desde esta perspectiva, Lean UX cumple dos funciones en el proyecto. La primera es estratégica: obliga al equipo a formular con precisión qué problema se está abordando, para qué actores se está construyendo valor y qué parte del dominio quedará fuera del MVP inicial. La segunda es metodológica: convierte supuestos del equipo en hipótesis observables, reduciendo el riesgo de diseñar una solución sobredimensionada o incoherente con la realidad operativa del sector. En consecuencia, los artefactos que se presentan a continuación no deben leerse como meras formalidades del capítulo, sino como un marco de decisión que ordena el resto del informe y justifica la secuencia posterior de entrevistas, needfinding, backlog y diseño.
+</p>
+
 #### 1.2.2.1. Visión del modelo de negocio soportado por el software
 
 <p align="justify">
@@ -192,7 +251,7 @@ Nexa soporta un modelo de negocio SaaS B2B especializado en la gestión del fluj
 En este modelo, la empresa distribuidora es el cliente pagador de la solución y el entorno donde se produce la primera validación de valor. Sin embargo, el producto solo resulta sostenible si también genera beneficios claros para los usuarios internos que coordinan la operación y para el cliente comercial B2B que compra y hace seguimiento. Por ello, el software debe demostrar valor tanto hacia dentro de la operación —reduciendo retrabajo, errores y descoordinación— como hacia fuera —ofreciendo más claridad, autonomía y predictibilidad al comprador comercial—.
 </p>
 
-**Tabla 8**
+**Tabla 9**
 
 *Tabla de visión*
 
@@ -251,6 +310,10 @@ En este modelo, la empresa distribuidora es el cliente pagador de la solución y
 Los problem statements expresan la brecha entre la situación actual del dominio y el resultado que el proyecto busca habilitar. En esta versión se alinean con la taxonomía definitiva del informe: tres segmentos operativos primarios, más un stakeholder secundario que alimenta restricciones del dominio.
 </p>
 
+<p align="justify">
+Conviene precisar que los siguientes problem statements no describen módulos de software ni funcionalidades cerradas, sino situaciones problemáticas que el proyecto necesita transformar. Por ello, cada uno articula un dominio de fricción, un segmento afectado, una brecha observable y una dirección estratégica inicial. Esta distinción es importante porque evita confundir tempranamente el problema con su posible implementación técnica.
+</p>
+
 **Problem Statement 1 — Captura comercial y validación del pedido**
 
 - **Domain:** Recepción, interpretación, digitación y validación inicial de pedidos B2B dentro de la empresa distribuidora.
@@ -293,6 +356,10 @@ Los problem statements expresan la brecha entre la situación actual del dominio
 Las assumptions representan creencias críticas del proyecto que aún deben contrastarse. No se presentan como verdades cerradas, sino como riesgos del modelo de negocio, del comportamiento del usuario y de la solución propuesta que el equipo validará mediante entrevistas, prototipos y evidencia de uso.
 </p>
 
+<p align="justify">
+En términos de ingeniería de producto, estas assumptions cumplen la función de hacer explícito aquello que el equipo cree saber antes de contar con evidencia suficiente. Declararlas de forma visible permite distinguir entre conocimiento confirmado y conocimiento provisional, lo cual resulta especialmente relevante en un dominio donde confluyen restricciones operativas reales, expectativas comerciales y hábitos de uso todavía poco digitalizados.
+</p>
+
 **Suposiciones de negocio y viabilidad**
 
 - Las empresas distribuidoras percibirán suficiente valor en ordenar el flujo del pedido como para considerar viable una solución SaaS especializada.
@@ -323,13 +390,17 @@ A partir de las assumptions anteriores, el equipo formula hipótesis de aprendiz
 3. Creemos que la visibilidad de ETA, incidencias y prueba de entrega reducirá fricciones en el cierre del pedido y mejorará la percepción de cumplimiento del servicio.
 4. Creemos que concentrar el MVP en captura del pedido, autoservicio B2B, inventario básico, crédito comercial y seguimiento validará mejor el valor del producto que intentar incorporar desde el inicio toda la complejidad logística futura.
 
+<p align="justify">
+Para que estas hipótesis sean útiles dentro del proceso Lean UX, el equipo asume como señales iniciales de validación la reducción del retrabajo reportado por coordinación comercial, la percepción de mayor claridad y confianza en el flujo de compra por parte del cliente B2B, y una mejora en la visibilidad del estado del pedido durante despacho y cierre. Aunque estas señales todavía no constituyen métricas finales del producto, sí permiten orientar el aprendizaje del MVP hacia evidencias observables y comparables en las etapas siguientes del proyecto.
+</p>
+
 #### 1.2.2.5. Lean UX Canvas
 
 <p align="justify">
 El Lean UX Canvas sintetiza la lógica del producto en una sola vista: problema, usuarios, propuesta de valor, outcomes y aprendizaje prioritario. Se presenta como artefacto de cierre del bloque Lean UX y como base de conexión con entrevistas, needfinding y backlog inicial.
 </p>
 
-**Tabla 9**
+**Tabla 10**
 
 *Lean UX Canvas*
 
