@@ -399,6 +399,35 @@ Henrry García enfatiza que la confianza es el motor de la relación B2B. Aunque
 El segmento de mercaderistas y personal de coordinación comercial, representado en esta muestra por Lorena Silva, Cinthia Levano y Celia Pérez, constituye el punto de captura más sensible del flujo del pedido. En las tres entrevistas aparece la misma tensión operativa: responder con rapidez al cliente y, al mismo tiempo, validar crédito, stock y condiciones comerciales con información que no siempre está integrada. Sobre esa base se identifican los siguientes patrones compartidos.
 </p>
 
+<table border="1" cellspacing="0" cellpadding="6" align="center">
+  <tr>
+    <th>Variable observada en S1</th>
+    <th>Evidencia recurrente</th>
+    <th>Lectura analítica</th>
+    <th>Implicancia de diseño</th>
+  </tr>
+  <tr>
+    <td>Uso intensivo de WhatsApp y canales paralelos</td>
+    <td>Lorena, Cinthia y Celia describen dependencia de mensajería y validaciones externas</td>
+    <td>El pedido nace en un entorno rápido, pero con baja estructuración de datos</td>
+    <td>El flujo inicial debe capturar rapidez sin perder consistencia ni trazabilidad</td>
+  </tr>
+  <tr>
+    <td>Validación manual de stock y crédito</td>
+    <td>Lorena y Cinthia reportan consultas adicionales antes de confirmar pedidos</td>
+    <td>La captura del pedido no está suficientemente conectada con la información crítica del negocio</td>
+    <td>Conviene unificar stock, crédito y condiciones comerciales en la misma experiencia</td>
+  </tr>
+  <tr>
+    <td>Necesidad de operar en movilidad</td>
+    <td>Celia y Lorena describen trabajo fuera del escritorio o en condiciones de campo</td>
+    <td>La experiencia comercial no puede depender exclusivamente de entornos de oficina</td>
+    <td>La interfaz debe responder bien en móvil y reducir pasos innecesarios</td>
+  </tr>
+</table>
+
+*Nota.* La tabla resume la cadena dato observado → patrón → implicancia de diseño dentro de la muestra analizada. Elaboración propia.
+
 **Características objetivas:**
 
 - **Rol laboral:** 100% de los entrevistados (3 de 3) ejerce funciones directas de captura de pedidos, gestión de créditos y seguimiento de cartera.
@@ -431,6 +460,35 @@ El segmento de mercaderistas y personal de coordinación comercial, representado
 Este bloque, integrado por Hilda Litano, Edith Taype y Jesica Sandoval, aporta una lectura transversal del dominio. Aquí el foco se desplaza desde la rapidez comercial hacia la trazabilidad, el control documental, la rotación y la responsabilidad operativa sobre productos perecederos. Más que describir un usuario del MVP, estas entrevistas exponen restricciones que el sistema no puede ignorar.
 </p>
 
+<table border="1" cellspacing="0" cellpadding="6" align="center">
+  <tr>
+    <th>Variable observada en stakeholder operativo</th>
+    <th>Evidencia recurrente</th>
+    <th>Lectura analítica</th>
+    <th>Implicancia de dominio</th>
+  </tr>
+  <tr>
+    <td>Trazabilidad documental sensible</td>
+    <td>Hilda y Jesica enfatizan control de documentación, temperatura y vencimientos</td>
+    <td>La operación necesita respaldo verificable, no solo visibilidad superficial del pedido</td>
+    <td>El modelo del dominio debe contemplar evidencia, estados y reglas de validación</td>
+  </tr>
+  <tr>
+    <td>Rotación y vencimientos como restricción real</td>
+    <td>Jesica y Edith describen dependencia de coordinación manual para FEFO y disponibilidad</td>
+    <td>La calidad de la entrega depende de decisiones previas sobre inventario y priorización</td>
+    <td>El sistema debe hacer visible stock, vencimientos y criterios de rotación relevantes</td>
+  </tr>
+  <tr>
+    <td>Accesos y visibilidad fragmentados</td>
+    <td>Edith reporta limitaciones de acceso y necesidad de intermediación interna</td>
+    <td>La operación no comparte la misma información con el mismo nivel de oportunidad</td>
+    <td>Se requieren roles, permisos y vistas diferenciadas sobre un mismo flujo</td>
+  </tr>
+</table>
+
+*Nota.* La tabla sintetiza cómo las entrevistas de jefatura y operación alimentan reglas y restricciones del dominio. Elaboración propia.
+
 **Características objetivas:**
 
 - **Funciones de supervisión:** 100% (3 de 3) tiene responsabilidad sobre la validación de inventario, cumplimiento de normativas sanitarias y despacho.
@@ -460,6 +518,35 @@ Este bloque, integrado por Hilda Litano, Edith Taype y Jesica Sandoval, aporta u
 <p align="justify">
 El análisis de Pedro Puente y Henrry García muestra un patrón consistente: el cliente comercial necesita previsibilidad logística, pero no está dispuesto a adoptarla a costa de complejidad adicional o pérdida de trato humano. Para ambos, el distribuidor no es solo un proveedor, sino un actor del que depende la continuidad operativa del negocio.
 </p>
+
+<table border="1" cellspacing="0" cellpadding="6" align="center">
+  <tr>
+    <th>Variable observada en S2</th>
+    <th>Evidencia recurrente</th>
+    <th>Lectura analítica</th>
+    <th>Implicancia de diseño</th>
+  </tr>
+  <tr>
+    <td>Dependencia de canales informales para pedir</td>
+    <td>Pedro y Henrry describen uso de llamadas y WhatsApp para resolver urgencias</td>
+    <td>La velocidad de respuesta pesa más que la sofisticación funcional</td>
+    <td>El portal debe ser rápido de usar y fácil de entender desde el primer contacto</td>
+  </tr>
+  <tr>
+    <td>Necesidad de visibilidad del estado del pedido</td>
+    <td>Ambos expresan incertidumbre sobre stock, confirmación y entrega</td>
+    <td>El principal valor esperado no es solo comprar, sino saber qué ocurrirá después del pedido</td>
+    <td>Conviene priorizar confirmación clara, estados visibles y seguimiento del despacho</td>
+  </tr>
+  <tr>
+    <td>Confianza como condición de adopción</td>
+    <td>Henrry enfatiza soporte humano y Pedro asocia servicio con continuidad del negocio</td>
+    <td>Una digitalización excesivamente impersonal puede afectar adopción</td>
+    <td>La experiencia debe combinar autoservicio con posibilidad de soporte cuando haga falta</td>
+  </tr>
+</table>
+
+*Nota.* La tabla ordena la relación entre evidencia empírica del cliente comercial y decisiones esperadas del portal B2B. Elaboración propia.
 
 **Características objetivas:**
 

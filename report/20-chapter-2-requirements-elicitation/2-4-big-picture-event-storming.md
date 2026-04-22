@@ -8,7 +8,43 @@ El Big Picture EventStorming de Nexa modela el flujo principal del pedido B2B de
 El modelado mantiene la misma taxonomía canónica definida en el proyecto. En ese marco, <strong>S1</strong> se expresa principalmente en la captura asistida y validación comercial, <strong>S2</strong> en la consulta, envío y seguimiento del pedido por parte del cliente comercial, y <strong>S3</strong> en el despacho, la gestión de incidencias y el cierre de la entrega. La jefatura logística permanece como stakeholder secundario que define políticas y restricciones del dominio.
 </p>
 
-### 2.4.1. Actores del dominio
+<p align="justify">
+El EventStorming se construyó como un ejercicio de síntesis del dominio a partir de la evidencia reunida en entrevistas, needfinding y análisis competitivo. En lugar de partir de pantallas o módulos, el equipo ordenó primero los hechos que modifican el estado del pedido y luego identificó qué comandos, reglas y actores participan en esas transiciones. Este enfoque resulta útil porque evita diseñar el sistema desde una lista de funcionalidades dispersas y obliga a pensar el producto como una secuencia coherente de eventos del negocio.
+</p>
+
+### 2.4.1. Proceso de construcción del modelado
+
+<table border="1" cellspacing="0" cellpadding="6" align="center">
+  <tr>
+    <th>Etapa</th>
+    <th>Propósito</th>
+    <th>Resultado obtenido</th>
+  </tr>
+  <tr>
+    <td><strong>1. Delimitación del flujo</strong></td>
+    <td>Definir qué tramo del negocio debía representarse en el MVP</td>
+    <td>Se acotó el modelado desde la intención de compra hasta el cierre de entrega</td>
+  </tr>
+  <tr>
+    <td><strong>2. Identificación de eventos</strong></td>
+    <td>Reconocer qué hechos cambian realmente el estado del pedido</td>
+    <td>Se consolidó la secuencia borrador → envío → validación → confirmación → preparación → despacho → entrega</td>
+  </tr>
+  <tr>
+    <td><strong>3. Asociación de comandos y actores</strong></td>
+    <td>Vincular cada cambio de estado con acciones y responsables del dominio</td>
+    <td>Se clarificó la participación de cliente comercial, coordinación comercial, operación y reparto</td>
+  </tr>
+  <tr>
+    <td><strong>4. Extracción de políticas</strong></td>
+    <td>Hacer visibles las reglas que condicionan el avance del flujo</td>
+    <td>Se incorporaron validación comercial, reserva de stock, FEFO, visibilidad compartida y cierre con evidencia</td>
+  </tr>
+</table>
+
+*Nota.* La tabla resume el proceso seguido para convertir evidencia cualitativa en un modelo de dominio entendible y útil para el MVP. Elaboración propia.
+
+### 2.4.2. Actores del dominio
 
 | Actor | Responsabilidad principal |
 |-------|----------------------------|
@@ -19,7 +55,7 @@ El modelado mantiene la misma taxonomía canónica definida en el proyecto. En e
 | Chofer de reparto | Ejecuta el despacho y registra el cierre de entrega |
 | Administrador autorizado | Gestiona cuentas internas y parámetros base del sistema |
 
-### 2.4.2. Comandos y eventos principales
+### 2.4.3. Comandos y eventos principales
 
 | Comando | Evento de dominio esperado | Resultado de negocio |
 |---------|----------------------------|----------------------|
@@ -38,7 +74,7 @@ El modelado mantiene la misma taxonomía canónica definida en el proyecto. En e
 | Cerrar entrega | Pedido entregado | El flujo comercial-operativo termina con trazabilidad suficiente |
 | Cancelar pedido antes de despacho | Pedido cancelado y stock liberado | Se evita dejar inventario comprometido de forma incorrecta |
 
-### 2.4.3. Políticas y reglas identificadas
+### 2.4.4. Políticas y reglas identificadas
 
 | Política | Disparador | Regla resultante |
 |----------|------------|------------------|
@@ -49,7 +85,7 @@ El modelado mantiene la misma taxonomía canónica definida en el proyecto. En e
 | Control de rotación | Registro de lotes o vencimientos | Los productos con vencimiento próximo deben quedar visibles para priorización FEFO |
 | Cierre con evidencia | Confirmación de entrega | El pedido no debe cerrarse como entregado sin al menos una prueba de entrega válida |
 
-### 2.4.4. Flujo resumido del dominio
+### 2.4.5. Flujo resumido del dominio
 
 1. El cliente consulta el catálogo o la coordinación comercial captura el pedido de forma asistida.
 2. El sistema identifica al cliente y recupera sus condiciones comerciales.
@@ -62,4 +98,8 @@ El modelado mantiene la misma taxonomía canónica definida en el proyecto. En e
 
 <p align="justify">
 Este modelado refuerza dos ideas centrales del proyecto: el problema principal no está en un único “módulo” aislado, sino en la transición entre captura, validación, disponibilidad, despacho y cierre; y la jefatura logística, aunque no sea una persona primaria del backlog, sigue siendo fundamental para definir políticas y restricciones del dominio.
+</p>
+
+<p align="justify">
+La principal contribución del EventStorming al capítulo no es solo ordenar nombres de eventos, sino mostrar que el valor del sistema depende de sostener continuidad entre estados. Si el pedido cambia de mano entre actores, pero el sistema no conserva reglas, evidencia y visibilidad comunes, el problema persiste aunque existan interfaces nuevas. En ese sentido, el modelado confirma que la unidad real de diseño no es una pantalla aislada, sino el tránsito completo del pedido entre S1, S2, S3 y las restricciones definidas por la operación.
 </p>
