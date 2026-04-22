@@ -88,23 +88,26 @@ Investigaciones sobre almacenamiento y distribución de perecederos muestran que
 </p>
 
 <p align="justify">
-Como consecuencia de esta desarticulación se observan al menos tres impactos principales:
+Como consecuencia de esta desarticulación se observan tres impactos principales, cada uno con implicancias directas para la viabilidad operativa y comercial del negocio.
 </p>
 
-<p align="justify">
-<b>Primero</b>, errores en la preparación y despacho de pedidos —como cantidades inexactas, productos erróneos o retrasos por falta de stock—, los cuales son coherentes con los hallazgos de estudios que vinculan procesos manuales y ausencia de sistemas integrados con incrementos en errores operativos en cadenas de alimentos perecederos (Muñoz et al., 2022; Buenaño et al., 2024).
-</p>
+<div style="display: grid; grid-template-columns: 1fr; gap: 12px; margin: 16px 0;">
+  <div style="padding: 12px 14px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff;">
+    <strong>1. Errores en preparación y despacho</strong><br/>
+    Cantidades inexactas, productos erróneos o retrasos por falta de stock aparecen con mayor probabilidad cuando el flujo depende de captura manual y sistemas no integrados. Este efecto es coherente con estudios que vinculan procesos fragmentados con incrementos en errores operativos en cadenas de alimentos perecederos (Muñoz et al., 2022; Buenaño et al., 2024).
+  </div>
+  <div style="padding: 12px 14px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff;">
+    <strong>2. Mermas económicas por mala rotación</strong><br/>
+    La dificultad de conectar pedidos, inventario y fechas de vencimiento limita la aplicación sistemática de estrategias de rotación como FIFO o FEFO en cadenas de frío, elevando el riesgo de caducidad y pérdida económica (Tutiven et al., 2026; Arriaga et al., 2023).
+  </div>
+  <div style="padding: 12px 14px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff;">
+    <strong>3. Riesgo normativo y sanitario</strong><br/>
+    La comercialización y transporte de productos refrigerados exigen trazabilidad, registros de temperatura y capacidad de respuesta ante auditorías o incidentes. La literatura sobre cadena de frío en contextos sanitarios y agroalimentarios muestra que las rupturas térmicas y la falta de trazabilidad se asocian con incumplimientos normativos y con riesgos para la seguridad del paciente o consumidor (Vértiz, 2011; Tutiven et al., 2026).
+  </div>
+</div>
 
 <p align="justify">
-<b>Segundo</b>, mermas económicas por caducidad o mala rotación, ya que la dificultad de conectar información de pedidos, inventario y fechas de vencimiento limita la aplicación sistemática de estrategias de rotación como FIFO o FEFO en cadenas de frío (Tutiven et al., 2026; Arriaga et al., 2023).
-</p>
-
-<p align="justify">
-<b>Tercero</b>, un riesgo normativo y sanitario significativo, dado que la comercialización y transporte de productos refrigerados exigen trazabilidad, registros de temperatura y capacidad de respuesta ante auditorías o incidentes. La literatura sobre cadena de frío en contextos sanitarios y agroalimentarios muestra que las rupturas térmicas y la falta de trazabilidad se asocian con incumplimientos de normas y con riesgo para la seguridad del paciente o consumidor (Vértiz, 2011; Tutiven et al., 2026).
-</p>
-
-<p align="justify">
-A pesar de ello, diferentes trabajos y diagnósticos sectoriales indican que muchas empresas de tamaño mediano priorizan aún la inversión en activos físicos —incluyendo vehículos, cámaras frigoríficas y equipos de refrigeración especializados— por encima de la inversión en soluciones digitales para la gestión integral de la cadena de frío y la operación comercial (Rivas & Castillo, 2020; Torres & Tardillo, 2020; Aguayo et al., 2025).
+A pesar de ello, diferentes trabajos y diagnósticos sectoriales indican que muchas empresas de tamaño mediano priorizan aún la inversión en activos físicos, incluyendo vehículos, cámaras frigoríficas y equipos de refrigeración especializados, por encima de la inversión en soluciones digitales para la gestión integral de la cadena de frío y la operación comercial (Rivas & Castillo, 2020; Torres & Tardillo, 2020; Aguayo et al., 2025).
 </p>
 
 <p align="justify">
@@ -201,7 +204,7 @@ El problema identificado puede estructurarse mediante la técnica 5W2H, lo que p
   <tr>
     <td>What (qué)</td>
     <td>
-      El problema central consiste en la gestión manual, fragmentada y poco trazable del flujo de pedidos B2B de productos refrigerados, donde la información transita por canales informales —llamadas, mensajes de texto o voz— y se replica manualmente en hojas de cálculo o sistemas no integrados. Esto impide conectar de manera consistente el catálogo, la toma de pedido, el control de inventario, las fechas de vencimiento y el seguimiento operativo del despacho.
+      El problema central consiste en la gestión manual, fragmentada y poco trazable del flujo de pedidos B2B de productos refrigerados, donde la información transita por canales informales, como llamadas, mensajes de texto o notas de voz, y se replica manualmente en hojas de cálculo o sistemas no integrados. Esto impide conectar de manera consistente el catálogo, la toma de pedido, el control de inventario, las fechas de vencimiento y el seguimiento operativo del despacho.
     </td>
   </tr>
   <tr>
@@ -252,7 +255,7 @@ Desde esta perspectiva, Lean UX cumple dos funciones en el proyecto. La primera 
 
 <p align="justify">
 Nexa soporta un modelo de negocio SaaS B2B especializado en la gestión del flujo principal de pedidos para empresas importadoras y distribuidoras de productos refrigerados y congelados. La lógica del negocio no se basa en vender un marketplace horizontal ni en reemplazar de inmediato todo el ecosistema logístico, sino en ofrecer una plataforma web que ordene el tramo donde hoy se concentran mayores fricciones: catálogo, registro de pedido, disponibilidad, control básico de inventario y seguimiento operativo.
-En este modelo, la empresa distribuidora es el cliente pagador de la solución y el entorno donde se produce la primera validación de valor. Sin embargo, el producto solo resulta sostenible si también genera beneficios claros para los usuarios internos que coordinan la operación y para el cliente comercial B2B que compra y hace seguimiento. Por ello, el software debe demostrar valor tanto hacia dentro de la operación —reduciendo retrabajo, errores y descoordinación— como hacia fuera —ofreciendo más claridad, autonomía y predictibilidad al comprador comercial—.
+En este modelo, la empresa distribuidora es el cliente pagador de la solución y el entorno donde se produce la primera validación de valor. Sin embargo, el producto solo resulta sostenible si también genera beneficios claros para los usuarios internos que coordinan la operación y para el cliente comercial B2B que compra y hace seguimiento. Por ello, el software debe demostrar valor tanto hacia dentro de la operación, reduciendo retrabajo, errores y descoordinación, como hacia fuera, ofreciendo más claridad, autonomía y predictibilidad al comprador comercial.
 </p>
 
 **Tabla 9**

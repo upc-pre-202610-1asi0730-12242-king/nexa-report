@@ -24,6 +24,10 @@ La construcción de estos segmentos no se basa en una única fuente de informaci
 
 *Nota.* Los segmentos operativos primarios son la referencia oficial para personas, journeys, empathy maps, user stories y backlog. Elaboración propia.
 
+<div style="padding: 14px 16px; border-left: 4px solid #2554df; background: #f8fbff; margin: 16px 0;">
+  <strong>Cómo se leerá esta sección.</strong> Primero se presenta una caracterización general de cada segmento desde evidencia demográfica, ocupacional y tecnológica. Luego, en una segunda parte claramente separada, se profundiza cada segmento desde la lógica del producto, explicando por qué ese actor importa para el MVP, qué valor espera recibir y qué fricciones concentra dentro del flujo del pedido.
+</div>
+
 #### Caracterización demográfica y estadística de los segmentos
 
 <p align="justify">
@@ -34,7 +38,7 @@ La siguiente caracterización complementa los perfiles cualitativos con evidenci
 En consecuencia, cada segmento se describe en cuatro planos complementarios: un plano demográfico y ocupacional, que permite ubicar al actor dentro del ecosistema; un plano conductual, que explica cómo opera hoy; un plano tecnológico, que anticipa barreras y condiciones de adopción; y un plano de valor esperado, que conecta el perfil del usuario con la propuesta del producto. Esta estructura evita que el análisis se limite a datos demográficos aislados y permite que la segmentación sirva como insumo real para decisiones de diseño y priorización.
 </p>
 
-**Segmento 1 (S1) — Coordinación comercial y captura del pedido**
+**Segmento 1 (S1): Coordinación comercial y captura del pedido**
 
 <p align="justify">
 El personal dedicado a la coordinación comercial y captura de pedidos en empresas distribuidoras de alimentos en el Perú se concentra predominantemente en el rango etario de 25 a 40 años, con acceso habitual a dispositivos móviles y conectividad básica. Este perfil corresponde a trabajadores del sector comercio mayorista y distribución, categoría cuya fuerza laboral femenina representa una proporción significativa en roles administrativos y de ventas internas (Instituto Nacional de Estadística e Informática [INEI], 2023). El contexto tecnológico del segmento es determinante: la evidencia muestra que el canal informal (WhatsApp, llamadas) sigue siendo la herramienta principal de coordinación en pequeñas y medianas empresas distribuidoras, pese a la disponibilidad de alternativas digitales (Grupo Lucky, 2022). Esto posiciona a este segmento como el punto de mayor fricción en el flujo del pedido y, al mismo tiempo, como el de mayor impacto potencial ante la adopción de una plataforma estructurada.
@@ -44,7 +48,7 @@ El personal dedicado a la coordinación comercial y captura de pedidos en empres
 Desde una perspectiva conductual, este segmento opera en tensión permanente entre velocidad y control. Necesita responder con inmediatez al cliente, pero al mismo tiempo debe validar información comercial y operativa que rara vez está concentrada en un único entorno. Esa dualidad explica por qué el comportamiento digital del segmento no puede analizarse solo como uso o no uso de tecnología: en la práctica, la coordinación comercial ya utiliza herramientas digitales, pero lo hace en forma fragmentada, alternando entre mensajería, hojas de cálculo, ERP y validaciones manuales con otras áreas. El problema, por tanto, no es la ausencia total de tecnología, sino la falta de una experiencia integrada que reduzca fricción sin ralentizar la respuesta.
 </p>
 
-**Segmento 2 (S2) — Cliente comercial B2B y abastecimiento recurrente**
+**Segmento 2 (S2): Cliente comercial B2B y abastecimiento recurrente**
 
 <p align="justify">
 El segmento de clientes comerciales B2B del canal tradicional peruano incluye bodegas, minimarkets, distribuidores pequeños y establecimientos del canal HORECA. En conjunto, este universo representa aproximadamente 414,000 bodegas activas a nivel nacional, con una concentración mayor en Lima Metropolitana (Asociación de Bodegueros del Perú, 2022). En términos de madurez digital, el Índice de Madurez Digital del Canal Tradicional elaborado por Xplora/Grupo Lucky reporta que solo alrededor del 28% de bodegas utiliza algún aplicativo para gestionar tareas del negocio, mientras que el 83% se ubica todavía en nivel "principiante" de transformación digital (Grupo Lucky, 2022). Complementariamente, un estudio sobre pagos digitales en pequeños comercios muestra que la adopción de herramientas digitales es incipiente y depende de la simplicidad percibida de la herramienta (Taipe Quispe, 2025). Esto confirma que la adopción del portal B2B de Nexa está condicionada a una experiencia de uso sin fricción que equipare o supere la velocidad percibida del canal informal.
@@ -66,14 +70,20 @@ pie title Uso de Aplicativos en Bodegas (Canal Tradicional)
 
 *Nota.* Fuente: Elaboración propia en base a datos de Grupo Lucky (2022).
 
-**Segmento 3 (S3) — Despacho, transporte y cierre de entrega**
+**Segmento 3 (S3): Despacho, transporte y cierre de entrega**
 
 <p align="justify">
-El personal de reparto y despacho en empresas distribuidoras de alimentos refrigerados opera en rutas urbanas de alta rotación, con jornadas que pueden extenderse entre 8 y 12 horas diarias. Según datos del sector transporte y almacenamiento en el Perú, este segmento tiene una participación mayoritariamente masculina y se concentra en el rango etario de 25 a 45 años (INEI, 2023). Desde una perspectiva operativa, la evidencia recogida en el needfinding y en estudios de trazabilidad en cadena de frío indica que las rupturas de temperatura durante el transporte —64 rupturas registradas en una sola microred de salud en un año (Bravo De la Cruz et al., 2025)— son en parte atribuibles a la descoordinación entre el envío del pedido, la ruta física y la notificación al punto de entrega. El segmento de despacho no adopta tecnología por iniciativa propia, sino cuando esta reduce directamente las interrupciones durante la ruta: llamadas, esperas en cliente y reclamos al cierre de entrega.
+El personal de reparto y despacho en empresas distribuidoras de alimentos refrigerados opera en rutas urbanas de alta rotación, con jornadas que pueden extenderse entre 8 y 12 horas diarias. Según datos del sector transporte y almacenamiento en el Perú, este segmento tiene una participación mayoritariamente masculina y se concentra en el rango etario de 25 a 45 años (INEI, 2023). Desde una perspectiva operativa, la evidencia recogida en el needfinding y en estudios de trazabilidad en cadena de frío indica que las rupturas de temperatura durante el transporte, como las 64 rupturas registradas en una sola microred de salud en un año (Bravo De la Cruz et al., 2025), son en parte atribuibles a la descoordinación entre el envío del pedido, la ruta física y la notificación al punto de entrega. El segmento de despacho no adopta tecnología por iniciativa propia, sino cuando esta reduce directamente las interrupciones durante la ruta: llamadas, esperas en cliente y reclamos al cierre de entrega.
 </p>
 
 <p align="justify">
 Este rasgo es clave para la lógica del producto. A diferencia de otros actores del sistema, el transportista no mide el valor de la solución por la riqueza del dashboard o por la sofisticación funcional, sino por su capacidad de simplificar la ejecución física del trabajo. Si la herramienta reduce llamadas, comunica mejor la ETA, ayuda a llegar a puntos de entrega preparados y facilita el cierre con evidencia, entonces el segmento percibe utilidad. Si añade pasos, formularios extensos o dependencias innecesarias durante la ruta, la adopción tenderá a degradarse, incluso cuando la solución sea útil para el resto del negocio.
+</p>
+
+#### Desarrollo analítico de los segmentos
+
+<p align="justify">
+La subsección que sigue no repite la información anterior, sino que la traduce a una lectura de diseño y priorización del producto. Mientras la caracterización previa justificó por qué cada segmento es relevante en el dominio, el desarrollo analítico detalla cómo cada perfil se conecta con la propuesta de valor de Nexa, qué tipo de experiencia necesita y qué fricciones debe resolver el MVP.
 </p>
 
 #### Segmento 1: Coordinación comercial y captura del pedido
