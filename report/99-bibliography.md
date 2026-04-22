@@ -10,7 +10,7 @@ Buenaño, E., Paredes, M., Mora, C., & Lucio, K. (2024). Riesgos en la cadena de
 
 Comisión Económica para América Latina y el Caribe, & organizaciones sectoriales asociadas. (2025). *Diagnóstico regional de infraestructura, trazabilidad y brechas operativas en cadenas de frío alimentarias de América Latina*. CEPAL.
 
-Grupo Lucky. (2022). *Índice de Madurez Digital del Canal Tradicional en el Perú*. Xplora / Grupo Lucky.
+Lucky-Xplora. (2022). *Estudio de madurez digital del canal tradicional: Bodegas 2022*.
 
 Instituto Nacional de Estadística e Informática. (2023). *Perú: características de empleo y composición ocupacional en comercio, transporte y almacenamiento*. INEI.
 
