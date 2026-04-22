@@ -205,6 +205,10 @@ No basta saber si usa apps; importa cómo decide confiar en una herramienta.
 En esta subsección se preservan los nombres y cargos reales de las personas entrevistadas. En cambio, los nombres de las user personas del capítulo 2.3 son <strong>arquetipos sintéticos</strong> construidos a partir de patrones compartidos entre varias entrevistas; por ello, no deben leerse como equivalentes literales de una única persona entrevistada.
 </p>
 
+<p align="justify">
+Además de las capturas integradas en el informe, el archivo audiovisual original de las ocho entrevistas se conserva en la carpeta compartida <strong>King Nexa</strong> de OneDrive. Cada ficha incluye su enlace directo para mantener trazabilidad entre la evidencia visual resumida y la grabación completa utilizada en el levantamiento.
+</p>
+
 **Segmento canónico S1: Mercaderistas / personal de coordinación comercial**
 
 **Entrevistado 1**
@@ -221,6 +225,8 @@ En esta subsección se preservan los nombres y cargos reales de las personas ent
 ![Lorena](../assets/images/pruebas-entrevistas/Lorena.jpeg)
 
 *Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
+
+*Respaldo audiovisual:* [Video de entrevista en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e1%20diego%20-%20lorena%20silva.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -247,6 +253,8 @@ A nivel técnico, reporta fricciones severas con el sistema actual (Fontana), el
 
 *Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
 
+*Respaldo audiovisual:* [Video de entrevista en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e2%20cesar%20-%20paola%20levano.mp4?web=1)
+
 **Resumen de la Entrevista**
 
 <p align="justify">
@@ -271,6 +279,8 @@ Cinthia enfatiza la necesidad de simplicidad. Describe su flujo actual como una 
 ![Celia](../assets/images/pruebas-entrevistas/Celia.jpeg)
 
 *Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
+
+*Respaldo audiovisual:* [Video de entrevista en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e3%20diego%20-%20cecilia%20perez.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -299,6 +309,8 @@ Su testimonio confirma que, para el personal en ruta, la estabilidad de la conex
 
 *Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
 
+*Respaldo audiovisual:* [Video de entrevista en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e1%20diego%20-%20hilda%20litano.mp4?web=1)
+
 **Resumen de la Entrevista**
 
 <p align="justify">
@@ -320,6 +332,8 @@ Hilda Litano supervisa procesos de importación y cumplimiento sanitario. Su enf
 
 *Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
 
+*Respaldo audiovisual:* [Video de entrevista en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e2%20gino%20-%20edith%20taype.mp4?web=1)
+
 **Resumen de la Entrevista**
 
 <p align="justify">
@@ -340,6 +354,8 @@ Edith Taype opera en el punto de venta (supermercados), donde la manipulación y
 ![Jesica](../assets/images/pruebas-entrevistas/Jesica.jpeg)
 
 *Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
+
+*Respaldo audiovisual:* [Video de entrevista en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e3%20diego%20-%20jesica%20sandoval.mp4?web=1)
 
 **Resumen de la Entrevista**
 
@@ -364,6 +380,8 @@ Jesica Sandoval, supervisora de ventas Horeca, subraya el riesgo de la transcrip
 
 *Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
 
+*Respaldo audiovisual:* [Video de entrevista en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s3.e1%20diego%20-%20pedro%20puente.mp4?web=1)
+
 **Resumen de la Entrevista**
 
 <p align="justify">
@@ -384,6 +402,8 @@ Pedro Puente es un distribuidor cuya mayor frustración es la incertidumbre log�
 ![Henry](../assets/images/pruebas-entrevistas/Henry.jpeg)
 
 *Nota.* Captura de sesión de validación con el arquetipo. Elaboración propia.
+
+*Respaldo audiovisual:* [Video de entrevista en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s3.e2%20cesar%20-%20henry%20garcia.mp4?web=1)
 
 **Resumen de la Entrevista**
 

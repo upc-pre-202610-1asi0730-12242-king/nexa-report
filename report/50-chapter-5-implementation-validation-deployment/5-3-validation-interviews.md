@@ -28,19 +28,23 @@ Bajo esta estructura, la validación de AV1 no busca medir rendimiento de un ERP
 El repositorio preserva evidencia de ocho entrevistas de dominio realizadas durante la etapa de levantamiento y análisis. Estas entrevistas no deben presentarse como una nueva ronda audiovisual completa de “validación final del producto”; sin embargo, sí constituyen la base metodológica verificable para seleccionar perfiles de validación y para comprobar si la propuesta implementada responde a dolores reales observados en el campo.
 </p>
 
+<p align="justify">
+Adicionalmente, el archivo audiovisual fuente de esas ocho entrevistas ya se encuentra conservado externamente en OneDrive, mientras que el repositorio mantiene las capturas resumidas integradas en el capítulo 2. Esta combinación permite sostener AV1 con evidencia trazable sin confundir el material de descubrimiento del dominio con una ronda posterior de validación funcional del producto terminado.
+</p>
+
 | Participante con evidencia en repositorio | Perfil analizado | Evidencia preservada | Problema dominante que debe validar AV1 |
 |---|---|---|---|
-| Lorena Silva | Coordinación comercial (S1) | `Lorena.jpeg` | Dependencia de WhatsApp, lentitud del sistema actual y baja confiabilidad del stock |
-| Cinthia Levano | Coordinación comercial (S1) | `Paola.jpeg` | Fragmentación entre Trello, WhatsApp y Excel; exceso de pasos para registrar pedidos |
-| Celia Pérez | Coordinación comercial (S1) | `Celia.jpeg` | Necesidad de coordinación más simple y visibilidad comercial |
-| Hilda Litano | Stakeholder secundario operativo | `Hilda.jpeg` | Restricciones logísticas, trazabilidad y consistencia operativa |
-| Edith Taype | Stakeholder secundario operativo | `Edith.jpeg` | Control de flujo y dependencia de validaciones manuales |
-| Jesica Sandoval | Stakeholder secundario operativo | `Jesica.jpeg` | FEFO, control de vencimientos y riesgo de transcripción |
-| Pedro Puente | Segmento asociado al cierre operativo / entrega | `Pedro.jpeg` | Visibilidad de la entrega y prueba de cierre |
-| Henry García | Perfil de operación complementario | `Henry.jpeg` | Coordinación operativa y trazabilidad del proceso |
+| Lorena Silva | Coordinación comercial (S1) | `Lorena.jpeg` + [video](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e1%20diego%20-%20lorena%20silva.mp4?web=1) | Dependencia de WhatsApp, lentitud del sistema actual y baja confiabilidad del stock |
+| Cinthia Levano | Coordinación comercial (S1) | `Paola.jpeg` + [video](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e2%20cesar%20-%20paola%20levano.mp4?web=1) | Fragmentación entre Trello, WhatsApp y Excel; exceso de pasos para registrar pedidos |
+| Celia Pérez | Coordinación comercial (S1) | `Celia.jpeg` + [video](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e3%20diego%20-%20cecilia%20perez.mp4?web=1) | Necesidad de coordinación más simple y visibilidad comercial |
+| Hilda Litano | Stakeholder secundario operativo | `Hilda.jpeg` + [video](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e1%20diego%20-%20hilda%20litano.mp4?web=1) | Restricciones logísticas, trazabilidad y consistencia operativa |
+| Edith Taype | Stakeholder secundario operativo | `Edith.jpeg` + [video](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e2%20gino%20-%20edith%20taype.mp4?web=1) | Control de flujo y dependencia de validaciones manuales |
+| Jesica Sandoval | Stakeholder secundario operativo | `Jesica.jpeg` + [video](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e3%20diego%20-%20jesica%20sandoval.mp4?web=1) | FEFO, control de vencimientos y riesgo de transcripción |
+| Pedro Puente | Segmento asociado al cierre operativo / entrega | `Pedro.jpeg` + [video](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s3.e1%20diego%20-%20pedro%20puente.mp4?web=1) | Visibilidad de la entrega y prueba de cierre |
+| Henrry García | Perfil de operación complementario | `Henry.jpeg` + [video](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s3.e2%20cesar%20-%20henry%20garcia.mp4?web=1) | Coordinación operativa y trazabilidad del proceso |
 
 <p align="justify">
-Por ello, el registro de entrevistas utilizable en AV1 consiste en un <strong>registro base de validadores</strong> con evidencia real ya archivada. Lo que todavía no aparece en el repositorio es una segunda ronda formalmente etiquetada como entrevista de validación del producto implementado, con video o bitácora específica de hallazgos sobre la landing o el prototipo.
+Por ello, el registro de entrevistas utilizable en AV1 consiste en un <strong>registro base de validadores</strong> con evidencia real ya archivada tanto en el repositorio como en el repositorio externo de OneDrive. Lo que todavía no aparece como entregable formal es una <strong>segunda ronda</strong> etiquetada explícitamente como entrevista de validación del producto implementado, con hallazgos específicos sobre la landing o el prototipo ya probados frente al artefacto final visible.
 </p>
 
 ### 5.3.3. Evaluaciones según heurísticas.

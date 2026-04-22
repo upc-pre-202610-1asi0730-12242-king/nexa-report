@@ -136,7 +136,7 @@ Aunque varias historias de inventario y control recaen sobre supervisión operat
 A continuación se presenta la evidencia visual del backlog cargado en la herramienta Jira, siguiendo la priorización por valor de negocio y el roadmap de lanzamientos definido.
 </p>
 
-[**Enlace Público al Product Backlog (Jira)**](https://teamking12.atlassian.net/jira/software/projects/NEX/boards/1/backlog?epics=visible)
+[**Enlace Público al Product Backlog (Jira)**](https://team-nexa.atlassian.net/jira/software/projects/NX/boards/1/backlog?epics=visible)
 
 <p align="justify">
 La evidencia principal de esta subsección es el enlace público al backlog cargado en Jira, donde puede verificarse la organización por épicas, el orden relativo de historias y la consistencia entre estimación y roadmap. Dado que el backlog es una herramienta viva de gestión, el informe conserva aquí la referencia directa al tablero para transparentar la priorización utilizada en el proyecto, en lugar de depender exclusivamente de una captura estática que podría quedar desactualizada.

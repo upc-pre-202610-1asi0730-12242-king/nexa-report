@@ -14,7 +14,7 @@ Para estandarizar el trabajo colaborativo del equipo y asegurar trazabilidad ent
 
 **Gestión ágil y documentación**
 
-- **Jira Software:** Herramienta central para la planificación Scrum, priorización del Product Backlog, definición de Sprint Backlogs y asignación de responsabilidades. La evidencia del tablero se encuentra publicada en [Nexa Product Backlog (Jira)](https://teamking12.atlassian.net/jira/software/projects/NEX/boards/1/backlog?epics=visible).
+- **Jira Software:** Herramienta central para la planificación Scrum, priorización del Product Backlog, definición de Sprint Backlogs y asignación de responsabilidades. La evidencia del tablero se encuentra publicada en [Nexa Product Backlog (Jira)](https://team-nexa.atlassian.net/jira/software/projects/NX/boards/1/backlog?epics=visible).
 - **GitHub:** Plataforma de control de versiones utilizada para separar artefactos por repositorio y mantener trazabilidad documental y técnica. En el corte AV1, la evidencia verificable se concentra en `nexa-report` y `nexa-website`.
 - **Markdown bajo enfoque Docs-as-Code:** Formato de redacción del informe técnico, organizado por capítulos numerados, activos relativos y ensamblado posterior a PDF.
 
