@@ -6,7 +6,64 @@
 El backlog de Nexa se organiza en dos capas complementarias. La primera cubre el sitio público multipágina que comunica la propuesta de valor, enruta por segmentos comerciales y capta oportunidades mediante el landing page. La segunda cubre el producto transaccional: catálogo, captura asistida del pedido, portal B2B, condiciones comerciales, inventario y seguimiento hasta la entrega. Todas las historias se redactan con actores explícitos, estimación en puntos de historia (escala Fibonacci) y criterios de aceptación verificables en formato Gherkin, alineados con los arquetipos canónicos del proyecto: Valeria, Hilda y Pedro.
 </p>
 
+<p align="justify">
+La especificación no parte de una colección arbitraria de funcionalidades. Cada épica se deriva de la evidencia levantada en el Capítulo 2 y traduce dolores observados en comportamientos verificables. Por ello, el frente público se orienta a comunicar con claridad el problema, el alcance y la propuesta de valor; el núcleo transaccional se centra en pedido, catálogo, condiciones comerciales, inventario y seguimiento; y las historias técnicas del API se tratan como habilitadores de integración coherentes con el dominio, no como un bloque desconectado del valor de negocio.
+</p>
+
 **Tabla 14**
+
+*Trazabilidad de épicas con actores, evidencia y propósito funcional*
+
+<table>
+<thead>
+<tr>
+<th>Bloque</th>
+<th>Épicas</th>
+<th>Actor o arquetipo dominante</th>
+<th>Base empírica del Capítulo 2</th>
+<th>Propósito dentro del MVP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sitio público y conversión</td>
+<td>EP01-EP06</td>
+<td>Visitante comercial y prospectos cercanos a S1 y S2</td>
+<td>Análisis competitivo, problem statements y necesidad de comunicar foco, confianza y forma de adopción sin sobredimensionar el roadmap.</td>
+<td>Validar comprensión del producto, posicionamiento inicial y captación de oportunidades comerciales.</td>
+</tr>
+<tr>
+<td>Captura y compra del pedido</td>
+<td>EP07-EP09</td>
+<td>Valeria y Hilda</td>
+<td>Entrevistas sobre pedidos por WhatsApp, validaciones manuales, incertidumbre de stock y dependencia del canal informal.</td>
+<td>Digitalizar el flujo principal del pedido desde la captura asistida hasta el autoservicio B2B.</td>
+</tr>
+<tr>
+<td>Seguimiento, inventario y cierre</td>
+<td>EP10-EP11</td>
+<td>Hilda, Pedro y supervisión operativa</td>
+<td>Needfinding, journey maps y EventStorming sobre falta de ETA, visibilidad parcial del despacho y necesidad de evidencia de cierre.</td>
+<td>Dar predictibilidad al despacho, ordenar el stock y cerrar la trazabilidad del pedido.</td>
+</tr>
+<tr>
+<td>Datos comerciales y control de acceso</td>
+<td>EP12-EP13</td>
+<td>Valeria y roles internos autorizados</td>
+<td>Hallazgos sobre mora, crédito, configuración comercial por cliente y separación necesaria entre accesos internos y B2B.</td>
+<td>Sostener reglas mínimas para que el flujo principal sea operable y consistente.</td>
+</tr>
+<tr>
+<td>Servicios de integración</td>
+<td>EP14</td>
+<td>Aplicaciones cliente y capa de integración</td>
+<td>Arquitectura derivada del dominio y necesidad de compartir reglas entre captura asistida, portal B2B y seguimiento.</td>
+<td>Exponer contratos técnicos coherentes con el dominio para soportar el MVP sin duplicar lógica.</td>
+</tr>
+</tbody>
+</table>
+
+**Tabla 15**
 
 *User Stories — Épicas, historias, criterios de aceptación y estimación*
 
@@ -494,8 +551,8 @@ Dado que el envío fue exitoso,<br>
 <!-- ═══════════════════════════════════════════════════════════ EP06 -->
 <tr>
 <td><strong>EP06</strong></td>
-<td><strong>FAQ, Support &amp; Login Placeholder</strong></td>
-<td>Agrupa las historias del FAQ categorizado, el panel flotante de soporte y el acceso público al placeholder del portal de clientes.</td>
+<td><strong>FAQ, Support &amp; Public Portal Access</strong></td>
+<td>Agrupa las historias del FAQ categorizado, el panel flotante de soporte y la orientación pública del acceso al portal de clientes.</td>
 <td>—</td>
 <td>—</td>
 <td>—</td>
@@ -1411,7 +1468,7 @@ entonces el sistema solicita confirmación explícita antes de aplicar el nuevo 
 <tr>
 <td><strong>EP14</strong></td>
 <td><strong>Technical Stories for REST API</strong></td>
-<td>Agrupa las technical stories del RESTful API. El rol es Developer y los criterios de aceptación se formulan como contratos de request/response alineados al dominio del producto.</td>
+<td>Agrupa las historias técnicas del RESTful API. El actor se modela como capa de integración y los criterios de aceptación se formulan como contratos de request/response alineados con el dominio del producto.</td>
 <td>—</td>
 <td>—</td>
 <td>—</td>
@@ -1420,7 +1477,7 @@ entonces el sistema solicita confirmación explícita antes de aplicar el nuevo 
 <tr>
 <td>US58</td>
 <td>Exponer endpoint de catálogo</td>
-<td>Como Developer, quiero exponer un endpoint de catálogo (<code>GET /products</code>), para que el portal B2B y la aplicación interna consulten productos habilitados según el contexto autenticado.</td>
+<td>Como capa de integración, quiero exponer un endpoint de catálogo (<code>GET /products</code>), para que el portal B2B y la aplicación interna consulten productos habilitados según el contexto autenticado.</td>
 <td>
 <strong>Escenario 1 — Respuesta exitosa con productos:</strong><br>
 Dado que el request contiene un token de autenticación válido,<br>
@@ -1442,7 +1499,7 @@ entonces el API responde con <code>429 Too Many Requests</code> e incluye el tie
 <tr>
 <td>US59</td>
 <td>Exponer endpoint de detalle y ficha técnica de producto</td>
-<td>Como Developer, quiero exponer un endpoint de detalle de producto (<code>GET /products/{id}</code>), para que el portal muestre información ampliada, disponibilidad y documentos técnicos asociados.</td>
+<td>Como capa de integración, quiero exponer un endpoint de detalle de producto (<code>GET /products/{id}</code>), para que el portal muestre información ampliada, disponibilidad y documentos técnicos asociados.</td>
 <td>
 <strong>Escenario 1 — Detalle de producto existente:</strong><br>
 Dado que el identificador del producto existe y es accesible para el contexto autenticado,<br>
@@ -1464,7 +1521,7 @@ entonces el API responde con <code>403 Forbidden</code> sin revelar la existenci
 <tr>
 <td>US60</td>
 <td>Exponer endpoint de cliente por RUC/DNI y condiciones comerciales</td>
-<td>Como Developer, quiero exponer un endpoint de búsqueda de cliente por documento (<code>GET /customers?document={ruc|dni}</code>), para soportar el flujo asistido de captura del pedido con carga automática de condiciones.</td>
+<td>Como capa de integración, quiero exponer un endpoint de búsqueda de cliente por documento (<code>GET /customers?document={ruc|dni}</code>), para soportar el flujo asistido de captura del pedido con carga automática de condiciones.</td>
 <td>
 <strong>Escenario 1 — Cliente encontrado con condiciones cargadas:</strong><br>
 Dado que la consulta proviene de un usuario interno autorizado y el documento existe,<br>
@@ -1486,7 +1543,7 @@ entonces el API responde con <code>400 Bad Request</code> indicando el formato e
 <tr>
 <td>US61</td>
 <td>Exponer endpoint de registro de pedido</td>
-<td>Como Developer, quiero exponer un endpoint de creación de pedido (<code>POST /orders</code>), para que el portal B2B y la captura asistida puedan enviar solicitudes estructuradas de forma unificada.</td>
+<td>Como capa de integración, quiero exponer un endpoint de creación de pedido (<code>POST /orders</code>), para que el portal B2B y la captura asistida puedan enviar solicitudes estructuradas de forma unificada.</td>
 <td>
 <strong>Escenario 1 — Pedido creado exitosamente:</strong><br>
 Dado que el request contiene cliente válido, líneas de producto y condiciones comerciales que cumplen las reglas del dominio,<br>
@@ -1508,7 +1565,7 @@ entonces responde con el pedido original ya creado sin generar un duplicado.
 <tr>
 <td>US62</td>
 <td>Exponer endpoint de tracking y ETA del pedido</td>
-<td>Como Developer, quiero exponer un endpoint de seguimiento (<code>GET /shipments/{id}</code> y <code>GET /shipments/{id}/events</code>), para que la aplicación muestre el estado actualizado, el historial de eventos y la ETA.</td>
+<td>Como capa de integración, quiero exponer un endpoint de seguimiento (<code>GET /shipments/{id}</code> y <code>GET /shipments/{id}/events</code>), para que la aplicación muestre el estado actualizado, el historial de eventos y la ETA.</td>
 <td>
 <strong>Escenario 1 — Estado, historial y ETA retornados:</strong><br>
 Dado que el pedido o envío existe y el contexto autenticado está autorizado,<br>
@@ -1530,7 +1587,7 @@ entonces el API responde con la página solicitada de eventos y metadatos de nav
 <tr>
 <td>US63</td>
 <td>Exponer endpoint de eventos de despacho y POD</td>
-<td>Como Developer, quiero exponer endpoints de despacho y prueba de entrega (<code>POST /shipments/{id}/events</code> y <code>POST /shipments/{id}/pod</code>), para registrar salida, incidencias y cierre de entrega con evidencia.</td>
+<td>Como capa de integración, quiero exponer endpoints de despacho y prueba de entrega (<code>POST /shipments/{id}/events</code> y <code>POST /shipments/{id}/pod</code>), para registrar salida, incidencias y cierre de entrega con evidencia.</td>
 <td>
 <strong>Escenario 1 — Evento de despacho registrado:</strong><br>
 Dado que el envío existe y el usuario está autorizado para registrar eventos,<br>
@@ -1552,7 +1609,7 @@ entonces responde con <code>400 Bad Request</code> indicando el tipo o tamaño p
 <tr>
 <td>US64</td>
 <td>Exponer endpoint de autenticación y recuperación de acceso</td>
-<td>Como Developer, quiero exponer endpoints de autenticación (<code>POST /auth/login</code>) y recuperación (<code>POST /auth/recover</code>), para que internos y clientes operen con sesiones válidas y recuperación controlada.</td>
+<td>Como capa de integración, quiero exponer endpoints de autenticación (<code>POST /auth/login</code>) y recuperación (<code>POST /auth/recover</code>), para que internos y clientes operen con sesiones válidas y recuperación controlada.</td>
 <td>
 <strong>Escenario 1 — Autenticación exitosa con token:</strong><br>
 Dado que las credenciales del request son válidas y la cuenta está activa,<br>
@@ -1578,4 +1635,4 @@ entonces el API emite un nuevo token de acceso sin requerir que el usuario ingre
 
 ---
 
-*Nota.* La tabla integra el sitio público, el producto transaccional y las technical stories del API bajo una taxonomía coherente con la investigación de campo y el landing page. La estimación en puntos de historia (SP) sigue la escala Fibonacci (1, 2, 3, 5, 8, 13). Elaboración propia.
+*Nota.* La tabla integra el sitio público, el producto transaccional y las historias técnicas del API bajo una taxonomía coherente con la investigación de campo y el landing page. La estimación en puntos de historia (SP) sigue la escala Fibonacci (1, 2, 3, 5, 8, 13). Elaboración propia.
