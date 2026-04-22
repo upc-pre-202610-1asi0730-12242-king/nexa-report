@@ -28,6 +28,15 @@ La construcción de estos segmentos no se basa en una única fuente de informaci
   <strong>Cómo se leerá esta sección.</strong> Primero se presenta una caracterización general de cada segmento desde evidencia demográfica, ocupacional y tecnológica. Luego, en una segunda parte claramente separada, se profundiza cada segmento desde la lógica del producto, explicando por qué ese actor importa para el MVP, qué valor espera recibir y qué fricciones concentra dentro del flujo del pedido.
 </div>
 
+<div style="padding: 14px 16px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff; margin: 16px 0;">
+  <strong>Estructura de lectura del apartado.</strong><br/><br/>
+  <ul>
+    <li><strong>Primera lectura:</strong> caracteriza cada segmento con evidencia demográfica, ocupacional y tecnológica.</li>
+    <li><strong>Segunda lectura:</strong> traduce esa caracterización a decisiones de diseño, valor esperado y prioridad del MVP.</li>
+    <li><strong>Criterio metodológico:</strong> la segunda parte no reemplaza la primera; la convierte en una interpretación útil para producto, UX y backlog.</li>
+  </ul>
+</div>
+
 #### Caracterización demográfica y estadística de los segmentos
 
 <p align="justify">
@@ -40,6 +49,16 @@ En consecuencia, cada segmento se describe en cuatro planos complementarios: un 
 
 **Segmento 1 (S1): Coordinación comercial y captura del pedido**
 
+<div style="padding: 12px 14px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff; margin: 14px 0;">
+  <strong>Ficha rápida del segmento.</strong><br/><br/>
+  <ul>
+    <li><strong>Actor principal:</strong> coordinación comercial, ventas internas, mercaderistas y personal que traduce pedidos a operación.</li>
+    <li><strong>Contexto dominante:</strong> presión por responder rápido sin perder control sobre stock, crédito y condiciones comerciales.</li>
+    <li><strong>Riesgo de adopción:</strong> el usuario ya usa herramientas digitales, pero en forma dispersa y con alta dependencia de validaciones manuales.</li>
+    <li><strong>Valor esperado:</strong> una captura estructurada que reduzca retrabajo y evite errores desde el origen del pedido.</li>
+  </ul>
+</div>
+
 <p align="justify">
 El personal dedicado a la coordinación comercial y captura de pedidos en empresas distribuidoras de alimentos en el Perú se concentra predominantemente en el rango etario de 25 a 40 años, con acceso habitual a dispositivos móviles y conectividad básica. Este perfil corresponde a trabajadores del sector comercio mayorista y distribución, categoría cuya fuerza laboral femenina representa una proporción significativa en roles administrativos y de ventas internas (Instituto Nacional de Estadística e Informática [INEI], 2023). El contexto tecnológico del segmento es determinante: la evidencia muestra que el canal informal (WhatsApp, llamadas) sigue siendo la herramienta principal de coordinación en pequeñas y medianas empresas distribuidoras, pese a la disponibilidad de alternativas digitales (Grupo Lucky, 2022). Esto posiciona a este segmento como el punto de mayor fricción en el flujo del pedido y, al mismo tiempo, como el de mayor impacto potencial ante la adopción de una plataforma estructurada.
 </p>
@@ -49,6 +68,16 @@ Desde una perspectiva conductual, este segmento opera en tensión permanente ent
 </p>
 
 **Segmento 2 (S2): Cliente comercial B2B y abastecimiento recurrente**
+
+<div style="padding: 12px 14px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff; margin: 14px 0;">
+  <strong>Ficha rápida del segmento.</strong><br/><br/>
+  <ul>
+    <li><strong>Actor principal:</strong> bodegas, minimarkets, pequeños distribuidores y negocios del canal HORECA que compran para sostener su operación.</li>
+    <li><strong>Contexto dominante:</strong> alta sensibilidad a la continuidad del abastecimiento y baja tolerancia a demoras o incertidumbre de stock.</li>
+    <li><strong>Riesgo de adopción:</strong> la madurez digital del segmento es todavía incipiente y depende de experiencias simples y confiables.</li>
+    <li><strong>Valor esperado:</strong> comprar con claridad, autonomía y seguimiento sin perder respaldo humano cuando haga falta.</li>
+  </ul>
+</div>
 
 <p align="justify">
 El segmento de clientes comerciales B2B del canal tradicional peruano incluye bodegas, minimarkets, distribuidores pequeños y establecimientos del canal HORECA. En conjunto, este universo representa aproximadamente 414,000 bodegas activas a nivel nacional, con una concentración mayor en Lima Metropolitana (Asociación de Bodegueros del Perú, 2022). En términos de madurez digital, el Índice de Madurez Digital del Canal Tradicional elaborado por Xplora/Grupo Lucky reporta que solo alrededor del 28% de bodegas utiliza algún aplicativo para gestionar tareas del negocio, mientras que el 83% se ubica todavía en nivel "principiante" de transformación digital (Grupo Lucky, 2022). Complementariamente, un estudio sobre pagos digitales en pequeños comercios muestra que la adopción de herramientas digitales es incipiente y depende de la simplicidad percibida de la herramienta (Taipe Quispe, 2025). Esto confirma que la adopción del portal B2B de Nexa está condicionada a una experiencia de uso sin fricción que equipare o supere la velocidad percibida del canal informal.
@@ -72,6 +101,16 @@ pie title Uso de Aplicativos en Bodegas (Canal Tradicional)
 
 **Segmento 3 (S3): Despacho, transporte y cierre de entrega**
 
+<div style="padding: 12px 14px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff; margin: 14px 0;">
+  <strong>Ficha rápida del segmento.</strong><br/><br/>
+  <ul>
+    <li><strong>Actor principal:</strong> choferes de reparto, personal de despacho y actores involucrados en la ejecución física de la entrega.</li>
+    <li><strong>Contexto dominante:</strong> rutas urbanas exigentes, cierre bajo presión y dependencia de información generada por áreas previas.</li>
+    <li><strong>Riesgo de adopción:</strong> el valor de la tecnología se juzga por su capacidad de reducir interrupciones en ruta, no por sofisticación funcional.</li>
+    <li><strong>Valor esperado:</strong> menos llamadas, ETA más clara y evidencia simple de entrega para evitar reclamos posteriores.</li>
+  </ul>
+</div>
+
 <p align="justify">
 El personal de reparto y despacho en empresas distribuidoras de alimentos refrigerados opera en rutas urbanas de alta rotación, con jornadas que pueden extenderse entre 8 y 12 horas diarias. Según datos del sector transporte y almacenamiento en el Perú, este segmento tiene una participación mayoritariamente masculina y se concentra en el rango etario de 25 a 45 años (INEI, 2023). Desde una perspectiva operativa, la evidencia recogida en el needfinding y en estudios de trazabilidad en cadena de frío indica que las rupturas de temperatura durante el transporte, como las 64 rupturas registradas en una sola microred de salud en un año (Bravo De la Cruz et al., 2025), son en parte atribuibles a la descoordinación entre el envío del pedido, la ruta física y la notificación al punto de entrega. El segmento de despacho no adopta tecnología por iniciativa propia, sino cuando esta reduce directamente las interrupciones durante la ruta: llamadas, esperas en cliente y reclamos al cierre de entrega.
 </p>
@@ -80,13 +119,17 @@ El personal de reparto y despacho en empresas distribuidoras de alimentos refrig
 Este rasgo es clave para la lógica del producto. A diferencia de otros actores del sistema, el transportista no mide el valor de la solución por la riqueza del dashboard o por la sofisticación funcional, sino por su capacidad de simplificar la ejecución física del trabajo. Si la herramienta reduce llamadas, comunica mejor la ETA, ayuda a llegar a puntos de entrega preparados y facilita el cierre con evidencia, entonces el segmento percibe utilidad. Si añade pasos, formularios extensos o dependencias innecesarias durante la ruta, la adopción tenderá a degradarse, incluso cuando la solución sea útil para el resto del negocio.
 </p>
 
-#### Desarrollo analítico de los segmentos
+#### Implicancias de diseño por segmento
 
 <p align="justify">
-La subsección que sigue no repite la información anterior, sino que la traduce a una lectura de diseño y priorización del producto. Mientras la caracterización previa justificó por qué cada segmento es relevante en el dominio, el desarrollo analítico detalla cómo cada perfil se conecta con la propuesta de valor de Nexa, qué tipo de experiencia necesita y qué fricciones debe resolver el MVP.
+La subsección que sigue no repite la información anterior, sino que la traduce a una lectura de diseño y priorización del producto. Mientras la caracterización previa justificó por qué cada segmento es relevante en el dominio, esta segunda lectura detalla cómo cada perfil se conecta con la propuesta de valor de Nexa, qué tipo de experiencia necesita y qué fricciones debe resolver el MVP.
 </p>
 
-#### Segmento 1: Coordinación comercial y captura del pedido
+<div style="padding: 14px 16px; border-left: 4px solid #2554df; background: #f8fbff; margin: 16px 0;">
+  <strong>Propósito de esta segunda lectura.</strong> A partir de este punto, cada segmento se analiza como insumo de diseño. La pregunta ya no es solo quién es el actor, sino qué debe resolver el producto para que ese actor perciba valor, adopte el flujo y sostenga el uso dentro del MVP.
+</div>
+
+#### S1. Implicancias de diseño: Coordinación comercial y captura del pedido
 
 <p align="justify">
 Este segmento agrupa al personal que recibe pedidos desde múltiples canales, valida productos, consulta stock, corrige inconsistencias y traduce la intención del cliente a un formato operable por la empresa. Incluye mercaderistas, coordinadoras comerciales, ventas internas y personal que trabaja entre clientes, facturación, almacén y despacho. El arquetipo canónico es <strong>Valeria</strong>, porque sintetiza la fricción cotidiana del proceso: mensajes ambiguos, doble validación, presión por responder rápido y necesidad de trabajar desde herramientas simples.
@@ -117,7 +160,7 @@ Desde el punto de vista del diseño, Valeria representa al usuario que más clar
   </div>
 </div>
 
-#### Segmento 2: Cliente comercial B2B y abastecimiento recurrente
+#### S2. Implicancias de diseño: Cliente comercial B2B y abastecimiento recurrente
 
 <p align="justify">
 Este segmento representa a los negocios que dependen del distribuidor para mantener abastecida su operación, entre ellos minimarkets, bodegas, pequeños mayoristas y cuentas del canal HORECA. El arquetipo canónico es <strong>Hilda</strong>, sintetizada como administradora de minimarket que compra con frecuencia, necesita rapidez y no puede detener su negocio para perseguir confirmaciones o esperar respuestas por WhatsApp.
@@ -148,7 +191,7 @@ Hilda también es el segmento que más claramente obliga al proyecto a equilibra
   </div>
 </div>
 
-#### Segmento 3: Despacho, transporte y cierre de entrega
+#### S3. Implicancias de diseño: Despacho, transporte y cierre de entrega
 
 <p align="justify">
 Este segmento reúne a quienes ejecutan la entrega física y cargan con las consecuencias de una mala coordinación previa. El arquetipo canónico es <strong>Pedro</strong>, chofer de reparto que necesita avanzar en ruta sin responder llamadas constantes, llegar con información correcta y cerrar la entrega con evidencia suficiente para evitar reclamos posteriores.

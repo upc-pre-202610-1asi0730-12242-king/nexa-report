@@ -321,7 +321,7 @@ Los problem statements expresan la brecha entre la situación actual del dominio
 Conviene precisar que los siguientes problem statements no describen módulos de software ni funcionalidades cerradas, sino situaciones problemáticas que el proyecto necesita transformar. Por ello, cada uno articula un dominio de fricción, un segmento afectado, una brecha observable y una dirección estratégica inicial. Esta distinción es importante porque evita confundir tempranamente el problema con su posible implementación técnica.
 </p>
 
-**Problem Statement 1 — Captura comercial y validación del pedido**
+**Problem Statement 1: Captura comercial y validación del pedido**
 
 <div style="border: 1px solid #dbe7ff; border-radius: 8px; padding: 14px 16px; margin: 12px 0 18px 0; background: #fcfdff;">
   <p><strong>Domain:</strong> Recepción, interpretación, digitación y validación inicial de pedidos B2B dentro de la empresa distribuidora.</p>
@@ -333,7 +333,7 @@ Conviene precisar que los siguientes problem statements no describen módulos de
   <p><strong>Resultado esperado:</strong> Disminuyen el tiempo de aclaración, la doble digitación y los errores de interpretación.</p>
 </div>
 
-**Problem Statement 2 — Abastecimiento del cliente comercial B2B**
+**Problem Statement 2: Abastecimiento del cliente comercial B2B**
 
 <div style="border: 1px solid #dbe7ff; border-radius: 8px; padding: 14px 16px; margin: 12px 0 18px 0; background: #fcfdff;">
   <p><strong>Domain:</strong> Compra recurrente de productos refrigerados desde la perspectiva del cliente comercial.</p>
@@ -345,7 +345,7 @@ Conviene precisar que los siguientes problem statements no describen módulos de
   <p><strong>Resultado esperado:</strong> El cliente percibe más claridad, autonomía y predictibilidad en su abastecimiento.</p>
 </div>
 
-**Problem Statement 3 — Despacho, predictibilidad y cierre de entrega**
+**Problem Statement 3: Despacho, predictibilidad y cierre de entrega**
 
 <div style="border: 1px solid #dbe7ff; border-radius: 8px; padding: 14px 16px; margin: 12px 0 18px 0; background: #fcfdff;">
   <p><strong>Domain:</strong> Ejecución del despacho y cierre del pedido en el punto de entrega.</p>
@@ -357,7 +357,7 @@ Conviene precisar que los siguientes problem statements no describen módulos de
   <p><strong>Resultado esperado:</strong> Mejora la predictibilidad del despacho y disminuyen los reclamos por falta de trazabilidad en la entrega.</p>
 </div>
 
-**Stakeholder secundario — Logística, abastecimiento y operación**
+**Stakeholder secundario: Logística, abastecimiento y operación**
 
 <div style="border: 1px dashed #cbd5e1; border-radius: 8px; padding: 14px 16px; margin: 12px 0 18px 0; background: #fafafa;">
   <p><strong>Domain:</strong> Reglas, restricciones y control integral del proceso.</p>
