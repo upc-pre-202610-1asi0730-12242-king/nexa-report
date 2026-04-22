@@ -24,16 +24,12 @@ La construcción de estos segmentos no se basa en una única fuente de informaci
 
 *Nota.* Los segmentos operativos primarios son la referencia oficial para personas, journeys, empathy maps, user stories y backlog. Elaboración propia.
 
-<div style="padding: 14px 16px; border-left: 4px solid #2554df; background: #f8fbff; margin: 16px 0;">
-  <strong>Cómo se leerá esta sección.</strong> Primero se presenta una caracterización general de cada segmento desde evidencia demográfica, ocupacional y tecnológica. Luego, en una segunda parte claramente separada, se profundiza cada segmento desde la lógica del producto, explicando por qué ese actor importa para el MVP, qué valor espera recibir y qué fricciones concentra dentro del flujo del pedido.
-</div>
-
 <div style="padding: 14px 16px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff; margin: 16px 0;">
-  <strong>Estructura de lectura del apartado.</strong><br/><br/>
+  <strong>Organización del análisis.</strong><br/><br/>
   <ul>
-    <li><strong>Primera lectura:</strong> caracteriza cada segmento con evidencia demográfica, ocupacional y tecnológica.</li>
-    <li><strong>Segunda lectura:</strong> traduce esa caracterización a decisiones de diseño, valor esperado y prioridad del MVP.</li>
-    <li><strong>Criterio metodológico:</strong> la segunda parte no reemplaza la primera; la convierte en una interpretación útil para producto, UX y backlog.</li>
+    <li><strong>Caracterización del segmento:</strong> reúne evidencia demográfica, ocupacional y tecnológica para justificar su relevancia en el dominio.</li>
+    <li><strong>Implicancias de diseño:</strong> traduce esa caracterización a valor esperado, decisiones de UX y prioridad dentro del MVP.</li>
+    <li><strong>Sentido metodológico:</strong> ambos planos describen al mismo actor, pero con finalidades distintas dentro del informe.</li>
   </ul>
 </div>
 
@@ -122,12 +118,8 @@ Este rasgo es clave para la lógica del producto. A diferencia de otros actores 
 #### Implicancias de diseño por segmento
 
 <p align="justify">
-La subsección que sigue no repite la información anterior, sino que la traduce a una lectura de diseño y priorización del producto. Mientras la caracterización previa justificó por qué cada segmento es relevante en el dominio, esta segunda lectura detalla cómo cada perfil se conecta con la propuesta de valor de Nexa, qué tipo de experiencia necesita y qué fricciones debe resolver el MVP.
+La siguiente subsección traslada la caracterización previa al terreno de producto. El foco deja de estar en describir al actor dentro del mercado y pasa a centrarse en qué espera del sistema, qué fricciones concentra y qué decisiones de diseño deben priorizarse para que el MVP resulte útil.
 </p>
-
-<div style="padding: 14px 16px; border-left: 4px solid #2554df; background: #f8fbff; margin: 16px 0;">
-  <strong>Propósito de esta segunda lectura.</strong> A partir de este punto, cada segmento se analiza como insumo de diseño. La pregunta ya no es solo quién es el actor, sino qué debe resolver el producto para que ese actor perciba valor, adopte el flujo y sostenga el uso dentro del MVP.
-</div>
 
 #### S1. Implicancias de diseño: Coordinación comercial y captura del pedido
 
