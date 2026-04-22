@@ -577,8 +577,8 @@ cuando se ejecuta la navegación,<br>
 entonces el sistema lo lleva directamente a la sección correspondiente dentro de la misma página sin recargar.<br><br>
 <strong>Escenario 3 — FAQ sin dependencias externas:</strong><br>
 Dado que el visitante accede a FAQ desde cualquier dispositivo,<br>
-cuando la página carga,<br>
-entonces el sistema muestra el contenido de todas las categorías sin depender de APIs externas ni recursos dinámicos no disponibles en el MVP.
+ cuando la página carga,<br>
+entonces el sistema muestra el contenido completo de las categorías de forma consistente y accesible dentro de la misma experiencia pública.
 </td>
 <td>2</td>
 <td>EP06</td>
@@ -1088,8 +1088,8 @@ entonces el sistema conserva una única transición válida y notifica a la segu
 
 <tr>
 <td>US42</td>
-<td>Registrar despacho y objeto POD (Proof of Delivery)</td>
-<td>Como transportista autorizado (Pedro), quiero registrar el despacho y generar el objeto POD, para cerrar la trazabilidad del pedido con evidencia digital de recepción conforme.</td>
+<td>Registrar despacho y POD (Proof of Delivery)</td>
+<td>Como transportista autorizado (Pedro), quiero registrar el despacho y generar el POD, para cerrar la trazabilidad del pedido con evidencia digital de recepción conforme.</td>
 <td>
 <strong>Escenario 1 — Generación automática de POD:</strong><br>
 Dado que el transportista marca el pedido como entregado,<br>
@@ -1472,7 +1472,7 @@ entonces el sistema solicita confirmación explícita antes de aplicar el nuevo 
 <tr>
 <td><strong>EP14</strong></td>
 <td><strong>Technical Stories for REST API</strong></td>
-<td>Agrupa las historias técnicas del RESTful API. El actor se modela como capa de integración y los criterios de aceptación se formulan como contratos de request/response alineados con el dominio del producto.</td>
+<td>Agrupa las historias técnicas del RESTful API. El actor se modela como <code>Developer</code> y los criterios de aceptación se formulan como contratos de request/response alineados con el dominio del producto.</td>
 <td>—</td>
 <td>—</td>
 <td>—</td>
@@ -1481,7 +1481,7 @@ entonces el sistema solicita confirmación explícita antes de aplicar el nuevo 
 <tr>
 <td>US58</td>
 <td>Exponer endpoint de catálogo</td>
-<td>Como capa de integración, quiero exponer un endpoint de catálogo (<code>GET /products</code>), para que el portal B2B y la aplicación interna consulten productos habilitados según el contexto autenticado.</td>
+<td>Como Developer, quiero exponer un endpoint de catálogo (<code>GET /products</code>), para que el portal B2B y la aplicación interna consulten productos habilitados según el contexto autenticado.</td>
 <td>
 <strong>Escenario 1 — Respuesta exitosa con productos:</strong><br>
 Dado que el request contiene un token de autenticación válido,<br>
@@ -1503,7 +1503,7 @@ entonces el API responde con <code>429 Too Many Requests</code> e incluye el tie
 <tr>
 <td>US59</td>
 <td>Exponer endpoint de detalle y ficha técnica de producto</td>
-<td>Como capa de integración, quiero exponer un endpoint de detalle de producto (<code>GET /products/{id}</code>), para que el portal muestre información ampliada, disponibilidad y documentos técnicos asociados.</td>
+<td>Como Developer, quiero exponer un endpoint de detalle de producto (<code>GET /products/{id}</code>), para que el portal muestre información ampliada, disponibilidad y documentos técnicos asociados.</td>
 <td>
 <strong>Escenario 1 — Detalle de producto existente:</strong><br>
 Dado que el identificador del producto existe y es accesible para el contexto autenticado,<br>
@@ -1525,7 +1525,7 @@ entonces el API responde con <code>403 Forbidden</code> sin revelar la existenci
 <tr>
 <td>US60</td>
 <td>Exponer endpoint de cliente por RUC/DNI y condiciones comerciales</td>
-<td>Como capa de integración, quiero exponer un endpoint de búsqueda de cliente por documento (<code>GET /customers?document={ruc|dni}</code>), para soportar el flujo asistido de captura del pedido con carga automática de condiciones.</td>
+<td>Como Developer, quiero exponer un endpoint de búsqueda de cliente por documento (<code>GET /customers?document={ruc|dni}</code>), para soportar el flujo asistido de captura del pedido con carga automática de condiciones.</td>
 <td>
 <strong>Escenario 1 — Cliente encontrado con condiciones cargadas:</strong><br>
 Dado que la consulta proviene de un usuario interno autorizado y el documento existe,<br>
@@ -1547,7 +1547,7 @@ entonces el API responde con <code>400 Bad Request</code> indicando el formato e
 <tr>
 <td>US61</td>
 <td>Exponer endpoint de registro de pedido</td>
-<td>Como capa de integración, quiero exponer un endpoint de creación de pedido (<code>POST /orders</code>), para que el portal B2B y la captura asistida puedan enviar solicitudes estructuradas de forma unificada.</td>
+<td>Como Developer, quiero exponer un endpoint de creación de pedido (<code>POST /orders</code>), para que el portal B2B y la captura asistida puedan enviar solicitudes estructuradas de forma unificada.</td>
 <td>
 <strong>Escenario 1 — Pedido creado exitosamente:</strong><br>
 Dado que el request contiene cliente válido, líneas de producto y condiciones comerciales que cumplen las reglas del dominio,<br>
@@ -1569,7 +1569,7 @@ entonces responde con el pedido original ya creado sin generar un duplicado.
 <tr>
 <td>US62</td>
 <td>Exponer endpoint de tracking y ETA del pedido</td>
-<td>Como capa de integración, quiero exponer un endpoint de seguimiento (<code>GET /shipments/{id}</code> y <code>GET /shipments/{id}/events</code>), para que la aplicación muestre el estado actualizado, el historial de eventos y la ETA.</td>
+<td>Como Developer, quiero exponer un endpoint de seguimiento (<code>GET /shipments/{id}</code> y <code>GET /shipments/{id}/events</code>), para que la aplicación muestre el estado actualizado, el historial de eventos y la ETA.</td>
 <td>
 <strong>Escenario 1 — Estado, historial y ETA retornados:</strong><br>
 Dado que el pedido o envío existe y el contexto autenticado está autorizado,<br>
@@ -1591,7 +1591,7 @@ entonces el API responde con la página solicitada de eventos y metadatos de nav
 <tr>
 <td>US63</td>
 <td>Exponer endpoint de eventos de despacho y POD</td>
-<td>Como capa de integración, quiero exponer endpoints de despacho y prueba de entrega (<code>POST /shipments/{id}/events</code> y <code>POST /shipments/{id}/pod</code>), para registrar salida, incidencias y cierre de entrega con evidencia.</td>
+<td>Como Developer, quiero exponer endpoints de despacho y prueba de entrega (<code>POST /shipments/{id}/events</code> y <code>POST /shipments/{id}/pod</code>), para registrar salida, incidencias y cierre de entrega con evidencia.</td>
 <td>
 <strong>Escenario 1 — Evento de despacho registrado:</strong><br>
 Dado que el envío existe y el usuario está autorizado para registrar eventos,<br>
@@ -1613,7 +1613,7 @@ entonces responde con <code>400 Bad Request</code> indicando el tipo o tamaño p
 <tr>
 <td>US64</td>
 <td>Exponer endpoint de autenticación y recuperación de acceso</td>
-<td>Como capa de integración, quiero exponer endpoints de autenticación (<code>POST /auth/login</code>) y recuperación (<code>POST /auth/recover</code>), para que internos y clientes operen con sesiones válidas y recuperación controlada.</td>
+<td>Como Developer, quiero exponer endpoints de autenticación (<code>POST /auth/login</code>) y recuperación (<code>POST /auth/recover</code>), para que internos y clientes operen con sesiones válidas y recuperación controlada.</td>
 <td>
 <strong>Escenario 1 — Autenticación exitosa con token:</strong><br>
 Dado que las credenciales del request son válidas y la cuenta está activa,<br>

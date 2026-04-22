@@ -16,6 +16,7 @@ El siguiente diagrama, desarrollado mediante la notación de ingeniería de soft
 
 *Diagrama Entidad-Relación (ERD) — Arquitectura de Datos Nexa*
 
+```mermaid
 erDiagram
     ROLE {
         int id PK
@@ -248,14 +249,14 @@ El modelo propuesto cumple estrictamente con la <strong>Tercera Forma Normal (3N
 
 #### Módulos Críticos:
 <ol>
-    <li><strong>Gestión de Inventario Atómica:</strong> La entidad <code>INVENTORY_TRANSACTION</code> actúa como un libro contable (<em>Ledger</em>). Ningún stock se modifica directamente sin una transacción que respalde el movimiento, garantizando una trazabilidad forense ante cualquier discrepancia.</li>
+    <li><strong>Gestión de Inventario Atómica:</strong> La entidad <code>INVENTORY_TRANS</code> actúa como un libro contable (<em>Ledger</em>). Ningún stock se modifica directamente sin una transacción que respalde el movimiento, garantizando una trazabilidad forense ante cualquier discrepancia.</li>
     <li><strong>Inteligencia de Precios B2B:</strong> Mediante <code>PRICE_LIST</code> y <code>PRICE_LIST_ASSIGNMENT</code>, el sistema soporta precios dinámicos por canal, zona o cliente específico, resolviendo la necesidad de negociaciones personalizadas propia del sector.</li>
-    <li><strong>Trazabilidad Logística:</strong> El módulo de logística integra <code>ROUTE_CHECKPOINTS</code> e <code>INCIDENTS</code>, permitiendo reconstruir la historia térmica y geográfica de cada pedido, cumpliendo con las normativas sanitarias vigentes.</li>
+    <li><strong>Trazabilidad Logística:</strong> El módulo de logística integra <code>DISPATCH</code>, <code>INCIDENT</code> y <code>POD</code>, permitiendo reconstruir la historia operativa de cada pedido y sostener evidencia verificable del cierre de entrega.</li>
 </ol>
 
 #### Reglas de Integridad y Seguridad:
 <ul>
-    <li><strong>Validación Térmica (Check Constraints):</strong> Se implementan reglas de integridad para asegurar que las especificaciones de temperatura en <code>PRODUCT_SPECIFICATION</code> coincidan con las capacidades del <code>VEHICLE</code> asignado.</li>
+    <li><strong>Validación Térmica (Check Constraints):</strong> Se implementan reglas de integridad para asegurar que las especificaciones de temperatura en <code>PRODUCT_SPEC</code> sean consistentes con las condiciones operativas del despacho.</li>
     <li><strong>Seguridad de Identidad:</strong> Los datos sensibles se segregan mediante una arquitectura RBAC granular, donde cada acción en las tablas maestras queda registrada en <code>AUDIT_LOG</code> para fines de auditoría y cumplimiento normativo.</li>
     <li><strong>Integridad Referencial:</strong> El uso de Llaves Foráneas (FK) con políticas de eliminación restringida asegura que no se pierda la historia comercial (pedidos) al intentar depurar datos maestros (productos).</li>
 </ul>

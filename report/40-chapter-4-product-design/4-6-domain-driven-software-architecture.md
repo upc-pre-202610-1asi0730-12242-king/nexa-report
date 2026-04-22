@@ -10,6 +10,10 @@ La arquitectura de software de Nexa sigue los principios del Domain-Driven Desig
 El Design-Level EventStorming profundiza en los bounded contexts identificados durante el Big Picture EventStorming, permitiendo al equipo descomponer cada dominio en agregados, comandos, eventos, políticas, read models y responsabilidades técnicas con mayor nivel de detalle. Este proceso tuvo como objetivo principal delimitar las responsabilidades de cada contexto y establecer los contratos de comunicación entre ellos, sentando las bases para la arquitectura técnica de la plataforma.
 </p>
 
+<p align="justify">
+Las capturas incluidas a continuación corresponden a los resultados producidos durante la sesión de modelado. La evidencia de coordinación grupal de esa sesión —como reuniones síncronas, acuerdos y revisiones internas del sprint— debe leerse de forma complementaria en la subsección <strong>5.2.1.8</strong> y en el <strong>Anexo A</strong>, que es el espacio destinado a respaldar la colaboración del equipo ante la rúbrica.
+</p>
+
 **Ilustración 49**
 *Design-Level EventStorming — Paso 1: Exploración de eventos detallados*
 ![DDD Paso 1](../assets/images/ddd/PASO_1.jpeg)

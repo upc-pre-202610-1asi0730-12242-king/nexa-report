@@ -165,7 +165,7 @@ classDiagram
     Dispatch "1" *-- "0..1" POD : evidence
 ```
 
-*Nota.* El diagrama de clases integra las reglas de negocio transaccionales con el modelo relacional. A diferencia del ERD, aquí se destacan los métodos de control (ej: <code>verifyColdChain</code>, <code>validateCredit</code>) que aseguran la integridad del proceso de distribución. Elaboración propia.
+*Nota.* El diagrama de clases integra las reglas de negocio transaccionales con el modelo relacional. A diferencia del ERD, aquí se destacan los métodos de control (ej: <code>verifyColdChain</code>, <code>isCreditApproved</code>) que aseguran la integridad del proceso de distribución. Elaboración propia.
 
 ---
 

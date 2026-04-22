@@ -84,13 +84,13 @@ La priorización no responde únicamente a facilidad de implementación. Se cons
 | **55** | US54 | Login Interno | Como usuaria interna, quiero iniciar sesión en la plataforma, para acceder únicamente a los módulos que corresponden a mi rol. | 3 |
 | **56** | US55 | Login B2B | Como cliente comercial, quiero iniciar sesión en el portal, para gestionar mi catálogo y pedidos de forma privada. | 3 |
 | **57** | US56 | Recuperar Acceso | Como usuaria del sistema, quiero recuperar mi acceso mediante un flujo controlado, para volver a operar de forma segura. | 5 |
-| **58** | US58 | API Catálogo | Como capa de integración, quiero un endpoint de catálogo (GET /products), para que el portal consulte productos según el contexto. | 5 |
-| **59** | US59 | API Ficha Producto | Como capa de integración, quiero un endpoint de detalle (GET /products/{id}), para mostrar info ampliada y documentos técnicos. | 5 |
-| **60** | US60 | API Cliente & Crédito | Como capa de integración, quiero un endpoint (GET /customers), para soportar el flujo asistido con carga automática de condiciones comerciales. | 8 |
-| **61** | US61 | API Registro Pedido | Como capa de integración, quiero un endpoint (POST /orders), para recibir solicitudes estructuradas desde el portal o captura asistida. | 8 |
-| **62** | US62 | API Tracking & ETA | Como capa de integración, quiero un endpoint (GET /shipments/{id}), para mostrar el estado actualizado y la predictibilidad de entrega. | 5 |
-| **63** | US63 | API POD & Eventos | Como capa de integración, quiero un endpoint (POST /shipments/{id}/pod), para registrar salida y cierre con evidencia digital. | 5 |
-| **64** | US64 | API Auth & Recover | Como capa de integración, quiero endpoints de autenticación (/auth), para que las aplicaciones operen con sesiones seguras y controladas. | 5 |
+| **58** | US58 | API Catálogo | Como Developer, quiero un endpoint de catálogo (GET /products), para que el portal consulte productos según el contexto. | 5 |
+| **59** | US59 | API Ficha Producto | Como Developer, quiero un endpoint de detalle (GET /products/{id}), para mostrar info ampliada y documentos técnicos. | 5 |
+| **60** | US60 | API Cliente & Crédito | Como Developer, quiero un endpoint (GET /customers), para soportar el flujo asistido con carga automática de condiciones comerciales. | 8 |
+| **61** | US61 | API Registro Pedido | Como Developer, quiero un endpoint (POST /orders), para recibir solicitudes estructuradas desde el portal o captura asistida. | 8 |
+| **62** | US62 | API Tracking & ETA | Como Developer, quiero un endpoint (GET /shipments/{id}), para mostrar el estado actualizado y la predictibilidad de entrega. | 5 |
+| **63** | US63 | API POD & Eventos | Como Developer, quiero un endpoint (POST /shipments/{id}/pod), para registrar salida y cierre con evidencia digital. | 5 |
+| **64** | US64 | API Auth & Recover | Como Developer, quiero endpoints de autenticación (/auth), para que las aplicaciones operen con sesiones seguras y controladas. | 5 |
 
 ### 3.3.2. Resumen de Estimación y Release Map
 
@@ -106,7 +106,7 @@ La priorización no responde únicamente a facilidad de implementación. Se cons
 | EP12-EP13 | US49-US57 | 39 | Sprint 4 | Media (Soporte) |
 | EP14 | US58-US64 | 41 | Sprint 5 | Técnica (Backend) |
 
-**Total de Story Points del Proyecto: 239**
+**Total de Story Points del Proyecto: 238**
 
 <p align="justify">
 La secuencia del roadmap sigue una lógica deliberada. El <strong>Sprint 1</strong> concentra el frente público porque permite validar entendimiento del problema, foco de segmento y captación comercial sin bloquear todavía el núcleo transaccional. El <strong>Sprint 2</strong> incorpora el corazón del valor prometido a Valeria y Hilda: catálogo, condiciones y captura o registro del pedido. El <strong>Sprint 3</strong> extiende ese valor hacia seguimiento, despacho, inventario y cierre. El <strong>Sprint 4</strong> consolida datos comerciales y control de acceso, necesarios para operar con reglas mínimas y diferenciación por cuenta. Finalmente, el <strong>Sprint 5</strong> formaliza contratos técnicos del API como capa de integración consistente con los flujos ya definidos funcionalmente.
