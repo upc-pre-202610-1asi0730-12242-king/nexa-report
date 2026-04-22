@@ -43,5 +43,6 @@
 | TB1 V1.6.1 | 21/04/2026 | Yucra Sandoval, Diego Sebastian | Actualización del enlace oficial de Jira, incorporación de enlaces audiovisuales OneDrive para las ocho entrevistas base y ajuste de trazabilidad de validación en AV1 |
 | TB1 V1.6.2 | 21/04/2026 | Yucra Sandoval, Diego Sebastian | Reestructuración del alcance AV1 del Capítulo V al formato Sprint 1 requerido por la rúbrica, fortalecimiento de Web Applications Design y redacción de conclusiones finales |
 | TB1 V1.6.3 | 21/04/2026 | Yucra Sandoval, Diego Sebastian | Integración de verificación completa Jira-Sprint-Backlog con siete capturas, registro del archivo Figma real de la web application y creación de anexos guía para evidencias de coordinación grupal |
+| TB1 V1.6.4 | 22/04/2026 | Yucra Sandoval, Diego Sebastian | Integración de capturas exportadas de la web application en 4.5, documentación visual por bloques operativos y normalización de activos de mockups dentro de `report/assets/images` |
 
 *Nota.* La tabla documenta los cambios significativos y las contribuciones individuales realizadas al informe a lo largo del ciclo del proyecto, asegurando la trazabilidad de su evolución. *Elaboración propia.*

@@ -24,6 +24,10 @@ La inspección del archivo Figma autenticado del equipo confirmó que la página
 | Proyecto Figma del equipo | [Nexa Landing Page / Project](https://www.figma.com/files/team/1586383034175281439/project/587167294) |
 | Archivo Figma de la web application | [Web App - Figma Design File](https://www.figma.com/design/buDa5VZmYjPNokbl4FEJqx/Web-App?node-id=0-1) |
 
+<p align="justify">
+Adicionalmente, el equipo ya exportó y archivó en el repositorio diez capturas PNG del prototipo, lo que fortalece la sustentación del capítulo: la evidencia ya no depende solo de un archivo autenticado en Figma, sino que queda preservada como activo visual trazable dentro de <code>report/assets/images/webapp-mockups</code>.
+</p>
+
 **Ilustración 46**
 
 *Mapa funcional de los mockups de alta fidelidad verificados en Figma*
@@ -48,17 +52,61 @@ graph TD
 
 *Pantallas de alta fidelidad verificadas en el prototipo autenticado*
 
-| Pantalla prototipada | Propósito dentro del flujo | Enlace directo |
+| Pantalla prototipada | Propósito dentro del flujo | Respaldo verificable |
 |---|---|---|
-| Dashboard Operativo: Control Total | Consolidar alertas, KPIs y estado general de la operación | [Abrir frame](https://www.figma.com/design/buDa5VZmYjPNokbl4FEJqx/Web-App?node-id=1-2) |
-| B2B Orders Hub | Gestionar órdenes y revisar estados de procesamiento | [Abrir frame](https://www.figma.com/design/buDa5VZmYjPNokbl4FEJqx/Web-App?node-id=1-1885) |
-| Creación de Pedido Asistido | Capturar pedidos con validación comercial y operativa | [Abrir frame](https://www.figma.com/design/buDa5VZmYjPNokbl4FEJqx/Web-App?node-id=1-496) |
-| Inventory Management | Controlar stock, riesgo térmico y rotación visible | [Abrir frame](https://www.figma.com/design/buDa5VZmYjPNokbl4FEJqx/Web-App?node-id=1-2114) |
-| Confirmación de Despacho & Asignación de Flota | Asignar vehículos y coordinar despacho listo para salida | [Abrir frame](https://www.figma.com/design/buDa5VZmYjPNokbl4FEJqx/Web-App?node-id=1-1645) |
-| FEFO Intelligence & Analytics | Visualizar vencimientos, alertas y priorización FEFO | [Abrir frame](https://www.figma.com/design/buDa5VZmYjPNokbl4FEJqx/Web-App?node-id=1-2592) |
-| Active Shipments & Routes | Monitorear trayectos y incidencias en ruta | [Abrir frame](https://www.figma.com/design/buDa5VZmYjPNokbl4FEJqx/Web-App?node-id=1-211) |
-| Cierre de Entrega (POD) & Certificación | Registrar evidencia de cierre y prueba de entrega | [Abrir frame](https://www.figma.com/design/buDa5VZmYjPNokbl4FEJqx/Web-App?node-id=1-981) |
+| Dashboard Operativo: Control Total | Consolidar alertas, KPIs y estado general de la operación | [Frame Figma](https://www.figma.com/design/buDa5VZmYjPNokbl4FEJqx/Web-App?node-id=1-2) + PNG exportado |
+| B2B Orders Hub | Gestionar órdenes y revisar estados de procesamiento | [Frame Figma](https://www.figma.com/design/buDa5VZmYjPNokbl4FEJqx/Web-App?node-id=1-1885) + PNG exportado |
+| Creación de Pedido Asistido | Capturar pedidos con validación comercial y operativa | [Frame Figma](https://www.figma.com/design/buDa5VZmYjPNokbl4FEJqx/Web-App?node-id=1-496) + PNG exportado |
+| Inventory Management | Controlar stock, riesgo térmico y rotación visible | [Frame Figma](https://www.figma.com/design/buDa5VZmYjPNokbl4FEJqx/Web-App?node-id=1-2114) + PNG exportado |
+| Confirmación de Despacho & Asignación de Flota | Asignar vehículos y coordinar despacho listo para salida | [Frame Figma](https://www.figma.com/design/buDa5VZmYjPNokbl4FEJqx/Web-App?node-id=1-1645) + PNG exportado |
+| FEFO Intelligence & Analytics | Visualizar vencimientos, alertas y priorización FEFO | [Frame Figma](https://www.figma.com/design/buDa5VZmYjPNokbl4FEJqx/Web-App?node-id=1-2592) + PNG exportado |
+| Active Shipments & Routes | Monitorear trayectos, excursiones térmicas e incidencias en ruta | [Frame Figma](https://www.figma.com/design/buDa5VZmYjPNokbl4FEJqx/Web-App?node-id=1-211) + PNG exportado |
+| Cierre de Entrega (POD) & Certificación | Registrar evidencia de cierre, firma y prueba de entrega | [Frame Figma](https://www.figma.com/design/buDa5VZmYjPNokbl4FEJqx/Web-App?node-id=1-981) + PNG exportado |
+| Inventory Detail: Premium Artisan Organic Milk | Profundizar en estabilidad térmica, stock disponible y alertas FEFO por producto | PNG exportado del archivo maestro |
+| Order Detail & Traceability | Verificar ruta, manifiesto, cadena de custodia y prueba de entrega por orden | PNG exportado del archivo maestro |
 
 <p align="justify">
-La evidencia anterior permite defender el prototipado con mayor precisión: Nexa sí preserva un archivo real de mockups autenticados con pantallas concretas para dashboard, órdenes, inventario, despacho, FEFO, tracking y POD. No obstante, la interpretación correcta para AV1 sigue siendo la misma: estas vistas constituyen <strong>evidencia visual de diseño y preparación funcional</strong>, no evidencia de implementación desplegada. Si el equipo desea elevar el cierre visual del informe antes de la entrega final, bastará con exportar desde esos mismos frames tres o cuatro capturas PNG y reemplazar esta tabla por las imágenes correspondientes, manteniendo exactamente los enlaces ya verificados como respaldo.
+La lectura correcta de estas pantallas no es estética sino operativa. Cada vista traduce una fricción levantada en los capítulos previos: alertas térmicas que antes eran tardías, validaciones comerciales que antes se hacían por llamada, asignación de flota antes manual, y cierre documental del pedido que antes dependía de mensajes dispersos. En conjunto, el prototipo deja ver una arquitectura visual consistente basada en navegación lateral persistente, encabezado transversal y módulos de decisión por contexto.
+</p>
+
+**Bloque A. Control operativo y captura comercial**
+
+![Dashboard Operativo Total Control](../assets/images/webapp-mockups/webapp-dashboard-operativo-total-control.png)
+
+![B2B Orders Hub](../assets/images/webapp-mockups/webapp-b2b-orders-hub.png)
+
+![Creación de Pedido Asistido](../assets/images/webapp-mockups/webapp-creacion-pedido-asistido.png)
+
+<p align="justify">
+Este primer bloque valida la entrada al sistema y el corazón comercial del MVP. El <strong>dashboard operativo</strong> concentra alertas de desviación térmica, bajo stock y despacho demorado en una sola superficie de decisión; el <strong>orders hub</strong> convierte el pedido en una lista gestionable con estados y acciones visibles; y la pantalla de <strong>pedido asistido</strong> demuestra que la captura puede hacerse con búsqueda de cliente, selección de SKU y validación comercial previa a la confirmación. El resultado es una experiencia que reduce la dependencia del canal informal y vuelve explícitas las reglas del negocio antes de comprometer inventario.
+</p>
+
+**Bloque B. Inventario, analítica y control de riesgo**
+
+![Inventory Management](../assets/images/webapp-mockups/webapp-inventory-management.png)
+
+![Inventory Detail Premium Artisan Organic Milk](../assets/images/webapp-mockups/webapp-inventory-detail-premium-artisan-organic-milk.png)
+
+![FEFO Intelligence & Analytics](../assets/images/webapp-mockups/webapp-fefo-intelligence-analytics.png)
+
+<p align="justify">
+Las tres vistas siguientes muestran que el prototipo no se limita a “listar stock”. <strong>Inventory Management</strong> prioriza visibilidad de activos, productos en riesgo y estados FEFO; el <strong>detalle de inventario</strong> baja al nivel de un ítem concreto para exponer temperatura actual, rango requerido, capacidad consumida y alerta de vencimiento; y <strong>FEFO Intelligence & Analytics</strong> convierte esos datos en señales de priorización, variación térmica y cumplimiento. Esta combinación respalda que Nexa fue pensada para prevenir pérdida de producto y no solo para registrar movimientos.
+</p>
+
+**Bloque C. Despacho, trazabilidad y cierre certificado**
+
+![Confirmación de Despacho y Asignación de Flota](../assets/images/webapp-mockups/webapp-confirmacion-despacho-asignacion-flota.png)
+
+![Active Shipments and Routes](../assets/images/webapp-mockups/webapp-active-shipments-routes.png)
+
+![Order Detail and Traceability](../assets/images/webapp-mockups/webapp-order-detail-traceability.png)
+
+![Cierre de Entrega POD y Certificación](../assets/images/webapp-mockups/webapp-cierre-entrega-pod-certificacion.png)
+
+<p align="justify">
+El último bloque documenta la continuidad completa del pedido desde que queda listo para salir hasta que se certifica su entrega. <strong>Dispatch Coordination</strong> presenta cola de pedidos listos, requerimiento térmico y flota apta; <strong>Active Shipments & Routes</strong> expone incidentes y telemetría en tránsito; <strong>Order Detail & Traceability</strong> reconstruye la ruta, el manifiesto y la cadena de custodia de una orden concreta; y <strong>Delivery Closure</strong> demuestra que el cierre contempla integridad térmica, firma del receptor y evidencia visual. Por eso, estas capturas sostienen argumentalmente que la web application fue diseñada como una operación trazable de extremo a extremo.
+</p>
+
+<p align="justify">
+La evidencia anterior permite defender el prototipado con mayor precisión: Nexa sí preserva un archivo real de mockups autenticados y, además, ya conserva sus exportaciones PNG dentro del repositorio para sustentar visualmente el capítulo. No obstante, la interpretación correcta para AV1 sigue siendo la misma: estas vistas constituyen <strong>evidencia visual de diseño y preparación funcional</strong>, no evidencia de implementación desplegada. Su valor en el informe es demostrar coherencia entre hallazgos, backlog y experiencia futura de la plataforma autenticada.
 </p>
