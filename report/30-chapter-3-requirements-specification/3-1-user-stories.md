@@ -6,7 +6,7 @@
 El backlog de Nexa se organiza en dos capas complementarias. La primera cubre el sitio público multipágina que comunica la propuesta de valor, enruta por segmentos comerciales y capta oportunidades mediante el landing page. La segunda cubre el producto transaccional: catálogo, captura asistida del pedido, portal B2B, condiciones comerciales, inventario y seguimiento hasta la entrega. Todas las historias se redactan con actores explícitos, estimación en puntos de historia (escala Fibonacci) y criterios de aceptación verificables en formato Gherkin, alineados con los arquetipos canónicos del proyecto: Valeria, Hilda y Pedro.
 </p>
 
-**Tabla 12**
+**Tabla 14**
 
 *User Stories — Épicas, historias, criterios de aceptación y estimación*
 
@@ -1573,6 +1573,8 @@ entonces el API emite un nuevo token de acceso sin requerir que el usuario ingre
 
 </tbody>
 </table>
+
+*Nota. Detalle de requerimientos funcionales estructurados bajo el estándar Gherkin para validación técnica. Elaboración propia.*
 
 ---
 

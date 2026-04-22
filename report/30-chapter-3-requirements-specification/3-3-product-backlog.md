@@ -6,7 +6,7 @@ El Product Backlog de Nexa organiza el universo de requerimientos en una secuenc
 
 ### 3.3.1. Detalle del Product Backlog (Full Backlog)
 
-**Tabla 12**
+**Tabla 15**
 
 *Product Backlog — Ordenamiento, Valor y Estimación*
 
@@ -79,6 +79,10 @@ El Product Backlog de Nexa organiza el universo de requerimientos en una secuenc
 
 ### 3.3.2. Resumen de Estimación y Release Map
 
+**Tabla 16**
+
+*Resumen de Estimación por Épica y Roadmap de Lanzamiento*
+
 | Épica | Historias Incluidas | SP Total | Sprint Sugerido | Prioridad Negocio |
 | :--- | :--- | :--- | :--- | :--- |
 | EP01-EP06 | US01-US23 | 43 | Sprint 1 | Crítica (Landing) |
@@ -98,6 +102,10 @@ A continuación se presenta la evidencia visual del backlog cargado en la herram
 </p>
 
 [**Enlace Público al Product Backlog (Jira)**](https://teamking12.atlassian.net/jira/software/projects/NEX/boards/1/backlog?epics=visible)
+
+**Ilustración 20**
+
+*Evidencia del Backlog en Jira — Sprint 1 y Backlog Priorizado*
 
 > [!NOTE]
 > **Captura de Pantalla del Backlog**: Se debe insertar aquí la captura de Jira que muestre las historias del Sprint 1 (Landing) en la parte superior, seguidas por el núcleo transaccional (B2B Core) con sus respectivos story points.
