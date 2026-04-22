@@ -10,6 +10,10 @@ El diseño de la web application de Nexa debe leerse como la continuación natur
 Los wireframes de la aplicación web se organizan bajo una estructura de <strong>navegación persistente con panel lateral</strong>, encabezado de contexto y área central de trabajo. Esta disposición responde directamente a los hallazgos del capítulo 2: la operación no puede depender de saltos desordenados entre WhatsApp, Excel, llamadas y validaciones verbales. La interfaz debe permitir que cada actor vea, en una sola superficie, la información crítica para decidir si un pedido continúa, se bloquea o se reprograma.
 </p>
 
+**Tabla 31**
+
+*Vistas priorizadas en el diseño de la Web Application*
+
 | Vista priorizada | Usuario dominante | Información crítica visible | Decisión que habilita |
 |---|---|---|---|
 | Dashboard operativo | Supervisión logística y coordinación | stock comprometido, alertas FEFO, incidencias, temperatura, estado de pedidos | Priorizar acciones, corregir desvíos y reasignar atención |
@@ -17,7 +21,7 @@ Los wireframes de la aplicación web se organizan bajo una estructura de <strong
 | Portal B2B de autoservicio | Cliente comercial | catálogo filtrado, precios, stock, borradores e historial | Realizar un pedido directo sin depender del canal informal |
 | Seguimiento y POD | Operación, transporte y cliente | ETA, secuencia de estados, incidencias y evidencia de cierre | Confirmar trazabilidad y resolver reclamos con evidencia |
 
-**Ilustración 43**
+**Ilustración 44**
 
 *Esqueleto funcional de la web application autenticada*
 
@@ -48,7 +52,7 @@ graph LR
 El wireflow de la aplicación debe mostrar dos rutas principales que convergen en una misma lógica de negocio: la <strong>captura asistida interna</strong> y el <strong>autoservicio B2B</strong>. Aunque los puntos de entrada son distintos, ambos caminos desembocan en validaciones sobre stock, crédito, reglas comerciales y estados de entrega. Esta decisión de diseño evita duplicar procesos y mantiene una sola verdad operativa para el pedido.
 </p>
 
-**Ilustración 44**
+**Ilustración 45**
 
 *Wireflow del pedido Nexa desde acceso hasta cierre operativo*
 
@@ -75,7 +79,7 @@ graph LR
 El user flow crítico para la web application es el <strong>reabastecimiento B2B con validaciones automáticas</strong>. El valor de Nexa no reside solo en mostrar pantallas, sino en reducir el retrabajo que hoy ocurre cuando el pedido entra mal, el crédito no alcanza, el stock no coincide o la operación carece de trazabilidad. El flujo siguiente sintetiza la interacción esperada entre usuario, sistema e inventario.
 </p>
 
-**Ilustración 45**
+**Ilustración 46**
 
 *User Flow del reabastecimiento B2B con validación de negocio*
 

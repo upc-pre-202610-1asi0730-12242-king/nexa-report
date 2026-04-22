@@ -4,6 +4,10 @@
 El video del producto para AV1 debe sintetizar en una sola pieza la lógica completa del proyecto: problema detectado, propuesta de valor, evidencia de trabajo colaborativo, backlog en Jira, despliegue del sitio público y proyección técnica hacia la web application y el API. Su función no es repetir el informe palabra por palabra, sino demostrar que el equipo entiende el producto, domina sus artefactos y puede defender con claridad qué está implementado hoy y qué queda pendiente para la siguiente etapa.
 </p>
 
+**Tabla 42**
+
+*Estructura sugerida para el video del producto (AV1)*
+
 | Bloque sugerido del video | Evidencia que debería mostrarse | Propósito evaluativo |
 |---|---|---|
 | Presentación del equipo | Integrantes, roles y startup | Cumplir la formalidad de exposición y evidenciar trabajo colaborativo |

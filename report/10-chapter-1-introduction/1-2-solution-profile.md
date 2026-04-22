@@ -448,22 +448,15 @@ El Lean UX Canvas sintetiza la lógica del producto en una sola vista: problema,
 
 *Lean UX Canvas*
 
-| **Problema de negocio** | **Ideas de solución** | **Resultados de negocio (outcomes)** |
-|-------------------------|-----------------------|--------------------------------------|
-| Las distribuidoras de productos refrigerados y sus clientes B2B coordinan pedidos con información fragmentada, baja trazabilidad y dependencia de canales informales, lo que incrementa errores, retrabajo, quiebres y descoordinación operativa. | Sitio público multipágina, portal B2B para clientes, flujo asistido de captura del pedido, visibilidad compartida del estado, control básico de inventario, condiciones comerciales y seguimiento hasta la entrega. | Menor retrabajo en captura, mayor claridad para el cliente comercial, mejor predictibilidad del despacho y validación del valor del MVP SaaS. |
-
----
-
-| **Usuarios y clientes** | **Segmentos priorizados** |
-|-------------------------|---------------------------|
-| Cliente pagador: distribuidor refrigerado. <br> Usuarios operativos primarios: coordinación comercial, cliente comercial B2B y despacho. <br> Stakeholder secundario: logística y operación. | S1: Valeria / coordinación comercial <br> S2: Hilda / cliente comercial B2B <br> S3: Pedro / despacho y entrega |
-
----
-
-| **Propuesta de valor** | **Riesgos clave a validar** | **Prioridad de aprendizaje** |
-|------------------------|-----------------------------|------------------------------|
-| Ordenar el flujo principal del pedido en una plataforma web especializada que conecte catálogo, condiciones comerciales, pedido, disponibilidad y seguimiento hasta la entrega. | Adopción real del flujo asistido por coordinación comercial, disposición del cliente a usar un portal, suficiencia de las reglas comerciales del MVP y valor percibido del seguimiento del despacho. | Comprobar si el producto resuelve una fricción real en captura, compra y cierre de entrega antes de ampliar el alcance hacia automatizaciones o integraciones más complejas. |
-
----
+| **Sección** | **Contenido** |
+| :--- | :--- |
+| **Problema de negocio** | Las distribuidoras de productos refrigerados y sus clientes B2B coordinan pedidos con información fragmentada, baja trazabilidad y dependencia de canales informales, lo que incrementa errores, retrabajo, quiebres y descoordinación operativa. |
+| **Ideas de solución** | Sitio público multipágina, portal B2B para clientes, flujo asistido de captura del pedido, visibilidad compartida del estado, control básico de inventario, condiciones comerciales y seguimiento hasta la entrega. |
+| **Resultados de negocio (outcomes)** | Menor retrabajo en captura, mayor claridad para el cliente comercial, mejor predictibilidad del despacho y validación del valor del MVP SaaS. |
+| **Usuarios y clientes** | Cliente pagador: distribuidor refrigerado. <br> Usuarios operativos primarios: coordinación comercial, cliente comercial B2B y despacho. <br> Stakeholder secundario: logística y operación. |
+| **Segmentos priorizados** | S1: Valeria / coordinación comercial <br> S2: Hilda / cliente comercial B2B <br> S3: Pedro / despacho y entrega |
+| **Propuesta de valor** | Ordenar el flujo principal del pedido en una plataforma web especializada que conecte catálogo, condiciones comerciales, pedido, disponibilidad y seguimiento hasta la entrega. |
+| **Riesgos clave a validar** | Adopción real del flujo asistido por coordinación comercial, disposición del cliente a usar un portal, suficiencia de las reglas comerciales del MVP y valor percibido del seguimiento del despacho. |
+| **Prioridad de aprendizaje** | Comprobar si el producto resuelve una fricción real en captura, compra y cierre de entrega antes de ampliar el alcance hacia automatizaciones o integraciones más complejas. |
 
 *Nota.* El Lean UX Canvas resume los pilares estratégicos del proyecto, conectando el problema del usuario, la solución propuesta y los resultados de negocio, e incluye las hipótesis clave que orientan la validación inicial. Elaboración propia.
