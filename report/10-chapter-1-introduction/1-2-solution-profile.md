@@ -3,7 +3,7 @@
 ### 1.2.1. Antecedentes y problemática
 
 <p align="justify">
-La cadena de frío cumple un rol crítico en sectores como alimentos, productos farmacéuticos y agroexportación, al asegurar que los productos sensibles a la temperatura mantengan su calidad e inocuidad durante el almacenamiento, transporte y distribución hasta el usuario final (Vértiz, 2011). Estudios en distintos países de la región muestran que fallas en uno o varios eslabones de la cadena de frío —especialmente en el transporte y la venta al por menor— se asocian con incumplimientos de normas de temperatura, proliferación microbiana y reducción de la vida útil de lácteos, carnes y otros perecederos (Tutiven et al., 2026; Arriaga et al., 2023). Al respecto, las investigaciones demuestran una constante fluctuación térmica en la comercialización de cortes de res, registrando temperaturas que superan ampliamente los límites normativos, como se evidencia en la Tabla 5. Esta deficiencia subraya la necesidad de un control logístico riguroso y continuo antes de que el producto llegue al cliente comercial.
+La cadena de frío cumple un rol crítico en sectores como alimentos, productos farmacéuticos y agroexportación, al asegurar que los productos sensibles a la temperatura mantengan su calidad e inocuidad durante el almacenamiento, transporte y distribución hasta el usuario final (Vértiz, 2011). Estudios en distintos países de la región muestran que fallas en uno o varios eslabones de la cadena de frío, especialmente en transporte y venta al por menor, se asocian con incumplimientos de normas de temperatura, proliferación microbiana y reducción de la vida útil de lácteos, carnes y otros perecederos (Tutiven et al., 2026; Arriaga et al., 2023). Al respecto, las investigaciones demuestran una constante fluctuación térmica en la comercialización de cortes de res, registrando temperaturas que superan ampliamente los límites normativos, como se evidencia en la Tabla 5. Esta deficiencia subraya la necesidad de un control logístico riguroso y continuo antes de que el producto llegue al cliente comercial.
 </p>
 
 
@@ -68,7 +68,7 @@ En el contexto peruano, investigaciones en salud y logística evidencian que las
 
 <p align="justify">
 De forma similar, trabajos de tesis y proyectos tecnológicos en Perú muestran que la falta de sistemas de seguimiento y trazabilidad en tiempo real contribuye a pérdidas significativas de productos alimenticios refrigerados y a una visibilidad limitada del proceso logístico (Torres & Tardillo, 2020).  
-En paralelo, análisis regionales de la CEPAL y asociaciones del sector señalan que, aunque la infraestructura básica de frío en América Latina se ha expandido, persisten cuellos de botella en flotas refrigeradas, almacenes especializados y sistemas de monitoreo, lo que se traduce en pérdidas de alimentos y riesgos para la inocuidad (Aguayo et al., 2025).Estas brechas son especialmente relevantes para organizaciones que trabajan con productos refrigerados y congelados -como importadoras y distribuidoras-, donde una falla en el control logístico afecta simultáneamente la eficiencia operativa, la calidad del producto y el cumplimiento normativo (Vértiz, 2011; Rivas & Castillo, 2020).  
+En paralelo, análisis regionales de la CEPAL y asociaciones del sector señalan que, aunque la infraestructura básica de frío en América Latina se ha expandido, persisten cuellos de botella en flotas refrigeradas, almacenes especializados y sistemas de monitoreo, lo que se traduce en pérdidas de alimentos y riesgos para la inocuidad (Aguayo et al., 2025). Estas brechas son especialmente relevantes para organizaciones que trabajan con productos refrigerados y congelados, como importadoras y distribuidoras, donde una falla en el control logístico afecta simultáneamente la eficiencia operativa, la calidad del producto y el cumplimiento normativo (Vértiz, 2011; Rivas & Castillo, 2020).  
 </p>
 
 <p align="justify">
@@ -118,6 +118,10 @@ A partir de este contexto, el proyecto Nexa se plantea como respuesta a una prob
 <p align="justify">
 La relevancia de este problema no radica únicamente en la pérdida de eficiencia interna. En un dominio como el de productos refrigerados y congelados, una falla en la coordinación del pedido compromete simultáneamente variables comerciales, operativas y sanitarias. Cuando el catálogo no refleja disponibilidad real, cuando la toma del pedido depende de mensajes dispersos o cuando el seguimiento del despacho carece de visibilidad compartida, la empresa no solo pierde tiempo: también deteriora la confianza del cliente comercial, incrementa el riesgo de quiebre de stock en el punto de venta y dificulta la respuesta ante incidencias o auditorías. Por ello, el problema del proyecto debe entenderse como una falla de articulación del flujo de información crítico del negocio, más que como una carencia aislada de software.
 </p>
+
+<div style="padding: 14px 16px; border-left: 4px solid #2554df; background: #f8fbff; margin: 16px 0;">
+  <strong>Lectura de síntesis del problema.</strong> En el contexto de Nexa, el problema no es únicamente la falta de digitalización, sino la falta de integración operativa entre captura comercial, validación, inventario y seguimiento del pedido. Esa desconexión explica por qué errores aparentemente menores terminan convirtiéndose en sobrecostos, quiebres, reclamos y pérdida de trazabilidad.
+</div>
 
 #### Objetivos y restricciones del proyecto
 
@@ -316,39 +320,47 @@ Conviene precisar que los siguientes problem statements no describen módulos de
 
 **Problem Statement 1 — Captura comercial y validación del pedido**
 
-- **Domain:** Recepción, interpretación, digitación y validación inicial de pedidos B2B dentro de la empresa distribuidora.
-- **Customer segment:** Coordinación comercial, mercaderistas y personal que toma pedidos y los traslada hacia operación.
-- **Pain points:** El pedido llega por audios, mensajes o listas; el stock no siempre es confiable; la revisión de crédito o morosidad sigue siendo manual; y los errores se detectan demasiado tarde.
-- **Gap actual:** La información del pedido no nace estructurada ni conectada con disponibilidad, condiciones comerciales y seguimiento posterior.
-- **Vision / strategy:** Nexa debe reducir la fricción en el punto de captura, permitiendo identificar al cliente, consultar condiciones, registrar el pedido y dejar trazabilidad desde el origen.
-- **Initial segment priority:** Es el segmento prioritario para validar simplicidad de uso, captura asistida y reducción de retrabajo.
-- **Outcome esperado:** Disminuyen el tiempo de aclaración, la doble digitación y los errores de interpretación.
+<div style="border: 1px solid #dbe7ff; border-radius: 8px; padding: 14px 16px; margin: 12px 0 18px 0; background: #fcfdff;">
+  <p><strong>Domain:</strong> Recepción, interpretación, digitación y validación inicial de pedidos B2B dentro de la empresa distribuidora.</p>
+  <p><strong>Customer segment:</strong> Coordinación comercial, mercaderistas y personal que toma pedidos y los traslada hacia operación.</p>
+  <p><strong>Pain points:</strong> El pedido llega por audios, mensajes o listas; el stock no siempre es confiable; la revisión de crédito o morosidad sigue siendo manual; y los errores se detectan demasiado tarde.</p>
+  <p><strong>Gap actual:</strong> La información del pedido no nace estructurada ni conectada con disponibilidad, condiciones comerciales y seguimiento posterior.</p>
+  <p><strong>Dirección estratégica inicial:</strong> Reducir la fricción en el punto de captura, permitiendo identificar al cliente, consultar condiciones, registrar el pedido y dejar trazabilidad desde el origen.</p>
+  <p><strong>Prioridad inicial del segmento:</strong> Este es el segmento prioritario para validar simplicidad de uso, captura asistida y reducción de retrabajo.</p>
+  <p><strong>Resultado esperado:</strong> Disminuyen el tiempo de aclaración, la doble digitación y los errores de interpretación.</p>
+</div>
 
 **Problem Statement 2 — Abastecimiento del cliente comercial B2B**
 
-- **Domain:** Compra recurrente de productos refrigerados desde la perspectiva del cliente comercial.
-- **Customer segment:** Minimarkets, bodegas, pequeños mayoristas y cuentas del canal HORECA que compran al distribuidor.
-- **Pain points:** El cliente no sabe con certeza qué hay disponible, cuándo llegará su pedido ni si el proveedor responderá a tiempo; además, una plataforma lenta o impersonal no reemplaza bien al canal informal.
-- **Gap actual:** El cliente comercial no cuenta con un entorno claro donde pueda consultar catálogo, revisar condiciones, registrar pedidos y seguir la entrega sin depender completamente de WhatsApp o llamadas.
-- **Vision / strategy:** Nexa debe ofrecer un portal B2B simple, confiable y acompañado de soporte humano cuando se necesite.
-- **Initial segment priority:** Es prioritario para validar adopción del portal y percepción de valor desde la demanda.
-- **Outcome esperado:** El cliente percibe más claridad, autonomía y predictibilidad en su abastecimiento.
+<div style="border: 1px solid #dbe7ff; border-radius: 8px; padding: 14px 16px; margin: 12px 0 18px 0; background: #fcfdff;">
+  <p><strong>Domain:</strong> Compra recurrente de productos refrigerados desde la perspectiva del cliente comercial.</p>
+  <p><strong>Customer segment:</strong> Clientes del canal tradicional y del canal HORECA, incluyendo bodegas, minimarkets, pequeños mayoristas y negocios que compran al distribuidor para sostener su operación.</p>
+  <p><strong>Pain points:</strong> El cliente no sabe con certeza qué hay disponible, cuándo llegará su pedido ni si el proveedor responderá a tiempo; además, una plataforma lenta o impersonal no reemplaza bien al canal informal.</p>
+  <p><strong>Gap actual:</strong> El cliente comercial no cuenta con un entorno claro donde pueda consultar catálogo, revisar condiciones, registrar pedidos y seguir la entrega sin depender completamente de WhatsApp o llamadas.</p>
+  <p><strong>Dirección estratégica inicial:</strong> Ofrecer un portal B2B simple, confiable y acompañado de soporte humano cuando se necesite.</p>
+  <p><strong>Prioridad inicial del segmento:</strong> Es prioritario para validar adopción del portal y percepción de valor desde la demanda.</p>
+  <p><strong>Resultado esperado:</strong> El cliente percibe más claridad, autonomía y predictibilidad en su abastecimiento.</p>
+</div>
 
 **Problem Statement 3 — Despacho, predictibilidad y cierre de entrega**
 
-- **Domain:** Ejecución del despacho y cierre del pedido en el punto de entrega.
-- **Customer segment:** Choferes de reparto y actores vinculados al cierre físico del pedido.
-- **Pain points:** El transportista recibe llamadas constantes, encuentra clientes no preparados para recibir, y cierra entregas con demasiada dependencia de papeles o pruebas débiles.
-- **Gap actual:** La entrega no cuenta con suficiente visibilidad compartida, ETA comunicable ni evidencia digital mínima de cierre.
-- **Vision / strategy:** Nexa debe conectar seguimiento, incidencias y prueba de entrega para reducir interrupciones y reclamos posteriores.
-- **Initial segment priority:** Complementa la validación del flujo principal al cerrar la promesa comercial con ejecución real.
-- **Outcome esperado:** Mejora la predictibilidad del despacho y disminuyen los reclamos por falta de trazabilidad en la entrega.
+<div style="border: 1px solid #dbe7ff; border-radius: 8px; padding: 14px 16px; margin: 12px 0 18px 0; background: #fcfdff;">
+  <p><strong>Domain:</strong> Ejecución del despacho y cierre del pedido en el punto de entrega.</p>
+  <p><strong>Customer segment:</strong> Choferes de reparto y actores vinculados al cierre físico del pedido.</p>
+  <p><strong>Pain points:</strong> El transportista recibe llamadas constantes, encuentra clientes no preparados para recibir y cierra entregas con demasiada dependencia de papeles o pruebas débiles.</p>
+  <p><strong>Gap actual:</strong> La entrega no cuenta con suficiente visibilidad compartida, una ETA comunicable ni evidencia digital mínima de cierre.</p>
+  <p><strong>Dirección estratégica inicial:</strong> Conectar seguimiento, incidencias y prueba de entrega para reducir interrupciones y reclamos posteriores.</p>
+  <p><strong>Prioridad inicial del segmento:</strong> Complementa la validación del flujo principal al cerrar la promesa comercial con ejecución real.</p>
+  <p><strong>Resultado esperado:</strong> Mejora la predictibilidad del despacho y disminuyen los reclamos por falta de trazabilidad en la entrega.</p>
+</div>
 
 **Stakeholder secundario — Logística, abastecimiento y operación**
 
-- **Domain:** Reglas, restricciones y control integral del proceso.
-- **Customer segment:** Jefatura o responsables de logística, abastecimiento, operación y supervisión comercial.
-- **Rol dentro del aprendizaje:** No redefine la columna vertebral de personas, pero sí aporta visibilidad sobre lotes, vencimientos, temperatura, crédito, documentación e integración entre áreas.
+<div style="border: 1px dashed #cbd5e1; border-radius: 8px; padding: 14px 16px; margin: 12px 0 18px 0; background: #fafafa;">
+  <p><strong>Domain:</strong> Reglas, restricciones y control integral del proceso.</p>
+  <p><strong>Customer segment:</strong> Jefatura o responsables de logística, abastecimiento, operación y supervisión comercial.</p>
+  <p><strong>Rol dentro del aprendizaje:</strong> No redefine la columna vertebral de personas, pero sí aporta visibilidad sobre lotes, vencimientos, temperatura, crédito, documentación e integración entre áreas.</p>
+</div>
 
 #### 1.2.2.3 Lean UX Assumptions
 

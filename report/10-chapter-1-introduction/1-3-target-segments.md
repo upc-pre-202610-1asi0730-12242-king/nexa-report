@@ -5,7 +5,7 @@ La solución Nexa se dirige a un ecosistema B2B donde conviven actores operativo
 </p>
 
 <p align="justify">
-Bajo esta lógica, los segmentos S1, S2 y S3 no representan tipos de empresa, sino puntos críticos del flujo del pedido: captura comercial, abastecimiento del cliente y ejecución de la entrega. En paralelo, el landing page comunica el mismo dominio desde una óptica comercial, priorizando distribuidores refrigerados y ampliando el discurso hacia importadores/mayoristas y operadores de cámaras frías como extensiones estratégicas del mismo problema.
+Bajo esta lógica, los segmentos S1, S2 y S3 no representan tipos de empresa, sino puntos críticos del flujo del pedido: captura comercial, abastecimiento del cliente y ejecución de la entrega. En paralelo, el landing page comunica el mismo dominio desde una óptica comercial, priorizando distribuidores refrigerados y ampliando el discurso hacia importadores, mayoristas y operadores de cámaras frías como extensiones estratégicas del mismo problema.
 </p>
 
 <p align="justify">
@@ -47,7 +47,7 @@ Desde una perspectiva conductual, este segmento opera en tensión permanente ent
 **Segmento 2 (S2) — Cliente comercial B2B y abastecimiento recurrente**
 
 <p align="justify">
-El segmento de clientes comerciales B2B del canal tradicional peruano —bodegas, minimarkets, distribuidores pequeños y establecimientos HORECA— representa un universo de aproximadamente 414,000 bodegas activas a nivel nacional, con una concentración mayor en Lima Metropolitana (Asociación de Bodegueros del Perú, 2022). En términos de madurez digital, el Índice de Madurez Digital del Canal Tradicional elaborado por Xplora/Grupo Lucky reporta que solo alrededor del 28% de bodegas utiliza algún aplicativo para gestionar tareas del negocio, mientras que el 83% se ubica todavía en nivel "principiante" de transformación digital (Grupo Lucky, 2022). Complementariamente, un estudio sobre pagos digitales en pequeños comercios muestra que la adopción de herramientas digitales es incipiente y depende de la simplicidad percibida de la herramienta (Taipe Quispe, 2025). Esto confirma que la adopción del portal B2B de Nexa está condicionada a una experiencia de uso sin fricción que equipare o supere la velocidad percibida del canal informal.
+El segmento de clientes comerciales B2B del canal tradicional peruano incluye bodegas, minimarkets, distribuidores pequeños y establecimientos del canal HORECA. En conjunto, este universo representa aproximadamente 414,000 bodegas activas a nivel nacional, con una concentración mayor en Lima Metropolitana (Asociación de Bodegueros del Perú, 2022). En términos de madurez digital, el Índice de Madurez Digital del Canal Tradicional elaborado por Xplora/Grupo Lucky reporta que solo alrededor del 28% de bodegas utiliza algún aplicativo para gestionar tareas del negocio, mientras que el 83% se ubica todavía en nivel "principiante" de transformación digital (Grupo Lucky, 2022). Complementariamente, un estudio sobre pagos digitales en pequeños comercios muestra que la adopción de herramientas digitales es incipiente y depende de la simplicidad percibida de la herramienta (Taipe Quispe, 2025). Esto confirma que la adopción del portal B2B de Nexa está condicionada a una experiencia de uso sin fricción que equipare o supere la velocidad percibida del canal informal.
 </p>
 
 <p align="justify">
@@ -90,24 +90,27 @@ Su valor esperado no está en funciones complejas, sino en la reducción de paso
 Desde el punto de vista del diseño, Valeria representa al usuario que más claramente tensiona usabilidad y estructura. Necesita una experiencia suficientemente guiada para evitar errores, pero no tan rígida que le impida operar al ritmo que exige la atención comercial. Por eso este arquetipo es central en la definición del MVP: si la solución no funciona para quien captura y valida el pedido en condiciones de presión operativa, el resto del ecosistema tampoco podrá beneficiarse de una información mejor estructurada.
 </p>
 
-**Necesidades principales**
-
-- Recibir pedidos en un flujo estructurado y consistente.
-- Validar stock, crédito y condiciones comerciales sin saltar entre varias herramientas.
-- Registrar pedidos desde celular, tablet o escritorio sin retrabajo posterior.
-- Tener evidencia clara del estado del pedido para responder al cliente sin depender de llamadas constantes.
-
-**Puntos de dolor**
-
-- Los pedidos llegan por audios, listas o mensajes libres y requieren interpretación manual.
-- La disponibilidad real de stock no siempre coincide con lo que muestran los sistemas existentes.
-- La revisión de morosidad o crédito sigue siendo manual y lenta.
-- Los errores de digitación y de especificaciones terminan trasladándose a almacén, despacho y devoluciones.
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 16px 0;">
+  <div style="padding: 12px 14px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff;">
+    <strong>Necesidades principales</strong><br/><br/>
+    • Recibir pedidos en un flujo estructurado y consistente.<br/>
+    • Validar stock, crédito y condiciones comerciales sin saltar entre varias herramientas.<br/>
+    • Registrar pedidos desde celular, tablet o escritorio sin retrabajo posterior.<br/>
+    • Tener evidencia clara del estado del pedido para responder al cliente sin depender de llamadas constantes.
+  </div>
+  <div style="padding: 12px 14px; border: 1px solid #ffe2e2; border-radius: 8px; background: #fffdfd;">
+    <strong>Puntos de dolor</strong><br/><br/>
+    • Los pedidos llegan por audios, listas o mensajes libres y requieren interpretación manual.<br/>
+    • La disponibilidad real de stock no siempre coincide con lo que muestran los sistemas existentes.<br/>
+    • La revisión de morosidad o crédito sigue siendo manual y lenta.<br/>
+    • Los errores de digitación y de especificaciones terminan trasladándose a almacén, despacho y devoluciones.
+  </div>
+</div>
 
 #### Segmento 2: Cliente comercial B2B y abastecimiento recurrente
 
 <p align="justify">
-Este segmento representa a los negocios que dependen del distribuidor para mantener abastecida su operación: minimarkets, bodegas, pequeños mayoristas y cuentas del canal HORECA. El arquetipo canónico es <strong>Hilda</strong>, sintetizada como administradora de minimarket que compra con frecuencia, necesita rapidez y no puede detener su negocio para perseguir confirmaciones o esperar respuestas por WhatsApp.
+Este segmento representa a los negocios que dependen del distribuidor para mantener abastecida su operación, entre ellos minimarkets, bodegas, pequeños mayoristas y cuentas del canal HORECA. El arquetipo canónico es <strong>Hilda</strong>, sintetizada como administradora de minimarket que compra con frecuencia, necesita rapidez y no puede detener su negocio para perseguir confirmaciones o esperar respuestas por WhatsApp.
 </p>
 
 <p align="justify">
@@ -118,19 +121,22 @@ Desde su perspectiva, el problema no es “usar más tecnología”, sino compra
 Hilda también es el segmento que más claramente obliga al proyecto a equilibrar autoservicio y acompañamiento. Un portal completamente deshumanizado puede reducir costos operativos para la distribuidora, pero no necesariamente aumentar adopción en un contexto donde la confianza comercial sigue siendo relacional. Por ello, el valor esperado para este perfil no consiste solo en “digitalizar el pedido”, sino en transformar la experiencia de abastecimiento sin romper la sensación de respaldo que hoy provee la comunicación directa con el vendedor o coordinador comercial.
 </p>
 
-**Necesidades principales**
-
-- Consultar productos, formatos y fichas técnicas sin esperar respuesta manual.
-- Saber si el producto está disponible antes de confirmar el pedido.
-- Conocer el estado del pedido y una ventana estimada de entrega.
-- Resolver dudas o incidencias sin perder el componente humano de la relación comercial.
-
-**Puntos de dolor**
-
-- La compra por llamada o WhatsApp no deja trazabilidad clara del pedido.
-- La falta de disponibilidad o los cambios de último minuto afectan ventas y caja.
-- Las demoras de entrega generan desorden en el local y pérdida de confianza.
-- La complejidad excesiva haría que el usuario vuelva al canal informal.
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 16px 0;">
+  <div style="padding: 12px 14px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff;">
+    <strong>Necesidades principales</strong><br/><br/>
+    • Consultar productos, formatos y fichas técnicas sin esperar respuesta manual.<br/>
+    • Saber si el producto está disponible antes de confirmar el pedido.<br/>
+    • Conocer el estado del pedido y una ventana estimada de entrega.<br/>
+    • Resolver dudas o incidencias sin perder el componente humano de la relación comercial.
+  </div>
+  <div style="padding: 12px 14px; border: 1px solid #ffe2e2; border-radius: 8px; background: #fffdfd;">
+    <strong>Puntos de dolor</strong><br/><br/>
+    • La compra por llamada o WhatsApp no deja trazabilidad clara del pedido.<br/>
+    • La falta de disponibilidad o los cambios de último minuto afectan ventas y caja.<br/>
+    • Las demoras de entrega generan desorden en el local y pérdida de confianza.<br/>
+    • La complejidad excesiva haría que el usuario vuelva al canal informal.
+  </div>
+</div>
 
 #### Segmento 3: Despacho, transporte y cierre de entrega
 
@@ -146,19 +152,22 @@ Aunque en esta etapa la validación se apoya más en los artefactos de needfindi
 Metodológicamente, Pedro cumple una función de cierre dentro de la segmentación: evita que el proyecto interprete el problema solo desde la captura del pedido o desde la compra del cliente, y obliga a considerar la ejecución física como parte del valor. En otras palabras, este segmento recuerda que la propuesta de Nexa no se valida solo cuando el pedido es registrado, sino cuando la coordinación generada por el sistema se traduce en una entrega más predecible, trazable y defendible frente a incidencias.
 </p>
 
-**Necesidades principales**
-
-- Ejecutar la ruta con menos llamadas e interrupciones.
-- Llegar a puntos de entrega mejor preparados para recibir la mercadería.
-- Registrar el despacho y la entrega con evidencia simple y confiable.
-- Disminuir reclamos injustos provocados por errores previos del flujo comercial.
-
-**Puntos de dolor**
-
-- El cliente muchas veces no está listo para recibir ni pagar cuando el camión llega.
-- Los retrasos se comunican tarde y generan más llamadas durante la conducción.
-- Las guías físicas y el cierre manual aumentan el riesgo de pérdida o inconsistencia.
-- El transportista termina cargando reclamos originados por falta de stock o errores de pedido.
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 16px 0;">
+  <div style="padding: 12px 14px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff;">
+    <strong>Necesidades principales</strong><br/><br/>
+    • Ejecutar la ruta con menos llamadas e interrupciones.<br/>
+    • Llegar a puntos de entrega mejor preparados para recibir la mercadería.<br/>
+    • Registrar el despacho y la entrega con evidencia simple y confiable.<br/>
+    • Disminuir reclamos injustos provocados por errores previos del flujo comercial.
+  </div>
+  <div style="padding: 12px 14px; border: 1px solid #ffe2e2; border-radius: 8px; background: #fffdfd;">
+    <strong>Puntos de dolor</strong><br/><br/>
+    • El cliente muchas veces no está listo para recibir ni pagar cuando el camión llega.<br/>
+    • Los retrasos se comunican tarde y generan más llamadas durante la conducción.<br/>
+    • Las guías físicas y el cierre manual aumentan el riesgo de pérdida o inconsistencia.<br/>
+    • El transportista termina cargando reclamos originados por falta de stock o errores de pedido.
+  </div>
+</div>
 
 #### Stakeholder secundario: Jefatura y responsables de logística, abastecimiento y operación
 
