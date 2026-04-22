@@ -39,5 +39,6 @@
 | TB1 V1.3.0 | 21/04/2026 | Yucra Sandoval, Diego Sebastian | Nutrición estadística del Capítulo I: Transformación de datos de madurez digital (INEI/Lucky) en diagramas visuales de alto impacto |
 | TB1 V1.4.0 | 21/04/2026 | Yucra Sandoval, Diego Sebastian | Integración de evidencias visuales (pruebas) en el Capítulo II; fix de links rotos y normalización de activos en la sección de arquitectura DDD (4.6) |
 | TB1 V1.5.0 | 21/04/2026 | Yucra Sandoval, Diego Sebastian | Formalización académica de carátula (estilo UPC), expansión de Student Outcome (ABET 5) y actualización de perfiles con fotos integradas |
+| TB1 V1.6.0 | 21/04/2026 | Yucra Sandoval, Diego Sebastian | Reescritura completa del Capítulo V con integración de evidencias Jira, planificación de sprints, backlog remanente, validación AV1 y explicitación de pendientes formales para cierre de entrega |
 
 *Nota.* La tabla documenta los cambios significativos y las contribuciones individuales realizadas al informe a lo largo del ciclo del proyecto, asegurando la trazabilidad de su evolución. *Elaboración propia.*
