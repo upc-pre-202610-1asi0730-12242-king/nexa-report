@@ -14,8 +14,6 @@ El EventStorming se construyó como un ejercicio de síntesis del dominio a part
 
 ### 2.4.1. Proceso de construcción del modelado
 
-**Tabla 18**
-
 *Proceso de construcción del modelado*
 
 <table border="1" cellspacing="0" cellpadding="6" align="center">
@@ -46,11 +44,9 @@ El EventStorming se construyó como un ejercicio de síntesis del dominio a part
   </tr>
 </table>
 
-*Nota.* La tabla resume el proceso seguido para convertir evidencia cualitativa en un modelo de dominio entendible y útil para el MVP. Elaboración propia.
+La tabla resume el proceso seguido para convertir evidencia cualitativa en un modelo de dominio entendible y útil para el MVP. Elaboración propia.
 
 ### 2.4.2. Actores del dominio
-
-**Tabla 19**
 
 *Actores del dominio*
 
@@ -64,8 +60,6 @@ El EventStorming se construyó como un ejercicio de síntesis del dominio a part
 | Administrador autorizado | Gestiona cuentas internas y parámetros base del sistema |
 
 ### 2.4.3. Eventos del dominio y puntos de tensión principales
-
-**Tabla 20**
 
 *Eventos del dominio y puntos de tensión principales*
 
@@ -83,8 +77,6 @@ El EventStorming se construyó como un ejercicio de síntesis del dominio a part
 | Pedido cancelado antes de despacho | Coordinación comercial, operación | La cancelación exige recuperar continuidad operativa y evitar compromisos inconsistentes |
 
 ### 2.4.4. Pain points y restricciones operativas identificadas
-
-**Tabla 21**
 
 *Pain points y restricciones operativas identificadas*
 

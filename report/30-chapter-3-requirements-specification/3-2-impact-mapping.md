@@ -17,13 +17,11 @@ El mapa se estructura en cuatro niveles fundamentales:
 3. **Impacto:** cambio observable en la forma de actuar del actor.
 4. **Entregable (Deliverable):** componente funcional o técnico que facilita dicho cambio.
 
-**Ilustración 21**
-
 *Impact Mapping de Nexa — Alineación de metas, actores e impactos del MVP*
 
 ![Impact-mapping](../assets/images/impact-map1.png)
 
-*Nota. Elaboración propia. El mapa sintetiza la relación entre problemas observados en la investigación, actores priorizados y entregables requeridos para el MVP.*
+Elaboración propia. El mapa sintetiza la relación entre problemas observados en la investigación, actores priorizados y entregables requeridos para el MVP.
 
 <p align="justify">
 La lectura central del diagrama es que Nexa no persigue una optimización genérica de la cadena de frío, sino una reducción específica de fricción en el pedido y en su trazabilidad posterior. Esa definición es importante porque delimita alcance. El proyecto prioriza visibilidad comercial y operativa donde la investigación encontró mayor densidad de errores: captura informal del pedido, validación tardía de stock o condiciones, incertidumbre sobre la entrega y baja capacidad de cierre con evidencia trazable.
@@ -32,8 +30,6 @@ La lectura central del diagrama es que Nexa no persigue una optimización genér
 <p align="justify">
 En esta lectura, la supervisión operativa se mantiene como <em>stakeholder secundario</em>. Su presencia es decisiva para definir restricciones, validar estados, controlar lotes y sostener la trazabilidad; sin embargo, el mapa conserva como actores protagónicos a Valeria, Hilda y Pedro porque son ellos quienes concentran la interacción funcional más directa con el flujo del MVP. Esta distinción mantiene consistencia con la taxonomía ya consolidada en el Capítulo 2.
 </p>
-
-**Tabla 25**
 
 *Lectura analítica del Impact Mapping de Nexa*
 

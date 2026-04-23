@@ -33,13 +33,11 @@ Nexa se rige por el principio de <strong>"Calm-Tech"</strong>: la interfaz debe 
 La paleta se fundamenta en un sistema <strong>HSL (Hue, Saturation, Lightness)</strong> que permite una gestión dinámica del contraste y la adaptabilidad ante diversas condiciones lumínicas en centros logísticos.
 </p>
 
-**Ilustración 22**
-
 *Sistema de Colorimetría Nexa*
 
 ![Colorimetry](../assets/images/style-guidelines/Colorimetry.jpeg)
 
-*Nota.* Especificación de Brand Colors y Text Colors. *Elaboración propia.*
+Especificación de Brand Colors y Text Colors. Elaboración propia.
 
 <table style="width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 14px;">
   <thead>
@@ -74,13 +72,11 @@ La paleta se fundamenta en un sistema <strong>HSL (Hue, Saturation, Lightness)</
 Se ha estandarizado el uso de <strong>Inter</strong> como familia tipográfica universal. Esta decisión técnica (no solo estética) garantiza que la información se mantenga legible incluso en condiciones de baja resolución o alta fatiga ocular.
 </p>
 
-**Ilustración 23**
-
 *Sistema Tipográfico Nexa*
 
 ![Typography](../assets/images/style-guidelines/Typography.jpeg)
 
-*Nota.* Definición de jerarquías para Display, Headings, Body y Mono. *Elaboración propia.*
+Definición de jerarquías para Display, Headings, Body y Mono. Elaboración propia.
 
 <div style="background-color: #fff; padding: 15px; border: 1px solid #e2e8f0; border-radius: 8px; margin-top: 15px;">
   <p style="margin: 0; font-size: 14px;"><strong>Matriz Tipográfica Técnica:</strong></p>
@@ -98,13 +94,11 @@ Se ha estandarizado el uso de <strong>Inter</strong> como familia tipográfica u
 El sistema iconográfico utiliza trazos lineales consistentes para mantener la ligereza visual del portal, evitando que el peso de las imágenes compita con la lectura de los datos operativos.
 </p>
 
-**Ilustración 24**
-
 *Iconografía Nexa*
 
 ![Iconography](../assets/images/style-guidelines/Iconography.jpeg)
 
-*Nota.* Biblioteca de iconos vectoriales para navegación y soporte. *Elaboración propia.*
+Biblioteca de iconos vectoriales para navegación y soporte. Elaboración propia.
 
 #### 04. Grid Systems & Technical Layout
 
@@ -112,13 +106,11 @@ El sistema iconográfico utiliza trazos lineales consistentes para mantener la l
 Nexa utiliza una rejilla de <strong>12 columnas</strong> con un ancho de contenedor maestro de <strong>1440px</strong>. El diseño responde a la necesidad de visualizar dashboards de control en monitores de almacén, mientras que los flujos de consumo rápido se adaptan a tablets y smartphones.
 </p>
 
-**Ilustración 25**
-
 *Sistema de Rejilla y Breakpoints*
 
 ![Grid System](../assets/images/style-guidelines/grid-system.jpeg)
 
-*Nota.* Dimensionamiento para Desktop HD, Desktop y Tablet. *Elaboración propia.*
+Dimensionamiento para Desktop HD, Desktop y Tablet. Elaboración propia.
 
 #### 05. Spacing & Rhythm System
 
@@ -126,13 +118,11 @@ Nexa utiliza una rejilla de <strong>12 columnas</strong> con un ancho de contene
 El ritmo visual se basa en una escala de múltiplos de <strong>4px</strong>, un estándar de la industria que garantiza que cada elemento de la interfaz tenga una separación armónica y predecible.
 </p>
 
-**Ilustración 26**
-
 *Escala de Espaciado Nexa*
 
 ![Spacing](../assets/images/style-guidelines/Spacing.jpeg)
 
-*Nota.* Niveles de espaciado desde 4px hasta 96px. *Elaboración propia.*
+Niveles de espaciado desde 4px hasta 96px. Elaboración propia.
 
 ---
 

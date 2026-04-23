@@ -6,8 +6,6 @@
 Este anexo respalda la subsección <strong>5.2.1.8. Team Collaboration Insights during Sprint</strong>. Aquí deben colocarse las pruebas de coordinación síncrona y asíncrona del equipo, especialmente cuando la rúbrica solicite evidencia de llamada grupal, revisión de avance o acuerdos de trabajo.
 </p>
 
-**Tabla 43**
-
 *Tipos de evidencia de coordinación grupal del Sprint 1*
 
 | Tipo de evidencia | Qué debe colocarse | Formato sugerido |
@@ -31,8 +29,6 @@ Si la rúbrica o el profesor piden una <strong>prueba grupal</strong> o una <str
 Este apartado debe concentrar pruebas del progreso del incremento AV1 antes de la entrega: comparativas de mockups, revisión de Jira, estado del landing page, chequeos del reporte o cualquier evidencia que muestre evolución del sprint.
 </p>
 
-**Tabla 44**
-
 *Registro de evidencia de avance y Sprint Review interna*
 
 | Evidencia de avance | Qué conviene anexar |
@@ -47,8 +43,6 @@ Si aún no cuentan con estas capturas, este apartado puede funcionar como placeh
 </p>
 
 ## A.3. Enlaces Maestros de Soporte
-
-**Tabla 45**
 
 *Enlaces maestros de soporte técnico y de diseño*
 
