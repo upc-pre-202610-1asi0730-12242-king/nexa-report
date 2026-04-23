@@ -288,11 +288,11 @@ En este modelo, la empresa distribuidora es el cliente pagador de la solución y
     </tr>
     <tr>
       <td>Usuarios operativos primarios</td>
-      <td>Coordinación comercial / mercaderista (Valeria), cliente comercial B2B (Hilda) y despacho / chofer de reparto (Pedro).</td>
+      <td>S1: coordinación comercial y captura del pedido; S2: cliente comercial B2B y abastecimiento recurrente; S3: despacho, transporte y cierre de entrega.</td>
     </tr>
     <tr>
-      <td>Stakeholder secundario</td>
-      <td>Jefatura o responsables de logística, abastecimiento y operación, quienes alimentan reglas de negocio, restricciones y roadmap.</td>
+      <td>Contexto operativo del dominio</td>
+      <td>Reglas y restricciones de abastecimiento, inventario, despacho y cierre que delimitan el alcance inicial del MVP.</td>
     </tr>
     <tr>
       <td>Segmentos comerciales del sitio público</td>
@@ -471,7 +471,7 @@ El Lean UX Canvas sintetiza la lógica del producto en una sola vista: problema,
 | **Ideas de solución** | Sitio público multipágina, portal B2B para clientes, flujo asistido de captura del pedido, visibilidad compartida del estado, control básico de inventario, condiciones comerciales y seguimiento hasta la entrega. |
 | **Resultados de negocio (outcomes)** | Menor retrabajo en captura, mayor claridad para el cliente comercial, mejor predictibilidad del despacho y validación del valor del MVP SaaS. |
 | **Usuarios y clientes** | Cliente pagador: distribuidor refrigerado. <br> Usuarios operativos primarios: coordinación comercial, cliente comercial B2B y despacho. <br> Contexto del dominio: reglas operativas de inventario, despacho y documentación consideradas para delimitar el MVP. |
-| **Segmentos priorizados** | S1: Valeria / coordinación comercial <br> S2: Hilda / cliente comercial B2B <br> S3: Pedro / despacho y entrega |
+| **Segmentos priorizados** | S1: coordinación comercial y captura del pedido <br> S2: cliente comercial B2B y abastecimiento recurrente <br> S3: despacho, transporte y cierre de entrega |
 | **Propuesta de valor** | Ordenar el flujo principal del pedido en una plataforma web especializada que conecte catálogo, condiciones comerciales, pedido, disponibilidad y seguimiento hasta la entrega. |
 | **Riesgos clave a validar** | Adopción real del flujo asistido por coordinación comercial, disposición del cliente a usar un portal, suficiencia de las reglas comerciales del MVP y valor percibido del seguimiento del despacho. |
 | **Prioridad de aprendizaje** | Comprobar si el producto resuelve una fricción real en captura, compra y cierre de entrega antes de ampliar el alcance hacia automatizaciones o integraciones más complejas. |
