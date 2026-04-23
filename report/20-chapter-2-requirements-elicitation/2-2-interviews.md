@@ -1,15 +1,15 @@
 ## 2.2. Entrevistas
 
 <p align="justify">
-Para mantener continuidad con el Capítulo I y con los artefactos posteriores de needfinding, este capítulo distingue entre <strong>segmentos canónicos del producto</strong> y <strong>bloques de levantamiento de información</strong>. Los segmentos canónicos del informe siguen siendo <strong>S1: coordinación comercial y captura del pedido</strong>, <strong>S2: cliente comercial B2B y abastecimiento recurrente</strong> y <strong>S3: despacho, transporte y cierre de entrega</strong>. Sin embargo, el trabajo de campo no se organizó únicamente por esos tres arquetipos, sino también por un cuarto lente de análisis: la <strong>jefatura y responsables de logística, abastecimiento y operación</strong>, que funciona como stakeholder secundario para validar reglas del dominio, trazabilidad, riesgos sanitarios y restricciones operativas.
+Para mantener continuidad con el Capítulo I y con los artefactos posteriores de needfinding, este capítulo trabaja con tres segmentos del producto: <strong>S1: coordinación comercial y captura del pedido</strong>, <strong>S2: cliente comercial B2B y abastecimiento recurrente</strong> y <strong>S3: despacho, transporte y cierre de entrega</strong>. Las entrevistas se organizaron para entender esos tres tramos del flujo y, cuando fue necesario, recoger evidencia complementaria sobre restricciones operativas del dominio sin crear una segmentación adicional.
 </p>
 
 > **Correspondencia metodológica utilizada en el capítulo**
 >
 > - **Bloque de entrevistas 1:** alimenta directamente al segmento canónico **S1**.
-> - **Bloque de entrevistas 2:** no reemplaza a un segmento canónico; se interpreta como **stakeholder secundario** para validar reglas, riesgos y restricciones del dominio.
+> - **Bloque complementario de operación:** aporta reglas, restricciones y evidencia útil para entender mejor el flujo completo del pedido.
 > - **Bloque de entrevistas 3:** alimenta directamente al segmento canónico **S2**.
-> - **Segmento canónico S3:** se materializa por triangulación entre hallazgos operativos, puntos de dolor del cierre de entrega, artefactos de needfinding y modelado del flujo del dominio.
+> - **Segmento canónico S3:** se consolida en el capítulo como el tramo de despacho, seguimiento e incidencia que cierra la promesa comercial del sistema.
 
 ### 2.2.1. Diseño de entrevistas
 
@@ -76,9 +76,9 @@ Aquí todavía no se vende la solución; se explora el mínimo valor esperado.
 
 **Nota para el moderador.** No es necesario formular todas las preguntas literalmente. Lo importante es mantener el foco, pedir ejemplos recientes, repreguntar “por qué” cuando aparezca un problema y no interrumpir silencios útiles.
 
-**Bloque complementario de entrevistas: Jefatura y responsables de logística, abastecimiento y operación**
+**Bloque complementario de entrevistas: operación y restricciones del dominio**
 
-**Stakeholder analizado:**  Personas con responsabilidad de supervisión o decisión sobre importación, abastecimiento, almacén, inventario, despacho y coordinación logística.
+**Perfiles entrevistados:** Personas con responsabilidad de supervisión o decisión sobre importación, abastecimiento, almacén, inventario, despacho y coordinación logística.
 
 **Objetivo de investigación:** Comprender el flujo end-to-end del pedido, sus puntos críticos, riesgos de escalabilidad y criterios de valor para una primera solución digital.
 
@@ -88,7 +88,7 @@ Aquí todavía no se vende la solución; se explora el mínimo valor esperado.
 
 **Foco principal:** Trazabilidad, puntos de quiebre, visibilidad interna, coordinación entre áreas, prioridades del MVP y evolución futura.
 
-**Rol dentro de la taxonomía del informe:** Este bloque no redefine a S2 ni a S3. Su función es complementar la investigación con una visión de dominio y restricciones operativas que después alimenta el diseño, el EventStorming y la delimitación del alcance.
+**Uso dentro del informe:** Este bloque no redefine la taxonomía del proyecto. Su función es complementar la investigación con una visión de dominio y restricciones operativas que luego alimentan el diseño, el EventStorming y la delimitación del alcance.
 
 **Warm-up y alcance del cargo**
 La idea es ubicar rápido desde qué parte del proceso mira la operación.
@@ -275,7 +275,7 @@ Celia Pérez, con experiencia previa en ventas de ruta, aporta una perspectiva c
 Su testimonio confirma que, para el personal en ruta, la estabilidad de la conexión y la velocidad de respuesta del sistema son factores determinantes para la adopción tecnológica. Cualquier retraso en el dispositivo móvil se traduce en una atención deficiente al cliente y en una carga operativa innecesaria al final del día.
 </p>
 
-**Stakeholder secundario: Jefatura o responsables de logística y operación**
+**Bloque complementario de operación y restricciones del dominio**
 
 **Entrevistado 1**
 
@@ -449,13 +449,13 @@ La tabla resume la cadena dato observado → patrón → implicancia de diseño 
 - Conviene integrar en la misma interfaz la visibilidad de crédito, cobranzas y disponibilidad para reducir validaciones paralelas.
 - La experiencia debe responder bien en móvil, porque parte importante del trabajo ocurre fuera del escritorio o en condiciones de alta urgencia.
 
-**Análisis del stakeholder secundario: Jefatura o responsables de logística y operación**
+**Análisis complementario de operación y restricciones del dominio**
 
 <p align="justify">
-Este bloque, integrado por Hilda Litano, Edith Taype y Jesica Sandoval, aporta una lectura transversal del dominio. Aquí el foco se desplaza desde la rapidez comercial hacia la trazabilidad, el control documental, la rotación y la responsabilidad operativa sobre productos perecederos. Más que describir un usuario del MVP, estas entrevistas exponen restricciones que el sistema no puede ignorar.
+Este bloque, integrado por Hilda Litano, Edith Taype y Jesica Sandoval, aporta una lectura transversal del dominio. Aquí el foco se desplaza desde la rapidez comercial hacia la trazabilidad, el control documental, la rotación y la responsabilidad operativa sobre productos perecederos. Más que describir un segmento adicional del MVP, estas entrevistas exponen restricciones que el sistema no puede ignorar.
 </p>
 
-*Análisis del stakeholder secundario: Jefatura o responsables de logística y operación*
+*Análisis complementario de operación y restricciones del dominio*
 
 <table border="1" cellspacing="0" cellpadding="6" align="center">
   <tr>
@@ -508,7 +508,7 @@ La tabla sintetiza cómo las entrevistas de jefatura y operación alimentan regl
 - Se requiere una **herramienta unificada** que centralice la documentación sanitaria con el estado real del stock.
 - La **trazabilidad de temperatura** debe ser una evidencia inalterable para proteger la responsabilidad de la distribuidora frente a reclamos de clientes.
 - Reducir los **silos de información** permitiendo diferentes niveles de acceso según el rol operativo.
-- Este bloque confirma que la jefatura funciona mejor como <strong>stakeholder secundario</strong> del informe: define restricciones, políticas y riesgos, pero no sustituye a los segmentos de uso cotidiano del MVP.
+- Este bloque confirma que la operación aporta reglas, políticas y riesgos que deben respetarse en el producto, pero no altera la segmentación oficial del informe.
 
 **Análisis del segmento canónico S2: Clientes comerciales B2B (minoristas y mayoristas)**
 
@@ -570,17 +570,17 @@ La tabla ordena la relación entre evidencia empírica del cliente comercial y d
 - El sistema debe digitalizar la operación sin eliminar por completo el soporte humano en casos excepcionales.
 - La predictibilidad del despacho aparece como una de las variables de valor más claras para este segmento.
 
-**Materialización del segmento canónico S3: Despacho, transporte y cierre de entrega**
+**Segmento canónico S3: Despacho, transporte y cierre de entrega**
 
 <p align="justify">
-El segmento canónico S3 no nace de un bloque independiente de entrevistas a choferes de reparto, sino de una triangulación metodológica entre tres fuentes: la visión de jefatura sobre la ejecución física y la trazabilidad, los puntos de dolor del cliente comercial respecto a la incertidumbre de entrega, y los artefactos de modelado del flujo elaborados en needfinding y EventStorming. Esta decisión evita forzar una equivalencia artificial entre entrevistados reales y personas canónicas, y conserva la coherencia con el Capítulo I, donde S3 ya fue definido como el actor responsable del cierre operativo del pedido.
+El segmento canónico S3 expresa el tramo final del flujo del pedido: despacho, seguimiento, incidencia y cierre con evidencia. En este capítulo se consolida a partir de los hallazgos sobre visibilidad de entrega, necesidad de ETA comunicable, cierre defendible y carga operativa durante la ruta, manteniendo coherencia con la segmentación ya definida desde el Capítulo I.
 </p>
 
 **Evidencia que sostiene S3:**
 
-- Desde el stakeholder secundario, aparece la necesidad de contar con evidencia de temperatura, trazabilidad documental y cierre defendible frente a incidencias.
+- Desde la evidencia complementaria de operación, aparece la necesidad de contar con trazabilidad documental y cierre defendible frente a incidencias.
 - Desde el cliente comercial B2B, aparece la necesidad de una ETA comunicable, menor opacidad del despacho y confirmación confiable de entrega.
-- Desde el flujo del dominio, el cierre del pedido exige estados claros, registro de incidencias y prueba de entrega, lo que convierte al personal de despacho en un actor indispensable del MVP aunque su validación empírica todavía sea menos directa que la de S1 y S2.
+- Desde el flujo del dominio, el cierre del pedido exige estados claros, registro de incidencias y prueba de entrega, lo que convierte al personal de despacho en un actor indispensable del MVP.
 
 **Implicancias de diseño para S3:**
 
@@ -591,7 +591,7 @@ El segmento canónico S3 no nace de un bloque independiente de entrevistas a cho
 ### 2.2.4. Síntesis Global de Hallazgos
 
 <p align="justify">
-Tras el análisis detallado de los ocho perfiles levantados y de la triangulación posterior hacia los segmentos canónicos del producto, se identifica una <strong>brecha de trazabilidad integral</strong>. Esta brecha se manifiesta en la desconexión entre la promesa comercial capturada por canales informales y la realidad operativa gestionada con sistemas fragmentados, validaciones manuales y visibilidad incompleta del despacho.
+Tras el análisis detallado de los ocho perfiles levantados y de la lectura conjunta de los tres segmentos del producto, se identifica una <strong>brecha de trazabilidad integral</strong>. Esta brecha se manifiesta en la desconexión entre la promesa comercial capturada por canales informales y la realidad operativa gestionada con sistemas fragmentados, validaciones manuales y visibilidad incompleta del despacho.
 </p>
 
 *Distribución de Canales de Comunicación Identificados*
@@ -603,7 +603,7 @@ pie title Uso de Canales de Comunicación
     "ERP / Sistema Formal" : 10
 ```
 
-Elaboración propia. Resultados obtenidos de las 8 entrevistas a profundidad realizadas sobre coordinación comercial, cliente comercial B2B y stakeholder operativo de dominio.
+Elaboración propia. Resultados obtenidos de las 8 entrevistas a profundidad realizadas sobre coordinación comercial, cliente comercial B2B y evidencias complementarias de operación.
 
 *Jerarquía de Puntos de Dolor por Incidencia en los Segmentos*
 
@@ -618,5 +618,5 @@ graph TD
 Elaboración propia. Mapeo analítico construido a partir de la recurrencia de temas mencionados en las entrevistas; los porcentajes deben leerse como aproximaciones de frecuencia dentro de la muestra, no como mediciones estadísticas del mercado.
 
 <p align="justify">
-En conclusión, Nexa no solo debe resolver la toma de pedidos, sino articular de forma consistente los tres segmentos canónicos del producto: quien captura y valida el pedido (S1), quien se abastece y necesita previsibilidad (S2), y quien ejecuta el despacho y cierra la entrega (S3). La jefatura logística, por su parte, permanece como stakeholder secundario que aporta reglas, restricciones y criterios de control sobre ese mismo flujo.
+En conclusión, Nexa no solo debe resolver la toma de pedidos, sino articular de forma consistente los tres segmentos canónicos del producto: quien captura y valida el pedido (S1), quien se abastece y necesita previsibilidad (S2), y quien ejecuta el despacho y cierra la entrega (S3). Las reglas, restricciones y criterios de control del dominio acompañan ese flujo completo, pero la segmentación del informe se mantiene únicamente en esos tres tramos del producto.
 </p>

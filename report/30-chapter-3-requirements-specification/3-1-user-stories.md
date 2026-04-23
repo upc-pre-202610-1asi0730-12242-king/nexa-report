@@ -11,7 +11,7 @@ La especificación no parte de una colección arbitraria de funcionalidades. Cad
 </p>
 
 <p align="justify">
-La lógica de actores se mantiene estable respecto del capítulo anterior. Los arquetipos canónicos continúan siendo Valeria, Hilda y Pedro; mientras que la supervisión operativa conserva un rol de <em>stakeholder secundario</em> que influye sobre reglas de negocio, control de stock, lotes y cierre, pero no reemplaza a los tres protagonistas funcionales del MVP. Esta precisión evita duplicidades de segmentación y refuerza la continuidad narrativa del informe.
+La lógica de actores se mantiene estable respecto del capítulo anterior. Los arquetipos canónicos continúan siendo Valeria, Hilda y Pedro, y todas las historias se sostienen sobre esos tres segmentos del MVP. Las reglas de inventario, stock, lotes, crédito y cierre se incorporan como parte del dominio, no como una segmentación adicional.
 </p>
 
 *Trazabilidad de épicas con actores, evidencia y propósito funcional*

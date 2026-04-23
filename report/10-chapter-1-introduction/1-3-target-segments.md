@@ -1,15 +1,15 @@
 ### 1.3. Segmentos Objetivos
 
 <p align="justify">
-La solución Nexa se dirige a un ecosistema B2B donde conviven actores operativos, comerciales y logísticos con responsabilidades distintas. Para mantener consistencia metodológica entre el capítulo 1, el needfinding y el backlog, el proyecto utilizará dos capas de segmentación complementarias y no competitivas. La primera capa corresponde a los <strong>segmentos operativos primarios</strong>, que son la base canónica del informe porque ya fueron materializados en las user personas, los journey maps y los empathy maps. La segunda capa corresponde a los <strong>segmentos comerciales del sitio público</strong>, utilizados para comunicar la propuesta de valor del producto en el landing page sin alterar la estructura principal de la investigación.
+La solución Nexa se organiza sobre tres segmentos objetivos que recorren el flujo principal del pedido B2B refrigerado: <strong>S1</strong> para la captura comercial, <strong>S2</strong> para el abastecimiento del cliente comercial y <strong>S3</strong> para la ejecución y cierre de la entrega. Esta taxonomía se mantiene estable en todo el informe y sirve como base para personas, journeys, empathy maps, user stories, backlog y arquitectura del producto.
 </p>
 
 <p align="justify">
-Bajo esta lógica, los segmentos S1, S2 y S3 no representan tipos de empresa, sino puntos críticos del flujo del pedido: captura comercial, abastecimiento del cliente y ejecución de la entrega. En paralelo, el landing page comunica el mismo dominio desde una óptica comercial, priorizando distribuidores refrigerados y ampliando el discurso hacia importadores, mayoristas y operadores de cámaras frías como extensiones estratégicas del mismo problema.
+El sitio público utiliza agrupaciones comerciales como distribuidores, importadores y operadores de cámaras frías para comunicar la propuesta de valor, pero esas agrupaciones no reemplazan ni amplían la segmentación oficial del proyecto. La estructura de investigación y de diseño del producto sigue trabajando únicamente con S1, S2 y S3.
 </p>
 
 <p align="justify">
-La construcción de estos segmentos no se basa en una única fuente de información. Por el contrario, responde a un criterio de triangulación entre literatura sectorial, datos de mercado e hipótesis operativas que luego serán contrastadas con el proceso de entrevistas y needfinding. Esta aclaración es metodológicamente importante: la caracterización estadística presentada en este capítulo cumple la función de justificar la relevancia del segmento dentro del dominio, mientras que el capítulo 2 se encargará de profundizar cómo esas características se manifiestan en comportamientos, pain points y expectativas concretas de uso.
+La caracterización presentada en este capítulo combina contexto sectorial, datos de mercado e hipótesis operativas iniciales. Su función es justificar por qué cada segmento resulta relevante dentro del dominio; el Capítulo 2 profundiza luego cómo esas características aparecen en comportamientos, pain points y expectativas concretas de uso.
 </p>
 
 *Resumen de segmentos operativos primarios*
@@ -168,7 +168,7 @@ Este segmento reúne a quienes ejecutan la entrega física y cargan con las cons
 </p>
 
 <p align="justify">
-Aunque en esta etapa la validación se apoya más en los artefactos de needfinding y en evidencia indirecta del resto de entrevistas, el segmento sigue siendo esencial porque representa el punto donde la promesa comercial se vuelve servicio real. Nexa debe permitirle contar con estados claros, visibilidad compartida de la entrega, alertas tempranas al cliente y una prueba de entrega que reduzca el uso de papeles y las discusiones al cierre.
+Este segmento es esencial porque representa el punto donde la promesa comercial se vuelve servicio real. Nexa debe permitirle contar con estados claros, visibilidad compartida de la entrega, alertas tempranas al cliente y una prueba de entrega que reduzca el uso de papeles y las discusiones al cierre.
 </p>
 
 <p align="justify">
@@ -189,34 +189,24 @@ Metodológicamente, Pedro cumple una función de cierre dentro de la segmentaci�
 > - Las guías físicas y el cierre manual aumentan el riesgo de pérdida o inconsistencia.
 > - El transportista termina cargando reclamos originados por falta de stock o errores de pedido.
 
-#### Stakeholder secundario: Jefatura y responsables de logística, abastecimiento y operación
-
 <p align="justify">
-La jefatura de logística, abastecimiento y operación se mantiene como <strong>stakeholder secundario</strong> del proyecto. Este perfil no reemplaza a las personas primarias, pero sí alimenta reglas de negocio, restricciones operativas, criterios de aceptación y decisiones de roadmap. Sus entrevistas son especialmente valiosas para entender visibilidad end-to-end, trazabilidad, control de vencimientos, bloqueo por crédito, manejo de incidencias, temperatura y coordinación inter-áreas.
+Las restricciones de logística, abastecimiento y operación se consideran contexto del dominio para delimitar reglas de negocio, condiciones de inventario, cierre de entrega y prioridades de evolución. Sin embargo, ese contexto no altera la segmentación del proyecto: la validación de uso y de valor del MVP sigue organizada únicamente en torno a S1, S2 y S3.
 </p>
 
-<p align="justify">
-En términos estratégicos, este stakeholder ayuda a evitar que Nexa se diseñe solo desde la comodidad del front comercial. Su función en el informe es complementar la validación del dominio, no redefinir la columna vertebral de personas que ya fue consolidada en el capítulo 2.
-</p>
+#### Agrupaciones comerciales del sitio público
 
 <p align="justify">
-Mantener este actor como stakeholder secundario y no como persona principal responde a un criterio de foco. La jefatura condiciona fuertemente las reglas del sistema, pero no necesariamente interactúa con la misma frecuencia con el flujo transaccional cotidiano que los perfiles operativos priorizados. En consecuencia, su aporte resulta decisivo para delimitar restricciones del dominio y decisiones de evolución, mientras que la validación de usabilidad y adopción del MVP recae principalmente en quienes capturan, compran y ejecutan el pedido.
+El landing page utiliza una agrupación comercial adicional para orientar la propuesta de valor hacia tipos de empresa compradoras del producto. Esta organización no sustituye a S1, S2 y S3; solo ordena el discurso público del sitio para adquisición y posicionamiento comercial.
 </p>
 
-#### Segmentos comerciales del sitio público
+*Agrupaciones comerciales del sitio público*
 
-<p align="justify">
-El landing page utiliza una capa comercial adicional para orientar la propuesta de valor hacia tipos de empresa compradoras del producto. Esta segmentación no sustituye a S1, S2 y S3; simplemente organiza el discurso público del sitio para adquisición y posicionamiento comercial.
-</p>
-
-*Segmentos comerciales del sitio público*
-
-| **Segmento comercial del sitio** | **Rol comercial** | **Relación con los segmentos operativos** | **Nivel de prioridad** |
+| **Agrupación comercial del sitio** | **Rol comercial** | **Relación con los segmentos operativos** | **Nivel de prioridad** |
 |----------------------------------|-------------------|--------------------------------------------|------------------------|
-| **Distribuidores refrigerados** | Cliente pagador principal de la plataforma SaaS | Conecta directamente con Valeria, Hilda, Pedro y el stakeholder logístico | Principal |
-| **Importadores y mayoristas** | Segmento adyacente con problemas similares de catálogo, stock y coordinación | Se apoya sobre todo en reglas y visibilidad operativa aportadas por coordinación comercial y jefatura | Adyacente |
+| **Distribuidores refrigerados** | Cliente pagador principal de la plataforma SaaS | Conecta directamente con Valeria, Hilda y Pedro a lo largo del flujo del pedido | Principal |
+| **Importadores y mayoristas** | Segmento adyacente con problemas similares de catálogo, stock y coordinación | Se relaciona con los mismos puntos de fricción que S1, S2 y S3 en un contexto comercial más amplio | Adyacente |
 | **Operadores de cámaras frías** | Extensión estratégica del dominio hacia almacenamiento y trazabilidad | Se relaciona con necesidades de inventario, vencimientos y control de cadena de frío | Expansión |
 
 <p align="justify">
-Esta doble capa de segmentación permite mantener coherencia entre investigación y comunicación comercial: el informe trabaja con arquetipos operativos concretos, mientras que el sitio público presenta el mismo problema en términos comprensibles para los tipos de empresa que podrían comprar la solución.
+Esta organización permite mantener coherencia entre investigación y comunicación comercial: el informe trabaja con tres arquetipos operativos concretos, mientras que el sitio público presenta el mismo problema en términos comprensibles para los tipos de empresa que podrían comprar la solución.
 </p>

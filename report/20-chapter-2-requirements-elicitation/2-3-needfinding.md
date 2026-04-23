@@ -15,7 +15,7 @@ Por ello, los artefactos de needfinding no deben interpretarse como piezas visua
 >
 > - **Valeria (S1):** sintetiza patrones compartidos por el personal de coordinación comercial entrevistado.
 > - **Hilda (S2):** sintetiza patrones del cliente comercial B2B y no corresponde a una única entrevistada individual.
-> - **Pedro (S3):** sintetiza el rol de despacho y cierre a partir de triangulación entre restricciones operativas, pain points del seguimiento y modelado del flujo.
+> - **Pedro (S3):** sintetiza el rol de despacho y cierre a partir de hallazgos del seguimiento, las incidencias y el cierre de entrega observados en la investigación.
 
 ### 2.3.1. User Personas
 
@@ -44,7 +44,7 @@ Las user personas no sustituyen a los entrevistados reales; funcionan como sínt
   </tr>
   <tr>
     <td><strong>Pedro (S3)</strong></td>
-    <td>Triangulación entre stakeholder operativo, pain points del seguimiento y modelado del flujo</td>
+    <td>Hallazgos del seguimiento, las incidencias y el cierre de entrega observados en la investigación</td>
     <td>Necesidad de cierre con evidencia, reducción de interrupciones y visibilidad del estado de entrega</td>
     <td>Representar la ejecución física del pedido y el momento donde la promesa comercial se valida o fracasa</td>
   </tr>
@@ -62,7 +62,7 @@ Representación sintética del arquetipo de cliente comercial B2B, construida a 
 
 *User Persona — Segmento 3: Pedro*
 ![User Persona 3](../assets/images/user-persona-3.png)
-Representación sintética del arquetipo de despacho y entrega, enfocada en la eficiencia de ruta y el cierre digital con evidencia. Su construcción se apoya en triangulación entre stakeholder operativo, pain points del seguimiento y modelado del flujo de dominio. Elaboración propia.
+Representación sintética del arquetipo de despacho y entrega, enfocada en la eficiencia de ruta y el cierre digital con evidencia. Su construcción se apoya en hallazgos del seguimiento del pedido, las incidencias y el cierre de entrega dentro del dominio. Elaboración propia.
 
 <p align="justify">
 En conjunto, las tres personas muestran una progresión coherente del mismo problema. Valeria evidencia cómo la información del pedido nace fragmentada; Hilda expresa la incertidumbre que ese desorden produce en el cliente comercial; y Pedro representa el punto donde la falta de coordinación se vuelve retraso, reclamo o cierre débil de la entrega. Esta continuidad resulta importante porque permite que los artefactos del capítulo no describan actores desconectados, sino tres posiciones sobre una misma historia operativa.

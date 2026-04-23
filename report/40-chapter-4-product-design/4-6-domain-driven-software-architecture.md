@@ -4,6 +4,10 @@
 La arquitectura de software de Nexa sigue los principios del Domain-Driven Design (DDD), partiendo de los bounded contexts identificados en el Big Picture EventStorming y profundizando en su modelado mediante el Design-Level EventStorming. La representación arquitectónica emplea el modelo C4, que permite comunicar la estructura del sistema en cuatro niveles de abstracción progresiva: contexto, contenedores, componentes y código. Para Nexa, se presentan los tres primeros niveles, dado que el cuarto (código) corresponde a fases de implementación avanzada.
 </p>
 
+<p align="justify">
+Dentro del informe, esta sección cumple una función de soporte: ordenar el dominio y explicar cómo se distribuye la solución a nivel arquitectónico. La separación más fina de clases por bounded context se documenta después en la sección 4.7, por lo que aquí el foco se mantiene en el vínculo entre EventStorming, C4 y límites del sistema.
+</p>
+
 ### 4.6.1. Design-Level EventStorming
 
 El Design-Level EventStorming profundiza el trabajo iniciado en el Big Picture EventStorming. En esta fase, el objetivo ya no fue solo entender el problema, sino ordenar el dominio en piezas que luego pudieran traducirse a arquitectura: eventos, líneas temporales, pain points, comandos, políticas, read models y bounded contexts.
