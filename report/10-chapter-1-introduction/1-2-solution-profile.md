@@ -132,9 +132,8 @@ A partir de este contexto, el proyecto Nexa se plantea como respuesta a una prob
 La relevancia de este problema no radica únicamente en la pérdida de eficiencia interna. En un dominio como el de productos refrigerados y congelados, una falla en la coordinación del pedido compromete simultáneamente variables comerciales, operativas y sanitarias. Cuando el catálogo no refleja disponibilidad real, cuando la toma del pedido depende de mensajes dispersos o cuando el seguimiento del despacho carece de visibilidad compartida, la empresa no solo pierde tiempo: también deteriora la confianza del cliente comercial, incrementa el riesgo de quiebre de stock en el punto de venta y dificulta la respuesta ante incidencias o auditorías. Por ello, el problema del proyecto debe entenderse como una falla de articulación del flujo de información crítico del negocio, más que como una carencia aislada de software.
 </p>
 
-<div style="padding: 14px 16px; border-left: 4px solid #2554df; background: #f8fbff; margin: 16px 0;">
-  <strong>Síntesis del problema.</strong> En el contexto de Nexa, el problema no es únicamente la falta de digitalización, sino la falta de integración operativa entre captura comercial, validación, inventario y seguimiento del pedido. Esa desconexión explica por qué errores aparentemente menores terminan convirtiéndose en sobrecostos, quiebres, reclamos y pérdida de trazabilidad.
-</div>
+> **Síntesis del problema**  
+> En el contexto de Nexa, el problema no es únicamente la falta de digitalización, sino la falta de integración operativa entre captura comercial, validación, inventario y seguimiento del pedido. Esa desconexión explica por qué errores aparentemente menores terminan convirtiéndose en sobrecostos, quiebres, reclamos y pérdida de trazabilidad.
 
 #### Objetivos y restricciones del proyecto
 
@@ -256,16 +255,13 @@ En este proyecto, el uso de Lean UX resulta pertinente porque el dominio combina
 Desde esta perspectiva, Lean UX cumple dos funciones en el proyecto. La primera es estratégica: obliga al equipo a formular con precisión qué problema se está abordando, para qué actores se está construyendo valor y qué parte del dominio quedará fuera del MVP inicial. La segunda es metodológica: convierte supuestos del equipo en hipótesis observables, reduciendo el riesgo de diseñar una solución sobredimensionada o incoherente con la realidad operativa del sector. Por ello, este bloque concentra las decisiones que conectan la problemática del capítulo con la investigación posterior, la priorización del backlog y el diseño del MVP.
 </p>
 
-<div style="padding: 14px 16px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff; margin: 16px 0;">
-  <strong>Componentes del bloque Lean UX.</strong><br/><br/>
-  <ul>
-    <li><strong>Visión del modelo de negocio:</strong> define quién paga, quién usa y dónde se concentra el valor inicial del producto.</li>
-    <li><strong>Problem Statements:</strong> delimitan la brecha principal que afecta a cada segmento priorizado.</li>
-    <li><strong>Assumptions:</strong> explicitan los supuestos que todavía deben contrastarse.</li>
-    <li><strong>Hypothesis Statements:</strong> traducen esos supuestos en aprendizajes esperados.</li>
-    <li><strong>Lean UX Canvas:</strong> resume el vínculo entre problema, solución, usuarios y outcomes esperados.</li>
-  </ul>
-</div>
+> **Componentes del bloque Lean UX**
+>
+> - **Visión del modelo de negocio:** define quién paga, quién usa y dónde se concentra el valor inicial del producto.
+> - **Problem Statements:** delimitan la brecha principal que afecta a cada segmento priorizado.
+> - **Assumptions:** explicitan los supuestos que todavía deben contrastarse.
+> - **Hypothesis Statements:** traducen esos supuestos en aprendizajes esperados.
+> - **Lean UX Canvas:** resume el vínculo entre problema, solución, usuarios y outcomes esperados.
 
 #### 1.2.2.1. Visión del modelo de negocio soportado por el software
 
@@ -335,49 +331,98 @@ Los problem statements expresan la brecha entre la situación actual del dominio
 Cada problem statement articula un dominio de fricción, un segmento afectado, una brecha observable y una dirección estratégica inicial. Esta estructura permite mantener separado el problema del segmento y la decisión de diseño que luego orientará el MVP.
 </p>
 
-**Problem Statement 1: Captura comercial y validación del pedido**
+### Problem Statement 1: Captura comercial y validación del pedido
 
-<div style="border: 1px solid #dbe7ff; border-radius: 8px; padding: 14px 16px; margin: 12px 0 18px 0; background: #fcfdff;">
-  <p><strong>Domain:</strong> Recepción, interpretación, digitación y validación inicial de pedidos B2B dentro de la empresa distribuidora.</p>
-  <p><strong>Customer segment:</strong> Coordinación comercial, mercaderistas y personal que toma pedidos y los traslada hacia operación.</p>
-  <p><strong>Pain points:</strong> El pedido llega por audios, mensajes o listas; el stock no siempre es confiable; la revisión de crédito o morosidad sigue siendo manual; y los errores se detectan demasiado tarde.</p>
-  <p><strong>Gap actual:</strong> La información del pedido no nace estructurada ni conectada con disponibilidad, condiciones comerciales y seguimiento posterior.</p>
-  <p><strong>Dirección estratégica inicial:</strong> Reducir la fricción en el punto de captura, permitiendo identificar al cliente, consultar condiciones, registrar el pedido y dejar trazabilidad desde el origen.</p>
-  <p><strong>Prioridad inicial del segmento:</strong> Este es el segmento prioritario para validar simplicidad de uso, captura asistida y reducción de retrabajo.</p>
-  <p><strong>Resultado esperado:</strong> Disminuyen el tiempo de aclaración, la doble digitación y los errores de interpretación.</p>
-</div>
+> **Domain**  
+> Recepción, interpretación, digitación y validación inicial de pedidos B2B dentro de la empresa distribuidora.
+>
+> **Customer segment**  
+> Coordinación comercial, mercaderistas y personal que toma pedidos y los traslada hacia operación.
+>
+> **Pain points**
+> - El pedido llega por audios, mensajes o listas.
+> - El stock no siempre es confiable.
+> - La revisión de crédito o morosidad sigue siendo manual.
+> - Los errores se detectan demasiado tarde.
+>
+> **Gap actual**  
+> La información del pedido no nace estructurada ni conectada con disponibilidad, condiciones comerciales y seguimiento posterior.
+>
+> **Dirección estratégica inicial**  
+> Reducir la fricción en el punto de captura, permitiendo identificar al cliente, consultar condiciones, registrar el pedido y dejar trazabilidad desde el origen.
+>
+> **Prioridad inicial del segmento**  
+> Este es el segmento prioritario para validar simplicidad de uso, captura asistida y reducción de retrabajo.
+>
+> **Resultado esperado**
+> - Menor tiempo de aclaración.
+> - Menor doble digitación.
+> - Menos errores de interpretación.
 
-**Problem Statement 2: Abastecimiento del cliente comercial B2B**
+### Problem Statement 2: Abastecimiento del cliente comercial B2B
 
-<div style="border: 1px solid #dbe7ff; border-radius: 8px; padding: 14px 16px; margin: 12px 0 18px 0; background: #fcfdff;">
-  <p><strong>Domain:</strong> Compra recurrente de productos refrigerados desde la perspectiva del cliente comercial.</p>
-  <p><strong>Customer segment:</strong> Clientes del canal tradicional y del canal HORECA, incluyendo bodegas, minimarkets, pequeños mayoristas y negocios que compran al distribuidor para sostener su operación.</p>
-  <p><strong>Pain points:</strong> El cliente no sabe con certeza qué hay disponible, cuándo llegará su pedido ni si el proveedor responderá a tiempo; además, una plataforma lenta o impersonal no reemplaza bien al canal informal.</p>
-  <p><strong>Gap actual:</strong> El cliente comercial no cuenta con un entorno claro donde pueda consultar catálogo, revisar condiciones, registrar pedidos y seguir la entrega sin depender completamente de WhatsApp o llamadas.</p>
-  <p><strong>Dirección estratégica inicial:</strong> Ofrecer un portal B2B simple, confiable y acompañado de soporte humano cuando se necesite.</p>
-  <p><strong>Prioridad inicial del segmento:</strong> Es prioritario para validar adopción del portal y percepción de valor desde la demanda.</p>
-  <p><strong>Resultado esperado:</strong> El cliente percibe más claridad, autonomía y predictibilidad en su abastecimiento.</p>
-</div>
+> **Domain**  
+> Compra recurrente de productos refrigerados desde la perspectiva del cliente comercial.
+>
+> **Customer segment**  
+> Clientes del canal tradicional y del canal HORECA, incluyendo bodegas, minimarkets, pequeños mayoristas y negocios que compran al distribuidor para sostener su operación.
+>
+> **Pain points**
+> - El cliente no sabe con certeza qué hay disponible.
+> - No sabe cuándo llegará su pedido.
+> - No tiene claridad sobre si el proveedor responderá a tiempo.
+> - Una plataforma lenta o impersonal no reemplaza bien al canal informal.
+>
+> **Gap actual**  
+> El cliente comercial no cuenta con un entorno claro donde pueda consultar catálogo, revisar condiciones, registrar pedidos y seguir la entrega sin depender completamente de WhatsApp o llamadas.
+>
+> **Dirección estratégica inicial**  
+> Ofrecer un portal B2B simple, confiable y acompañado de soporte humano cuando se necesite.
+>
+> **Prioridad inicial del segmento**  
+> Es prioritario para validar adopción del portal y percepción de valor desde la demanda.
+>
+> **Resultado esperado**
+> - Mayor claridad.
+> - Mayor autonomía.
+> - Mayor predictibilidad en su abastecimiento.
 
-**Problem Statement 3: Despacho, predictibilidad y cierre de entrega**
+### Problem Statement 3: Despacho, predictibilidad y cierre de entrega
 
-<div style="border: 1px solid #dbe7ff; border-radius: 8px; padding: 14px 16px; margin: 12px 0 18px 0; background: #fcfdff;">
-  <p><strong>Domain:</strong> Ejecución del despacho y cierre del pedido en el punto de entrega.</p>
-  <p><strong>Customer segment:</strong> Choferes de reparto y actores vinculados al cierre físico del pedido.</p>
-  <p><strong>Pain points:</strong> El transportista recibe llamadas constantes, encuentra clientes no preparados para recibir y cierra entregas con demasiada dependencia de papeles o pruebas débiles.</p>
-  <p><strong>Gap actual:</strong> La entrega no cuenta con suficiente visibilidad compartida, una ETA comunicable ni evidencia digital mínima de cierre.</p>
-  <p><strong>Dirección estratégica inicial:</strong> Conectar seguimiento, incidencias y prueba de entrega para reducir interrupciones y reclamos posteriores.</p>
-  <p><strong>Prioridad inicial del segmento:</strong> Complementa la validación del flujo principal al cerrar la promesa comercial con ejecución real.</p>
-  <p><strong>Resultado esperado:</strong> Mejora la predictibilidad del despacho y disminuyen los reclamos por falta de trazabilidad en la entrega.</p>
-</div>
+> **Domain**  
+> Ejecución del despacho y cierre del pedido en el punto de entrega.
+>
+> **Customer segment**  
+> Choferes de reparto y actores vinculados al cierre físico del pedido.
+>
+> **Pain points**
+> - El transportista recibe llamadas constantes.
+> - Encuentra clientes no preparados para recibir.
+> - Cierra entregas con demasiada dependencia de papeles o pruebas débiles.
+>
+> **Gap actual**  
+> La entrega no cuenta con suficiente visibilidad compartida, una ETA comunicable ni evidencia digital mínima de cierre.
+>
+> **Dirección estratégica inicial**  
+> Conectar seguimiento, incidencias y prueba de entrega para reducir interrupciones y reclamos posteriores.
+>
+> **Prioridad inicial del segmento**  
+> Complementa la validación del flujo principal al cerrar la promesa comercial con ejecución real.
+>
+> **Resultado esperado**
+> - Mejora la predictibilidad del despacho.
+> - Disminuyen los reclamos por falta de trazabilidad en la entrega.
 
-**Stakeholder secundario: Logística, abastecimiento y operación**
+### Stakeholder secundario: Logística, abastecimiento y operación
 
-<div style="border: 1px dashed #cbd5e1; border-radius: 8px; padding: 14px 16px; margin: 12px 0 18px 0; background: #fafafa;">
-  <p><strong>Domain:</strong> Reglas, restricciones y control integral del proceso.</p>
-  <p><strong>Customer segment:</strong> Jefatura o responsables de logística, abastecimiento, operación y supervisión comercial.</p>
-  <p><strong>Rol dentro del aprendizaje:</strong> No redefine la columna vertebral de personas, pero sí aporta visibilidad sobre lotes, vencimientos, temperatura, crédito, documentación e integración entre áreas.</p>
-</div>
+> **Domain**  
+> Reglas, restricciones y control integral del proceso.
+>
+> **Customer segment**  
+> Jefatura o responsables de logística, abastecimiento, operación y supervisión comercial.
+>
+> **Rol dentro del aprendizaje**  
+> No redefine la columna vertebral de personas, pero sí aporta visibilidad sobre lotes, vencimientos, temperatura, crédito, documentación e integración entre áreas.
 
 #### 1.2.2.3 Lean UX Assumptions
 
