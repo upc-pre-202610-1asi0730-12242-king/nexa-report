@@ -26,7 +26,7 @@ Nexa se rige por el principio de <strong>"Calm-Tech"</strong>: la interfaz debe 
 
 ## 4.1.2. Web Style Guidelines
 
-#### 01. Colorimetry: El Sistema HSL Dinámico
+### 01. Colorimetry: El Sistema HSL Dinámico
 
 <p align="justify">
 La paleta se fundamenta en un sistema <strong>HSL (Hue, Saturation, Lightness)</strong> que permite una gestión dinámica del contraste y la adaptabilidad ante diversas condiciones lumínicas en centros logísticos.
