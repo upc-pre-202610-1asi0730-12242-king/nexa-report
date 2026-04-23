@@ -213,5 +213,26 @@ El análisis de la colaboración durante el Sprint 1 se evidencia en tres canale
 
 Adicionalmente, el proceso de integración continua hacia GitHub Pages operó como el principal punto de validación. Cada *pull request* o actualización en la rama principal desencadenaba un despliegue que permitía a todo el equipo revisar la apariencia y funcionalidad del sitio público desde cualquier dispositivo, garantizando que el diseño *mobile-first* propuesto en los mockups se cumpliera en la implementación real.
 
-> [!NOTE]
-> *Las capturas completas de las reuniones (Teams/Stream), del historial extendido de GitHub y del tablero Jira se encuentran adjuntas en los anexos y repositorios locales para evitar sobrecargar la lectura del documento principal.*
+<br>
+
+<p align="center">
+  <img src="../../assets/images/jira/github-insights.png" alt="GitHub Insights & Commits" width="80%">
+  <br>
+  <em>Evidencia 1: Actividad y contribuciones en el repositorio durante el Sprint 1</em>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="../../assets/images/jira/jira-board.png" alt="Jira Software Board" width="80%">
+  <br>
+  <em>Evidencia 2: Tablero Jira con el seguimiento de tareas del Sprint 1</em>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="../../assets/images/pruebas-entrevistas/teams-meeting.png" alt="Reunión de Coordinación Síncrona" width="80%">
+  <br>
+  <em>Evidencia 3: Reunión de coordinación síncrona en Microsoft Teams/Stream</em>
+</p>
