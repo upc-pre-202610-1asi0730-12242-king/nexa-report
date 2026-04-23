@@ -11,14 +11,11 @@ La construcción de este bloque parte de tres insumos previos. El primero es el 
 Por ello, los artefactos de needfinding no deben interpretarse como piezas visuales aisladas. Su función es traducir evidencia cualitativa en criterios de diseño: quién necesita autonomía, quién necesita visibilidad, quién necesita rapidez, quién necesita trazabilidad y en qué punto del recorrido cada una de esas necesidades se vuelve más sensible. Bajo ese enfoque, el valor del needfinding no está únicamente en mostrar personas, tareas o journeys, sino en demostrar cómo esas representaciones ayudan a delimitar el alcance del MVP y a justificar decisiones posteriores de backlog, arquitectura y experiencia de usuario.
 </p>
 
-<div style="padding: 14px 16px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff; margin: 16px 0;">
-  <strong>Criterio de construcción de arquetipos.</strong><br/><br/>
-  <ul>
-    <li><strong>Valeria (S1):</strong> sintetiza patrones compartidos por el personal de coordinación comercial entrevistado.</li>
-    <li><strong>Hilda (S2):</strong> sintetiza patrones del cliente comercial B2B y no corresponde a una única entrevistada individual.</li>
-    <li><strong>Pedro (S3):</strong> sintetiza el rol de despacho y cierre a partir de triangulación entre restricciones operativas, pain points del seguimiento y modelado del flujo.</li>
-  </ul>
-</div>
+> **Criterio de construcción de arquetipos**
+>
+> - **Valeria (S1):** sintetiza patrones compartidos por el personal de coordinación comercial entrevistado.
+> - **Hilda (S2):** sintetiza patrones del cliente comercial B2B y no corresponde a una única entrevistada individual.
+> - **Pedro (S3):** sintetiza el rol de despacho y cierre a partir de triangulación entre restricciones operativas, pain points del seguimiento y modelado del flujo.
 
 ### 2.3.1. User Personas
 

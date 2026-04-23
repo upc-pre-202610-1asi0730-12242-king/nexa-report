@@ -22,14 +22,11 @@ La construcción de estos segmentos no se basa en una única fuente de informaci
 
 Los segmentos operativos primarios son la referencia oficial para personas, journeys, empathy maps, user stories y backlog. Elaboración propia.
 
-<div style="padding: 14px 16px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff; margin: 16px 0;">
-  <strong>Organización del análisis.</strong><br/><br/>
-  <ul>
-    <li><strong>Caracterización del segmento:</strong> reúne evidencia demográfica, ocupacional y tecnológica para justificar su relevancia en el dominio.</li>
-    <li><strong>Implicancias de diseño:</strong> traduce esa caracterización a valor esperado, decisiones de UX y prioridad dentro del MVP.</li>
-    <li><strong>Sentido metodológico:</strong> ambos planos describen al mismo actor, pero con finalidades distintas dentro del informe.</li>
-  </ul>
-</div>
+> **Organización del análisis**
+>
+> - **Caracterización del segmento:** reúne evidencia demográfica, ocupacional y tecnológica para justificar su relevancia en el dominio.
+> - **Implicancias de diseño:** traduce esa caracterización a valor esperado, decisiones de UX y prioridad dentro del MVP.
+> - **Sentido metodológico:** ambos planos describen al mismo actor, pero con finalidades distintas dentro del informe.
 
 #### Caracterización demográfica y estadística de los segmentos
 
@@ -43,15 +40,12 @@ En consecuencia, cada segmento se describe en cuatro planos complementarios: un 
 
 **Segmento 1 (S1): Coordinación comercial y captura del pedido**
 
-<div style="padding: 12px 14px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff; margin: 14px 0;">
-  <strong>Ficha rápida del segmento.</strong><br/><br/>
-  <ul>
-    <li><strong>Actor principal:</strong> coordinación comercial, ventas internas, mercaderistas y personal que traduce pedidos a operación.</li>
-    <li><strong>Contexto dominante:</strong> presión por responder rápido sin perder control sobre stock, crédito y condiciones comerciales.</li>
-    <li><strong>Riesgo de adopción:</strong> el usuario ya usa herramientas digitales, pero en forma dispersa y con alta dependencia de validaciones manuales.</li>
-    <li><strong>Valor esperado:</strong> una captura estructurada que reduzca retrabajo y evite errores desde el origen del pedido.</li>
-  </ul>
-</div>
+> **Ficha rápida del segmento**
+>
+> - **Actor principal:** coordinación comercial, ventas internas, mercaderistas y personal que traduce pedidos a operación.
+> - **Contexto dominante:** presión por responder rápido sin perder control sobre stock, crédito y condiciones comerciales.
+> - **Riesgo de adopción:** el usuario ya usa herramientas digitales, pero en forma dispersa y con alta dependencia de validaciones manuales.
+> - **Valor esperado:** una captura estructurada que reduzca retrabajo y evite errores desde el origen del pedido.
 
 <p align="justify">
 El personal dedicado a la coordinación comercial y captura de pedidos en empresas distribuidoras de alimentos en el Perú se concentra predominantemente en el rango etario de 25 a 40 años, con acceso habitual a dispositivos móviles y conectividad básica. Este perfil corresponde a trabajadores del sector comercio mayorista y distribución, categoría cuya fuerza laboral femenina representa una proporción significativa en roles administrativos y de ventas internas (Instituto Nacional de Estadística e Informática [INEI], 2023). El contexto tecnológico del segmento es determinante: la evidencia muestra que el canal informal (WhatsApp, llamadas) sigue siendo la herramienta principal de coordinación en pequeñas y medianas empresas distribuidoras, pese a la disponibilidad de alternativas digitales (Lucky-Xplora, 2022). Esto posiciona a este segmento como el punto de mayor fricción en el flujo del pedido y, al mismo tiempo, como el de mayor impacto potencial ante la adopción de una plataforma estructurada.
@@ -63,15 +57,12 @@ Desde una perspectiva conductual, este segmento opera en tensión permanente ent
 
 **Segmento 2 (S2): Cliente comercial B2B y abastecimiento recurrente**
 
-<div style="padding: 12px 14px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff; margin: 14px 0;">
-  <strong>Ficha rápida del segmento.</strong><br/><br/>
-  <ul>
-    <li><strong>Actor principal:</strong> bodegas, minimarkets, pequeños distribuidores y negocios del canal HORECA que compran para sostener su operación.</li>
-    <li><strong>Contexto dominante:</strong> alta sensibilidad a la continuidad del abastecimiento y baja tolerancia a demoras o incertidumbre de stock.</li>
-    <li><strong>Riesgo de adopción:</strong> la madurez digital del segmento es todavía incipiente y depende de experiencias simples y confiables.</li>
-    <li><strong>Valor esperado:</strong> comprar con claridad, autonomía y seguimiento sin perder respaldo humano cuando haga falta.</li>
-  </ul>
-</div>
+> **Ficha rápida del segmento**
+>
+> - **Actor principal:** bodegas, minimarkets, pequeños distribuidores y negocios del canal HORECA que compran para sostener su operación.
+> - **Contexto dominante:** alta sensibilidad a la continuidad del abastecimiento y baja tolerancia a demoras o incertidumbre de stock.
+> - **Riesgo de adopción:** la madurez digital del segmento es todavía incipiente y depende de experiencias simples y confiables.
+> - **Valor esperado:** comprar con claridad, autonomía y seguimiento sin perder respaldo humano cuando haga falta.
 
 <p align="justify">
 El segmento de clientes comerciales B2B del canal tradicional peruano incluye bodegas, minimarkets, distribuidores pequeños y establecimientos del canal HORECA. En conjunto, este universo representa aproximadamente 414,000 bodegas activas a nivel nacional, con una concentración mayor en Lima Metropolitana (Asociación de Bodegueros del Perú, 2022). En términos de madurez digital, el estudio de madurez digital del canal tradicional elaborado por Lucky-Xplora reporta que solo alrededor del 28% de bodegas utiliza algún aplicativo para gestionar tareas del negocio, mientras que el 83% se ubica todavía en nivel "principiante" de transformación digital (Lucky-Xplora, 2022). Complementariamente, un estudio sobre pagos digitales en pequeños comercios muestra que la adopción de herramientas digitales es incipiente y depende de la simplicidad percibida de la herramienta (Taipe Quispe, 2025). Esto confirma que la adopción del portal B2B de Nexa está condicionada a una experiencia de uso sin fricción que equipare o supere la velocidad percibida del canal informal.
@@ -93,15 +84,12 @@ Fuente: Elaboración propia en base a datos de Lucky-Xplora (2022).
 
 **Segmento 3 (S3): Despacho, transporte y cierre de entrega**
 
-<div style="padding: 12px 14px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff; margin: 14px 0;">
-  <strong>Ficha rápida del segmento.</strong><br/><br/>
-  <ul>
-    <li><strong>Actor principal:</strong> choferes de reparto, personal de despacho y actores involucrados en la ejecución física de la entrega.</li>
-    <li><strong>Contexto dominante:</strong> rutas urbanas exigentes, cierre bajo presión y dependencia de información generada por áreas previas.</li>
-    <li><strong>Riesgo de adopción:</strong> el valor de la tecnología se juzga por su capacidad de reducir interrupciones en ruta, no por sofisticación funcional.</li>
-    <li><strong>Valor esperado:</strong> menos llamadas, ETA más clara y evidencia simple de entrega para evitar reclamos posteriores.</li>
-  </ul>
-</div>
+> **Ficha rápida del segmento**
+>
+> - **Actor principal:** choferes de reparto, personal de despacho y actores involucrados en la ejecución física de la entrega.
+> - **Contexto dominante:** rutas urbanas exigentes, cierre bajo presión y dependencia de información generada por áreas previas.
+> - **Riesgo de adopción:** el valor de la tecnología se juzga por su capacidad de reducir interrupciones en ruta, no por sofisticación funcional.
+> - **Valor esperado:** menos llamadas, ETA más clara y evidencia simple de entrega para evitar reclamos posteriores.
 
 <p align="justify">
 El personal de reparto y despacho en empresas distribuidoras de alimentos refrigerados opera en rutas urbanas de alta rotación, con jornadas que pueden extenderse entre 8 y 12 horas diarias. Según datos del sector transporte y almacenamiento en el Perú, este segmento tiene una participación mayoritariamente masculina y se concentra en el rango etario de 25 a 45 años (INEI, 2023). Desde una perspectiva operativa, la evidencia recogida en el needfinding y en estudios de trazabilidad en cadena de frío indica que las rupturas de temperatura durante el transporte, como las 64 rupturas registradas en una sola microred de salud en un año (Bravo De la Cruz et al., 2025), son en parte atribuibles a la descoordinación entre el envío del pedido, la ruta física y la notificación al punto de entrega. El segmento de despacho no adopta tecnología por iniciativa propia, sino cuando esta reduce directamente las interrupciones durante la ruta: llamadas, esperas en cliente y reclamos al cierre de entrega.
@@ -131,22 +119,19 @@ Su valor esperado no está en funciones complejas, sino en la reducción de paso
 Desde el punto de vista del diseño, Valeria representa al usuario que más claramente tensiona usabilidad y estructura. Necesita una experiencia suficientemente guiada para evitar errores, pero no tan rígida que le impida operar al ritmo que exige la atención comercial. Por eso este arquetipo es central en la definición del MVP: si la solución no funciona para quien captura y valida el pedido en condiciones de presión operativa, el resto del ecosistema tampoco podrá beneficiarse de una información mejor estructurada.
 </p>
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 16px 0;">
-  <div style="padding: 12px 14px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff;">
-    <strong>Necesidades principales</strong><br/><br/>
-    • Recibir pedidos en un flujo estructurado y consistente.<br/>
-    • Validar stock, crédito y condiciones comerciales sin saltar entre varias herramientas.<br/>
-    • Registrar pedidos desde celular, tablet o escritorio sin retrabajo posterior.<br/>
-    • Tener evidencia clara del estado del pedido para responder al cliente sin depender de llamadas constantes.
-  </div>
-  <div style="padding: 12px 14px; border: 1px solid #ffe2e2; border-radius: 8px; background: #fffdfd;">
-    <strong>Puntos de dolor</strong><br/><br/>
-    • Los pedidos llegan por audios, listas o mensajes libres y requieren interpretación manual.<br/>
-    • La disponibilidad real de stock no siempre coincide con lo que muestran los sistemas existentes.<br/>
-    • La revisión de morosidad o crédito sigue siendo manual y lenta.<br/>
-    • Los errores de digitación y de especificaciones terminan trasladándose a almacén, despacho y devoluciones.
-  </div>
-</div>
+> **Necesidades principales**
+>
+> - Recibir pedidos en un flujo estructurado y consistente.
+> - Validar stock, crédito y condiciones comerciales sin saltar entre varias herramientas.
+> - Registrar pedidos desde celular, tablet o escritorio sin retrabajo posterior.
+> - Tener evidencia clara del estado del pedido para responder al cliente sin depender de llamadas constantes.
+>
+> **Puntos de dolor**
+>
+> - Los pedidos llegan por audios, listas o mensajes libres y requieren interpretación manual.
+> - La disponibilidad real de stock no siempre coincide con lo que muestran los sistemas existentes.
+> - La revisión de morosidad o crédito sigue siendo manual y lenta.
+> - Los errores de digitación y de especificaciones terminan trasladándose a almacén, despacho y devoluciones.
 
 #### S2. Implicancias de diseño: Cliente comercial B2B y abastecimiento recurrente
 
@@ -162,22 +147,19 @@ Desde su perspectiva, el problema no es “usar más tecnología”, sino compra
 Hilda también es el segmento que más claramente obliga al proyecto a equilibrar autoservicio y acompañamiento. Un portal completamente deshumanizado puede reducir costos operativos para la distribuidora, pero no necesariamente aumentar adopción en un contexto donde la confianza comercial sigue siendo relacional. Por ello, el valor esperado para este perfil no consiste solo en “digitalizar el pedido”, sino en transformar la experiencia de abastecimiento sin romper la sensación de respaldo que hoy provee la comunicación directa con el vendedor o coordinador comercial.
 </p>
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 16px 0;">
-  <div style="padding: 12px 14px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff;">
-    <strong>Necesidades principales</strong><br/><br/>
-    • Consultar productos, formatos y fichas técnicas sin esperar respuesta manual.<br/>
-    • Saber si el producto está disponible antes de confirmar el pedido.<br/>
-    • Conocer el estado del pedido y una ventana estimada de entrega.<br/>
-    • Resolver dudas o incidencias sin perder el componente humano de la relación comercial.
-  </div>
-  <div style="padding: 12px 14px; border: 1px solid #ffe2e2; border-radius: 8px; background: #fffdfd;">
-    <strong>Puntos de dolor</strong><br/><br/>
-    • La compra por llamada o WhatsApp no deja trazabilidad clara del pedido.<br/>
-    • La falta de disponibilidad o los cambios de último minuto afectan ventas y caja.<br/>
-    • Las demoras de entrega generan desorden en el local y pérdida de confianza.<br/>
-    • La complejidad excesiva haría que el usuario vuelva al canal informal.
-  </div>
-</div>
+> **Necesidades principales**
+>
+> - Consultar productos, formatos y fichas técnicas sin esperar respuesta manual.
+> - Saber si el producto está disponible antes de confirmar el pedido.
+> - Conocer el estado del pedido y una ventana estimada de entrega.
+> - Resolver dudas o incidencias sin perder el componente humano de la relación comercial.
+>
+> **Puntos de dolor**
+>
+> - La compra por llamada o WhatsApp no deja trazabilidad clara del pedido.
+> - La falta de disponibilidad o los cambios de último minuto afectan ventas y caja.
+> - Las demoras de entrega generan desorden en el local y pérdida de confianza.
+> - La complejidad excesiva haría que el usuario vuelva al canal informal.
 
 #### S3. Implicancias de diseño: Despacho, transporte y cierre de entrega
 
@@ -193,22 +175,19 @@ Aunque en esta etapa la validación se apoya más en los artefactos de needfindi
 Metodológicamente, Pedro cumple una función de cierre dentro de la segmentación: evita que el proyecto interprete el problema solo desde la captura del pedido o desde la compra del cliente, y obliga a considerar la ejecución física como parte del valor. En otras palabras, este segmento recuerda que la propuesta de Nexa no se valida solo cuando el pedido es registrado, sino cuando la coordinación generada por el sistema se traduce en una entrega más predecible, trazable y defendible frente a incidencias.
 </p>
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 16px 0;">
-  <div style="padding: 12px 14px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff;">
-    <strong>Necesidades principales</strong><br/><br/>
-    • Ejecutar la ruta con menos llamadas e interrupciones.<br/>
-    • Llegar a puntos de entrega mejor preparados para recibir la mercadería.<br/>
-    • Registrar el despacho y la entrega con evidencia simple y confiable.<br/>
-    • Disminuir reclamos injustos provocados por errores previos del flujo comercial.
-  </div>
-  <div style="padding: 12px 14px; border: 1px solid #ffe2e2; border-radius: 8px; background: #fffdfd;">
-    <strong>Puntos de dolor</strong><br/><br/>
-    • El cliente muchas veces no está listo para recibir ni pagar cuando el camión llega.<br/>
-    • Los retrasos se comunican tarde y generan más llamadas durante la conducción.<br/>
-    • Las guías físicas y el cierre manual aumentan el riesgo de pérdida o inconsistencia.<br/>
-    • El transportista termina cargando reclamos originados por falta de stock o errores de pedido.
-  </div>
-</div>
+> **Necesidades principales**
+>
+> - Ejecutar la ruta con menos llamadas e interrupciones.
+> - Llegar a puntos de entrega mejor preparados para recibir la mercadería.
+> - Registrar el despacho y la entrega con evidencia simple y confiable.
+> - Disminuir reclamos injustos provocados por errores previos del flujo comercial.
+>
+> **Puntos de dolor**
+>
+> - El cliente muchas veces no está listo para recibir ni pagar cuando el camión llega.
+> - Los retrasos se comunican tarde y generan más llamadas durante la conducción.
+> - Las guías físicas y el cierre manual aumentan el riesgo de pérdida o inconsistencia.
+> - El transportista termina cargando reclamos originados por falta de stock o errores de pedido.
 
 #### Stakeholder secundario: Jefatura y responsables de logística, abastecimiento y operación
 

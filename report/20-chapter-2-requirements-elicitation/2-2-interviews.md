@@ -4,15 +4,12 @@
 Para mantener continuidad con el Capítulo I y con los artefactos posteriores de needfinding, este capítulo distingue entre <strong>segmentos canónicos del producto</strong> y <strong>bloques de levantamiento de información</strong>. Los segmentos canónicos del informe siguen siendo <strong>S1: coordinación comercial y captura del pedido</strong>, <strong>S2: cliente comercial B2B y abastecimiento recurrente</strong> y <strong>S3: despacho, transporte y cierre de entrega</strong>. Sin embargo, el trabajo de campo no se organizó únicamente por esos tres arquetipos, sino también por un cuarto lente de análisis: la <strong>jefatura y responsables de logística, abastecimiento y operación</strong>, que funciona como stakeholder secundario para validar reglas del dominio, trazabilidad, riesgos sanitarios y restricciones operativas.
 </p>
 
-<div style="padding: 14px 16px; border: 1px solid #dbe7ff; border-radius: 8px; background: #fcfdff; margin: 16px 0;">
-  <strong>Correspondencia metodológica utilizada en el capítulo.</strong><br/><br/>
-  <ul>
-    <li><strong>Bloque de entrevistas 1:</strong> alimenta directamente al segmento canónico <strong>S1</strong>.</li>
-    <li><strong>Bloque de entrevistas 2:</strong> no reemplaza a un segmento canónico; se interpreta como <strong>stakeholder secundario</strong> para validar reglas, riesgos y restricciones del dominio.</li>
-    <li><strong>Bloque de entrevistas 3:</strong> alimenta directamente al segmento canónico <strong>S2</strong>.</li>
-    <li><strong>Segmento canónico S3:</strong> se materializa por triangulación entre hallazgos operativos, puntos de dolor del cierre de entrega, artefactos de needfinding y modelado del flujo del dominio.</li>
-  </ul>
-</div>
+> **Correspondencia metodológica utilizada en el capítulo**
+>
+> - **Bloque de entrevistas 1:** alimenta directamente al segmento canónico **S1**.
+> - **Bloque de entrevistas 2:** no reemplaza a un segmento canónico; se interpreta como **stakeholder secundario** para validar reglas, riesgos y restricciones del dominio.
+> - **Bloque de entrevistas 3:** alimenta directamente al segmento canónico **S2**.
+> - **Segmento canónico S3:** se materializa por triangulación entre hallazgos operativos, puntos de dolor del cierre de entrega, artefactos de needfinding y modelado del flujo del dominio.
 
 ### 2.2.1. Diseño de entrevistas
 

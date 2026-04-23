@@ -6,10 +6,9 @@ El diseño orientado a objetos de Nexa trasciende la mera representación de dat
 
 ---
 
-<div id="class-diagram-header" style="padding: 20px; background-color: #f1f5f9; border-left: 5px solid #0f172a; margin-bottom: 25px;">
-  <h3 style="margin: 0; color: #0f172a;">4.7.1. Class Diagrams</h3>
-  <p style="margin: 5px 0 0 0; color: #64748b; font-style: italic;">"Modelando el comportamiento inteligente de la distribución primaria."</p>
-</div>
+### 4.7.1. Class Diagrams
+
+> *"Modelando el comportamiento inteligente de la distribución primaria."*
 
 *Diagrama de Clases del Ecosistema Nexa (Enterprise Model)*
 
@@ -173,22 +172,15 @@ El diagrama de clases integra las reglas de negocio transaccionales con el model
 El diseño orientado a objetos ha sido validado contra el esquema de base de datos (Capítulo 4.8) para garantizar una <strong>correspondencia biunívoca</strong> entre las entidades de persistencia y las clases de dominio. Esta simetría permite que la capa de aplicación (Services) interactúe con el modelo sin fricciones arquitectónicas.
 </p>
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px;">
-  <div style="background-color: #f8fafc; padding: 15px; border-radius: 8px; border: 1px solid #e2e8f0;">
-    <h4 style="color: #2554df; margin-top: 0;">Lógica de Negocio Encapsulada</h4>
-    <ul style="font-size: 13px; color: #475569;">
-      <li><strong>Control de Riesgos:</strong> La clase <code>CommercialCondition</code> encapsula la validación de créditos, impidiendo la creación de pedidos si el cliente excede su saldo.</li>
-      <li><strong>Seguridad Térmica:</strong> Los métodos en <code>ProductSpec</code> y <code>Vehicle</code> permiten pre-validar la compatibilidad de carga antes del despacho.</li>
-    </ul>
-  </div>
-  <div style="background-color: #f8fafc; padding: 15px; border-radius: 8px; border: 1px solid #e2e8f0;">
-    <h4 style="color: #2554df; margin-top: 0;">Trazabilidad y Auditoría</h4>
-    <ul style="font-size: 13px; color: #475569;">
-      <li><strong>Ciclo de Vida del Lote:</strong> Se implementa un seguimiento granular por <code>Batch</code> para gestionar alertas de caducidad automática.</li>
-      <li><strong>Integridad Atómica:</strong> El objeto <code>Order</code> actúa como raíz del agregado, asegurando que los cambios en <code>Items</code> impacten en los totales y el stock de forma simultánea.</li>
-    </ul>
-  </div>
-</div>
+> **Lógica de Negocio Encapsulada**
+>
+> - **Control de Riesgos:** La clase <code>CommercialCondition</code> encapsula la validación de créditos, impidiendo la creación de pedidos si el cliente excede su saldo.
+> - **Seguridad Térmica:** Los métodos en <code>ProductSpec</code> y <code>Vehicle</code> permiten pre-validar la compatibilidad de carga antes del despacho.
+>
+> **Trazabilidad y Auditoría**
+>
+> - **Ciclo de Vida del Lote:** Se implementa un seguimiento granular por <code>Batch</code> para gestionar alertas de caducidad automática.
+> - **Integridad Atómica:** El objeto <code>Order</code> actúa como raíz del agregado, asegurando que los cambios en <code>Items</code> impacten en los totales y el stock de forma simultánea.
 
 ---
 
