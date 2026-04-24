@@ -12,7 +12,8 @@ En esta etapa, el equipo articuló el prototipo en <strong>Figma</strong> y dej�
 |---|---|
 | [Proyecto Figma del equipo](https://www.figma.com/files/team/1586383034175281439/project/587167294) | Preservar el espacio maestro donde se organizan wireframes, mock-ups y decisiones de diseño |
 | [Archivo Figma de la web application](https://www.figma.com/design/buDa5VZmYjPNokbl4FEJqx/Web-App?node-id=0-1) | Verificar la versión navegable y los frames conectados de la aplicación autenticada |
-| [Recorrido del prototipo](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202416289_upc_edu_pe/IQDHWDZKKNQkQJhwjsj4WhuiAft0C9xi86kyIzF4ZAVS5lk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=aCADLd) | Mostrar el recorrido principal del prototipo como evidencia visual de navegación |
+| [Recorrido del prototipo (Web)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202416289_upc_edu_pe/IQDHWDZKKNQkQJhwjsj4WhuiAft0C9xi86kyIzF4ZAVS5lk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=aCADLd) | Mostrar el recorrido principal del prototipo web como evidencia visual de navegación |
+| [Mobile Application Prototype - Video Evidence](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202416289_upc_edu_pe/IQDAzpe7sZiVS5hFspoveo4LAVT0NUAF28xfBpQdxXrwww0?e=tX0sV6&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJycmFsQXBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | Evidencia audiovisual del prototipo de la aplicación móvil (mobile-first), mostrando la navegación desde dispositivo móvil |
 
 <p align="justify">
 La utilidad metodológica del prototipo es doble. Primero, permite revisar continuidad entre módulos sin depender todavía de desarrollo productivo. Segundo, ofrece una base defendible para explicar cómo evolucionará Nexa desde su capa pública hacia su capa transaccional. En otras palabras, el prototipo no sustituye al desarrollo, pero sí reduce el riesgo de que la implementación futura contradiga lo ya investigado, priorizado y diseñado.
@@ -26,4 +27,14 @@ Elaboración propia. La captura corresponde a la pantalla principal del prototip
 
 <p align="justify">
 Bajo esta lectura, el prototipado debe presentarse con honestidad de alcance: constituye <strong>evidencia de diseño integrado</strong>, no evidencia de despliegue autenticado ni de operación real en producción. Su valor en el informe es mostrar que la web application ya fue pensada como un sistema consistente y recorrible antes de entrar en fases posteriores de implementación.
+</p>
+
+### 4.5.1. Sistema de navegación aplicado al prototipo
+
+<p align="justify">
+El prototipo aplica un <strong>sistema de navegación jerárquico por rol</strong> con un nivel global y dos niveles contextuales, consistente con la arquitectura de información definida en la sección 4.2. El nivel global se expresa en un <em>top bar</em> persistente con identidad de marca, selector de contexto (empresa activa) y acciones de cuenta; el primer nivel contextual se expresa en un <em>side navigation</em> por módulo del dominio (Catálogo, Pedidos, Inventario, Clientes, Despacho, Trazabilidad); el segundo nivel se expresa como <em>tabs</em> y <em>breadcrumbs</em> dentro de cada módulo para movimientos laterales sin perder contexto.
+</p>
+
+<p align="justify">
+La navegación es <strong>rol-consciente</strong>: S1 (coordinación) ve por defecto Pedidos y Clientes; S2 (cliente B2B) ve Catálogo, Mis pedidos y Seguimiento; S3 (despacho) ve Hoja de ruta, Entregas y Evidencias. Los <em>call-to-actions</em> primarios (crear pedido, despachar, cerrar entrega) se mantienen siempre visibles como <em>floating action</em> en la parte inferior derecha del frame, respetando la lógica <strong>mobile-first</strong>. Las transiciones entre frames siguen el principio de <em>progressive disclosure</em>: el usuario avanza solo cuando el sistema ya puede confirmar stock, crédito o estado, evitando pantallas intermedias sin valor.
 </p>

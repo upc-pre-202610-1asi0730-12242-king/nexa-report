@@ -80,7 +80,36 @@ La tabla resume el proceso seguido para convertir evidencia cualitativa en un mo
 | Cierre de entrega con evidencia insuficiente | Al final del flujo | Quedan reclamos, dudas sobre cumplimiento y poca trazabilidad del servicio |
 | Dependencia de coordinación humana para destrabar el proceso | En todo el ciclo del pedido | El flujo no escala bien y se vuelve sensible a interrupciones y retrabajo |
 
-### 2.4.5. Flujo resumido del dominio
+### 2.4.5. Comandos, políticas y read models del dominio
+
+<p align="justify">
+A partir de los eventos y los pain points identificados, el Big Picture permite explicitar los <strong>comandos</strong> (intenciones que disparan cambios de estado), las <strong>políticas</strong> (reacciones automáticas del dominio ante ciertos eventos) y los <strong>read models</strong> (vistas de solo lectura que los actores necesitan para decidir). Esta explicitación refuerza la lectura ingenieril del flujo sin introducir artefactos técnicos nuevos: se derivan únicamente de los eventos ya modelados.
+</p>
+
+| Comando (intención del actor) | Evento(s) que dispara | Política reactiva del dominio | Read Model que habilita la decisión |
+|---|---|---|---|
+| `SolicitarPedido` (S2) | `PedidoBorradorCreado` | Si el cliente no tiene crédito hábil, el pedido se marca como "a validar" | `CatálogoDisponibleParaCliente` (stock + precio + condiciones) |
+| `EnviarPedidoParaValidación` (S1) | `PedidoEnviadoParaRevisión` | Reserva temporal de stock por ventana definida de validación | `ResumenDePedidoPendiente` (ítems, totales, crédito disponible) |
+| `ValidarPedido` (S1 / Supervisión) | `PedidoValidado` o `PedidoBloqueado` | Si el stock real difiere del reservado, se notifica a coordinación y se re-valida | `VistaDeCréditoYMorosidad`, `StockRealPorSKU` |
+| `ConfirmarPedido` (S1) | `PedidoConfirmado` | Se genera orden de preparación y se notifica al cliente S2 | `EstadoDelPedidoParaCliente` |
+| `PrepararPedido` (Almacén) | `PedidoEnPreparación`, `LoteAsignado` | Política FEFO: sugerir lote con vencimiento más próximo apto | `ListaDePickingFEFO` (SKU, lote, vencimiento, ubicación) |
+| `DespacharPedido` (Almacén/S3) | `PedidoDespachado` | Se inicia el seguimiento de ruta y se habilita ETA para el cliente | `HojaDeRuta`, `ETAParaCliente` |
+| `RegistrarIncidenciaDeRuta` (S3) | `IncidenciaDeRutaRegistrada` | Notificación automática a coordinación comercial y al cliente | `BitácoraDeIncidenciasPorPedido` |
+| `CerrarEntrega` (S3) | `EntregaCerradaConEvidencia` | Se cierra el pedido y se archiva la evidencia de entrega (POD) | `PruebaDeEntrega` (firma, foto, temperatura, hora) |
+| `CancelarPedido` (S1 / S2) | `PedidoCancelado` | Liberación automática de stock reservado y ajuste de crédito | `EstadoDelPedidoParaCliente` |
+
+<p align="justify">
+Los comandos expresan la intención del actor; los eventos confirman que el estado efectivamente cambió; las políticas capturan las reacciones automáticas que el dominio debe sostener (reservas, validaciones, notificaciones, FEFO, liberación de stock); y los read models son las vistas consolidadas que permiten a S1, S2 y S3 decidir con información consistente. Juntos, cierran la narrativa del Big Picture como una cadena de <em>intención → hecho → reacción → visibilidad</em>, no como pantallas aisladas.
+</p>
+
+### 2.4.6. Evidencia de colaboración del modelado
+
+<p align="center">
+  <img src="../assets/images/project-collaboration/team-collaboration-meeting.jpg" alt="Reunión de modelado EventStorming del equipo KING" width="85%">
+  <br><em>Figura: Sesión colaborativa del equipo KING durante la construcción del Big Picture EventStorming. Elaboración propia.</em>
+</p>
+
+### 2.4.7. Flujo resumido del dominio
 
 1. El cliente consulta el catálogo o la coordinación comercial captura el pedido de forma asistida.
 2. Se identifican las condiciones comerciales y la disponibilidad necesarias para revisar el pedido.
