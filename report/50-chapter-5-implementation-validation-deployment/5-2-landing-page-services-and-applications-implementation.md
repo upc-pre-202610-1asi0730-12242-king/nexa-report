@@ -1,7 +1,7 @@
 ## 5.2. Landing Page, Services & Applications Implementation
 
 <p align="justify">
-Para AV1, la evidencia de implementación de Nexa debe concentrarse en el incremento que sí alcanzó un estado demostrable y defendible ante la rúbrica: <strong>Sprint 1</strong>. En esta iteración convergen la planificación en Jira, la consolidación del backlog, la producción de artefactos de diseño, la documentación arquitectónica y la construcción de la landing page pública desplegada. El tablero evidencia <strong>54 actividades</strong> y <strong>256 puntos visibles</strong>, distribuidos entre investigación, UX/UI, implementación pública, arquitectura y documentación; por ello, este sprint no puede leerse como un simple esfuerzo de maquetación, sino como el primer incremento formal y visible del proyecto.
+Para AV1, la evidencia de implementación de Nexa debe concentrarse en el incremento que sí alcanzó un estado demostrable y defendible ante la rúbrica: <strong>Sprint 1</strong>. En esta iteración convergen la planificación en Jira, la consolidación del backlog, la producción de artefactos de diseño, la documentación arquitectónica y la construcción de la landing page pública desplegada. El tablero vivo de Jira registra <strong>51 issues principales</strong> dentro del sprint, distribuidos en <strong>23 historias de usuario</strong> y <strong>28 tareas</strong>, además de <strong>16 subtareas reales</strong> asociadas por parent. Por ello, este sprint no puede leerse como un simple esfuerzo de maquetación, sino como el primer incremento formal y visible del proyecto.
 </p>
 
 ### 5.2.1. Sprint 1
@@ -28,10 +28,10 @@ La planificación del Sprint 1 se orientó a producir un incremento AV1 que pudi
 | **Preparado por** | Yucra Sandoval, Diego Sebastian |
 | **Asistentes** | Diego Yucra, Joaquín Verde, César Marín, Gino Torrejón, Gerard Rojas |
 | **Herramienta principal** | Jira Software |
-| **Carga visible** | 54 actividades y 256 puntos visibles |
+| **Carga visible** | 51 issues principales en Sprint 1: 23 historias + 28 tareas; 16 subtareas reales asociadas por parent |
 
 <p align="justify">
-La tabla anterior debe completarse con los datos reales de la sesión de planificación. No conviene inventarlos: ante revisión docente, esta subsección gana más valor si se acompaña de una captura o acta breve de la reunión y coincide con las evidencias de colaboración del anexo.
+La carga anterior corresponde al corte normalizado de Jira verificado el 24 de abril de 2026. Las subtareas no aparecen como issues directas del sprint en la consulta principal porque Jira las administra bajo sus historias padre; por eso se documentan en una tabla separada, preservando la trazabilidad entre historia, tarea técnica y evidencia del incremento.
 </p>
 
 #### 5.2.1.2. Aspect Leaders and Collaborators.
@@ -53,22 +53,121 @@ La ejecución del sprint evidencia una distribución funcional del liderazgo. En
 #### 5.2.1.3. Sprint Backlog 1.
 
 <p align="justify">
-La forma más clara de leer el Sprint Backlog 1 no es como una lista plana de tickets, sino como un conjunto de frentes coordinados que alimentan un mismo incremento. La agrupación siguiente resume la lógica real del sprint y explica por qué AV1 puede defenderse simultáneamente como entrega de producto, de diseño y de disciplina ingenieril.
+La forma más clara de leer el Sprint Backlog 1 no es como una lista plana de tickets, sino como un conjunto de frentes coordinados que alimentan un mismo incremento. La extracción de Jira confirma que el sprint no incluye el portal transaccional completo ni el backend productivo; concentra las historias públicas US01-US23, tareas transversales de investigación, UX/UI, arquitectura, despliegue y documentación, más subtareas específicas para las historias que necesitaban desglose operativo.
 </p>
 
 <p align="justify">
-Además, el Sprint Backlog 1 no puede analizarse aislado del <strong>Product Backlog documentado en la sección 3.3</strong>. Las capturas Jira verifican que la priorización descrita en el informe sí fue llevada a la herramienta de gestión: primero se ordenaron historias públicas y de validación comercial, luego se preservaron historias de arquitectura, documentación y preparación técnica futura. Por ello, la evidencia visual siguiente cumple una doble función: <strong>demuestra selección de trabajo para el sprint</strong> y <strong>verifica consistencia entre backlog académico y backlog operativo en Jira</strong>.
+Además, el Sprint Backlog 1 no puede analizarse aislado del <strong>Product Backlog documentado en la sección 3.3</strong>. Las tablas siguientes conectan la priorización académica con el tablero operativo: las historias US01-US23 quedan dentro del Sprint 1, mientras que las historias transaccionales US24-US64 y las tareas técnicas de backend permanecen como backlog futuro. Esta separación permite defender AV1 sin declarar software que todavía no existe.
 </p>
 
-*Agrupación de frentes de trabajo y issues en el Sprint 1*
+*Resumen cuantitativo del Sprint 1 en Jira*
 
-| Frente de trabajo | Issues visibles en las capturas Jira | Resultado esperado dentro del sprint |
-|---|---|---|
-| Fundamento de negocio e investigación | NX-59, NX-61, NX-62, NX-63, NX-67, NX-68, NX-69, NX-71, NX-169 | Consolidar startup profile, segmentos, entrevistas, personas, journeys, EventStorming y glosario para sostener el MVP con evidencia de dominio |
-| Diseño visual e información | NX-57, NX-64, NX-70, NX-77 | Traducir la investigación en style guidelines, arquitectura de información, wireframes, mockups y criterios de accesibilidad |
-| Sitio público y experiencia multipágina | NX-81, NX-84, NX-88, NX-91, NX-97, NX-100, NX-224 a NX-243 | Implementar Home, Platform, Solutions, Company y FAQ con narrativa coherente, CTA y soporte bilingüe EN/ES |
-| Arquitectura y base técnica futura | NX-94, NX-106, NX-113, NX-116, NX-122, NX-128, NX-133, NX-138 | Dejar preparada la evolución del producto en términos de dominio, arquitectura y documentación técnica |
-| Trazabilidad académica y despliegue | NX-142, NX-148, NX-153, NX-158, NX-161, NX-164, NX-167 | Alinear user stories, priorización, Student Outcome, estadísticas, publicación del sitio y compilación del informe |
+| Bloque | Cantidad | Códigos Jira | Lectura dentro de AV1 |
+| :--- | :---: | :--- | :--- |
+| Historias de usuario | 23 | NX-224 a NX-246 | Corresponden a US01-US23 del Product Backlog y cubren el sitio público, bilingüismo, contacto, FAQ, soporte visible y acceso público al portal en preparación. |
+| Tareas principales | 28 | NX-57, NX-59, NX-61 a NX-64, NX-67 a NX-71, NX-77, NX-81, NX-84, NX-88, NX-91, NX-106, NX-113, NX-142, NX-148, NX-153, NX-158, NX-161, NX-164, NX-167, NX-169, NX-254, NX-255 | Agrupan investigación, UX/UI, arquitectura, Docs-as-Code, despliegue, evidencia académica y dos tareas documentales finalizadas. |
+| Subtareas reales | 16 | NX-269 a NX-284 | Desglosan trabajo operativo bajo US01, US03, US18, US19, US20, US21, US22 y US23. |
+| Backlog futuro fuera del sprint | 44 historias sin sprint y tareas técnicas futuras | NX-247 a NX-251, NX-259, NX-260, NX-266 y tareas futuras como NX-94, NX-97, NX-100, NX-116, NX-122, NX-128, NX-133, NX-138 | Mantienen el alcance transaccional, dashboard, autenticación, API y backend fuera de AV1. |
+
+*Sprint 1 Jira - Historias de Usuario*
+
+| Key | US | Summary Jira | SP Backlog | Estado Jira | Evidencia / alcance |
+| :--- | :--- | :--- | :---: | :--- | :--- |
+| NX-224 | US01 | Navegar entre páginas | 2 | Por hacer | Navegación pública entre Home, Platform, Solutions, Company y FAQ. |
+| NX-225 | US02 | Dropdown de Solutions | 2 | Por hacer | Acceso rápido a segmentos desde el menú Solutions. |
+| NX-226 | US03 | Cambio de idioma | 3 | Por hacer | Selector EN/ES y persistencia del idioma en la experiencia pública. |
+| NX-227 | US04 | Navegación en Footer | 1 | Por hacer | Enlaces de cierre hacia páginas públicas y puntos de contacto. |
+| NX-228 | US05 | Propuesta en Hero | 2 | Por hacer | Propuesta de valor inicial del Home. |
+| NX-229 | US06 | Problema operativo | 2 | Por hacer | Narrativa del problema de coordinación, inventario y pedidos. |
+| NX-230 | US07 | Capacidades clave | 2 | Por hacer | Bloques de capacidades centrales del producto. |
+| NX-231 | US08 | Solicitar demo | 2 | Por hacer | CTA comercial hacia contacto o conversación de demo. |
+| NX-232 | US09 | Módulos en Platform | 2 | Por hacer | Presentación pública de módulos y alcance funcional. |
+| NX-233 | US10 | Cambio operativo | 2 | Por hacer | Explicación del cambio esperado en la operación diaria. |
+| NX-234 | US11 | MVP vs Expansión | 2 | Por hacer | Separación entre capacidades visibles del MVP y roadmap futuro. |
+| NX-235 | US12 | Hub de Solutions | 2 | Por hacer | Página hub para elegir segmento comercial. |
+| NX-236 | US13 | Propuesta Distribuidores | 2 | Por hacer | Landing específica para distribuidores. |
+| NX-237 | US14 | Propuesta Importadores | 2 | Por hacer | Landing específica para importadores y mayoristas. |
+| NX-238 | US15 | Propuesta Cámaras Frías | 2 | Por hacer | Landing específica para operadores de almacenamiento frío. |
+| NX-239 | US16 | Narrativa Company | 2 | Por hacer | Historia, propósito y equipo detrás de Nexa. |
+| NX-240 | US17 | Soporte Humano | 2 | Por hacer | Mensaje de soporte e implementación acompañada. |
+| NX-241 | US18 | Envío de contacto | 3 | Por hacer | Formulario público como canal comercial inicial. |
+| NX-242 | US19 | Validación Feedback | 3 | Por hacer | Validaciones visibles antes del envío del formulario. |
+| NX-243 | US20 | FAQ por Categorías | 2 | Por hacer | Organización de preguntas frecuentes por tema. |
+| NX-244 | US21 | Expandir FAQ | 2 | Por hacer | Interacción de acordeón para consultar respuestas. |
+| NX-245 | US22 | Soporte Flotante | 2 | Por hacer | Launcher de soporte persistente en el sitio público. |
+| NX-246 | US23 | Acceso público al portal en preparación | 1 | Por hacer | Estado visible del botón Log in sin prometer portal operativo. |
+
+*Sprint 1 Jira - Tareas Transversales*
+
+| Key | Tipo | Summary Jira | Estado Jira | Evidencia / salida |
+| :--- | :--- | :--- | :--- | :--- |
+| NX-57 | style | style: Definir guidelines visuales y design tokens | Por hacer | Lineamientos visuales del Capítulo 4 y tokens del sitio público. |
+| NX-59 | docs | docs: Redactar Startup Profile y Solution Profile | Por hacer | Base de negocio del Capítulo 1. |
+| NX-61 | docs | docs: Definir segmentos objetivo y análisis competitivo | Por hacer | Segmentos S1, S2, S3 y contexto competitivo. |
+| NX-62 | docs | docs: Diseñar guía de entrevistas y registrar ejecución | Por hacer | Evidencia de entrevistas y guía de investigación. |
+| NX-63 | docs | docs: Sintetizar User Personas y User Task Matrix | Por hacer | Personas, tareas y lectura de necesidad del Capítulo 2. |
+| NX-64 | docs | docs: Diseñar arquitectura de información y taxonomía | Por hacer | Navegación, sitemap y estructura de contenido. |
+| NX-67 | docs | docs: Elaborar Customer Journey Maps | Por hacer | Journey maps derivados de investigación. |
+| NX-68 | docs | docs: Registrar Big Picture EventStorming | Por hacer | Eventos, comandos y políticas de dominio. |
+| NX-69 | docs | docs: Consolidar glosario de Ubiquitous Language | Por hacer | Lenguaje ubicuo usado en historias y arquitectura. |
+| NX-70 | style | style: Diseñar wireframes Lo-Fi/Hi-Fi de landing y portal futuro | Por hacer | Wireframes y mockups para landing y referencia futura. |
+| NX-71 | docs | docs: Consolidar Impact Mapping | Por hacer | Trazabilidad entre objetivos, actores e impactos. |
+| NX-77 | style | style: Documentar accesibilidad WCAG 2.1 y Motion Principles | Por hacer | Criterios visuales, accesibilidad y movimiento. |
+| NX-81 | chore | chore: Scaffold repositorio website público | Por hacer | Estructura base del repositorio de landing. |
+| NX-84 | feat | feat(i18n): Implementar motor de internacionalización vanilla JS | Por hacer | Motor bilingüe EN/ES del sitio público. |
+| NX-88 | feat | feat(landing): Maquetar Hero y Features | Por hacer | Implementación visible del Home. |
+| NX-91 | feat | feat(contact): Implementar formulario y validación JS | Por hacer | Formulario público y validación del frente comercial. |
+| NX-106 | docs | docs: Diseñar modelo C4 del sistema | Por hacer | Contexto y contenedores del Capítulo 4. |
+| NX-113 | docs | docs: Expandir EventStorming con comandos y políticas | Por hacer | Profundización del modelo de dominio. |
+| NX-142 | docs | docs: Especificar 64 User Stories en BDD/Gherkin | Por hacer | User Stories completas del Capítulo 3. |
+| NX-148 | docs | docs: Priorizar MVP desde las 64 User Stories | Por hacer | Ordenamiento y release map del Product Backlog. |
+| NX-153 | docs | docs: Crear matriz de trazabilidad landing-backlog | Por hacer | Relación entre landing, backlog y alcance AV1. |
+| NX-158 | docs | docs: Graficar estadísticas de madurez digital | Por hacer | Sustento cuantitativo y visual de contexto. |
+| NX-161 | docs | docs: Completar cuadro Student Outcome ABET 5 | Por hacer | Evidencia de colaboración y roles. |
+| NX-164 | deploy | deploy: Publicar website en Vercel/GitHub Pages | Por hacer | Publicación del sitio público. |
+| NX-167 | docs | docs: Corregir APA 7, links rotos y compilación PDF | Por hacer | Cierre editorial y consistencia del informe. |
+| NX-169 | docs | docs: Estructurar Product Backlog inicial | Por hacer | Backlog priorizado del Capítulo 3. |
+| NX-254 | docs | docs: Redactar README principal del repositorio Nexa | Finalizado | README principal del repositorio como evidencia Docs-as-Code. |
+| NX-255 | docs | docs: Documentar arquitectura del sistema con diagramas C4 | Finalizado | Diagramas C4 y documentación arquitectónica asociada. |
+
+*Sprint 1 Jira - Subtasks por User Story*
+
+| Parent | Subtask | Summary Jira | Estado Jira | Propósito |
+| :--- | :--- | :--- | :--- | :--- |
+| NX-224 / US01 | NX-269 | feat(nav): Integrar rutas públicas principales | Por hacer | Implementar rutas de navegación del sitio público. |
+| NX-224 / US01 | NX-270 | test(nav): Verificar navegación desktop y mobile | Por hacer | Revisar navegación en vistas desktop y mobile. |
+| NX-226 / US03 | NX-271 | feat(i18n): Configurar selector EN/ES en navegación | Por hacer | Habilitar cambio de idioma desde la navegación. |
+| NX-226 / US03 | NX-272 | test(i18n): Verificar persistencia de idioma entre páginas públicas | Por hacer | Confirmar persistencia de idioma entre páginas. |
+| NX-241 / US18 | NX-273 | feat(contact): Maquetar formulario de contacto público | Por hacer | Construir el formulario visible de contacto. |
+| NX-241 / US18 | NX-274 | test(contact): Validar envío y mensaje de confirmación | Por hacer | Verificar respuesta tras intento de envío. |
+| NX-242 / US19 | NX-275 | feat(contact): Agregar validación de campos obligatorios | Por hacer | Añadir validaciones de campos requeridos. |
+| NX-242 / US19 | NX-276 | test(contact): Validar errores de nombre, correo y mensaje | Por hacer | Verificar mensajes de error del formulario. |
+| NX-243 / US20 | NX-277 | feat(faq): Estructurar categorías de preguntas frecuentes | Por hacer | Organizar preguntas por tema dentro del FAQ. |
+| NX-243 / US20 | NX-278 | test(faq): Verificar navegación por categorías del FAQ | Por hacer | Validar acceso a preguntas por categoría. |
+| NX-244 / US21 | NX-279 | feat(faq): Implementar acordeón de preguntas | Por hacer | Habilitar expandir y colapsar respuestas. |
+| NX-244 / US21 | NX-280 | test(faq): Verificar expandir y colapsar respuestas | Por hacer | Revisar comportamiento del acordeón. |
+| NX-245 / US22 | NX-281 | feat(support): Implementar launcher flotante de soporte | Por hacer | Mostrar acceso rápido a soporte visible. |
+| NX-245 / US22 | NX-282 | test(support): Verificar enlaces de soporte hacia contacto, plataforma y FAQ | Por hacer | Confirmar que los enlaces de soporte no rompen navegación. |
+| NX-246 / US23 | NX-283 | feat(auth-placeholder): Implementar estado visible de Log in | Por hacer | Mostrar el acceso al portal como preparación, no como feature completada. |
+| NX-246 / US23 | NX-284 | test(auth-placeholder): Verificar que Log in no dirige a una ruta rota | Por hacer | Evitar que el placeholder genere una experiencia rota. |
+
+*Backlog futuro fuera del Sprint 1*
+
+| Jira | Resumen | Estado | Motivo de exclusión de AV1 |
+| :--- | :--- | :--- | :--- |
+| NX-247 | US24 - Catálogo personalizado | Por hacer | Requiere portal privado y reglas comerciales no entregadas en AV1. |
+| NX-248 | US25 - Búsqueda SKU/Nombre | Por hacer | Depende del catálogo transaccional futuro. |
+| NX-249 | US26 - Filtros de Categoría | Por hacer | Pertenece al catálogo B2B posterior. |
+| NX-250 | US27 - Ficha Técnica | Por hacer | Requiere detalle de producto y datos operativos futuros. |
+| NX-251 | US28 - Mantenimiento Catálogo | Por hacer | Corresponde a administración interna del catálogo. |
+| NX-259 | US64 - API Auth & Recover | En curso | Es preparación técnica de autenticación y API, no incremento público AV1. |
+| NX-260 | US34 - Compra B2B | En curso | Pertenece al flujo transaccional del portal B2B. |
+| NX-266 | future: Dashboard de métricas comerciales | En curso | Dashboard interno futuro, fuera de la landing pública. |
+| NX-94, NX-97, NX-100, NX-116, NX-122, NX-128, NX-133, NX-138 | Tareas técnicas future-dashboard, future-webapp, future-auth, future-backend, future-orders y future-api | Fuera de Sprint 1 | Preparan módulos posteriores, pero no deben contarse como entregables AV1. |
+
+<p align="justify">
+Las capturas siguientes deben leerse como soporte visual del tablero. La referencia normalizada para evaluación es la tabla anterior, porque separa explícitamente historias, tareas, subtareas y backlog futuro sin mezclar módulos no entregados dentro del Sprint 1.
+</p>
 
 *Vista general del Sprint 1 cargado en Jira*
 
@@ -80,7 +179,7 @@ La vista general del tablero permite verificar el volumen de trabajo visible del
 
 ![Sprint 1 bloque A](../assets/images/jira/jira-sprint-1-block-a.png)
 
-El primer bloque del Sprint 1 muestra tareas de lineamientos visuales, arquitectura de información, wireframes, accesibilidad, scaffolding del sitio y componentes iniciales de frontend y backend. Elaboración propia.
+El primer bloque del Sprint 1 muestra tareas de lineamientos visuales, arquitectura de información, wireframes, accesibilidad, scaffolding del sitio y componentes iniciales del frente público. Elaboración propia.
 
 *Sprint 1 — bloque B de trabajo planificado en Jira*
 

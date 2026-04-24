@@ -125,15 +125,69 @@ Las historias de inventario, validación y control se priorizan como parte del d
 ### 3.3.3. Evidencias del Backlog en Herramienta de Gestión
 
 <p align="justify">
-A continuación se presenta la evidencia visual del backlog cargado en la herramienta Jira, siguiendo la priorización por valor de negocio y el roadmap de lanzamientos definido.
+A continuación se presenta la evidencia del backlog cargado en Jira, siguiendo la priorización por valor de negocio y el roadmap de lanzamientos definido. El documento mantiene las 64 User Stories como fuente funcional de verdad, mientras que Jira funciona como espejo operativo para planificar Sprint 1, conservar el backlog futuro y desglosar tareas y subtareas de ejecución.
 </p>
 
 [**Enlace Público al Product Backlog (Jira)**](https://team-nexa.atlassian.net/jira/software/projects/NX/boards/1/backlog?epics=visible)
 
 <p align="justify">
-La evidencia principal de esta subsección es el enlace público al backlog cargado en Jira, donde puede verificarse la organización por épicas, el orden relativo de historias y la consistencia entre estimación y roadmap. Dado que el backlog es una herramienta viva de gestión, el informe conserva aquí la referencia directa al tablero para transparentar la priorización utilizada en el proyecto, en lugar de depender exclusivamente de una captura estática que podría quedar desactualizada.
+La verificación viva de Jira realizada el 24 de abril de 2026 muestra que Sprint 1 contiene 23 historias normalizadas, 28 tareas principales y 16 subtareas asociadas por parent. Las historias US24-US64 permanecen como backlog posterior o preparación técnica, lo cual evita que AV1 declare como terminado el catálogo privado, pedidos B2B, autenticación, dashboard, tracking, inventario, backend o API productiva.
 </p>
 
----
+*Backlog documentado vs Jira*
+
+| Bloque de roadmap | Historias del documento | SP | Representación en Jira | Estado de sprint |
+| :--- | :--- | :---: | :--- | :--- |
+| Sprint 1 - Landing pública | US01-US23 | 43 | NX-224 a NX-246 dentro del Sprint 1 | Activo en Sprint 1 |
+| Sprint 2 - Ventas y pedido inicial | US24-US38 | 65 | Historias futuras como NX-247 a NX-251 y NX-260, más registros históricos relacionados | Fuera de Sprint 1 |
+| Sprint 3 - Tracking e inventario | US39-US48 | 51 | Historias futuras y registros históricos de seguimiento, estados, POD e inventario | Fuera de Sprint 1 |
+| Sprint 4 - Soporte comercial y acceso | US49-US57 | 39 | Historias futuras o registros históricos de clientes, crédito, cuentas y acceso privado | Fuera de Sprint 1 |
+| Sprint 5 - Contratos técnicos | US58-US64 | 41 | Preparación API como NX-259 y tareas técnicas futuras | Fuera de Sprint 1 |
+
+*Selección Sprint 1 cargada en Jira*
+
+| Orden backlog | US | Jira | Título | SP | Estado Jira |
+| :---: | :--- | :--- | :--- | :---: | :--- |
+| 1 | US18 | NX-241 | Envío de contacto | 3 | Por hacer |
+| 2 | US19 | NX-242 | Validación Feedback | 3 | Por hacer |
+| 3 | US03 | NX-226 | Cambio de idioma | 3 | Por hacer |
+| 4 | US05 | NX-228 | Propuesta en Hero | 2 | Por hacer |
+| 5 | US08 | NX-231 | Solicitar demo | 2 | Por hacer |
+| 6 | US01 | NX-224 | Navegar entre páginas | 2 | Por hacer |
+| 7 | US12 | NX-235 | Hub de Solutions | 2 | Por hacer |
+| 8 | US02 | NX-225 | Dropdown de Solutions | 2 | Por hacer |
+| 9 | US13 | NX-236 | Propuesta Distribuidores | 2 | Por hacer |
+| 10 | US14 | NX-237 | Propuesta Importadores | 2 | Por hacer |
+| 11 | US15 | NX-238 | Propuesta Cámaras Frías | 2 | Por hacer |
+| 12 | US09 | NX-232 | Módulos en Platform | 2 | Por hacer |
+| 13 | US10 | NX-233 | Cambio operativo | 2 | Por hacer |
+| 14 | US11 | NX-234 | MVP vs Expansión | 2 | Por hacer |
+| 15 | US06 | NX-229 | Problema operativo | 2 | Por hacer |
+| 16 | US07 | NX-230 | Capacidades clave | 2 | Por hacer |
+| 17 | US16 | NX-239 | Narrativa Company | 2 | Por hacer |
+| 18 | US17 | NX-240 | Soporte Humano | 2 | Por hacer |
+| 19 | US20 | NX-243 | FAQ por Categorías | 2 | Por hacer |
+| 20 | US21 | NX-244 | Expandir FAQ | 2 | Por hacer |
+| 21 | US22 | NX-245 | Soporte Flotante | 2 | Por hacer |
+| 22 | US04 | NX-227 | Navegación en Footer | 1 | Por hacer |
+| 23 | US23 | NX-246 | Acceso público al portal en preparación | 1 | Por hacer |
+
+*Backlog futuro preservado fuera de Sprint 1*
+
+| Jira | User Story / tarea | Estado Jira | Justificación |
+| :--- | :--- | :--- | :--- |
+| NX-247 | US24 - Catálogo personalizado | Por hacer | Requiere portal privado y reglas comerciales posteriores. |
+| NX-248 | US25 - Búsqueda SKU/Nombre | Por hacer | Depende del catálogo transaccional futuro. |
+| NX-249 | US26 - Filtros de Categoría | Por hacer | Pertenece al flujo de catálogo B2B. |
+| NX-250 | US27 - Ficha Técnica | Por hacer | Necesita datos de producto y detalle operativo. |
+| NX-251 | US28 - Mantenimiento Catálogo | Por hacer | Corresponde a administración interna del catálogo. |
+| NX-260 | US34 - Compra B2B | En curso | Pertenece al flujo transaccional del portal B2B. |
+| NX-259 | US64 - API Auth & Recover | En curso | Corresponde a contratos técnicos de autenticación. |
+| NX-266 | future: Dashboard de métricas comerciales | En curso | Es un dashboard posterior, no parte de la landing AV1. |
+| NX-94, NX-97, NX-100, NX-116, NX-122, NX-128, NX-133, NX-138 | Tareas future-dashboard, future-webapp, future-auth, future-backend, future-orders y future-api | Fuera de Sprint 1 | Preparan la evolución del producto, pero no se declaran como entrega funcional de AV1. |
+
+<p align="justify">
+La lectura correcta de Jira es, por tanto, complementaria al Product Backlog: el tablero demuestra gestión operativa, pero el estado de una issue no sustituye la evidencia técnica. La ejecución observable del Sprint 1 se valida en la sección 5.2, donde se separan las historias públicas y tareas documentales de los módulos futuros que todavía no forman parte del incremento entregado.
+</p>
 
 La elaboración del backlog prioriza la validación comercial y el flujo principal del pedido por encima de funcionalidades de soporte, manteniendo consistencia con el Impact Mapping y con la evidencia levantada en el Capítulo 2. Elaboración propia.
