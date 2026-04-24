@@ -2,6 +2,7 @@
 
 <table>
   <tr><td><a href="02-version-history.md">Registro de Versiones del Informe</a></td></tr>
+  <tr><td><a href="04-project-report-collaboration-insights.md">Project Report Collaboration Insights</a></td></tr>
   <tr><td>Contenido</td></tr>
   <tr><td><a href="05-student-outcome.md">Student Outcome</a></td></tr>
 
@@ -26,7 +27,8 @@
   <tr><td>&nbsp;&nbsp;<a href="../20-chapter-2-requirements-elicitation/2-3-needfinding.md">2.3.1. User Personas</a></td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../20-chapter-2-requirements-elicitation/2-3-needfinding.md">2.3.2. User Task Matrix</a></td></tr>
   <tr><td>&nbsp;&nbsp;<a href="../20-chapter-2-requirements-elicitation/2-3-needfinding.md">2.3.3. User Journey Mapping</a></td></tr>
-  <tr><td>&nbsp;&nbsp;<a href="../20-chapter-2-requirements-elicitation/2-3-needfinding.md">2.3.4. Empathy Mapping</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../20-chapter-2-requirements-elicitation/2-3-needfinding.md">2.3.4. As-Is Scenario Map</a></td></tr>
+  <tr><td>&nbsp;&nbsp;<a href="../20-chapter-2-requirements-elicitation/2-3-needfinding.md">2.3.5. Empathy Mapping</a></td></tr>
   <tr><td><a href="../20-chapter-2-requirements-elicitation/2-4-big-picture-event-storming.md">2.4. Big Picture Eventstorming</a></td></tr>
   <tr><td><a href="../20-chapter-2-requirements-elicitation/2-5-ubiquitous-language.md">2.5. Ubiquitous Language</a></td></tr>
 

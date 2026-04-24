@@ -41,4 +41,17 @@ El siguiente cuadro concentra los enlaces a las plataformas colaborativas y repo
 Este anexo respalda la subsección <strong>5.2.1.8. Team Collaboration Insights during Sprint</strong>. A continuación, se registran las pruebas de coordinación síncrona y asíncrona del equipo, incluyendo capturas de reuniones, revisiones de diseño y acuerdos de trabajo que garantizaron la integración continua del producto.
 </p>
 
-*(Aquí se deben colocar las capturas de pantalla de las reuniones de Teams, WhatsApp o Discord con sus respectivas fechas y breves notas de contexto)*
+<p align="center">
+  <img src="../assets/images/project-collaboration/sprint-collaboration-evidence.jpg" alt="Evidencia de coordinación grupal Sprint 1" width="85%">
+  <br><em>Figura: Trabajo colaborativo del equipo KING durante el Sprint 1. Elaboración propia.</em>
+</p>
+
+<p align="center">
+  <img src="../assets/images/project-collaboration/team-collaboration-meeting.jpg" alt="Reunión de coordinación del equipo KING" width="85%">
+  <br><em>Figura: Reunión de coordinación del equipo KING — sesión de modelado y planificación del Sprint 1. Elaboración propia.</em>
+</p>
+
+<p align="center">
+  <img src="../assets/images/project-collaboration/presentation-practice-evidence.png" alt="Práctica de exposición AV1" width="85%">
+  <br><em>Figura: Práctica de exposición del equipo KING para la sustentación AV1. Elaboración propia.</em>
+</p>
