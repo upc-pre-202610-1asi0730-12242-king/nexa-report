@@ -363,23 +363,107 @@ Adicionalmente, el proceso de integración continua hacia GitHub Pages operó co
 <br>
 
 <p align="center">
-  <img src="../../assets/images/jira/github-insights.png" alt="GitHub Insights & Commits" width="80%">
+  <img src="../assets/images/project-collaboration/github-insights.png" alt="GitHub Insights & Commits" width="80%">
   <br>
-  <em>Evidencia 1: Actividad y contribuciones en el repositorio durante el Sprint 1</em>
+  <em>Evidencia 1: Actividad y contribuciones en los repositorios durante el Sprint 1. Elaboración propia.</em>
 </p>
 
 <br>
 
 <p align="center">
-  <img src="../../assets/images/jira/jira-board.png" alt="Jira Software Board" width="80%">
+  <img src="../assets/images/jira/jira-sprint-0-overview.png" alt="Jira — Vista general Sprint 0 y Sprint 1" width="80%">
   <br>
-  <em>Evidencia 2: Tablero Jira con el seguimiento de tareas del Sprint 1</em>
+  <em>Evidencia 2: Vista general Sprint 0 + Sprint 1 en el tablero Jira del equipo KING. Elaboración propia.</em>
+</p>
+
+<p align="center">
+  <img src="../assets/images/jira/jira-sprint-1-block-a.png" alt="Jira Sprint 1 — bloque A" width="80%">
+  <br>
+  <em>Evidencia 3: Sprint 1 en Jira — bloque A. Elaboración propia.</em>
+</p>
+
+<p align="center">
+  <img src="../assets/images/jira/jira-sprint-1-block-b.png" alt="Jira Sprint 1 — bloque B" width="80%">
+  <br>
+  <em>Evidencia 4: Sprint 1 en Jira — bloque B. Elaboración propia.</em>
+</p>
+
+<p align="center">
+  <img src="../assets/images/jira/jira-sprint-1-block-c.png" alt="Jira Sprint 1 — bloque C" width="80%">
+  <br>
+  <em>Evidencia 5: Sprint 1 en Jira — bloque C. Elaboración propia.</em>
+</p>
+
+<p align="center">
+  <img src="../assets/images/jira/jira-backlog-block-a.png" alt="Jira Product Backlog — bloque A" width="80%">
+  <br>
+  <em>Evidencia 6: Product Backlog en Jira — bloque A. Elaboración propia.</em>
+</p>
+
+<p align="center">
+  <img src="../assets/images/jira/jira-backlog-block-b.png" alt="Jira Product Backlog — bloque B" width="80%">
+  <br>
+  <em>Evidencia 7: Product Backlog en Jira — bloque B. Elaboración propia.</em>
+</p>
+
+<p align="center">
+  <img src="../assets/images/jira/jira-backlog-block-c.png" alt="Jira Product Backlog — bloque C" width="80%">
+  <br>
+  <em>Evidencia 8: Product Backlog en Jira — bloque C. Elaboración propia.</em>
+</p>
+
+<br>
+
+*Evidencia gráfica — Historial de commits en `nexa-report`*
+
+<p align="center">
+  <img src="../assets/images/project-collaboration/report-commits/first-commits.png" alt="Primeros commits nexa-report" width="85%">
+  <br><em>Figura: Primeros commits del repositorio `nexa-report`. Elaboración propia.</em>
+</p>
+
+<p align="center">
+  <img src="../assets/images/project-collaboration/report-commits/commits.png" alt="Commits intermedios nexa-report" width="85%">
+  <br><em>Figura: Bloque intermedio de commits del repositorio `nexa-report`. Elaboración propia.</em>
+</p>
+
+<p align="center">
+  <img src="../assets/images/project-collaboration/report-commits/last-commits.png" alt="Últimos commits nexa-report" width="85%">
+  <br><em>Figura: Últimos commits del repositorio `nexa-report` al cierre de AV1. Elaboración propia.</em>
+</p>
+
+*Evidencia gráfica — Historial de commits en `nexa-website`*
+
+<p align="center">
+  <img src="../assets/images/project-collaboration/website-commits/first-commits.png" alt="Primeros commits nexa-website" width="85%">
+  <br><em>Figura: Primeros commits del repositorio `nexa-website`. Elaboración propia.</em>
+</p>
+
+<p align="center">
+  <img src="../assets/images/project-collaboration/website-commits/commits.png" alt="Commits intermedios nexa-website" width="85%">
+  <br><em>Figura: Bloque intermedio de commits del repositorio `nexa-website`. Elaboración propia.</em>
+</p>
+
+<p align="center">
+  <img src="../assets/images/project-collaboration/website-commits/last-commits.png" alt="Últimos commits nexa-website" width="85%">
+  <br><em>Figura: Últimos commits del repositorio `nexa-website` al cierre de AV1. Elaboración propia.</em>
 </p>
 
 <br>
 
 <p align="center">
-  <img src="../../assets/images/pruebas-entrevistas/teams-meeting.png" alt="Reunión de Coordinación Síncrona" width="80%">
+  <img src="../assets/images/project-collaboration/team-collaboration-meeting.jpg" alt="Reunión de coordinación del equipo KING" width="80%">
   <br>
-  <em>Evidencia 3: Reunión de coordinación síncrona en Microsoft Teams/Stream</em>
+  <em>Evidencia 6: Reunión de coordinación síncrona del equipo KING (Microsoft Teams). Elaboración propia.</em>
+</p>
+
+<p align="center">
+  <img src="../assets/images/project-collaboration/sprint-collaboration-evidence.jpg" alt="Colaboración durante sprint" width="80%">
+  <br>
+  <em>Evidencia 7: Trabajo colaborativo del equipo durante el Sprint 1. Elaboración propia.</em>
+</p>
+
+<p align="center">
+  <img src="../assets/images/project-collaboration/presentation-practice-evidence.png" alt="Práctica de exposición" width="80%">
+  <br>
+  <em>Evidencia 8: Sesión de práctica de exposición y preparación de la sustentación AV1. Elaboración propia.</em>
 </p>
