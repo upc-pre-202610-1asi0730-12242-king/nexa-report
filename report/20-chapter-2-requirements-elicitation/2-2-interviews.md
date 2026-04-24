@@ -603,6 +603,18 @@ El segmento canónico S3 expresa el tramo final del flujo del pedido: despacho, 
 Tras el análisis detallado de los ocho perfiles levantados y de la lectura conjunta de los tres segmentos del producto, se identifica una <strong>brecha de trazabilidad integral</strong>. Esta brecha se manifiesta en la desconexión entre la promesa comercial capturada por canales informales y la realidad operativa gestionada con sistemas fragmentados, validaciones manuales y visibilidad incompleta del despacho.
 </p>
 
+*Cuantificación explícita de hallazgos (base: 8 entrevistados)*
+
+- **6 de 8 entrevistados (75%)** mencionan a WhatsApp como canal operativo principal para coordinar pedidos o urgencias logísticas.
+- **7 de 8 entrevistados (88%)** reportan fragmentación de información entre sistemas formales (ERP), hojas de cálculo y canales informales.
+- **6 de 8 entrevistados (75%)** identifican re-digitación o validaciones manuales como fuente recurrente de retrabajo.
+- **5 de 8 entrevistados (63%)** señalan falta de visibilidad logística sobre stock real, ETA o estado del pedido.
+- **4 de 8 entrevistados (50%)** describen inestabilidad, lentitud o cierres inesperados del software actualmente usado.
+- **8 de 8 entrevistados (100%)** expresan apertura a adoptar una herramienta digital siempre que reduzca pasos, no añada complejidad y responda en entornos móviles.
+
+Elaboración propia a partir de la codificación temática de las ocho entrevistas.
+
+
 *Distribución de Canales de Comunicación Identificados*
 
 ```mermaid
