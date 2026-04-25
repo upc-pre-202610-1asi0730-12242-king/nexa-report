@@ -125,7 +125,7 @@ Además, el Sprint Backlog 1 no puede analizarse aislado del <strong>Product Bac
 | NX-158 | docs | docs: Graficar estadísticas de madurez digital | Por hacer | Sustento cuantitativo y visual de contexto. |
 | NX-161 | docs | docs: Completar cuadro Student Outcome ABET 5 | Por hacer | Evidencia de colaboración y roles. |
 | NX-164 | deploy | deploy: Publicar website en Vercel/GitHub Pages | Por hacer | Publicación del sitio público. |
-| NX-167 | docs | docs: Corregir APA 7, links rotos y compilación PDF | Por hacer | Cierre editorial y consistencia del informe. |
+| NX-167 | docs | docs: Corregir APA 7, links rotos y compilación PDF | Finalizado | Cierre editorial y consistencia del informe. |
 | NX-169 | docs | docs: Estructurar Product Backlog inicial | Por hacer | Backlog priorizado del Capítulo 3. |
 | NX-254 | docs | docs: Redactar README principal del repositorio Nexa | Finalizado | README principal del repositorio como evidencia Docs-as-Code. |
 | NX-255 | docs | docs: Documentar arquitectura del sistema con diagramas C4 | Finalizado | Diagramas C4 y documentación arquitectónica asociada. |
@@ -196,7 +196,7 @@ El backlog en Jira demuestra que las historias priorizadas para investigación, 
 #### 5.2.1.4. Development Evidence for Sprint Review.
 
 <p align="justify">
-La evidencia de desarrollo del Sprint 1 abarca cuatro repositorios activos dentro de la organización <a href="https://github.com/upc-pre-202610-1asi0730-12242-king">upc-pre-202610-1asi0730-12242-king</a>. El repositorio <strong>nexa-report</strong> concentra toda la documentación académica del proyecto, construida de forma incremental desde el 01/04/2026. El repositorio <strong>nexa-website</strong> contiene la implementación real del Landing Page desplegado en GitHub Pages. Los repositorios <strong>nexa-platform</strong> y <strong>nexa-webapp</strong> fueron inicializados durante el sprint como base para la siguiente iteración. A continuación se presenta la tabla de commits relacionados con el incremento del Sprint 1, organizados por repositorio.
+La evidencia de desarrollo del Sprint 1 abarca cuatro repositorios activos dentro de la organización <a href="https://github.com/upc-pre-202610-1asi0730-12242-king">upc-pre-202610-1asi0730-12242-king</a>. El repositorio <strong>nexa-report</strong> concentra toda la documentación académica del proyecto, construida de forma incremental desde el 01/04/2026. El repositorio <strong>nexa-website</strong> contiene la implementación real del Landing Page desplegado en GitHub Pages. Los repositorios <strong><a href="https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-platform">nexa-platform</a></strong> y <strong><a href="https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-webapp">nexa-webapp</a></strong> fueron inicializados durante el sprint como base para la siguiente iteración. A continuación se presenta la tabla de commits relacionados con el incremento del Sprint 1, organizados por repositorio.
 </p>
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on |
@@ -242,6 +242,7 @@ La evidencia de desarrollo del Sprint 1 abarca cuatro repositorios activos dentr
 | `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `65cf019` | `assets(jira): update sprint and backlog screenshots` | | 24/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `12a30a3` | `docs(front-matter): update jira image references in collaboration insights` | | 24/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `880b191` | `docs(ch5): sync website commit table and fix heading lint in cover` | | 24/04/2026 |
+| - | - | - | - | - | - |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `3b97299` | `Initial commit` | | 14/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `a175f4c` | `chore: set up initial repository structure and project documentation` | | 17/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `53ef7e3` | `docs: add initial README with project overview and structure` | | 17/04/2026 |
