@@ -169,47 +169,29 @@ Además, el Sprint Backlog 1 no puede analizarse aislado del <strong>Product Bac
 Las capturas siguientes deben leerse como soporte visual del tablero. La referencia normalizada para evaluación es la tabla anterior, porque separa explícitamente historias, tareas, subtareas y backlog futuro sin mezclar módulos no entregados dentro del Sprint 1.
 </p>
 
-*Vista general del Sprint 1 cargado en Jira*
+*Vista general Sprint 0 + Sprint 1 cargado en Jira*
 
-![Vista general del Sprint 1](../assets/images/jira/jira-sprint-0-overview.png)
+![Vista general del Sprint 0 y Sprint 1](../assets/images/jira/sprint-0-sprint-1.png)
 
 La vista general del tablero permite verificar el volumen de trabajo visible del incremento AV1 y su organización inicial antes de revisar los bloques específicos. Elaboración propia.
 
-*Sprint 1 — bloque A de trabajo planificado en Jira*
-
-![Sprint 1 bloque A](../assets/images/jira/jira-sprint-1-block-a.png)
-
-El primer bloque del Sprint 1 muestra tareas de lineamientos visuales, arquitectura de información, wireframes, accesibilidad, scaffolding del sitio y componentes iniciales del frente público. Elaboración propia.
-
 *Sprint 1 — bloque B de trabajo planificado en Jira*
 
-![Sprint 1 bloque B](../assets/images/jira/jira-sprint-1-block-b.png)
+![Sprint 1 parte 2](../assets/images/jira/sprint-1-p2.png)
 
-El segundo bloque evidencia continuidad entre especificación de user stories, priorización del MVP, despliegue del website y cierre documental de la entrega. Elaboración propia.
+Este bloque evidencia continuidad entre especificación de user stories, priorización del MVP, despliegue del website y cierre documental de la entrega. Elaboración propia.
 
-*Sprint 1 — bloque C de historias públicas dentro del sprint*
+*Sprint 1 — parte 3 de historias públicas dentro del sprint*
 
-![Sprint 1 bloque C](../assets/images/jira/jira-sprint-1-block-c.png)
+![Sprint 1 parte 3](../assets/images/jira/sprint-1-p3.png)
 
 Este bloque agrupa historias del sitio público para Home, Platform, Solutions, Company y FAQ, todas asignadas al Sprint 1. Su presencia confirma que la experiencia pública forma parte directa del incremento AV1. Elaboración propia.
 
-*Verificación del Product Backlog en Jira — bloque A*
+*Verificación del Product Backlog en Jira*
 
-![Product Backlog bloque A](../assets/images/jira/jira-backlog-block-a.png)
+![Product Backlog completo](../assets/images/jira/backlog.png)
 
-Este primer bloque del backlog en Jira demuestra que las historias priorizadas para investigación, diseño y composición del MVP sí fueron registradas en la herramienta y no solo descritas en el informe. Elaboración propia.
-
-*Verificación del Product Backlog en Jira — bloque B*
-
-![Product Backlog bloque B](../assets/images/jira/jira-backlog-block-b.png)
-
-El segundo bloque confirma continuidad entre historias del sitio público, backlog técnico y preparación de la siguiente fase del producto. Elaboración propia.
-
-*Verificación del Product Backlog en Jira — bloque C*
-
-![Product Backlog bloque C](../assets/images/jira/jira-backlog-block-c.png)
-
-El tercer bloque permite contrastar la lógica de priorización del capítulo 3 con la evidencia viva de Jira, incluyendo historias orientadas a despliegue, trazabilidad académica y preparación técnica posterior. Elaboración propia.
+El backlog en Jira demuestra que las historias priorizadas para investigación, diseño y composición del MVP sí fueron registradas en la herramienta y no solo descritas en el informe. Permite contrastar la lógica de priorización del capítulo 3 con la evidencia viva de Jira, incluyendo historias orientadas a despliegue, trazabilidad académica y preparación técnica posterior. Elaboración propia.
 
 #### 5.2.1.4. Development Evidence for Sprint Review.
 
@@ -250,10 +232,11 @@ La evidencia de desarrollo del Sprint 1 abarca cuatro repositorios activos dentr
 | `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `43a1178` | `docs(report): polish AV1 with re-indexed illustrations and synced TOC` | | 20/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `d660ca8` | `docs(report): restructure AV1 evidence, clean assets and enforce rubric formats` | | 23/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `9ab7067` | `fix(lint): resolve markdownlint heading increment and hard tab errors` | | 23/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `3b97299` | `Initial commit` | | 15/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `a175f4c` | `chore: set up initial repository structure and project documentation` | | 18/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `53ef7e3` | `docs: add initial README with project overview and structure` | | 18/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `3b97299` | `Initial commit` | | 14/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `a175f4c` | `chore: set up initial repository structure and project documentation` | | 17/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `53ef7e3` | `docs: add initial README with project overview and structure` | | 17/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `215b125` | `style(tokens): define Nexa brand design tokens v1.1.0` | | 19/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `05e01ce` | `docs: add project notes and planning decisions` | | 19/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `1332ae2` | `feat(landing): scaffold semantic index.html for 4-band Flecto layout` | Bands 1–3 with [data-band] scopes: dark hero, white tabs, cream segments, dark trust+contact. | 19/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `c0877ea` | `feat(landing): add styles/main.css + mirror tokens.css` | Layout grid system bound to tokens.css band scopes ([data-band]). Components and utility classes. | 19/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `d37c0a3` | `feat(landing): add i18n toggle for es_419/en_US lang pairs` | | 19/04/2026 |
@@ -263,16 +246,17 @@ La evidencia de desarrollo del Sprint 1 abarca cuatro repositorios activos dentr
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `1d91315` | `feat(design): implement premium visual redesign with new assets` | | 19/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `2d87251` | `feat: restore landing page to stable baseline` | | 19/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `427f52b` | `feat: translate DOM content to Spanish and update copy for local context` | | 19/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `525feac` | `fix(landing): fix i18n bindings, token references and layout inconsistencies` | | 20/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `e89e497` | `chore: archive legacy docs to nexa-archive` | | 20/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `f8d12a6` | `chore: clean up code comments` | | 20/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `525feac` | `fix(landing): fix i18n bindings, token references and layout inconsistencies` | | 19/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `e89e497` | `chore: archive legacy docs to nexa-archive` | | 19/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `f8d12a6` | `chore: clean up code comments` | | 19/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `5601bd3` | `fix(landing): viewport height fixes for laptop screens` | | 20/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `78fd683` | `docs: update README with live link, repo references and clean structure` | | 20/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `4a7b43e` | `chore: add .gitignore for OS and system files` | | 21/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `5255e41` | `ci(lint): add markdownlint and commitlint workflow` | | 21/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `57e0f9c` | `chore(git): ignore .claude worktree directory` | | 21/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `f30b3f5` | `fix(docs): correct filename typos in requirements folder` | | 21/04/2026 |
-| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `94d4735` | `feat(a11y): add skip-to-content link to all pages for WCAG compliance` | | 21/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `4a7b43e` | `chore: add .gitignore for OS and system files` | | 20/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `5cc9089` | `Update team member ID in README.md` | | 20/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `5255e41` | `ci(lint): add markdownlint and commitlint workflow` | | 20/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `57e0f9c` | `chore(git): ignore .claude worktree directory` | | 20/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `f30b3f5` | `fix(docs): correct filename typos in requirements folder` | | 20/04/2026 |
+| `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `94d4735` | `feat(a11y): add skip-to-content link to all pages for WCAG compliance` | | 20/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `505f4f6` | `docs(report): data update` | | 23/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-platform` | `main` | `520138d` | `Initial commit` | | 15/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `f374393` | `Initial commit` | | 15/04/2026 |
@@ -371,45 +355,27 @@ Adicionalmente, el proceso de integración continua hacia GitHub Pages operó co
 <br>
 
 <p align="center">
-  <img src="../assets/images/jira/jira-sprint-0-overview.png" alt="Jira — Vista general Sprint 0 y Sprint 1" width="80%">
+  <img src="../assets/images/jira/sprint-0-sprint-1.png" alt="Jira — Vista general Sprint 0 y Sprint 1" width="80%">
   <br>
   <em>Evidencia 2: Vista general Sprint 0 + Sprint 1 en el tablero Jira del equipo KING. Elaboración propia.</em>
 </p>
 
 <p align="center">
-  <img src="../assets/images/jira/jira-sprint-1-block-a.png" alt="Jira Sprint 1 — bloque A" width="80%">
+  <img src="../assets/images/jira/sprint-1-p2.png" alt="Jira Sprint 1 — parte 2" width="80%">
   <br>
-  <em>Evidencia 3: Sprint 1 en Jira — bloque A. Elaboración propia.</em>
+  <em>Evidencia 3: Sprint 1 en Jira — parte 2. Elaboración propia.</em>
 </p>
 
 <p align="center">
-  <img src="../assets/images/jira/jira-sprint-1-block-b.png" alt="Jira Sprint 1 — bloque B" width="80%">
+  <img src="../assets/images/jira/sprint-1-p3.png" alt="Jira Sprint 1 — parte 3" width="80%">
   <br>
-  <em>Evidencia 4: Sprint 1 en Jira — bloque B. Elaboración propia.</em>
+  <em>Evidencia 4: Sprint 1 en Jira — parte 3. Elaboración propia.</em>
 </p>
 
 <p align="center">
-  <img src="../assets/images/jira/jira-sprint-1-block-c.png" alt="Jira Sprint 1 — bloque C" width="80%">
+  <img src="../assets/images/jira/backlog.png" alt="Jira Product Backlog completo" width="80%">
   <br>
-  <em>Evidencia 5: Sprint 1 en Jira — bloque C. Elaboración propia.</em>
-</p>
-
-<p align="center">
-  <img src="../assets/images/jira/jira-backlog-block-a.png" alt="Jira Product Backlog — bloque A" width="80%">
-  <br>
-  <em>Evidencia 6: Product Backlog en Jira — bloque A. Elaboración propia.</em>
-</p>
-
-<p align="center">
-  <img src="../assets/images/jira/jira-backlog-block-b.png" alt="Jira Product Backlog — bloque B" width="80%">
-  <br>
-  <em>Evidencia 7: Product Backlog en Jira — bloque B. Elaboración propia.</em>
-</p>
-
-<p align="center">
-  <img src="../assets/images/jira/jira-backlog-block-c.png" alt="Jira Product Backlog — bloque C" width="80%">
-  <br>
-  <em>Evidencia 8: Product Backlog en Jira — bloque C. Elaboración propia.</em>
+  <em>Evidencia 5: Product Backlog completo en Jira. Elaboración propia.</em>
 </p>
 
 <br>
