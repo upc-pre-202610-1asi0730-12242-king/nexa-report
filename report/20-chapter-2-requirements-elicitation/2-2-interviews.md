@@ -208,7 +208,7 @@ Captura de sesión de entrevista. Elaboración propia.
 
 **Inicio de la entrevista:** 0:00:05  
 **Fin de la entrevista:** 0:26:05  
-**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e1%20diego%20-%20lorena%20silva.mp4?web=1)
+**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQBh49Y9SDAgRZlPLZSquYZRAdC_CjYnFHvBVKZmg3bhzQQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=xeVLVO)
 
 **Resumen de la Entrevista**
 
@@ -235,7 +235,7 @@ Captura de sesión de entrevista. Elaboración propia.
 
 **Inicio de la entrevista:** 0:26:06  
 **Fin de la entrevista:** 0:47:05  
-**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e2%20cesar%20-%20paola%20levano.mp4?web=1)
+**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQAyzf03TLfeSbIYrCXh28BxAd8G-WNr_uB1Uu5jS__edvc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=nDmxW2)
 
 **Resumen de la Entrevista**
 
@@ -262,7 +262,7 @@ Captura de sesión de entrevista. Elaboración propia.
 
 **Inicio de la entrevista:** 0:47:06  
 **Fin de la entrevista:** 1:04:01  
-**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s1.e3%20diego%20-%20cecilia%20perez.mp4?web=1)
+**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQDmUgpre5wLTJEjeIpKE5gMAR8lhXNb8-aN_5nfkE2mY-8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=cqpqFZ)
 
 **Resumen de la Entrevista**
 
@@ -291,7 +291,7 @@ Captura de sesión de entrevista. Elaboración propia.
 
 **Inicio de la entrevista:** 1:04:07  
 **Fin de la entrevista:** 1:19:39  
-**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e1%20diego%20-%20hilda%20litano.mp4?web=1)
+**Enlace de la entrevista:** [Video unificado en OneDrive](nexa-interview-s2-e1-diego-hilda-litano)
 
 **Resumen de la Entrevista**
 
@@ -314,7 +314,7 @@ Captura de sesión de entrevista. Elaboración propia.
 
 **Inicio de la entrevista:** 1:19:40  
 **Fin de la entrevista:** 1:51:08  
-**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e2%20gino%20-%20edith%20taype.mp4?web=1)
+**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQA-I6vCEGaNSr22U2cE6mS3AQWy6KV2LrkCrZkvACBGJgw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=TPayIp)
 
 **Resumen de la Entrevista**
 
@@ -337,7 +337,7 @@ Captura de sesión de entrevista. Elaboración propia.
 
 **Inicio de la entrevista:** 1:51:09  
 **Fin de la entrevista:** 2:12:02  
-**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s2.e3%20diego%20-%20jesica%20sandoval.mp4?web=1)
+**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQBvq5XhZwCRS5Gl-opHnp9-Ac-dkhnzHv_Yd3ET8251hbs?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=jDo3F6)
 
 **Resumen de la Entrevista**
 
@@ -362,7 +362,7 @@ Captura de sesión de entrevista. Elaboración propia.
 
 **Inicio de la entrevista:** 2:12:08  
 **Fin de la entrevista:** 2:24:34  
-**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s3.e1%20diego%20-%20pedro%20puente.mp4?web=1)
+**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQCYUvW2Mz8eQK0fo9Lddyv3AYFVeaOL7QGRwgePWMtQ99s?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=wZjyWp)
 
 **Resumen de la Entrevista**
 
@@ -385,7 +385,7 @@ Captura de sesión de entrevista. Elaboración propia.
 
 **Inicio de la entrevista:** 2:24:35  
 **Fin de la entrevista:** 2:40:00  
-**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/personal/u202416289_upc_edu_pe/documents/king%20nexa/s3.e2%20cesar%20-%20henry%20garcia.mp4?web=1)
+**Enlace de la entrevista:** [Video unificado en OneDrive](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQAH4V2bsaaTRq3LvOpIH7oBAesfDCbmetCKnYA7IjyxJuo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=tOoyGC)
 
 **Resumen de la Entrevista**
 

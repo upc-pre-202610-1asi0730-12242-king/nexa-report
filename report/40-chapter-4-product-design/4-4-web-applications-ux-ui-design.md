@@ -5,7 +5,8 @@ El diseño de la web application de Nexa debe leerse como la continuación opera
 </p>
 
 <p align="justify">
-En esta capa del producto, la interfaz deja de priorizar conversión comercial y pasa a priorizar decisión. Cada pantalla debe ayudar a responder una pregunta concreta del dominio: qué pedido está en riesgo, qué producto necesita atención, qué validación bloquea la operación, qué unidad está en ruta y qué evidencia respalda el cierre. Bajo esa lógica, el bloque se organiza en cuatro partes: wireframes, wireflow, mock-ups y user flows. Los artefactos se trabajaron en Figma y luego se exportaron para documentar el recorrido funcional del MVP.
+En esta capa del producto, la interfaz deja de priorizar la conversión comercial y pasa a enfocarse en la toma de decisiones operativas rápidas. Cada pantalla debe ayudar a responder una pregunta concreta del dominio: qué pedido está en riesgo, qué producto necesita atención, qué validación bloquea la operación, qué unidad está en ruta y qué evidencia respalda el cierre. Bajo esa lógica, la documentación se organiza en cuatro partes esenciales: wireframes, wireflows, mock-ups y user flows detallados. Los artefactos se trabajaron colaborativamente en Figma y luego se exportaron para documentar todo el recorrido funcional del MVP.
+
 </p>
 
 ### 4.4.1. Web Applications Wireframes.
@@ -370,3 +371,40 @@ flowchart TD
 ```
 
 Elaboración propia. Este recorrido pone el foco en la necesidad de previsibilidad del cliente y en la forma en que una incidencia debe ser visible sin obligarlo a volver al canal informal.
+
+### 4.4.5. Web Applications Mobile UX/UI Design.
+
+<p align="justify">
+Para garantizar una experiencia verdaderamente ubicua y accesible para los usuarios en movimiento (como conductores y personal en planta), las interfaces principales de la aplicación web de Nexa se adaptaron bajo principios <strong>mobile-first</strong>. Todo este trabajo de diseño estructural y visual se llevó a cabo utilizando la herramienta <strong>Figma</strong>.
+</p>
+
+#### A. Mobile Wireframes
+
+<p align="justify">
+Los wireframes para dispositivos móviles se diseñaron en Figma priorizando la densidad de información justa para pantallas compactas y reduciendo la complejidad visual sin comprometer la funcionalidad operativa.
+</p>
+
+*Estructura base del diseño móvil en Figma*
+
+![Mobile Wireframes Overview](../assets/images/mobile-browser/landing-wireframes-mobile-overview.png)
+
+Elaboración propia. Los wireframes móviles simplifican la lectura y aseguran que los botones de acción principal estén al alcance del pulgar del usuario.
+
+#### B. Mobile Mock-ups
+
+<p align="justify">
+Posteriormente, los mock-ups de alta fidelidad en Figma trasladaron el sistema de diseño definitivo a los flujos móviles clave, asegurando coherencia visual y usabilidad bajo condiciones de operación logística.
+</p>
+
+*Mock-ups de alta fidelidad móviles en Figma*
+
+![Mobile Mockups Overview](../assets/images/mobile-browser/landing-mockups-mobile-overview.png)
+
+![Mobile Mockups Sections](../assets/images/mobile-browser/landing-mockups-mobile-sections.png)
+
+![Mobile Mockups Usage](../assets/images/mobile-browser/landing-mockups-mobile-usage.png)
+
+![Mobile Mockups CTA and Footer](../assets/images/mobile-browser/landing-mockups-mobile-cta-footer.png)
+
+Elaboración propia. Muestras de alta fidelidad móvil que validan la interfaz adaptativa para el MVP de Nexa.
+
