@@ -50,3 +50,4 @@
 | AV1 V1.6.8 | 22/04/2026 | Yucra Sandoval, Diego Sebastian | Reencuadre del Capítulo V al alcance real de AV1: foco en `nexa-report` y `nexa-website`, ajuste del lenguaje sobre capas futuras y limpieza del bloque de implementación, servicios y despliegue |
 
 La tabla documenta los cambios significativos y las contribuciones individuales realizadas al informe a lo largo del ciclo del proyecto, asegurando la trazabilidad de su evolución. Elaboración propia.
+| TB2 V1.0.0 | 02/05/2026 | Yucra Sandoval, Diego Sebastian | Apertura del ciclo TB2: actualización del historial de versiones, registro inicial del Sprint 2 e incorporación de referencias al despliegue activo de `nexa-webapp` |
