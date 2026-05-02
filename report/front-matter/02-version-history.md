@@ -51,3 +51,7 @@
 
 La tabla documenta los cambios significativos y las contribuciones individuales realizadas al informe a lo largo del ciclo del proyecto, asegurando la trazabilidad de su evolución. Elaboración propia.
 | TB2 V1.0.0 | 02/05/2026 | Yucra Sandoval, Diego Sebastian | Apertura del ciclo TB2: actualización del historial de versiones, registro inicial del Sprint 2 e incorporación de referencias al despliegue activo de `nexa-webapp` |
+| TB2 V1.0.1 | 02/05/2026 | Marín Cueva, César Fernando | Actualización de la tabla de configuración de despliegue con el estado activo de `nexa-webapp` en TB2 |
+| TB2 V1.0.2 | 02/05/2026 | Torrejón De Los Santos, Gino Rodrigo | Actualización del README con indicador de estado TB2 Active |
+| TB2 V1.0.3 | 02/05/2026 | Verde Bueno, Joaquín Francisco | Adición de párrafo de conclusiones preliminares de la entrega TB2 |
+| TB2 V1.0.4 | 02/05/2026 | Rojas Mancilla, Gerard Gianpier | Sincronización del historial de versiones con todos los aportes del equipo en TB2 |
