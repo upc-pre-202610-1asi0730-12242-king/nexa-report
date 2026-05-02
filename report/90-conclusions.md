@@ -15,3 +15,7 @@ Desde la perspectiva de ingeniería de software, el principal logro de AV1 no es
 <p align="justify">
 Finalmente, AV1 deja una conclusión metodológica importante: el valor del proyecto no reside en sobredimensionar lo ya implementado, sino en distinguir con honestidad lo que ya es evidencia pública de lo que todavía permanece como backlog comprometido. Nexa cierra esta entrega con una plataforma pública desplegada, un sprint defendible, diseño de producto bien encaminado y una base técnica escalable; la continuidad inmediata debe concentrarse en convertir esa preparación en portal autenticado, catálogo transaccional, seguimiento operativo y servicios documentados en ejecución.
 </p>
+
+<p align="justify">
+La entrega TB2 consolida el avance más significativo del proyecto en términos de implementación: el despliegue activo de <code>nexa-webapp</code> como aplicación web autenticada con módulos operativos funcionales. A diferencia de AV1, donde la mayor parte del trabajo se concentraba en artefactos de diseño y documentación, TB2 entrega código ejecutable, flujos transaccionales reales y una cobertura que abarca el ciclo completo de operaciones: catálogo, inventario, pedidos, despacho, portal B2B y reportes. Este avance valida la arquitectura propuesta en el capítulo IV y cierra la brecha entre lo diseñado y lo construido, convirtiendo los bounded contexts documentados en módulos navegables y verificables en producción.
+</p>
