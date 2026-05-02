@@ -191,3 +191,61 @@ La lectura correcta de Jira es, por tanto, complementaria al Product Backlog: el
 </p>
 
 La elaboración del backlog prioriza la validación comercial y el flujo principal del pedido por encima de funcionalidades de soporte, manteniendo consistencia con el Impact Mapping y con la evidencia levantada en el Capítulo 2. Elaboración propia.
+
+---
+
+### 3.3.4. Mirror del Sprint 2 (TB1) en Jira
+
+<p align="justify">
+El Sprint 2 corresponde a TB1 y materializa la primera versión funcional de la Web Application con datos mock, hash routing en GitHub Pages, autenticación con guardas por rol, portal B2B con checkout/success, módulos operativos (catálogo + modal, drawers de lote y cliente, condiciones comerciales en pedido asistido, despacho/POD) y vista de reportes operativos. La planificación detallada de issues, subtareas y CSV de importación se conserva en el anexo <a href="../annexes/annex-jira-sprint-2-import.md">Annex – Jira Sprint 2 Import Plan</a>.
+</p>
+
+*Selección Sprint 2 (TB1) — User Stories nuevas y refinadas*
+
+| Tipo | US / Tarea | Resumen | Epic | SP | Estado Jira |
+| :--- | :--- | :--- | :--- | :---: | :--- |
+| Story | US65 | Redirección por rol al iniciar sesión | EP10 | 3 | In Progress |
+| Story | US66 | Estado visible de scope/permiso denegado | EP10 | 2 | In Progress |
+| Story | US67 | Ruteo seguro desde landing pública al webapp | EP06 | 2 | In Progress |
+| Story | US68 | Vista de reportes operativos | EP11 | 5 | In Progress |
+| Story | US69 | Disclosure de datos mock TB1 y API readiness | EP14 | 2 | In Progress |
+| Story (refinada) | US23 | Acceso público al portal en preparación | EP06 | 1 | In Progress |
+| Story (refinada) | US27 | Ficha Técnica → modal de producto | EP09 | 3 | In Progress |
+| Story (refinada) | US30 | Carga de Condiciones en pedido asistido | EP09 | 5 | In Progress |
+| Story (refinada) | US34 | Compra B2B end-to-end con clientId | EP08 | 5 | In Progress |
+| Story (refinada) | US37 | Envío + pantalla de éxito en portal | EP08 | 3 | In Progress |
+| Story (refinada) | US38 | Historial filtrado por clientId | EP08 | 3 | In Progress |
+| Story (refinada) | US41 | Estados con guards y forbidden | EP09 | 5 | In Progress |
+| Story (refinada) | US44 | Monitor stock visible en reportes | EP11 | 5 | In Progress |
+| Story (refinada) | US45 | Lotes con drawer de historial | EP09 | 5 | In Progress |
+| Story (refinada) | US49 | Ficha de cliente vía drawer | EP09 | 5 | In Progress |
+
+*Sprint 2 (TB1) — Distribución cuantitativa*
+
+| Bloque | Cantidad |
+| :--- | :---: |
+| User Stories nuevas | 5 |
+| User Stories refinadas | 10 |
+| Tareas principales | 20 |
+| Subtareas (3 por tarea) | 60 |
+| Total issues Sprint 2 | 95 |
+
+### 3.3.5. Backlog futuro AV2 / TB2 (no entra al Sprint 2)
+
+| Tema | Justificación de exclusión TB1 |
+| :--- | :--- |
+| Métodos de pago en checkout B2B | Requiere pasarela real, fuera de TB1 |
+| Direcciones de entrega guardadas | Requiere persistencia y modelo de cliente extendido |
+| Repetir pedido / borrador de pedido | Depende de persistencia real |
+| Detalle de orden en portal | Depende de persistencia y escenarios reales de POD |
+| Perfil y preferencias avanzadas | Fuera del alcance TB1 |
+| Notificaciones por preferencia | No entra a TB1 |
+| Dashboards por rol más profundos | Roadmap TB2 |
+| Reportes con cortes por periodo y exportación | Roadmap TB2 |
+| Pase completo de i18n en webapp | Iteración posterior |
+| API REST ASP.NET Core + Swagger/OpenAPI | TB2 |
+| Persistencia MySQL | TB2 |
+| Autenticación real + recuperación de acceso | TB2 |
+| POD con upload de archivo | TB2 |
+| Pasarela de pago | TB2 |
+| Sensores IoT + ETA real | TB2 |
