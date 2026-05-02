@@ -1628,6 +1628,125 @@ entonces el API emite un nuevo token de acceso sin requerir que el usuario ingre
 <td>EP14</td>
 </tr>
 
+<!-- ═══════════════════════════════════════════════════════════ Sprint 2 (TB1) — User Stories incorporadas durante la implementación de la Web Application -->
+<tr>
+<td><strong>EP10</strong></td>
+<td colspan="5"><strong>Identity &amp; Access — Comportamientos formalizados en TB1 sobre el frontend autenticado.</strong></td>
+</tr>
+
+<tr>
+<td>US65</td>
+<td>Redirección por rol al iniciar sesión</td>
+<td>Como usuaria autenticada (interna o B2B), quiero ser redirigida automáticamente al espacio que corresponde a mi rol al iniciar sesión, para no tener que navegar manualmente entre operación y portal.</td>
+<td>
+<strong>Escenario 1 — Usuario interno entra a operación:</strong><br>
+Dado que un usuario interno se autentica correctamente,<br>
+cuando termina el flujo de login,<br>
+entonces el sistema lo redirige a <code>/#/ops/dashboard</code>.<br><br>
+<strong>Escenario 2 — Cliente B2B entra a portal:</strong><br>
+Dado que un usuario con rol cliente B2B se autentica correctamente,<br>
+cuando termina el flujo de login,<br>
+entonces el sistema lo redirige a <code>/#/portal/home</code>.<br><br>
+<strong>Escenario 3 — Sesión expirada al entrar a ruta protegida:</strong><br>
+Dado que un usuario sin sesión activa intenta abrir una ruta protegida,<br>
+cuando el guard intercepta la navegación,<br>
+entonces el sistema lo envía a <code>/#/auth/login</code> conservando la ruta original como destino post-login.
+</td>
+<td>3</td>
+<td>EP10</td>
+</tr>
+
+<tr>
+<td>US66</td>
+<td>Estado visible de scope/permiso denegado</td>
+<td>Como usuaria autenticada, quiero ver un estado claro cuando intento acceder a una ruta sin permisos, para entender por qué no puedo continuar y volver a una zona segura.</td>
+<td>
+<strong>Escenario 1 — Acceso denegado por scope insuficiente:</strong><br>
+Dado que un usuario autenticado no tiene el scope requerido por la ruta,<br>
+cuando intenta acceder a esa ruta,<br>
+entonces el sistema muestra un estado de acceso denegado con explicación del motivo.<br><br>
+<strong>Escenario 2 — Salida segura desde el estado forbidden:</strong><br>
+Dado que el usuario está en el estado de acceso denegado,<br>
+cuando pulsa la acción primaria de retorno,<br>
+entonces el sistema lo lleva a una ruta segura compatible con su rol.
+</td>
+<td>2</td>
+<td>EP10</td>
+</tr>
+
+<tr>
+<td><strong>EP06</strong></td>
+<td colspan="5"><strong>Landing Page Continuity — Conexión segura entre el sitio público y el webapp para TB1.</strong></td>
+</tr>
+
+<tr>
+<td>US67</td>
+<td>Ruteo seguro desde landing pública al webapp</td>
+<td>Como visitante del sitio público, quiero pulsar el botón <em>Log in</em> del landing y aterrizar en la pantalla real de autenticación del webapp, para iniciar sesión sin rutas rotas.</td>
+<td>
+<strong>Escenario 1 — CTA Log in conduce al webapp:</strong><br>
+Dado que el visitante está en cualquier página pública,<br>
+cuando pulsa el botón Log in,<br>
+entonces el navegador abre la URL desplegada del webapp en <code>/#/auth/login</code>.<br><br>
+<strong>Escenario 2 — Hash routing evita 404 al refrescar:</strong><br>
+Dado que un usuario abre un deep link del webapp con hash,<br>
+cuando se sirve la página desde GitHub Pages,<br>
+entonces no se produce un 404 porque la ruta se resuelve en cliente.
+</td>
+<td>2</td>
+<td>EP06</td>
+</tr>
+
+<tr>
+<td><strong>EP11</strong></td>
+<td colspan="5"><strong>Reports &amp; Analytics — Vista de soporte a decisiones operativas en TB1.</strong></td>
+</tr>
+
+<tr>
+<td>US68</td>
+<td>Vista de reportes operativos</td>
+<td>Como supervisora operativa, quiero consultar una vista de reportes con KPIs, breakdown por estado y alertas FEFO, para tomar decisiones rápidas sobre stock y entregas.</td>
+<td>
+<strong>Escenario 1 — KPIs operativos visibles:</strong><br>
+Dado que la supervisora abre la vista de reportes,<br>
+cuando la vista se renderiza,<br>
+entonces se muestran KPIs de pedidos, entregas y stock con sus valores actuales según los datos del store.<br><br>
+<strong>Escenario 2 — Breakdown por estado de pedido:</strong><br>
+Dado que existen pedidos en distintos estados,<br>
+cuando se consulta el reporte,<br>
+entonces se muestra el conteo por estado siguiendo el flujo válido del dominio.<br><br>
+<strong>Escenario 3 — Alertas FEFO disponibles:</strong><br>
+Dado que existen lotes con vencimiento próximo,<br>
+cuando se carga el bloque FEFO,<br>
+entonces se listan los lotes ordenados por proximidad de vencimiento.
+</td>
+<td>5</td>
+<td>EP11</td>
+</tr>
+
+<tr>
+<td><strong>EP14</strong></td>
+<td colspan="5"><strong>Mock Services &amp; API Readiness — Comunicación honesta del alcance TB1.</strong></td>
+</tr>
+
+<tr>
+<td>US69</td>
+<td>Disclosure transparente de datos mock TB1 y API readiness</td>
+<td>Como usuaria del webapp TB1, quiero ver una disclosure clara de que los datos son mock y que la API real está planeada para TB2, para no confundir la versión TB1 con producción.</td>
+<td>
+<strong>Escenario 1 — Disclaimer visible en superficies clave:</strong><br>
+Dado que el usuario navega en superficies sensibles del webapp TB1,<br>
+cuando la pantalla se renderiza,<br>
+entonces se muestra una etiqueta o nota indicando "datos mock" sin bloquear la operación.<br><br>
+<strong>Escenario 2 — Documentación coherente con el código:</strong><br>
+Dado que el README y el reporte indican que TB1 usa datos mock,<br>
+cuando se compara con el comportamiento del webapp,<br>
+entonces no existe contradicción entre lo declarado y lo implementado.
+</td>
+<td>2</td>
+<td>EP14</td>
+</tr>
+
 </tbody>
 </table>
 
@@ -1635,4 +1754,23 @@ Detalle de requerimientos funcionales estructurados bajo el estándar Gherkin pa
 
 ---
 
-La tabla integra el sitio público, el producto transaccional y las historias técnicas del API bajo una taxonomía coherente con la investigación de campo y el landing page. La estimación en puntos de historia (SP) sigue la escala Fibonacci (1, 2, 3, 5, 8, 13). Elaboración propia.
+La tabla integra el sitio público, el producto transaccional y las historias técnicas del API bajo una taxonomía coherente con la investigación de campo y el landing page. Las historias <strong>US65-US69</strong> se incorporan durante el Sprint 2 (TB1) para formalizar comportamientos introducidos en el frontend de la Web Application: redirección por rol, estado forbidden, ruteo seguro landing→webapp, vista de reportes operativos y disclosure de datos mock. La estimación en puntos de historia (SP) sigue la escala Fibonacci (1, 2, 3, 5, 8, 13). Elaboración propia.
+
+### Refinamientos de escenario aplicados en Sprint 2 (TB1)
+
+<p align="justify">
+Las siguientes User Stories existentes recibieron refinamientos de escenario durante el Sprint 2 sin alterar su título, actor o prioridad. Los refinamientos consolidan el comportamiento ya entregado por el frontend mock y preparan el escenario para la integración con la API real en TB2.
+</p>
+
+| US | Refinamiento aplicado en TB1 |
+| :--- | :--- |
+| US23 — Acceso público al portal en preparación | El botón Log in ahora redirige a `/#/auth/login` real del webapp, no a un placeholder. |
+| US27 — Ficha Técnica | El detalle se entrega como modal de producto disponible en el catálogo de operación y en el portal B2B. |
+| US30 — Carga de Condiciones | Las condiciones comerciales son visibles dentro del flujo de pedido asistido. |
+| US34 — Compra B2B | El checkout B2B persiste el pedido en el store y lo asocia al `clientId` del usuario. |
+| US37 — Envío & Confirmación | Tras el checkout B2B se muestra una pantalla de éxito explícita. |
+| US38 — Historial de Pedidos | El listado se filtra por `clientId` para evitar exposición cruzada entre clientes. |
+| US41 — Gestión de Estados | Las transiciones de estado siguen el flujo válido y los guards muestran el estado forbidden cuando aplica. |
+| US44 — Monitor Stock | Los KPIs de stock y FEFO están disponibles en la vista de reportes operativos. |
+| US45 — Gestión de Lotes | El detalle de lote se consulta mediante un drawer con historial de movimientos. |
+| US49 — Ficha de Cliente | La ficha completa del cliente se consulta mediante un drawer dedicado en el módulo de clientes. |
