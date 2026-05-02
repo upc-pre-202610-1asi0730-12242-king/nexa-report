@@ -408,3 +408,77 @@ Posteriormente, los mock-ups de alta fidelidad en Figma trasladaron el sistema d
 
 Elaboración propia. Muestras de alta fidelidad móvil que validan la interfaz adaptativa para el MVP de Nexa.
 
+### 4.4.5. Web Applications — Wireframes y Screenshots TB1 (Sprint 2)
+
+<p align="justify">
+Durante el Sprint 2 (TB1) se incorporaron dos colecciones nuevas de evidencia visual responsive web para la Web Application: una colección de <strong>wireframes</strong> alineados al alcance entregado en TB1 y una colección de <strong>screenshots</strong> reales del frontend con datos mock. Esta evidencia complementa los wireframes y mock-ups previos del Sprint 1 (sin reemplazarlos) y sustenta la sección §5.2.2.5 del Capítulo 5. Las imágenes corresponden a vistas web responsivas del webapp; no son aplicaciones móviles nativas.
+</p>
+
+*Cobertura de wireframes y screenshots TB1*
+
+| Pantalla | Wireframe TB1 | Screenshot TB1 |
+| :--- | :--- | :--- |
+| Login | `../assets/images/web-app-wireframes/log-in-wireframe.png` | `../assets/images/web-app-screenshots/log-in.png` |
+| Dashboard operativo | `../assets/images/web-app-wireframes/dashboard-wireframe.png` | `../assets/images/web-app-screenshots/dashboard.png` |
+| Catálogo de operación | `../assets/images/web-app-wireframes/catalog-wireframe.png` | `../assets/images/web-app-screenshots/catalog.png` |
+| Inventario (FEFO + drawer) | `../assets/images/web-app-wireframes/inventory-wireframe.png` | `../assets/images/web-app-screenshots/inventory.png` |
+| Clientes (drawer de ficha) | `../assets/images/web-app-wireframes/clients-wireframe.png` | `../assets/images/web-app-screenshots/clients.png` |
+| Creación de pedido asistido | `../assets/images/web-app-wireframes/new-order-wireframe.png` | `../assets/images/web-app-screenshots/create-order.png` |
+| Bandeja de órdenes | `../assets/images/web-app-wireframes/orders-wireframe.png` | `../assets/images/web-app-screenshots/orders.png` |
+| Despacho y POD | `../assets/images/web-app-wireframes/dispatch-wireframe.png` | `../assets/images/web-app-screenshots/dispatch.png` |
+| Reportes operativos | `../assets/images/web-app-wireframes/reports-wireframe.png` | `../assets/images/web-app-screenshots/reports.png` |
+| Perfil y preferencias | `../assets/images/web-app-wireframes/profile-wireframe.png` | `../assets/images/web-app-screenshots/profile.png` |
+| Configuración (operación) | `../assets/images/web-app-wireframes/settings-wireframe.png` | `../assets/images/web-app-screenshots/settings.png` |
+
+#### Wireframes TB1 — Web Application
+
+![Wireframe TB1 — Login](../assets/images/web-app-wireframes/log-in-wireframe.png)
+
+![Wireframe TB1 — Dashboard](../assets/images/web-app-wireframes/dashboard-wireframe.png)
+
+![Wireframe TB1 — Catálogo](../assets/images/web-app-wireframes/catalog-wireframe.png)
+
+![Wireframe TB1 — Inventario](../assets/images/web-app-wireframes/inventory-wireframe.png)
+
+![Wireframe TB1 — Clientes](../assets/images/web-app-wireframes/clients-wireframe.png)
+
+![Wireframe TB1 — Nuevo Pedido](../assets/images/web-app-wireframes/new-order-wireframe.png)
+
+![Wireframe TB1 — Órdenes](../assets/images/web-app-wireframes/orders-wireframe.png)
+
+![Wireframe TB1 — Despacho](../assets/images/web-app-wireframes/dispatch-wireframe.png)
+
+![Wireframe TB1 — Reportes](../assets/images/web-app-wireframes/reports-wireframe.png)
+
+![Wireframe TB1 — Perfil](../assets/images/web-app-wireframes/profile-wireframe.png)
+
+![Wireframe TB1 — Configuración](../assets/images/web-app-wireframes/settings-wireframe.png)
+
+#### Screenshots TB1 — Web Application desplegada
+
+![Screenshot TB1 — Login](../assets/images/web-app-screenshots/log-in.png)
+
+![Screenshot TB1 — Dashboard](../assets/images/web-app-screenshots/dashboard.png)
+
+![Screenshot TB1 — Catálogo](../assets/images/web-app-screenshots/catalog.png)
+
+![Screenshot TB1 — Inventario](../assets/images/web-app-screenshots/inventory.png)
+
+![Screenshot TB1 — Clientes](../assets/images/web-app-screenshots/clients.png)
+
+![Screenshot TB1 — Crear Pedido](../assets/images/web-app-screenshots/create-order.png)
+
+![Screenshot TB1 — Órdenes](../assets/images/web-app-screenshots/orders.png)
+
+![Screenshot TB1 — Despacho](../assets/images/web-app-screenshots/dispatch.png)
+
+![Screenshot TB1 — Reportes](../assets/images/web-app-screenshots/reports.png)
+
+![Screenshot TB1 — Perfil](../assets/images/web-app-screenshots/profile.png)
+
+![Screenshot TB1 — Configuración](../assets/images/web-app-screenshots/settings.png)
+
+> Capturas pendientes (TODO): `forbidden.png`, `portal-home.png`, `portal-catalog.png`, `portal-checkout.png`, `portal-success.png`, `portal-orders.png`. Se incorporarán cuando se obtengan las capturas reales de las pantallas correspondientes; no se sustituyen por mockups.
+
+Elaboración propia. La evidencia TB1 es responsive web; corresponde al webapp desplegado en GitHub Pages con datos mock.
+
