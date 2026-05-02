@@ -106,6 +106,7 @@ La configuración de despliegue de AV1 debe leerse en dos niveles: <strong>despl
 | Informe técnico `nexa-report` | Gestión Docs-as-Code y compilación posterior a PDF | **Activo como repositorio fuente** | Estructura `report/` y control de versiones en GitHub |
 | Gestión del sprint | Publicación de backlog y sprint en **Jira** | **Activa como evidencia de proceso** | Capturas y referencias del Sprint 1 |
 | Web application autenticada | Alcance futuro nombrado en diseño y backlog | **No forma parte de AV1** | Referida en capítulos 3 y 4 como evolución posterior |
+| Web application autenticada `nexa-webapp` | Publicación en **GitHub Pages** desde rama `main` vía GitHub Actions | **Activo en TB2** | [nexa-webapp](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-webapp/) |
 | Backend y servicios REST | Alcance futuro nombrado en arquitectura y backlog | **No forma parte de AV1** | Referido en capítulos 3 y 4 como preparación técnica |
 
 <p align="justify">
