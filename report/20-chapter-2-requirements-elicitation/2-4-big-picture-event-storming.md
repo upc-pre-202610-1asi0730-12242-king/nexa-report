@@ -1,4 +1,4 @@
-## 2.4. Big Picture Eventstorming
+## **2.4. Big Picture Eventstorming**
 
 El Big Picture EventStorming de Nexa modela el flujo principal del pedido B2B de productos refrigerados, desde la intención de compra hasta el cierre de la entrega. Su propósito en esta etapa no es diseñar todavía la arquitectura técnica del sistema, sino hacer visible el recorrido del negocio, los actores que intervienen, los eventos más relevantes del dominio y los puntos de fricción que explican por qué el problema persiste.
 
@@ -6,9 +6,7 @@ El modelado mantiene la misma taxonomía canónica definida en el proyecto. En e
 
 El EventStorming se construyó como un ejercicio de síntesis del dominio a partir de la evidencia reunida en entrevistas, needfinding y análisis competitivo. En lugar de partir de pantallas o módulos, el equipo ordenó primero los hechos que modifican el estado del pedido y luego examinó qué actores, restricciones y tensiones aparecen en esas transiciones. Este enfoque resulta útil porque evita diseñar el sistema desde una lista de funcionalidades dispersas y obliga a pensar el producto como una secuencia coherente de eventos del negocio.
 
-Como respaldo del trabajo colaborativo, la evidencia visual del modelado presenta las tres primeras etapas (Exploración, Línea de Tiempo y Puntos de Dolor) directamente en esta sección. El detalle técnico completo (desde la definición de Comandos y Políticas hasta los Contextos Delimitados) se documenta en la sección 4.6.1, junto con las evidencias de coordinación del sprint registradas en el anexo.
-
-### 2.4.1. Proceso de construcción del modelado
+### ***2.4.1. Proceso de construcción del modelado***
 
 *Design-Level EventStorming — Step 1: Exploration*
 ![DDD Step 1](../assets/images/ddd/step-01.png)
@@ -28,9 +26,9 @@ Como respaldo del trabajo colaborativo, la evidencia visual del modelado present
 | **3. Asociación de actores e intervención** | Vincular cada cambio de estado con los responsables y momentos críticos del flujo | Se clarificó la participación de cliente comercial, coordinación comercial, operación y reparto |
 | **4. Identificación de restricciones** | Hacer visibles las fricciones y condiciones operativas que impiden un flujo continuo | Se incorporaron validación comercial tardía, stock incierto, FEFO manual, visibilidad fragmentada y cierre débil de entrega |
 
-La tabla resume el proceso seguido para convertir evidencia cualitativa en un modelo de dominio entendible y útil para el MVP. Elaboración propia.
+> *Nota:* La tabla resume el proceso seguido para convertir evidencia cualitativa en un modelo de dominio entendible y útil para el MVP. Elaboración propia.
 
-### 2.4.2. Actores del dominio
+### ***2.4.2. Actores del dominio***
 
 *Actores del dominio*
 
@@ -43,7 +41,7 @@ La tabla resume el proceso seguido para convertir evidencia cualitativa en un mo
 | Chofer de reparto | Ejecuta el despacho y registra el cierre de entrega |
 | Administrador autorizado | Gestiona cuentas internas y parámetros base del sistema |
 
-### 2.4.3. Eventos del dominio y puntos de tensión principales
+### ***2.4.3. Eventos del dominio y puntos de tensión principales***
 
 *Eventos del dominio y puntos de tensión principales*
 
@@ -60,7 +58,7 @@ La tabla resume el proceso seguido para convertir evidencia cualitativa en un mo
 | Entrega cerrada con evidencia | Chofer de reparto, cliente comercial, supervisión comercial / operación | El cierre débil deja reclamos abiertos y baja trazabilidad del servicio |
 | Pedido cancelado antes de despacho | Coordinación comercial, operación | La cancelación exige recuperar continuidad operativa y evitar compromisos inconsistentes |
 
-### 2.4.4. Pain points y restricciones operativas identificadas
+### ***2.4.4. Pain points y restricciones operativas identificadasv
 
 *Pain points y restricciones operativas identificadas*
 
@@ -73,7 +71,7 @@ La tabla resume el proceso seguido para convertir evidencia cualitativa en un mo
 | Cierre de entrega con evidencia insuficiente | Al final del flujo | Quedan reclamos, dudas sobre cumplimiento y poca trazabilidad del servicio |
 | Dependencia de coordinación humana para destrabar el proceso | En todo el ciclo del pedido | El flujo no escala bien y se vuelve sensible a interrupciones y retrabajo |
 
-### 2.4.5. Comandos, políticas y read models del dominio
+### ***2.4.5. Comandos, políticas y read models del dominio***
 
 A partir de los eventos y los pain points identificados, el Big Picture permite explicitar los **comandos** (intenciones que disparan cambios de estado), las **políticas** (reacciones automáticas del dominio ante ciertos eventos) y los **read models** (vistas de solo lectura que los actores necesitan para decidir). Esta explicitación refuerza la lectura ingenieril del flujo sin introducir artefactos técnicos nuevos: se derivan únicamente de los eventos ya modelados.
 
@@ -91,11 +89,11 @@ A partir de los eventos y los pain points identificados, el Big Picture permite 
 
 Los comandos expresan la intención del actor; los eventos confirman que el estado efectivamente cambió; las políticas capturan las reacciones automáticas que el dominio debe sostener (reservas, validaciones, notificaciones, FEFO, liberación de stock); y los read models son las vistas consolidadas que permiten al Segmento 1, al Segmento 2 y al Segmento 3 decidir con información consistente. Juntos, cierran la narrativa del Big Picture como una cadena de *intención → hecho → reacción → visibilidad*, no como pantallas aisladas.
 
-### 2.4.6. Evidencia de colaboración del modelado
+### ***2.4.6. Evidencia de colaboración del modelado***
 
   ![Reunión de modelado EventStorming del equipo KING](../assets/images/project-collaboration/team-collaboration-meeting.jpg)
   
-*Figura: Sesión colaborativa del equipo KING durante la construcción del Big Picture EventStorming. Elaboración propia.*
+> *Nota:* *Figura: Sesión colaborativa del equipo KING durante la construcción del Big Picture EventStorming. Elaboración propia.*
 
 ### 2.4.7. Flujo resumido del dominio
 
