@@ -2,15 +2,11 @@
 
 ## 5.1. Software Configuration Management
 
-<p align="justify">
-La gestión de la configuración del software en Nexa se documenta a partir de la evidencia verificable disponible en el corte AV1: el tablero de trabajo en Jira, los repositorios GitHub del informe y del sitio público, el despliegue de la landing page y los artefactos de diseño y arquitectura elaborados durante la iteración. Esta sección distingue entre <strong>configuración efectivamente observable</strong> y <strong>capacidad planificada</strong>, evitando atribuir como desplegado aquello que en este hito aún permanece en backlog o en diseño técnico.
-</p>
+La gestión de la configuración del software en Nexa se documenta a partir de la evidencia verificable disponible en el corte AV1: el tablero de trabajo en Jira, los repositorios GitHub del informe y del sitio público, el despliegue de la landing page y los artefactos de diseño y arquitectura elaborados durante la iteración. Esta sección distingue entre **configuración efectivamente observable** y **capacidad planificada**, evitando atribuir como desplegado aquello que en este hito aún permanece en backlog o en diseño técnico.
 
 ### 5.1.1. Software Development Environment Configuration
 
-<p align="justify">
 Para estandarizar el trabajo colaborativo del equipo y asegurar trazabilidad entre investigación, diseño, implementación y documentación, se configuró un entorno de trabajo compuesto por herramientas efectivamente observables en los repositorios revisados y por plataformas de coordinación ya utilizadas durante el Sprint 1. La siguiente tabla resume el entorno base con el que se produjo el incremento AV1.
-</p>
 
 *Configuración observable del entorno de desarrollo utilizada en AV1*
 
@@ -27,15 +23,11 @@ Para estandarizar el trabajo colaborativo del equipo y asegurar trazabilidad ent
 | Internacionalización | **Módulo propio `i18n.js`** | Soporte bilingüe EN/ES en textos y metadatos | Archivo `assets/js/i18n.js` en `nexa-website` |
 | Despliegue | **GitHub Pages** | Publicación del MVP público | URL activa del sitio web |
 
-<p align="justify">
-Adicionalmente, el corte AV1 deja preparada una capacidad técnica futura que todavía no debe confundirse con software implementado. El backlog y los capítulos de diseño ya prevén una <strong>web application autenticada</strong> y una <strong>capa de servicios</strong>; sin embargo, al cierre de esta entrega esa capa permanece como alcance modelado y priorizado, no como incremento desarrollado dentro del sprint visible.
-</p>
+Adicionalmente, el corte AV1 deja preparada una capacidad técnica futura que todavía no debe confundirse con software implementado. El backlog y los capítulos de diseño ya prevén una **web application autenticada** y una **capa de servicios**; sin embargo, al cierre de esta entrega esa capa permanece como alcance modelado y priorizado, no como incremento desarrollado dentro del sprint visible.
 
 ### 5.1.2. Source Code Management
 
-<p align="justify">
 El control de versiones se organiza bajo una convención GitFlow adaptada al alcance real de AV1. La revisión de los repositorios activos permite distinguir una estructura mínima pero consistente de ramas y responsabilidades.
-</p>
 
 *Repositorios activos y configuración de versionado utilizada en AV1*
 
@@ -52,19 +44,13 @@ El control de versiones se organiza bajo una convención GitFlow adaptada al alc
 - **`release/*`:** ramas de preparación del entregable.
 - **`hotfix/*`:** ramas reservadas para correcciones críticas posteriores a una liberación.
 
-<p align="justify">
 En la práctica, `nexa-report` y `nexa-website` funcionan como dos flujos sincronizados: el primero preserva la justificación ingenieril y el segundo concentra la ejecución visible del MVP. Esta separación reduce ruido entre documentación y código y facilita relacionar commits, capturas Jira, artefactos de diseño y despliegue público dentro de un mismo sprint.
-</p>
 
-<p align="justify">
 La web application autenticada y la futura capa de servicios ya están nombradas en backlog, arquitectura y diseño, pero no forman parte del control de versiones activo que este capítulo necesita defender como evidencia de AV1. Por ello, aquí solo se documentan los repositorios que sí sostienen la entrega visible del sprint.
-</p>
 
 ### 5.1.3. Source Code Style Guide & Conventions
 
-<p align="justify">
 Para garantizar mantenibilidad y lectura homogénea del proyecto, el equipo adopta convenciones explícitas tanto para el código fuente como para los artefactos documentales:
-</p>
 
 **Convención de commits (Conventional Commits):** Los mensajes siguen el patrón `type(scope): description`, en minúsculas y sin punto final.
 
@@ -93,9 +79,7 @@ Aunque la capa de servicios no forma parte del incremento activo de AV1, el back
 
 ### 5.1.4. Software Deployment Configuration
 
-<p align="justify">
-La configuración de despliegue de AV1 debe leerse en dos niveles: <strong>despliegue activo</strong> para el MVP público y <strong>preparación futura</strong> para la capa transaccional aún no desarrollada dentro de esta entrega. Esta distinción evita sobredeclarar capacidades no demostradas.
-</p>
+La configuración de despliegue de AV1 debe leerse en dos niveles: **despliegue activo** para el MVP público y **preparación futura** para la capa transaccional aún no desarrollada dentro de esta entrega. Esta distinción evita sobredeclarar capacidades no demostradas.
 
 *Configuración de despliegue observable en el corte AV1*
 
@@ -109,6 +93,5 @@ La configuración de despliegue de AV1 debe leerse en dos niveles: <strong>despl
 | Web application autenticada `nexa-webapp` | Publicación en **GitHub Pages** desde rama `main` vía GitHub Actions | **Activo en TB2** | [nexa-webapp](https://upc-pre-202610-1asi0730-12242-king.github.io/nexa-webapp/) |
 | Backend y servicios REST | Alcance futuro nombrado en arquitectura y backlog | **No forma parte de AV1** | Referido en capítulos 3 y 4 como preparación técnica |
 
-<p align="justify">
 En consecuencia, el procedimiento de despliegue defendible para AV1 se reduce a la capa que sí está operativa: versionar cambios en `nexa-website`, integrarlos en la rama estable, publicar el sitio en GitHub Pages y validar la navegación pública resultante. La capa transaccional del producto permanece identificada como siguiente fase de implementación y no debe leerse como evidencia de esta entrega.
-</p>
+
