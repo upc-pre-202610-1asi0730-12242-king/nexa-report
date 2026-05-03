@@ -2,7 +2,7 @@
 
 Esta sección presenta el diseño orientado a objetos de Nexa por bounded context, siguiendo la separación consolidada al cierre de la arquitectura del capítulo 4.6. En lugar de concentrar todo el dominio en un único diagrama, se muestran bloques más acotados para que cada contexto conserve una responsabilidad clara.
 
-El propósito de esta vista no es reemplazar el diseño de base de datos ni anticipar el código final de implementación, sino identificar las clases que concentran estado y comportamiento dentro de cada parte del sistema. Por eso algunos diagramas incluyen clases marcadas como <code>&lt;&lt;Reference&gt;&gt;</code>, usadas para representar dependencias con otros contextos sin absorber su modelo completo.
+El propósito de esta vista no es reemplazar el diseño de base de datos ni anticipar el código final de implementación, sino identificar las clases que concentran estado y comportamiento dentro de cada parte del sistema. Por eso algunos diagramas incluyen clases marcadas como `<<Reference>>`, usadas para representar dependencias con otros contextos sin absorber su modelo completo.
 
 ### 4.7.1. Class Diagrams
 
@@ -22,7 +22,7 @@ El contexto de catálogo concentra la estructura maestra del producto: categorí
 
 ![Inventory Class Diagram](../assets/images/class-diagrams/03-inventory-classes.svg)
 
-El contexto de inventario modela la disponibilidad física del producto mediante almacenes, ubicaciones, stock, lotes y movimientos. La inclusión de <code>InventoryTrans</code> permite representar que los cambios de stock no se tratan como un valor aislado, sino como movimientos registrados dentro del mismo contexto.
+El contexto de inventario modela la disponibilidad física del producto mediante almacenes, ubicaciones, stock, lotes y movimientos. La inclusión de `InventoryTrans` permite representar que los cambios de stock no se tratan como un valor aislado, sino como movimientos registrados dentro del mismo contexto.
 
 #### Customer Management
 

@@ -1,14 +1,10 @@
 ## 4.8. Database Design
 
-<p align="justify">
 La persistencia de Nexa se organiza por bounded context. En lugar de dejar todo el modelo en un único diagrama general, esta sección separa las tablas principales de cada bloque del dominio para que la relación con los class diagrams sea más clara. Los servicios de soporte como pagos y notificaciones no se modelan aquí como contextos propios, porque en esta etapa funcionan como integraciones auxiliares.
-</p>
 
 ### 4.8.1. Database Diagrams
 
-<p align="justify">
 Los siguientes diagramas muestran la estructura relacional principal de cada contexto. Cuando una tabla depende de otra parte del sistema, esa referencia se incluye de forma mínima para no repetir el modelo completo en cada imagen.
-</p>
 
 #### 4.8.1.1. Identity
 

@@ -1,12 +1,8 @@
 ## 4.6. Domain-Driven Software Architecture
 
-<p align="justify">
 La arquitectura de Nexa se apoya en Domain-Driven Design para ordenar el dominio antes de bajar a clases, tablas o detalles de implementación. El punto de partida fue el workshop de EventStorming; a partir de esa sesión, el equipo fue separando eventos, reglas, vistas de lectura y límites funcionales hasta llegar a una estructura más clara del sistema.
-</p>
 
-<p align="justify">
 En esta sección el foco está en el vínculo entre workshop y arquitectura. La separación más fina del dominio se desarrolla después en las secciones 4.7 y 4.8, donde se presentan los diagramas de clases y persistencia por bounded context.
-</p>
 
 ### 4.6.1. Design-Level EventStorming
 
@@ -38,15 +34,11 @@ La novena vista reorganiza el flujo en bloques más estables. Aquí ya se empiez
 ![DDD Step 10](../assets/images/ddd/step-10.png)
 La última captura resume los bounded contexts resultantes. En el workshop todavía aparecen bloques amplios como Product Catalog, Order, Inventory, Shipment y Billing, pero esa salida fue un punto de transición y no el cierre final del modelo.
 
-<p align="justify">
-La traducción posterior del workshop refinó esos bloques para el informe. Product Catalog pasó a leerse como <strong>Catalog</strong>; Order como <strong>Orders</strong>; Shipment como <strong>Traceability</strong>; Billing quedó absorbido como soporte de reglas comerciales e integración; y el diseño terminó separando además <strong>Identity</strong> y <strong>Customer Management</strong> como contextos necesarios para mantener límites más claros.
-</p>
+La traducción posterior del workshop refinó esos bloques para el informe. Product Catalog pasó a leerse como **Catalog**; Order como **Orders**; Shipment como **Traceability**; Billing quedó absorbido como soporte de reglas comerciales e integración; y el diseño terminó separando además **Identity** y **Customer Management** como contextos necesarios para mantener límites más claros.
 
 ### 4.6.2. Software Architecture Context Diagram
 
-<p align="justify">
 El diagrama de contexto muestra a Nexa como sistema central dentro de dos frentes de uso: el frente público del sitio y el frente operativo del producto. También ubica integraciones externas que acompañan el ecosistema, como autenticación, notificaciones, almacenamiento documental, calendario y pagos.
-</p>
 
 *Diagrama de Contexto del Sistema Nexa (C4 — Nivel 1)*
 
@@ -56,9 +48,7 @@ El contexto deja ver que el sistema no se limita a un solo actor. Hay visitantes
 
 ### 4.6.3. Software Architecture Container Diagrams
 
-<p align="justify">
 La vista de contenedores separa el sitio público, la web application transaccional, el backend API y la base de datos. Esa separación permite distinguir mejor el frente comercial del frente operativo y evita mezclar en una sola pieza la experiencia pública, la lógica de negocio y la persistencia.
-</p>
 
 *Diagrama de Contenedores del Sistema Nexa (C4 — Nivel 2)*
 
@@ -68,16 +58,13 @@ En esta versión del C4, el sitio público se representa como una capa en HTML, 
 
 ### 4.6.4. Software Architecture Components Diagrams
 
-<p align="justify">
 La vista de componentes baja un nivel más y muestra cómo se reparte la responsabilidad entre interfaz, backend y servicios de apoyo. No todos los bounded contexts aparecen con la misma granularidad en esta lámina, por lo que su lectura debe complementarse con 4.7 y 4.8.
-</p>
 
 *Diagrama de Componentes del Sistema Nexa (C4 — Nivel 3)*
 
 ![Diagrama de Componentes C4 — Sistema Nexa](../assets/images/c4/components.svg)
 
-En la imagen aparecen piezas visibles como Auth, Catalog, Order, Inventory y Customer dentro del backend, además de componentes de soporte como Payment Integration y Notification. Para mantener coherencia con el dominio, el informe conserva como núcleo los contextos Identity, Catalog, Inventory, Customer Management, Commercial Conditions, Orders y Traceability. En esa lectura, <strong>Auth</strong> se alinea con <strong>Identity</strong>, <strong>Customer</strong> con <strong>Customer Management</strong>, y los servicios de pago o notificación se tratan como apoyo transversal, no como bounded contexts principales.
+En la imagen aparecen piezas visibles como Auth, Catalog, Order, Inventory y Customer dentro del backend, además de componentes de soporte como Payment Integration y Notification. Para mantener coherencia con el dominio, el informe conserva como núcleo los contextos Identity, Catalog, Inventory, Customer Management, Commercial Conditions, Orders y Traceability. En esa lectura, **Auth** se alinea con **Identity**, **Customer** con **Customer Management**, y los servicios de pago o notificación se tratan como apoyo transversal, no como bounded contexts principales.
 
-<p align="justify">
 Esta decisión evita forzar una correspondencia literal entre cada caja del C4 y cada bloque del dominio. El C4 resume capas e integraciones; los capítulos siguientes afinan la separación interna del modelo. Por eso Commercial Conditions y Traceability se desarrollan con más precisión en las secciones 4.7 y 4.8, donde la lógica del dominio se documenta con mayor detalle.
-</p>
+
