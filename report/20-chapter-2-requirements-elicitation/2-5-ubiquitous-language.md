@@ -1,12 +1,8 @@
 ## 2.5. Ubiquitous Language
 
-<p align="justify">
-El siguiente glosario establece el vocabulario compartido entre el equipo de desarrollo y los expertos del dominio para el sistema Nexa. Todos los artefactos del proyecto —historias de usuario, diagramas, código y documentación— utilizan estos términos de manera consistente para evitar ambigüedades entre disciplinas e integrantes del equipo. Este glosario sigue los principios descritos por Eric Evans en <em>Domain-Driven Design: Tackling Complexity in the Heart of Software</em>, donde el Lenguaje Ubicuo se modela dentro de un contexto delimitado para que los términos tengan un significado preciso y unívoco acordado por todos los interesados.
-</p>
+El siguiente glosario establece el vocabulario compartido entre el equipo de desarrollo y los expertos del dominio para el sistema Nexa. Todos los artefactos del proyecto —historias de usuario, diagramas, código y documentación— utilizan estos términos de manera consistente para evitar ambigüedades entre disciplinas e integrantes del equipo. Este glosario sigue los principios descritos por Eric Evans en *Domain-Driven Design: Tackling Complexity in the Heart of Software*, donde el Lenguaje Ubicuo se modela dentro de un contexto delimitado para que los términos tengan un significado preciso y unívoco acordado por todos los interesados.
 
-<p align="justify">
 La selección de términos también mantiene continuidad con la segmentación del informe. Por ello, el glosario refuerza el lenguaje de los tres segmentos canónicos del MVP, evitando que entrevistas, needfinding, modelado del dominio y backlog utilicen nombres distintos para el mismo actor o para la misma transición del pedido.
-</p>
 
 *Glosario de Lenguaje Ubicuo — Dominio: Distribución B2B de productos refrigerados y congelados*
 
