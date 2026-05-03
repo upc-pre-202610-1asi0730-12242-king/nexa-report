@@ -12,11 +12,11 @@ La tabla resume la relación entre evidencia cualitativa, arquetipo sintetizado 
 ![User Persona 1](../assets/images/user-persona-1.png)
 > *Nota:* Representación del arquetipo de vendedoras y coordinación comercial, enfocado en reducir la carga administrativa y el retrabajo en la captura del pedido. Elaboración propia.
 
-*User Persona — Segmento 3: Roberto García*
+*User Persona — Segmento 2: Roberto García*
 ![User Persona 2](../assets/images/user-persona-2.png)
 > *Nota:* Representación sintética del arquetipo de comprador comercial B2B, construida a partir de entrevistas a compradores minoristas y mayoristas, más evidencia de adopción digital del canal tradicional. Elaboración propia.
 
-*User Persona — Segmento 2: Elena Litano*
+*User Persona — Segmento 3: Elena Litano*
 ![User Persona 3](../assets/images/user-persona-3.png)
 > *Nota:* Representación sintética del arquetipo de coordinación logística y operativa, enfocada en el control del cumplimiento, la visibilidad del despacho y el cierre con evidencia. Su construcción se apoya en hallazgos de trazabilidad, incidencias y coordinación operativa dentro del dominio. Elaboración propia.
 
