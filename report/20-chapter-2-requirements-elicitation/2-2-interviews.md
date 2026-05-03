@@ -1,7 +1,7 @@
 ## 2.2. Entrevistas
 
 <p align="justify">
-Para mantener continuidad con el Capítulo I y con los artefactos posteriores de needfinding, este capítulo trabaja con tres segmentos del producto: <strong>S1: coordinación comercial y captura del pedido</strong>, <strong>S2: cliente comercial B2B y abastecimiento recurrente</strong> y <strong>S3: despacho, transporte y cierre de entrega</strong>. Las entrevistas se organizaron para entender cómo el problema aparece en esos tres tramos del flujo. Cuando fue necesario, también se recogió información operativa del dominio para aclarar reglas, restricciones y puntos de quiebre del proceso, sin alterar la segmentación oficial del proyecto.
+Para mantener continuidad con el Capítulo I y con los artefactos posteriores de needfinding, este capítulo trabaja con tres segmentos del producto: <strong>Segmento 1: Vendedoras y coordinación comercial</strong>, <strong>Segmento 2: Jefatura logística y coordinación operativa</strong> y <strong>Segmento 3: Compradores comerciales B2B mayoristas y minoristas</strong>. Las entrevistas se organizaron para entender cómo el problema aparece en esos tres tramos del flujo. Cuando fue necesario, también se recogió información operativa del dominio para aclarar reglas, restricciones y puntos de quiebre del proceso, sin alterar la segmentación oficial del proyecto.
 </p>
 
 ### 2.2.1. Diseño de entrevistas
@@ -14,7 +14,7 @@ Para mantener continuidad con el Capítulo I y con los artefactos posteriores de
 
 **Guion por segmento**
 
-**Segmento 1: Mercaderistas y personal de coordinación comercial**
+**Segmento 1: Vendedoras y coordinación comercial**
 
 **Segmento:** Personal que recibe, interpreta y canaliza pedidos hacia facturación, almacén o despacho
 
@@ -69,7 +69,7 @@ Aquí todavía no se vende la solución; se explora el mínimo valor esperado.
 
 **Nota para el moderador.** No es necesario formular todas las preguntas literalmente. Lo importante es mantener el foco, pedir ejemplos recientes, repreguntar “por qué” cuando aparezca un problema y no interrumpir silencios útiles.
 
-**Bloque complementario de entrevistas: operación y restricciones del dominio**
+**Segmento 2: Jefatura logística y coordinación operativa**
 
 **Perfiles entrevistados:** Personas con responsabilidad de supervisión o decisión sobre importación, abastecimiento, almacén, inventario, despacho y coordinación logística.
 
@@ -81,7 +81,7 @@ Aquí todavía no se vende la solución; se explora el mínimo valor esperado.
 
 **Foco principal:** Trazabilidad, puntos de quiebre, visibilidad interna, coordinación entre áreas, prioridades del MVP y evolución futura.
 
-**Uso dentro del informe:** Este bloque no redefine la taxonomía del proyecto. Su función es complementar la investigación con una visión de dominio y restricciones operativas que luego alimentan el diseño, el EventStorming y la delimitación del alcance.
+**Uso dentro del informe:** Este segmento aporta la perspectiva de coordinación logística y validación operativa. Su función es complementar la investigación con una visión de dominio y restricciones operativas que luego alimentan el diseño, el EventStorming y la delimitación del alcance.
 
 **Warm-up y alcance del cargo**
 La idea es ubicar rápido desde qué parte del proceso mira la operación.
@@ -129,7 +129,7 @@ La meta es priorizar el valor real, no pedir features sueltas.
 
 **Nota para el moderador**. No es necesario formular todas las preguntas literalmente. Lo importante es mantener el foco, pedir ejemplos recientes, repreguntar “por qué” cuando aparezca un problema y no interrumpir silencios útiles.
 
-**Segmento 2 (S2) · Clientes comerciales B2B minoristas y mayoristas**
+**Segmento 3: Compradores comerciales B2B mayoristas y minoristas**
 
 **Segmento:** Bodegas, minimarkets, pequeños mayoristas y negocios HORECA que compran productos refrigerados o congelados a distribuidores.
 
@@ -191,7 +191,7 @@ En esta subsección se preservan los nombres y cargos reales de las personas ent
 Además de las capturas integradas en el informe, el archivo audiovisual original de las ocho entrevistas se conserva en la carpeta compartida <strong>King Nexa</strong> de OneDrive. Cada ficha incluye su enlace directo para mantener trazabilidad entre la evidencia visual resumida y la grabación completa utilizada en el levantamiento.
 </p>
 
-**Segmento S1: Mercaderistas / personal de coordinación comercial**
+**Segmento 1: Vendedoras y coordinación comercial**
 
 **Entrevistado 1**
 
@@ -274,7 +274,7 @@ Celia Pérez, con experiencia previa en ventas de ruta, aporta una perspectiva c
 Su testimonio confirma que, para el personal en ruta, la estabilidad de la conexión y la velocidad de respuesta del sistema son factores determinantes para la adopción tecnológica. Cualquier retraso en el dispositivo móvil se traduce en una atención deficiente al cliente y en una carga operativa innecesaria al final del día.
 </p>
 
-**Segmento S2: Clientes comerciales B2B (minoristas y mayoristas)**
+**Segmento 2: Jefatura logística y coordinación operativa**
 
 **Entrevistado 1**
 
@@ -345,7 +345,7 @@ Captura de sesión de entrevista. Elaboración propia.
 Jesica Sandoval, supervisora de ventas Horeca, subraya el riesgo de la transcripción manual de pedidos, donde los errores en cantidades obligan a validaciones individuales de cada orden. Señala que la variable crítica es el control de fechas de vencimiento (FEFO), información que actualmente no está integrada en el sistema central y requiere coordinación verbal constante con almacén.
 </p>
 
-**Segmento S3: Despacho, transporte y cierre de entrega**
+**Segmento 3: Compradores comerciales B2B mayoristas y minoristas**
 
 **Entrevistado 1**
 
@@ -395,17 +395,17 @@ Henrry García enfatiza que la confianza es el motor de la relación B2B. Aunque
 
 ### 2.2.3. Análisis de entrevistas
 
-**Análisis del segmento S1: Mercaderistas / personal de coordinación comercial**
+**Análisis del Segmento 1: Vendedoras y coordinación comercial**
 
 <p align="justify">
-El segmento de mercaderistas y personal de coordinación comercial, representado en esta muestra por Lorena Silva, Cinthia Levano y Celia Pérez, constituye el punto de captura más sensible del flujo del pedido. En las tres entrevistas aparece la misma tensión operativa: responder con rapidez al cliente y, al mismo tiempo, validar crédito, stock y condiciones comerciales con información que no siempre está integrada. Sobre esa base se identifican los siguientes patrones compartidos.
+El segmento de vendedoras y personal de coordinación comercial, representado en esta muestra por Lorena Silva, Cinthia Levano y Celia Pérez, constituye el punto de captura más sensible del flujo del pedido. En las tres entrevistas aparece la misma tensión operativa: responder con rapidez al cliente y, al mismo tiempo, validar crédito, stock y condiciones comerciales con información que no siempre está integrada. Sobre esa base se identifican los siguientes patrones compartidos.
 </p>
 
-*Análisis del segmento S1: Mercaderistas / personal de coordinación comercial*
+*Análisis del Segmento 1: Vendedoras y coordinación comercial*
 
 <table border="1" cellspacing="0" cellpadding="6" align="center">
   <tr>
-    <th>Variable observada en S1</th>
+    <th>Variable observada en Segmento 1</th>
     <th>Evidencia recurrente</th>
     <th>Lectura analítica</th>
     <th>Implicancia de diseño</th>
@@ -452,19 +452,19 @@ La tabla resume la cadena dato observado → patrón → implicancia de diseño 
 - **Brecha de Movilidad:** La incapacidad de realizar registros de clientes o pedidos complejos desde un smartphone limita la autonomía del 100% del personal en campo.
 - **Carga de re-digitación:** En las tres entrevistas aparece la necesidad de transcribir o revalidar información recibida por canales informales antes de convertirla en un pedido operable. Esto no permite estimar un porcentaje exacto de error, pero sí confirma una fuente recurrente de retrabajo y ambigüedad.
 
-**Hallazgos clave para S1:**
+**Hallazgos clave para el Segmento 1:**
 
 - La solución debe acercarse a la rapidez percibida de WhatsApp, pero sin renunciar a una estructura de datos confiable.
 - Conviene integrar en la misma interfaz la visibilidad de crédito, cobranzas y disponibilidad para reducir validaciones paralelas.
 - La experiencia debe responder bien en móvil, porque parte importante del trabajo ocurre fuera del escritorio o en condiciones de alta urgencia.
 
-**Análisis complementario de operación y restricciones del dominio**
+**Análisis del Segmento 2: Jefatura logística y coordinación operativa**
 
 <p align="justify">
-Este bloque, integrado por Hilda Litano, Edith Taype y Jesica Sandoval, aporta una lectura transversal del dominio. Aquí el foco se desplaza desde la rapidez comercial hacia la trazabilidad, el control documental, la rotación y la responsabilidad operativa sobre productos perecederos. Más que describir un segmento adicional del MVP, estas entrevistas exponen restricciones que el sistema no puede ignorar.
+El segmento de jefatura logística y coordinación operativa, representado en esta muestra por Hilda Litano, Edith Taype y Jesica Sandoval, aporta una lectura transversal del dominio. Aquí el foco se desplaza desde la rapidez comercial hacia la trazabilidad, el control documental, la rotación y la responsabilidad operativa sobre productos perecederos. Estas entrevistas exponen las restricciones operativas y los criterios de control que este segmento debe sostener para que el pedido se cumpla correctamente.
 </p>
 
-*Análisis complementario de operación y restricciones del dominio*
+*Análisis del Segmento 2: Jefatura logística y coordinación operativa*
 
 <table border="1" cellspacing="0" cellpadding="6" align="center">
   <tr>
@@ -517,19 +517,19 @@ La tabla sintetiza cómo las entrevistas de jefatura y operación alimentan regl
 - Se requiere una **herramienta unificada** que centralice la documentación sanitaria con el estado real del stock.
 - La **trazabilidad de temperatura** debe ser una evidencia inalterable para proteger la responsabilidad de la distribuidora frente a reclamos de clientes.
 - Reducir los **silos de información** permitiendo diferentes niveles de acceso según el rol operativo.
-- Este bloque confirma que la operación aporta reglas, políticas y riesgos que deben respetarse en el producto, pero no altera la segmentación oficial del informe.
+- El Segmento 2 confirma que la operación aporta reglas, políticas y riesgos que deben respetarse en el producto y que forman parte de la segmentación oficial del informe.
 
-**Análisis del segmento canónico S2: Clientes comerciales B2B (minoristas y mayoristas)**
+**Análisis del Segmento 3: Compradores comerciales B2B mayoristas y minoristas**
 
 <p align="justify">
-El análisis de Pedro Puente y Henrry García muestra un patrón consistente: el cliente comercial necesita previsibilidad logística, pero no está dispuesto a adoptarla a costa de complejidad adicional o pérdida de trato humano. Para ambos, el distribuidor no es solo un proveedor, sino un actor del que depende la continuidad operativa del negocio.
+El análisis de Pedro Puente y Henrry García muestra un patrón consistente: el comprador comercial necesita previsibilidad logística, pero no está dispuesto a adoptarla a costa de complejidad adicional o pérdida de trato humano. Para ambos, el distribuidor no es solo un proveedor, sino un actor del que depende la continuidad operativa del negocio.
 </p>
 
-*Análisis del segmento canónico S2: Clientes comerciales B2B (minoristas y mayoristas)*
+*Análisis del Segmento 3: Compradores comerciales B2B mayoristas y minoristas*
 
 <table border="1" cellspacing="0" cellpadding="6" align="center">
   <tr>
-    <th>Variable observada en S2</th>
+    <th>Variable observada en Segmento 3</th>
     <th>Evidencia recurrente</th>
     <th>Lectura analítica</th>
     <th>Implicancia de diseño</th>
@@ -573,28 +573,28 @@ La tabla ordena la relación entre evidencia empírica del cliente comercial y d
 - **Opacidad del ETA (Estimated Time of Arrival):** La falta de seguimiento de ruta obliga a esperar con alta incertidumbre la llegada del pedido y dificulta preparar la recepción.
 - **Asimetría competitiva:** En la muestra aparece la percepción de que los clientes pequeños quedan en desventaja frente a cuentas grandes cuando el stock o la capacidad de entrega se tensionan.
 
-**Hallazgos clave para S2:**
+**Hallazgos clave para el Segmento 3:**
 
 - La plataforma debe permitir un pedido rápido y ofrecer seguimiento sin obligar al cliente a perseguir confirmaciones por otros canales.
 - El sistema debe digitalizar la operación sin eliminar por completo el soporte humano en casos excepcionales.
 - La predictibilidad del despacho aparece como una de las variables de valor más claras para este segmento.
 
-**Segmento canónico S3: Despacho, transporte y cierre de entrega**
+**Implicancias de diseño operativo para el flujo de despacho y entrega**
 
 <p align="justify">
-El segmento canónico S3 expresa el tramo final del flujo del pedido: despacho, seguimiento, incidencia y cierre con evidencia. En este capítulo se consolida a partir de los hallazgos sobre visibilidad de entrega, necesidad de ETA comunicable, cierre defendible y carga operativa durante la ruta, manteniendo coherencia con la segmentación ya definida desde el Capítulo I.
+El tramo final del flujo del pedido —despacho, seguimiento, incidencia y cierre con evidencia— forma parte de las responsabilidades del Segmento 2 (Jefatura logística y coordinación operativa). A partir de los hallazgos sobre visibilidad de entrega, necesidad de ETA comunicable, cierre defendible y carga operativa durante la ruta, se identifican las siguientes implicancias de diseño que complementan la caracterización del Segmento 2.
 </p>
 
-**Evidencia que sostiene S3:**
+**Evidencia que sustenta estas implicancias:**
 
-- Desde la evidencia complementaria de operación, aparece la necesidad de contar con trazabilidad documental y cierre defendible frente a incidencias.
-- Desde el cliente comercial B2B, aparece la necesidad de una ETA comunicable, menor opacidad del despacho y confirmación confiable de entrega.
-- Desde el flujo del dominio, el cierre del pedido exige estados claros, registro de incidencias y prueba de entrega, lo que convierte al personal de despacho en un actor indispensable del MVP.
+- Desde la evidencia del Segmento 2, aparece la necesidad de contar con trazabilidad documental y cierre defendible frente a incidencias.
+- Desde el Segmento 3 (compradores), aparece la necesidad de una ETA comunicable, menor opacidad del despacho y confirmación confiable de entrega.
+- Desde el flujo del dominio, el cierre del pedido exige estados claros, registro de incidencias y prueba de entrega, lo que forma parte del alcance operativo que el Segmento 2 debe gestionar.
 
-**Implicancias de diseño para S3:**
+**Implicancias de diseño para el tramo de despacho y entrega:**
 
 - El producto debe reducir llamadas e interrupciones durante la ruta.
-- El estado del pedido debe mantenerse visible para cliente, coordinación comercial y operación.
+- El estado del pedido debe mantenerse visible para el comprador, la coordinación comercial y la operación.
 - El cierre debe registrar una evidencia mínima consistente, suficiente para disminuir reclamos y ambigüedad posterior.
 
 ### 2.2.4. Síntesis Global de Hallazgos
@@ -639,5 +639,5 @@ graph TD
 Elaboración propia. Mapeo analítico construido a partir de la recurrencia de temas mencionados en las entrevistas; los porcentajes deben leerse como aproximaciones de frecuencia dentro de la muestra, no como mediciones estadísticas del mercado.
 
 <p align="justify">
-En conclusión, Nexa no solo debe resolver la toma de pedidos, sino articular de forma consistente los tres segmentos canónicos del producto: quien captura y valida el pedido (S1), quien se abastece y necesita previsibilidad (S2), y quien ejecuta el despacho y cierra la entrega (S3). Las reglas, restricciones y criterios de control del dominio acompañan ese flujo completo, pero la segmentación del informe se mantiene únicamente en esos tres tramos del producto.
+En conclusión, Nexa no solo debe resolver la toma de pedidos, sino articular de forma consistente los tres segmentos del producto: quien captura y valida el pedido (Segmento 1: Vendedoras y coordinación comercial), quien coordina logística, inventario, preparación y despacho (Segmento 2: Jefatura logística y coordinación operativa), y quien se abastece y necesita previsibilidad (Segmento 3: Compradores comerciales B2B). Las reglas, restricciones y criterios de control del dominio acompañan ese flujo completo, y la segmentación del informe se organiza en esos tres tramos del producto.
 </p>

@@ -5,7 +5,7 @@ El Big Picture EventStorming de Nexa modela el flujo principal del pedido B2B de
 </p>
 
 <p align="justify">
-El modelado mantiene la misma taxonomía canónica definida en el proyecto. En ese marco, <strong>S1</strong> se expresa principalmente en la captura asistida y validación comercial, <strong>S2</strong> en la consulta, envío y seguimiento del pedido por parte del cliente comercial, y <strong>S3</strong> en el despacho, la gestión de incidencias y el cierre de la entrega. Las restricciones operativas del dominio permanecen visibles a lo largo del flujo, pero no redefinen la segmentación del informe.
+El modelado mantiene la misma taxonomía canónica definida en el proyecto. En ese marco, el <strong>Segmento 1</strong> se expresa principalmente en la captura asistida y validación comercial; el <strong>Segmento 2</strong> en la coordinación logística, preparación, despacho, gestión de incidencias y cierre de entrega; y el <strong>Segmento 3</strong> en la consulta, envío y seguimiento del pedido por parte del comprador comercial. Las restricciones operativas del dominio permanecen visibles a lo largo del flujo, pero no redefinen la segmentación del informe.
 </p>
 
 <p align="justify">
@@ -88,18 +88,18 @@ A partir de los eventos y los pain points identificados, el Big Picture permite 
 
 | Comando (intención del actor) | Evento(s) que dispara | Política reactiva del dominio | Read Model que habilita la decisión |
 |---|---|---|---|
-| `SolicitarPedido` (S2) | `PedidoBorradorCreado` | Si el cliente no tiene crédito hábil, el pedido se marca como "a validar" | `CatálogoDisponibleParaCliente` (stock + precio + condiciones) |
-| `EnviarPedidoParaValidación` (S1) | `PedidoEnviadoParaRevisión` | Reserva temporal de stock por ventana definida de validación | `ResumenDePedidoPendiente` (ítems, totales, crédito disponible) |
-| `ValidarPedido` (S1 / Supervisión) | `PedidoValidado` o `PedidoBloqueado` | Si el stock real difiere del reservado, se notifica a coordinación y se re-valida | `VistaDeCréditoYMorosidad`, `StockRealPorSKU` |
-| `ConfirmarPedido` (S1) | `PedidoConfirmado` | Se genera orden de preparación y se notifica al cliente S2 | `EstadoDelPedidoParaCliente` |
-| `PrepararPedido` (Almacén) | `PedidoEnPreparación`, `LoteAsignado` | Política FEFO: sugerir lote con vencimiento más próximo apto | `ListaDePickingFEFO` (SKU, lote, vencimiento, ubicación) |
-| `DespacharPedido` (Almacén/S3) | `PedidoDespachado` | Se inicia el seguimiento de ruta y se habilita ETA para el cliente | `HojaDeRuta`, `ETAParaCliente` |
-| `RegistrarIncidenciaDeRuta` (S3) | `IncidenciaDeRutaRegistrada` | Notificación automática a coordinación comercial y al cliente | `BitácoraDeIncidenciasPorPedido` |
-| `CerrarEntrega` (S3) | `EntregaCerradaConEvidencia` | Se cierra el pedido y se archiva la evidencia de entrega (POD) | `PruebaDeEntrega` (firma, foto, temperatura, hora) |
-| `CancelarPedido` (S1 / S2) | `PedidoCancelado` | Liberación automática de stock reservado y ajuste de crédito | `EstadoDelPedidoParaCliente` |
+| `SolicitarPedido` (Segmento 3) | `PedidoBorradorCreado` | Si el cliente no tiene crédito hábil, el pedido se marca como "a validar" | `CatálogoDisponibleParaCliente` (stock + precio + condiciones) |
+| `EnviarPedidoParaValidación` (Segmento 1) | `PedidoEnviadoParaRevisión` | Reserva temporal de stock por ventana definida de validación | `ResumenDePedidoPendiente` (ítems, totales, crédito disponible) |
+| `ValidarPedido` (Segmento 1 / Segmento 2) | `PedidoValidado` o `PedidoBloqueado` | Si el stock real difiere del reservado, se notifica a coordinación y se re-valida | `VistaDeCréditoYMorosidad`, `StockRealPorSKU` |
+| `ConfirmarPedido` (Segmento 1) | `PedidoConfirmado` | Se genera orden de preparación y se notifica al comprador (Segmento 3) | `EstadoDelPedidoParaCliente` |
+| `PrepararPedido` (Segmento 2 — Almacén) | `PedidoEnPreparación`, `LoteAsignado` | Política FEFO: sugerir lote con vencimiento más próximo apto | `ListaDePickingFEFO` (SKU, lote, vencimiento, ubicación) |
+| `DespacharPedido` (Segmento 2 — Despacho) | `PedidoDespachado` | Se inicia el seguimiento de ruta y se habilita ETA para el cliente | `HojaDeRuta`, `ETAParaCliente` |
+| `RegistrarIncidenciaDeRuta` (Segmento 2) | `IncidenciaDeRutaRegistrada` | Notificación automática a coordinación comercial y al cliente | `BitácoraDeIncidenciasPorPedido` |
+| `CerrarEntrega` (Segmento 2) | `EntregaCerradaConEvidencia` | Se cierra el pedido y se archiva la evidencia de entrega (POD) | `PruebaDeEntrega` (firma, foto, temperatura, hora) |
+| `CancelarPedido` (Segmento 1 / Segmento 3) | `PedidoCancelado` | Liberación automática de stock reservado y ajuste de crédito | `EstadoDelPedidoParaCliente` |
 
 <p align="justify">
-Los comandos expresan la intención del actor; los eventos confirman que el estado efectivamente cambió; las políticas capturan las reacciones automáticas que el dominio debe sostener (reservas, validaciones, notificaciones, FEFO, liberación de stock); y los read models son las vistas consolidadas que permiten a S1, S2 y S3 decidir con información consistente. Juntos, cierran la narrativa del Big Picture como una cadena de <em>intención → hecho → reacción → visibilidad</em>, no como pantallas aisladas.
+Los comandos expresan la intención del actor; los eventos confirman que el estado efectivamente cambió; las políticas capturan las reacciones automáticas que el dominio debe sostener (reservas, validaciones, notificaciones, FEFO, liberación de stock); y los read models son las vistas consolidadas que permiten al Segmento 1, al Segmento 2 y al Segmento 3 decidir con información consistente. Juntos, cierran la narrativa del Big Picture como una cadena de <em>intención → hecho → reacción → visibilidad</em>, no como pantallas aisladas.
 </p>
 
 ### 2.4.6. Evidencia de colaboración del modelado
@@ -125,5 +125,5 @@ Este modelado refuerza dos ideas centrales del proyecto: el problema principal n
 </p>
 
 <p align="justify">
-La principal contribución del EventStorming al capítulo no es solo ordenar nombres de eventos, sino mostrar que el valor del sistema depende de sostener continuidad entre estados. Si el pedido cambia de mano entre actores, pero el sistema no conserva reglas, evidencia y visibilidad comunes, el problema persiste aunque existan interfaces nuevas. En ese sentido, el modelado confirma que la unidad real de diseño no es una pantalla aislada, sino el tránsito completo del pedido entre S1, S2, S3 y las restricciones definidas por la operación.
+La principal contribución del EventStorming al capítulo no es solo ordenar nombres de eventos, sino mostrar que el valor del sistema depende de sostener continuidad entre estados. Si el pedido cambia de mano entre actores, pero el sistema no conserva reglas, evidencia y visibilidad comunes, el problema persiste aunque existan interfaces nuevas. En ese sentido, el modelado confirma que la unidad real de diseño no es una pantalla aislada, sino el tránsito completo del pedido entre el Segmento 1, el Segmento 2, el Segmento 3 y las restricciones definidas por la operación.
 </p>

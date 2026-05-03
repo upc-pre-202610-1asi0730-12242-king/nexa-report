@@ -28,7 +28,7 @@ La lectura central del diagrama es que Nexa no persigue una optimización genér
 </p>
 
 <p align="justify">
-En esta lectura, el mapa conserva como actores protagónicos a S1, S2 y S3 porque son ellos quienes concentran la interacción funcional más directa con el flujo del MVP. Las restricciones de validación, inventario, estados y trazabilidad permanecen dentro del dominio del problema, pero no introducen una segmentación adicional respecto del Capítulo 2.
+En esta lectura, el mapa conserva como actores protagónicos al Segmento 1, al Segmento 2 y al Segmento 3 porque son ellos quienes concentran la interacción funcional más directa con el flujo del MVP. Las restricciones de validación, inventario, estados y trazabilidad permanecen dentro del dominio del problema, pero no introducen una segmentación adicional respecto del Capítulo 2.
 </p>
 
 *Lectura analítica del Impact Mapping de Nexa*
@@ -36,9 +36,9 @@ En esta lectura, el mapa conserva como actores protagónicos a S1, S2 y S3 porqu
 | Nivel del mapa | Elemento priorizado | Sustento en Capítulo 2 | Traducción en especificación |
 | :--- | :--- | :--- | :--- |
 | Meta | **Reducir el tiempo de coordinación manual en un 30% y los errores de despacho en un 15% al cierre del primer release del MVP.** | Entrevistas y needfinding mostraron dependencia de mensajes dispersos, revisión manual y seguimiento poco visible. | Meta SMART alineada a la eficiencia operativa y reducción de mermas. |
-| Actor | `S1` como frente comercial interno | Necesidad de registrar pedidos sin doble digitación y consultar condiciones del cliente antes de comprometer la operación. | Épicas EP07, EP12 y parte de EP14. |
-| Actor | `S2` como cliente comercial recurrente | Necesidad de consultar un catálogo confiable, repetir compras y seguir el despacho sin depender de llamadas o WhatsApp. | Épicas EP07, EP08 y EP10. |
-| Actor | `S3` como cierre operativo del pedido | Necesidad de registrar eventos, documentar la entrega y sostener reclamos con evidencia verificable. | Épicas EP10, EP11 y servicios de tracking/POD. |
+| Actor | Segmento 1: Vendedoras y coordinación comercial | Necesidad de registrar pedidos sin doble digitación y consultar condiciones del cliente antes de comprometer la operación. | Épicas EP07, EP12 y parte de EP14. |
+| Actor | Segmento 3: Compradores comerciales B2B | Necesidad de consultar un catálogo confiable, repetir compras y seguir el despacho sin depender de llamadas o WhatsApp. | Épicas EP07, EP08 y EP10. |
+| Actor | Segmento 2: Jefatura logística y coordinación operativa | Necesidad de validar disponibilidad, organizar preparación, gestionar incidencias y documentar la entrega con evidencia verificable. | Épicas EP10, EP11 y servicios de tracking/POD. |
 | Impacto | Sustituir interacciones informales por flujos estructurados | En el análisis de entrevistas se observaron audios, listas y llamadas como soporte principal del pedido. | **US: Como coordinador, deseo capturar pedidos estructurados para evitar el retrabajo por datos ambiguos.** |
 | Impacto | Anticipar restricciones antes de prometer la entrega | Hallazgos sobre stock incierto, mora, crédito y validación demasiado tardía. | **US: Como cliente, deseo ver el stock real y mi saldo disponible para realizar pedidos sin riesgo de rechazo.** |
 | Impacto | Dar visibilidad al estado real del despacho | Needfinding y journey maps mostraron incertidumbre sobre ETA, incidencias y recepción. | **US: Como transportista, deseo registrar el POD digitalmente para reducir reclamos por falta de evidencia.** |
