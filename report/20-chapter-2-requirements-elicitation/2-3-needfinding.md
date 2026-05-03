@@ -28,20 +28,6 @@ Representación sintética del arquetipo de comprador comercial B2B, construida 
 ![User Persona 3](../assets/images/user-persona-3.png)
 Representación sintética del arquetipo de coordinación logística y operativa, enfocada en el control del cumplimiento, la visibilidad del despacho y el cierre con evidencia. Su construcción se apoya en hallazgos de trazabilidad, incidencias y coordinación operativa dentro del dominio. Elaboración propia.
 
-En conjunto, las tres personas muestran una progresión coherente del mismo problema. Valeria evidencia cómo la información del pedido nace fragmentada; Hilda expresa la incertidumbre que ese desorden produce en el cliente comercial; y Pedro representa el punto donde la falta de coordinación se vuelve retraso, reclamo o cierre débil de la entrega. Esta continuidad resulta importante porque permite que los artefactos del capítulo no describan actores desconectados, sino tres posiciones sobre una misma historia operativa.
-
-### Soporte de Variables Adicionales para User Personas
-
-Para dar soporte empírico a la construcción de los User Personas y asegurar su viabilidad técnica, a continuación se detallan las variables adicionales obligatorias identificadas durante las entrevistas, que condicionan el comportamiento y adopción tecnológica de cada segmento:
-
-| Segmento / Persona | Dispositivos / Browsers de uso frecuente | Marcas de uso cotidiano | Influencias y canales de adopción |
-| --- | --- | --- | --- |
-| **Segmento 1: Valeria** (Vendedoras y coordinación comercial) | Laptops corporativas (Windows), Smartphones Android (Samsung, Xiaomi). Browser: Google Chrome. | WhatsApp Business, Excel, Fontana (ERP heredado), Outlook. | Colegas de ventas, supervisores comerciales, urgencia del cliente. Buscan agilidad sobre estética. |
-| **Segmento 3: Hilda** (Compradores B2B) | Smartphones Android (Gama media). Poco uso de desktop. Browser: Chrome Mobile. | WhatsApp, Yape, Plin, Facebook, plataformas de bancos locales (BCP, BBVA). | Promotores de venta, recomendaciones de otros bodegueros, desconfianza hacia apps complejas. |
-| **Segmento 2: Pedro** (Jefatura logística y coordinación operativa) | Laptops de oficina, tablets o smartphones corporativos. Uso frecuente de sistemas internos y herramientas de coordinación. | Google Maps, Waze, WhatsApp, sistemas simples de GPS vehicular, hojas de cálculo o ERP básico. | Jefes de almacén, supervisores operativos. Adopción motivada si reduce incidencias, mejora trazabilidad y agiliza coordinación. |
-
-Estas variables confirman que la plataforma web (Nexa) debe estar fuertemente optimizada para **Google Chrome** y priorizar un diseño **Mobile First**, dado el alto uso de smartphones en el Segmento 3 y la rotación en campo del Segmento 1.
-
 ### 2.3.2. User Task Matrix
 
 La matriz de tareas resume qué actividades concentran mayor frecuencia e importancia relativa para cada segmento canónico. Su función no es enumerar funcionalidades del sistema, sino identificar qué tareas del trabajo real deben ser mejor soportadas por el producto para reducir fricción y sostener adopción.
