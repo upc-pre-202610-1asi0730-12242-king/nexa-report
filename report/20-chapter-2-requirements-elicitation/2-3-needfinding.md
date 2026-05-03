@@ -1,26 +1,26 @@
-## 2.3. Needfinding
+## **2.3. Needfinding**
 
 La construcción de este bloque parte de tres insumos previos. El primero es el análisis de entrevistas del apartado 2.2, que identifica patrones de comportamiento, fricciones recurrentes y expectativas de adopción. El segundo es el análisis competitivo del apartado 2.1, que muestra que las soluciones existentes resuelven fragmentos del problema, pero no articulan con suficiente claridad la continuidad entre captura comercial, abastecimiento del cliente y cierre de entrega. El tercero es la lógica del dominio modelada en el proyecto, que obliga a representar no solo quién usa el sistema, sino en qué momento del flujo su intervención resulta crítica.
 
 Por ello, los artefactos de needfinding no deben interpretarse como piezas visuales aisladas. Su función es traducir evidencia cualitativa en criterios de diseño: quién necesita autonomía, quién necesita visibilidad, quién necesita rapidez, quién necesita trazabilidad y en qué punto del recorrido cada una de esas necesidades se vuelve más sensible. Bajo ese enfoque, el valor del needfinding no está únicamente en mostrar personas, tareas o journeys, sino en demostrar cómo esas representaciones ayudan a delimitar el alcance del MVP y a justificar decisiones posteriores de backlog, arquitectura y experiencia de usuario.
 
-### 2.3.1. User Personas
+### ***2.3.1. User Personas***
 
 La tabla resume la relación entre evidencia cualitativa, arquetipo sintetizado y función de diseño. Elaboración propia.
 
 *User Persona — Segmento 1: Valeria Sánchez*
 ![User Persona 1](../assets/images/user-persona-1.png)
-Representación del arquetipo de vendedoras y coordinación comercial, enfocado en reducir la carga administrativa y el retrabajo en la captura del pedido. Elaboración propia.
+> *Nota:* Representación del arquetipo de vendedoras y coordinación comercial, enfocado en reducir la carga administrativa y el retrabajo en la captura del pedido. Elaboración propia.
 
 *User Persona — Segmento 3: Roberto García*
 ![User Persona 2](../assets/images/user-persona-2.png)
-Representación sintética del arquetipo de comprador comercial B2B, construida a partir de entrevistas a compradores minoristas y mayoristas, más evidencia de adopción digital del canal tradicional. Elaboración propia.
+> *Nota:* Representación sintética del arquetipo de comprador comercial B2B, construida a partir de entrevistas a compradores minoristas y mayoristas, más evidencia de adopción digital del canal tradicional. Elaboración propia.
 
 *User Persona — Segmento 2: Elena Litano*
 ![User Persona 3](../assets/images/user-persona-3.png)
-Representación sintética del arquetipo de coordinación logística y operativa, enfocada en el control del cumplimiento, la visibilidad del despacho y el cierre con evidencia. Su construcción se apoya en hallazgos de trazabilidad, incidencias y coordinación operativa dentro del dominio. Elaboración propia.
+> *Nota:* Representación sintética del arquetipo de coordinación logística y operativa, enfocada en el control del cumplimiento, la visibilidad del despacho y el cierre con evidencia. Su construcción se apoya en hallazgos de trazabilidad, incidencias y coordinación operativa dentro del dominio. Elaboración propia.
 
-### 2.3.2. User Task Matrix
+### ***2.3.2. User Task Matrix***
 
 Esta Sección resume qué actividades concentran mayor frecuencia e importancia relativa para cada segmento canónico. Su función no es enumerar funcionalidades del sistema, sino identificar qué tareas del trabajo real deben ser mejor soportadas por el producto para reducir fricción y sostener adopción.
 | Tareas Identificadas (Tasks)                                                           | Segmento 1: Valeria (Ventas) |           | Segmento 2: Roberto (Logística) |       | Segmento 3: Elena (Comprador) |       |
@@ -36,7 +36,7 @@ Esta Sección resume qué actividades concentran mayor frecuencia e importancia 
 | **Gestionar documentación física (Guías de remisión, facturas)**                       | Baja                         | Media     | Alta                            | Alta  | Media                         | Media |
 | **Atender y gestionar incidencias, reclamos o devoluciones**                           | Media                        | Alta      | Media                           | Alta  | Media                         | Alta  |
 
-### 2.3.3. User Journey Mapping
+### ***2.3.3. User Journey Mapping***
 
 Los journey maps modelan la situación *as-is* de cada segmento. Su valor analítico está en visibilizar dónde se concentran esperas, ambigüedades, dependencias manuales e interrupciones que después se transforman en oportunidades de diseño.
 
@@ -44,21 +44,21 @@ Leídos en conjunto, los tres journeys permiten reconstruir el recorrido complet
 
 *Journey Map — Segmento 1: Coordinación Comercial*
 ![Journey Map 1](../assets/images/journey-map-1.png)
-Mapeo del proceso de captura y gestión de pedidos, identificando puntos de dolor en la transcripción manual. Elaboración propia.
+> *Nota:* Mapeo del proceso de captura y gestión de pedidos, identificando puntos de dolor en la transcripción manual. Elaboración propia.
 
 *Journey Map — Segmento 2: Cliente Comercial B2B*
 ![Journey Map 2](../assets/images/journey-map-2.png)
-Mapeo de la experiencia de abastecimiento del cliente, destacando la incertidumbre en el seguimiento de entrega. Elaboración propia.
+> *Nota:* Mapeo de la experiencia de abastecimiento del cliente, destacando la incertidumbre en el seguimiento de entrega. Elaboración propia.
 
 *Journey Map — Segmento 3: Despacho y Entrega*
 ![Journey Map 3](../assets/images/journey-map-3.png)
-Mapeo de la ruta logística, enfatizando los cuellos de botella en la comunicación de incidencias. Elaboración propia.
+> *Nota:* Mapeo de la ruta logística, enfatizando los cuellos de botella en la comunicación de incidencias. Elaboración propia.
 
 El principal valor del bloque no está en describir tres trayectos separados, sino en demostrar que el punto de dolor cambia de forma pero no de origen. En el Segmento 1 el problema aparece como ambigüedad y retrabajo; en el Segmento 3 como opacidad del abastecimiento e incertidumbre; y en el Segmento 2 como incidencias, demoras y cierre sin evidencia suficiente. Dicho de otro modo, los journeys confirman que el problema central no es una sola pantalla mal resuelta, sino una cadena de decisiones y validaciones que hoy pierde continuidad entre actores.
 
 Esta lectura también deja una implicancia directa para diseño: el MVP necesita mejorar no solo la captura del pedido, sino también los momentos de transición entre estados. Si el sistema estructura bien el pedido, pero no comunica con claridad su confirmación, preparación, despacho o entrega, el valor percibido seguirá fragmentado. Por eso los journeys sostienen la prioridad de estados visibles, historial del pedido, confirmación clara y trazabilidad mínima del cierre.
 
-### 2.3.4. As-Is Scenario Map
+### ***2.3.4. As-Is Scenario Map***
 
 El **As-Is Scenario Map** sintetiza cómo ocurre hoy el flujo completo de un pedido en el dominio B2B de distribución refrigerada de Nexa (quesos, lácteos, charcutería y otros perecederos en cadena de frío). Su propósito no es describir la solución futura, sino dejar explícito el estado actual, con sus acciones reales, sus dolores y sus oportunidades de diseño. Mantiene el alcance honesto de AV1: la plataforma Nexa aún no está desplegada de forma transaccional; lo que se documenta aquí es el mundo *tal cual opera hoy*, antes de Nexa.
 
@@ -75,7 +75,7 @@ El recorrido se estructura en seis etapas operativas, alineadas con los tres seg
 
 La lectura horizontal del mapa deja explícitos los dolores estructurales del dominio en su estado actual: pedidos por WhatsApp/llamada, catálogo desactualizado, visibilidad limitada de stock, coordinación manual, errores de picking/preparación, seguimiento débil de despacho, problemas de rotación FEFO/FIFO, riesgo de vencimiento y trazabilidad casi inexistente entre áreas. Estos puntos no se presentan como funciones implementadas de Nexa en AV1, sino como el mapa de oportunidades que el producto pretende atacar por incrementos, empezando por la captura estructurada del pedido y la visibilidad de estado entre el Segmento 1, el Segmento 2 y el Segmento 3.
 
-### 2.3.5. Empathy Mapping
+### ***2.3.5. Empathy Mapping***
 
 Los empathy maps complementan la lectura operativa con variables de percepción, confianza, frustración y expectativa. Este nivel resulta importante porque la adopción del producto no dependerá solo de eficiencia funcional, sino también de si cada segmento siente que el sistema le reduce carga, incertidumbre o exposición al error.
 
@@ -83,15 +83,15 @@ En el Segmento 1, el empathy map concentra emociones ligadas a presión, urgenci
 
 *Empathy Map — Segmento 1: Coordinación Comercial*
 ![Empathy Map 1](../assets/images/empathy-map-1.png)
-Análisis de expectativas y temores del personal administrativo respecto a la adopción tecnológica. Elaboración propia.
+> *Nota:* Análisis de expectativas y temores del personal administrativo respecto a la adopción tecnológica. Elaboración propia.
 
 *Empathy Map — Segmento 2: Cliente Comercial B2B*
 ![Empathy Map 2](../assets/images/empathy-map-2.png)
-Identificación de motivadores extrínsecos e intrínsecos para la digitalización del bodeguero. Elaboración propia.
+> *Nota:* Identificación de motivadores extrínsecos e intrínsecos para la digitalización del bodeguero. Elaboración propia.
 
 *Empathy Map — Segmento 3: Despacho y Entrega*
 ![Empathy Map 3](../assets/images/empathy-map-3.png)
-Exploración del entorno laboral y necesidades de soporte del personal en ruta. Elaboración propia.
+> *Nota:* Exploración del entorno laboral y necesidades de soporte del personal en ruta. Elaboración propia.
 
 En términos de producto, los empathy maps confirman tres criterios de diseño. Primero, la herramienta debe reducir esfuerzo cognitivo en el Segmento 1, no aumentarlo. Segundo, debe generar confianza en el Segmento 3, no solo eficiencia transaccional. Tercero, debe proteger al Segmento 2 frente a ambigüedades del cierre operativo, ofreciendo visibilidad, trazabilidad y un registro suficiente de la preparación y entrega. Bajo esta lectura, el needfinding deja de ser un conjunto de imágenes explicativas y se convierte en una base argumental para justificar por qué el MVP prioriza captura estructurada, visibilidad compartida y evidencia mínima de entrega.
 
