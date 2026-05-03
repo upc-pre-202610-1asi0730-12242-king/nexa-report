@@ -14,11 +14,11 @@ La tabla resume la relación entre evidencia cualitativa, arquetipo sintetizado 
 
 *User Persona — Segmento 2: Roberto García*
 ![User Persona 2](../assets/images/user-persona-2.png)
-> *Nota:* Representación sintética del arquetipo de comprador comercial B2B, construida a partir de entrevistas a compradores minoristas y mayoristas, más evidencia de adopción digital del canal tradicional. Elaboración propia.
+> *Nota:* Representación sintética del arquetipo de coordinación logística y operativa, enfocada en el control del cumplimiento, la visibilidad del despacho y el cierre con evidencia. Su construcción se apoya en hallazgos de trazabilidad, incidencias y coordinación operativa dentro del dominio. Elaboración propia.
 
 *User Persona — Segmento 3: Elena Litano*
 ![User Persona 3](../assets/images/user-persona-3.png)
-> *Nota:* Representación sintética del arquetipo de coordinación logística y operativa, enfocada en el control del cumplimiento, la visibilidad del despacho y el cierre con evidencia. Su construcción se apoya en hallazgos de trazabilidad, incidencias y coordinación operativa dentro del dominio. Elaboración propia.
+> *Nota:* Representación sintética del arquetipo de comprador comercial B2B, construida a partir de entrevistas a compradores minoristas y mayoristas, más evidencia de adopción digital del canal tradicional. Elaboración propia.
 
 ### ***2.3.2. User Task Matrix***
 
@@ -42,13 +42,13 @@ Esta Sección resume qué actividades concentran mayor frecuencia e importancia 
 ![Journey Map 1](../assets/images/journey-map-1.png)
 > *Nota:* Mapeo del proceso de captura y gestión de pedidos, identificando puntos de dolor en la transcripción manual. Elaboración propia.
 
-*Journey Map — Segmento 2: Cliente Comercial B2B*
+*Journey Map — Segmento 2: Despacho y Entrega*
 ![Journey Map 2](../assets/images/journey-map-2.png)
-> *Nota:* Mapeo de la experiencia de abastecimiento del cliente, destacando la incertidumbre en el seguimiento de entrega. Elaboración propia.
-
-*Journey Map — Segmento 3: Despacho y Entrega*
-![Journey Map 3](../assets/images/journey-map-3.png)
 > *Nota:* Mapeo de la ruta logística, enfatizando los cuellos de botella en la comunicación de incidencias. Elaboración propia.
+
+*Journey Map — Segmento 3: Cliente Comercial B2B*
+![Journey Map 3](../assets/images/journey-map-3.png)
+> *Nota:* Mapeo de la experiencia de abastecimiento del cliente, destacando la incertidumbre en el seguimiento de entrega. Elaboración propia.
 
 El principal valor del bloque no está en describir tres trayectos separados, sino en demostrar que el punto de dolor cambia de forma pero no de origen. En el Segmento 1 el problema aparece como ambigüedad y retrabajo; en el Segmento 3 como opacidad del abastecimiento e incertidumbre; y en el Segmento 2 como incidencias, demoras y cierre sin evidencia suficiente. Dicho de otro modo, los journeys confirman que el problema central no es una sola pantalla mal resuelta, sino una cadena de decisiones y validaciones que hoy pierde continuidad entre actores.
 
@@ -73,21 +73,19 @@ Estos puntos no se presentan como funciones implementadas de Nexa en su primera 
 
 ### ***2.3.5. Empathy Mapping***
 
-Los empathy maps complementan la lectura operativa con variables de percepción, confianza, frustración y expectativa. Este nivel resulta importante porque la adopción del producto no dependerá solo de eficiencia funcional, sino también de si cada segmento siente que el sistema le reduce carga, incertidumbre o exposición al error.
-
-En el Segmento 1, el empathy map concentra emociones ligadas a presión, urgencia y desgaste por duplicación de tareas; en el Segmento 3, predominan la desconfianza frente a la opacidad del abastecimiento y la necesidad de respaldo humano; y en el Segmento 2, la carga emocional se asocia a incidencias, reclamos y falta de evidencia al cierre operativo. Estas diferencias son útiles porque muestran que la adopción no depende de un único argumento de valor para todos los actores.
+A continuación, se presentan los Empathy Maps desarrollados para cada segmento objetivo.
 
 *Empathy Map — Segmento 1: Coordinación Comercial*
 ![Empathy Map 1](../assets/images/empathy-map-1.png)
 > *Nota:* Análisis de expectativas y temores del personal administrativo respecto a la adopción tecnológica. Elaboración propia.
 
-*Empathy Map — Segmento 2: Cliente Comercial B2B*
+*Empathy Map — Segmento 2: Despacho y Entrega*
 ![Empathy Map 2](../assets/images/empathy-map-2.png)
-> *Nota:* Identificación de motivadores extrínsecos e intrínsecos para la digitalización del bodeguero. Elaboración propia.
-
-*Empathy Map — Segmento 3: Despacho y Entrega*
-![Empathy Map 3](../assets/images/empathy-map-3.png)
 > *Nota:* Exploración del entorno laboral y necesidades de soporte del personal en ruta. Elaboración propia.
+
+*Empathy Map — Segmento 3: Cliente Comercial B2B*
+![Empathy Map 3](../assets/images/empathy-map-3.png)
+> *Nota:* Identificación de motivadores extrínsecos e intrínsecos para la digitalización del bodeguero. Elaboración propia.
 
 En términos de producto, los empathy maps confirman tres criterios de diseño. Primero, la herramienta debe reducir esfuerzo cognitivo en el Segmento 1, no aumentarlo. Segundo, debe generar confianza en el Segmento 3, no solo eficiencia transaccional. Tercero, debe proteger al Segmento 2 frente a ambigüedades del cierre operativo, ofreciendo visibilidad, trazabilidad y un registro suficiente de la preparación y entrega. Bajo esta lectura, el needfinding deja de ser un conjunto de imágenes explicativas y se convierte en una base argumental para justificar por qué el MVP prioriza captura estructurada, visibilidad compartida y evidencia mínima de entrega.
 
