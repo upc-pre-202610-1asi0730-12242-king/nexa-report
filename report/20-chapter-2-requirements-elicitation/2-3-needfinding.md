@@ -1,16 +1,8 @@
 ## 2.3. Needfinding
 
-Los artefactos de needfinding que se presentan a continuación siguen la taxonomía canónica del proyecto definida desde el Capítulo I: **Segmento 1** para vendedoras y coordinación comercial, **Segmento 2** para jefatura logística y coordinación operativa, y **Segmento 3** para compradores comerciales B2B mayoristas y minoristas. Esta decisión es deliberada: el needfinding no replica literalmente los bloques de entrevista, sino que reorganiza la evidencia en función de los tres actores que estructuran el MVP.
-
 La construcción de este bloque parte de tres insumos previos. El primero es el análisis de entrevistas del apartado 2.2, que identifica patrones de comportamiento, fricciones recurrentes y expectativas de adopción. El segundo es el análisis competitivo del apartado 2.1, que muestra que las soluciones existentes resuelven fragmentos del problema, pero no articulan con suficiente claridad la continuidad entre captura comercial, abastecimiento del cliente y cierre de entrega. El tercero es la lógica del dominio modelada en el proyecto, que obliga a representar no solo quién usa el sistema, sino en qué momento del flujo su intervención resulta crítica.
 
 Por ello, los artefactos de needfinding no deben interpretarse como piezas visuales aisladas. Su función es traducir evidencia cualitativa en criterios de diseño: quién necesita autonomía, quién necesita visibilidad, quién necesita rapidez, quién necesita trazabilidad y en qué punto del recorrido cada una de esas necesidades se vuelve más sensible. Bajo ese enfoque, el valor del needfinding no está únicamente en mostrar personas, tareas o journeys, sino en demostrar cómo esas representaciones ayudan a delimitar el alcance del MVP y a justificar decisiones posteriores de backlog, arquitectura y experiencia de usuario.
-
-> **Criterio de construcción de arquetipos**
->
-> - **Valeria (Segmento 1):** sintetiza patrones compartidos por el personal de coordinación comercial y vendedoras entrevistadas.
-> - **Hilda (Segmento 3):** sintetiza patrones del comprador comercial B2B y no corresponde a una única entrevistada individual.
-> - **Pedro (Segmento 2):** sintetiza el rol de coordinación logística y cierre operativo a partir de hallazgos sobre trazabilidad, incidencias, preparación y despacho observados en la investigación.
 
 ### 2.3.1. User Personas
 
