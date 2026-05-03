@@ -38,10 +38,6 @@ Esta Sección resume qué actividades concentran mayor frecuencia e importancia 
 
 ### ***2.3.3. User Journey Mapping***
 
-Los journey maps modelan la situación *as-is* de cada segmento. Su valor analítico está en visibilizar dónde se concentran esperas, ambigüedades, dependencias manuales e interrupciones que después se transforman en oportunidades de diseño.
-
-Leídos en conjunto, los tres journeys permiten reconstruir el recorrido completo del pedido desde perspectivas complementarias. El journey del Segmento 1 muestra el desgaste que produce convertir mensajes ambiguos en pedidos operables; el del Segmento 3 expone la ansiedad del comprador cuando no puede saber con certeza qué recibirá ni cuándo llegará; y el del Segmento 2 muestra cómo la falta de coordinación previa se traslada a la preparación, al despacho y al cierre con evidencia del servicio.
-
 *Journey Map — Segmento 1: Coordinación Comercial*
 ![Journey Map 1](../assets/images/journey-map-1.png)
 > *Nota:* Mapeo del proceso de captura y gestión de pedidos, identificando puntos de dolor en la transcripción manual. Elaboración propia.
