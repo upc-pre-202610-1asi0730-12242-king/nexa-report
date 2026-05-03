@@ -22,25 +22,19 @@ Representación sintética del arquetipo de coordinación logística y operativa
 
 ### 2.3.2. User Task Matrix
 
-La matriz de tareas resume qué actividades concentran mayor frecuencia e importancia relativa para cada segmento canónico. Su función no es enumerar funcionalidades del sistema, sino identificar qué tareas del trabajo real deben ser mejor soportadas por el producto para reducir fricción y sostener adopción.
-
-| Tareas Identificadas (Tasks) | Segmento 1: Valeria (Frecuencia) | Segmento 1: Valeria (Importancia) | Segmento 3: Hilda (Frecuencia) | Segmento 3: Hilda (Importancia) | Segmento 2: Pedro (Frecuencia) | Segmento 2: Pedro (Importancia) |
-| :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| **Evaluar necesidades y solicitar mercadería**| N/A | N/A | Alta | Alta | N/A | N/A |
-|**Recibir, interpretar y transcribir pedidos**| Alta | Alta | N/A | N/A | N/A | N/A |
-|**Consultar/Validar disponibilidad de stock**| Alta | Alta | Alta | Alta | Alta | Alta |
-|**Preparar espacio físico y dinero para recepción**| N/A | N/A | Alta | Alta | N/A | N/A |
-|**Revisar y coordinar la preparación y despacho**| N/A | N/A | N/A | N/A | Alta | Alta |
-|**Coordinar y comunicar el estado/horario de la entrega**| Alta | Alta | Alta | Alta | Alta | Alta |
-|**Supervisar entrega y registrar incidencias**| N/A | N/A | N/A | N/A | Alta | Alta |
-|**Validar guías/facturas y confirmar cierre de entrega**| Media | Alta | Alta | Alta | Alta | Alta |
-|**Gestionar reclamos por errores o devoluciones** | Media | Alta | Baja | Alta | Alta | Alta |
-
-La lectura de la matriz deja tres prioridades claras. En el Segmento 1 dominan la captura, validación y seguimiento del pedido; en el Segmento 3 destacan la consulta de disponibilidad, el abastecimiento y la confirmación de entrega; y en el Segmento 2 pesan la coordinación de preparación y despacho, la comunicación del estado y el cierre con evidencia. Esta distribución refuerza que el MVP debe priorizar continuidad entre segmentos, más que resolver cada tarea como si perteneciera a módulos aislados.
-
-También se observan dos coincidencias transversales relevantes. La primera es que **consultar o validar disponibilidad** aparece como tarea de alta importancia en los tres segmentos, lo que confirma que el stock visible es una variable crítica tanto para la coordinación interna como para la confianza del comprador. La segunda es que **coordinar y comunicar el estado de la entrega** tiene alta frecuencia e importancia en los tres segmentos, lo que justifica que el seguimiento no se trate como un módulo accesorio, sino como una capacidad compartida del sistema.
-
-Las diferencias también son útiles para delimitar alcance. El Segmento 1 concentra tareas de interpretación y estructuración de información; el Segmento 3 concentra tareas de abastecimiento y recepción; y el Segmento 2 concentra tareas de coordinación, validación operativa y cierre. Esta separación ayuda a evitar un error común en proyectos de software: intentar diseñar una sola experiencia homogénea para actores que participan en momentos distintos del flujo y con criterios de éxito también distintos.
+Esta Sección resume qué actividades concentran mayor frecuencia e importancia relativa para cada segmento canónico. Su función no es enumerar funcionalidades del sistema, sino identificar qué tareas del trabajo real deben ser mejor soportadas por el producto para reducir fricción y sostener adopción.
+| Tareas Identificadas (Tasks)                                                           | Segmento 1: Valeria (Ventas) |           | Segmento 2: Roberto (Logística) |       | Segmento 3: Elena (Comprador) |       |
+|:---------------------------------------------------------------------------------------|:-----------------------------|:----------|:--------------------------------|:------|:------------------------------|:------|
+| **Evaluar necesidades de abastecimiento e inventario local**                           | -                            | -         | -                               | -     | Alta                          | Alta  |
+| **Consultar y validar disponibilidad de stock (Catálogo/Cámara)**                      | Alta                         | Alta      | Alta                            | Alta  | Alta                          | Alta  |
+| **Emitir solicitud de pedido / Realizar la compra**                                    | -                            | -         | -                               | -     | Alta                          | Alta  |
+| **Recepcionar, interpretar y transcribir el pedido**                                   | Alta                         | Alta      | -                               | -     | -                             | -     |
+| **Consolidar pedidos y preparar mercadería (Picking)**                                 | -                            | -         | Alta                            | Alta  | -                             | -     |
+| **Asignar rutas y gestionar el despacho de transporte**                                | -                            | -         | Alta                            | Alta  | -                             | -     |
+| **Hacer seguimiento al estado de la entrega en ruta (Tracking)**                       | Media                        | Alta      | Altta                           | Alta  | Alta                          | Alta  |
+| **Recepcionar la mercadería en el punto de venta y pagar**                             | -                            | -         | -                               | -     | Alta                          | Alta  |
+| **Gestionar documentación física (Guías de remisión, facturas)**                       | Baja                         | Media     | Alta                            | Alta  | Media                         | Media |
+| **Atender y gestionar incidencias, reclamos o devoluciones**                           | Media                        | Alta      | Media                           | Alta  | Media                         | Alta  |
 
 ### 2.3.3. User Journey Mapping
 
