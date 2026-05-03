@@ -6,25 +6,17 @@ Por ello, los artefactos de needfinding no deben interpretarse como piezas visua
 
 ### 2.3.1. User Personas
 
-Las user personas no sustituyen a los entrevistados reales; funcionan como síntesis operativas de patrones repetidos en la investigación. Por ello, cada persona concentra conductas, necesidades y fricciones compartidas que luego se traducen en decisiones de diseño, tareas y journeys.
-
-| Persona | Base empírica principal | Patrones sintetizados | Función dentro del MVP |
-| --- | --- | --- | --- |
-| **Valeria (Segmento 1)** | Entrevistas a vendedoras y coordinación comercial | Retrabajo, validaciones paralelas, dependencia de WhatsApp, presión por responder rápido | Representar el punto donde el pedido nace y donde más se degrada la calidad de la información |
-| **Hilda (Segmento 3)** | Entrevistas a compradores comerciales B2B y contexto de adopción digital del canal tradicional | Necesidad de disponibilidad clara, seguimiento confiable, soporte humano y baja tolerancia a la complejidad | Representar la demanda que compra, espera previsibilidad y define la adopción del portal |
-| **Pedro (Segmento 2)** | Hallazgos de coordinación logística, trazabilidad, incidencias y cierre operativo observados en la investigación | Necesidad de visibilidad operativa, control de incidencias, trazabilidad del despacho y cierre con evidencia | Representar la coordinación logística que transforma la solicitud comercial en cumplimiento operativo |
-
 La tabla resume la relación entre evidencia cualitativa, arquetipo sintetizado y función de diseño. Elaboración propia.
 
 *User Persona — Segmento 1: Valeria Sánchez*
 ![User Persona 1](../assets/images/user-persona-1.png)
 Representación del arquetipo de vendedoras y coordinación comercial, enfocado en reducir la carga administrativa y el retrabajo en la captura del pedido. Elaboración propia.
 
-*User Persona — Segmento 3: Hilda*
+*User Persona — Segmento 3: Roberto García*
 ![User Persona 2](../assets/images/user-persona-2.png)
 Representación sintética del arquetipo de comprador comercial B2B, construida a partir de entrevistas a compradores minoristas y mayoristas, más evidencia de adopción digital del canal tradicional. Elaboración propia.
 
-*User Persona — Segmento 2: Pedro*
+*User Persona — Segmento 2: Elena Litano*
 ![User Persona 3](../assets/images/user-persona-3.png)
 Representación sintética del arquetipo de coordinación logística y operativa, enfocada en el control del cumplimiento, la visibilidad del despacho y el cierre con evidencia. Su construcción se apoya en hallazgos de trazabilidad, incidencias y coordinación operativa dentro del dominio. Elaboración propia.
 
