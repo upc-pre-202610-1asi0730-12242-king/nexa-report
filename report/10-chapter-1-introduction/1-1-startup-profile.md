@@ -1,6 +1,6 @@
-# Capítulo I: Introducción
+# **Capítulo I: Introducción**
 
-## 1.1. Startup Profile
+## **1.1. Startup Profile**
 
 King es una startup de base tecnológica enfocada en el desarrollo de soluciones digitales para optimizar procesos comerciales y operativos en la distribución B2B de productos refrigerados y congelados en el Perú.
 Su origen se vincula con la oportunidad identificada: la existencia de brechas persistentes de digitalización en empresas importadoras y distribuidoras del sector, donde la coordinación de ventas, disponibilidad, pedidos y despachos todavía presenta niveles importantes de informalidad y fragmentación.
