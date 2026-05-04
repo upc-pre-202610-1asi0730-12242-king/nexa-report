@@ -558,7 +558,7 @@ Documentación TB1: actualización de evidencias, integración de screenshots/wi
 
 #### 5.2.2.5. Execution Evidence for Sprint Review.
 
-La ejecución observable del Sprint 2 se concreta en pantallas reales del frontend de la Web Application con datos mock. La tabla siguiente vincula cada pantalla con su propósito operativo, la imagen de evidencia, la User Story relacionada y el commit que la materializa. Las pantallas faltantes se marcan como TODO; no se inventan rutas ni se sustituyen por mockups.
+La ejecución observable del Sprint 2 se concreta en pantallas reales del frontend de la Web Application con datos mock. La tabla siguiente vincula cada pantalla con su propósito operativo, la imagen de evidencia, la User Story relacionada y el commit que la materializa. Las pantallas pendientes se indican sin evidencia; no se inventan rutas ni se sustituyen por mockups.
 
 *Pantallas ejecutadas - Web Application TB1*
 
@@ -575,12 +575,12 @@ La ejecución observable del Sprint 2 se concreta en pantallas reales del fronte
 | Reportes operativos | KPI + breakdown de estado + FEFO | `../assets/images/web-app-screenshots/reports.png` | US44, US68 | `d692ed6`, `39d4627`, `340f8d6` |
 | Perfil y preferencias | Datos personales e idioma | `../assets/images/web-app-screenshots/profile.png` | US69 | `9f69572`, `95adeb4` |
 | Configuración (operación) | Settings operativos por rol | `../assets/images/web-app-screenshots/settings.png` | US57 | `666293e` |
-| Estado forbidden / sin permisos | Visibilidad de scope denegado | TODO: pendiente captura `web-app-screenshots/forbidden.png` | US66, US41 (refinada) | `283c03c`, `1a6b417` |
-| Portal B2B - Home | Entrada del cliente B2B | TODO: pendiente captura `web-app-screenshots/portal-home.png` | US24, US55 | `0ff014d`, `6db2e58` |
-| Portal B2B - Catálogo + detalle | Catálogo B2B con modal de producto | TODO: pendiente captura `web-app-screenshots/portal-catalog.png` | US24, US27 (refinada) | `463f5c7` |
-| Portal B2B - Checkout | Confirmación del pedido B2B | TODO: pendiente captura `web-app-screenshots/portal-checkout.png` | US34, US37 (refinadas) | `6053d18` |
-| Portal B2B - Success | Confirmación post-checkout | TODO: pendiente captura `web-app-screenshots/portal-success.png` | US37 (refinada) | `5b53e6e` |
-| Portal B2B - Mis órdenes | Listado por cliente (clientId scoped) | TODO: pendiente captura `web-app-screenshots/portal-orders.png` | US38 (refinada) | `6053d18`, `6db2e58` |
+| Estado forbidden / sin permisos | Visibilidad de scope denegado | Pendiente | US66, US41 (refinada) | `283c03c`, `1a6b417` |
+| Portal B2B - Home | Entrada del cliente B2B | Pendiente | US24, US55 | `0ff014d`, `6db2e58` |
+| Portal B2B - Catálogo + detalle | Catálogo B2B con modal de producto | Pendiente | US24, US27 (refinada) | `463f5c7` |
+| Portal B2B - Checkout | Confirmación del pedido B2B | Pendiente | US34, US37 (refinadas) | `6053d18` |
+| Portal B2B - Success | Confirmación post-checkout | Pendiente | US37 (refinada) | `5b53e6e` |
+| Portal B2B - Mis órdenes | Listado por cliente (clientId scoped) | Pendiente | US38 (refinada) | `6053d18`, `6db2e58` |
 
 La ejecución debe leerse con honestidad de alcance: el frontend funciona end-to-end con datos mock y persiste en memoria/store del cliente. La integración con servicios reales (autenticación, persistencia, POD con upload, pagos, ETA real e IoT) permanece como roadmap explícito de TB2, no como ejecución TB1.
 
@@ -630,8 +630,7 @@ TB1 entrega dos artefactos desplegados en GitHub Pages: la landing pública y la
 
 *Evidencias de despliegue (capturas)*
 
-> TODO: pendiente captura `assets/images/deployment/webapp-github-pages.png` con la verificación visible del despliegue del webapp.
-> TODO: pendiente captura `assets/images/deployment/website-github-pages.png` con la verificación visible del despliegue del website (Sprint 2).
+> *Observación*: Las capturas de verificación del despliegue de webapp y website en GitHub Pages se incorporarán como evidencia complementaria al cierre del sprint.
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint.
 
@@ -649,9 +648,7 @@ La colaboración del Sprint 2 se sostuvo sobre tres canales: (1) Jira como table
 
 *Evidencias gráficas Sprint 2*
 
-> TODO: pendiente captura `assets/images/project-collaboration/github-insights-sprint-2.png` con GitHub Insights de los tres repositorios al cierre de TB1.
-> TODO: pendiente captura `assets/images/jira/sprint-2-board.png` con el tablero Jira del Sprint 2 (vista completa).
-> TODO: pendiente captura `assets/images/jira/sprint-2-backlog.png` con el backlog de Sprint 2 antes de iniciar.
+> *Observación*: Las evidencias gráficas del Sprint 2 (GitHub Insights, tablero Jira y backlog inicial) se incorporarán como capturas complementarias al cierre de TB1.
 
 La principal lectura colaborativa del Sprint 2 es que el equipo logró sostener tres repositorios en paralelo sin perder consistencia narrativa ni técnica. La separación de responsabilidades por frente (webapp, website, report) y el cierre coordinado de evidencia documental confirman que la metodología Docs-as-Code adoptada en el Sprint 1 escala correctamente cuando el incremento agrega una aplicación frontend completa, aun cuando el backend permanece como roadmap TB2.
 
