@@ -415,7 +415,7 @@ Durante el Sprint 2 (TB1) se incorporaron dos colecciones nuevas de evidencia vi
 
 ![Screenshot TB1 — Configuración](../assets/images/web-app-screenshots/settings.png)
 
-> Capturas pendientes (TODO): `forbidden.png`, `portal-home.png`, `portal-catalog.png`, `portal-checkout.png`, `portal-success.png`, `portal-orders.png`. Se incorporarán cuando se obtengan las capturas reales de las pantallas correspondientes; no se sustituyen por mockups.
+> *Observación*: Las capturas `forbidden.png`, `portal-home.png`, `portal-catalog.png`, `portal-checkout.png`, `portal-success.png` y `portal-orders.png` se incorporarán con evidencia real; no se sustituyen por mockups.
 
 Elaboración propia. La evidencia TB1 es responsive web; corresponde al webapp desplegado en GitHub Pages con datos mock.
 
