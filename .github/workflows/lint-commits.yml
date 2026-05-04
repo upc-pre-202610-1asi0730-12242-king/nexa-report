@@ -1,24 +1,12 @@
-name: Lint
+name: Lint Commits
 
 on:
-  push:
-    branches: [main, develop]
   pull_request:
     branches: [main, develop]
 
 jobs:
-  markdownlint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: markdownlint
-        uses: DavidAnson/markdownlint-cli2-action@v16
-        with:
-          globs: "report/**/*.md"
-
   commitlint:
     runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request'
     steps:
       - uses: actions/checkout@v4
         with:
