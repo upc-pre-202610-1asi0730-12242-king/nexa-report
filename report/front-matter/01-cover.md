@@ -29,7 +29,7 @@
 
 ## Informe de Avance 1 (AV1)
 
-**Startup:** King 
+**Startup:** King  
 **Producto:** Nexa  
 **Mes y Año:** Abril 2026
 
