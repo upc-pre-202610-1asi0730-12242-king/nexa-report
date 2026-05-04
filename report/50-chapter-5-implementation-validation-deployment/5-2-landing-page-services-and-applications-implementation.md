@@ -650,5 +650,17 @@ La colaboración del Sprint 2 se sostuvo sobre tres canales: (1) Jira como table
 
 > *Observación*: Las evidencias gráficas del Sprint 2 (GitHub Insights, tablero Jira y backlog inicial) se incorporarán como capturas complementarias al cierre de TB1.
 
+*Tabla. Evidencias visuales pendientes para cierre de Sprint 2*
+
+| Evidencia pendiente | Sección relacionada | Ruta sugerida | Propósito |
+| :--- | :--- | :--- | :--- |
+| Captura webapp en GitHub Pages | 5.2.2.7 Deployment Evidence | `assets/images/deployment/webapp-github-pages.png` | Verificar despliegue exitoso de la aplicación web en producción |
+| Captura website en GitHub Pages | 5.2.2.7 Deployment Evidence | `assets/images/deployment/website-github-pages.png` | Verificar despliegue del landing page en producción |
+| Tablero Jira Sprint 2 (board) | 5.2.2.8 Team Collaboration | `assets/images/jira/sprint-2-board.png` | Evidenciar el estado de issues al cierre del sprint |
+| Backlog Jira Sprint 2 | 5.2.2.8 Team Collaboration | `assets/images/jira/sprint-2-backlog.png` | Mostrar la distribución y priorización de tareas del sprint |
+| GitHub Insights Sprint 2 | 5.2.2.8 Team Collaboration | `assets/images/project-collaboration/github-insights-sprint-2.png` | Trazabilidad de contribuciones por integrante durante el sprint |
+
+> *Nota*: Las evidencias listadas corresponden a capturas necesarias para completar la trazabilidad visual del Sprint 2. Su incorporación no modifica el alcance funcional documentado.
+
 La principal lectura colaborativa del Sprint 2 es que el equipo logró sostener tres repositorios en paralelo sin perder consistencia narrativa ni técnica. La separación de responsabilidades por frente (webapp, website, report) y el cierre coordinado de evidencia documental confirman que la metodología Docs-as-Code adoptada en el Sprint 1 escala correctamente cuando el incremento agrega una aplicación frontend completa, aun cuando el backend permanece como roadmap TB2.
 

@@ -22,7 +22,7 @@ La lógica de construcción del producto responde a un criterio de viabilidad. E
 A partir de esa base, la startup proyecta una evolución futura coherente con las necesidades del dominio. En una fase posterior, el producto podrá ampliarse hacia funcionalidades de mayor profundidad operativa, como aplicaciones móviles para trabajo en campo, integraciones con herramientas del ecosistema logístico e incorporación progresiva de componentes de trazabilidad térmica apoyados en IoT. De este modo, Nexa mantiene una identidad clara: no busca abarcar todo el universo logístico desde el primer momento, sino construir una plataforma especializada cuya madurez crezca de forma progresiva y alineada con las necesidades reales del sector.
 
 *Misión, Visión y valores del equipo*
----
+
 | Misión | Visión | Valores |
 | --- | --- | --- |
 | Digitalizar y ordenar el ciclo de pedidos B2B de empresas importadoras y distribuidoras de productos refrigerados, mediante una plataforma web que mejore la visibilidad operativa, reduzca errores y facilite la gestión de catálogo, pedidos, inventario básico y seguimiento del despacho. | Convertirse en una solución tecnológica especializada de referencia para la gestión comercial y operativa de la cadena de frío B2B en el Perú y, a futuro, en la región, evolucionando hacia mayores niveles de trazabilidad, movilidad e integración con tecnologías IoT. | Especialización, claridad operativa, innovación y colaboración como principios que orientan el diseño del producto, la relación con clientes y la forma de trabajo de la startup. |
