@@ -22,23 +22,19 @@ La tabla resume la relación entre evidencia cualitativa, arquetipo sintetizado 
 
 ### ***2.3.2. User Task Matrix***
 
-User Task Matrix: Frecuencia e Importancia por Arquetipo
+#### User Task Matrix: Frecuencia e Importancia por Arquetipo
 
-#### Tabla User Task Matrix
+| Tareas del Mundo Real                                     | Valeria (S1: Comercial) |             | Roberto (S2: Logística) |             | Hilda (S3: Bodeguera) |             | 
+|:----------------------------------------------------------|:------------------------|:------------|:------------------------|:------------|:----------------------|:------------|
+|                                                           | Frecuencia              | Importancia | Frecuencia              | Importancia | Frecuencia            | Importancia |
+| **Revisar lista de precios y stock disponible**           | Alta                    | Alta        | Media                   | Alta        | Alta                  | Alta        |
+| **Elaborar y enviar listas de pedido**                    | Alta                    | Alta        | -                       | -           | Alta                  | Alta        |
+| **Revisar deudas y límite de crédito del comprador**      | Alta                    | Alta        | -                       | -           | Baja                  | Media       |
+| **Controlar fechas de caducidad de la mercadería**        | Media                   | Alta        | Alta                    | Alta        | Alta                  | Alta        |
+| **Preparar y organizar la carga física para el reparto**  | -                       | -           | Alta                    | Alta        | -                     | -           |
+| **Averiguar la ubicación y hora de llegada del camión**   | Alta                    | Media       | Alta                    | Alta        | Alta                  | Alta        |
+| **Verificar y dar conformidad a la mercadería entregada** | -                       | -           | Alta                    | Alta        | Alta                  | Alta        |
 
-|        Tareas Identificadas (Tasks)                                                           | Segmento 1: Valeria (Ventas) |   |  |      | Segmento 2: Roberto (Logística) |   | |    | Segmento 3: Elena (Comprador) |  ||
-|                                                          | Frecuencia  |           | Importancia |       | Frecuencia |   Importancia    |
-|:---------------------------------------------------------------------------------------|:-----------------------------|:----------|:--------------------------------|:------|:------------------------------|:------|
-| **Evaluar necesidades de abastecimiento e inventario local**                           | -                            | -         | -                               | -     | Alta                          | Alta  |
-| **Consultar y validar disponibilidad de stock (Catálogo/Cámara)**                      | Alta                         | Alta      | Alta                            | Alta  | Alta                          | Alta  |
-| **Emitir solicitud de pedido / Realizar la compra**                                    | -                            | -         | -                               | -     | Alta                          | Alta  |
-| **Recepcionar, interpretar y transcribir el pedido**                                   | Alta                         | Alta      | -                               | -     | -                             | -     |
-| **Consolidar pedidos y preparar mercadería (Picking)**                                 | -                            | -         | Alta                            | Alta  | -                             | -     |
-| **Asignar rutas y gestionar el despacho de transporte**                                | -                            | -         | Alta                            | Alta  | -                             | -     |
-| **Hacer seguimiento al estado de la entrega en ruta (Tracking)**                       | Media                        | Alta      | Alta                            | Alta  | Alta                          | Alta  |
-| **Recepcionar la mercadería en el punto de venta y pagar**                             | -                            | -         | -                               | -     | Alta                          | Alta  |
-| **Gestionar documentación física (Guías de remisión, facturas)**                       | Baja                         | Media     | Alta                            | Alta  | Media                         | Media |
-| **Atender y gestionar incidencias, reclamos o devoluciones**                           | Media                        | Alta      | Media                           | Alta  | Media                         | Alta  |
 > *Nota:* Análisis de la carga de tareas manuales distribuidas a lo largo de la cadena de suministro refrigerada. Frecuencia e importancia determinadas mediante el análisis cualitativo de las entrevistas (Needfinding). Elaboración propia.
 
 ### ***2.3.3. User Journey Mapping***
