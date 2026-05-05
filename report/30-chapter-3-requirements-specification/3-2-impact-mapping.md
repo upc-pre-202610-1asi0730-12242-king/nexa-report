@@ -19,7 +19,7 @@ El mapa se estructura en cuatro niveles fundamentales:
 
 *Impact Mapping de Nexa — Alineación de metas, actores e impactos del MVP*
 
-![Impact-mapping](../assets/images/impact-map1.png)
+![Impact-mapping](../assets/images/Impact map.png)
 
 Elaboración propia. El mapa sintetiza la relación entre problemas observados en la investigación, actores priorizados y entregables requeridos para el MVP.
 
