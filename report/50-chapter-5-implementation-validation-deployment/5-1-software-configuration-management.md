@@ -36,13 +36,49 @@ El control de versiones se organiza bajo una convención GitFlow adaptada al alc
 | `nexa-report` | Informe técnico, trazabilidad académica y narrativa del proyecto | `main` | `develop`, `release/v1.0.0`, ramas de respaldo locales | [nexa-report](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-report) |
 | `nexa-website` | Implementación del MVP público desplegado | `main` | `develop`, `release/v1.0.0` | [nexa-website](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website) |
 
-**Convención de ramas declarada para el proyecto**
+**GitFlow del Proyecto**
 
-- **`main`:** rama estable para artefactos validados y listos para entrega o exposición pública.
-- **`develop`:** rama de integración prevista para consolidar cambios antes de liberarlos.
-- **`feature/*`:** ramas de trabajo para cambios específicos de contenido, frontend o documentación.
-- **`release/*`:** ramas de preparación del entregable.
-- **`hotfix/*`:** ramas reservadas para correcciones críticas posteriores a una liberación.
+La organización del control de versiones puede representarse mediante un GitFlow adaptado al alcance real del proyecto: un informe técnico en Docs-as-Code, una landing page pública y una web application. Se propone un flujo deliberadamente ligero que prioriza trazabilidad sobre complejidad procedimental, y que resulta manejable para un equipo de cinco personas trabajando en tres frentes simultáneos.
+
+*Tabla. Convención de ramas y ejemplos aplicados en Nexa*
+
+| Rama | Uso correcto | Ejemplo aplicado en Nexa |
+|---|---|---|
+| `main` | Versión estable entregable | Lo presentado como versión final para revisión académica |
+| `develop` | Integración previa a entrega | Unión de cambios del informe, landing page y webapp antes del corte |
+| `feature/*` | Desarrollo por funcionalidad o sección del informe | `feature/user-stories-rewrite`, `feature/landing-page-av1` |
+| `release/*` | Congelamiento de entrega para revisión final | `release/tb1-final` |
+| `hotfix/*` | Corrección urgente sobre versión estable | `hotfix/report-critical-wording` |
+
+**Flujo de integración propuesto**
+
+```
+feature/* → develop → release/tb1-final → main → tag/release
+```
+
+Para efectos de trazabilidad, se establece como flujo de trabajo el ciclo en que cada unidad de trabajo parte de una rama `feature/*`, se integra en `develop` una vez revisada, avanza a `release/tb1-final` cuando el equipo congela el contenido para revisión, y finalmente se incorpora a `main` con un tag de versión semántica que identifica el hito entregado. Este flujo soporta cuatro funciones prácticas para el proyecto:
+
+- **Trazabilidad:** permite relacionar cada cambio con su autor, su alcance y el contexto de sprint en que se produjo.
+- **Control de integración:** evita que cambios parciales o no revisados alcancen la versión pública antes de pasar por `develop`.
+- **Estabilización de entrega:** la rama `release/*` actúa como zona de congelamiento donde solo se permiten ajustes menores antes del corte académico.
+- **Corrección urgente:** `hotfix/*` permite atender errores críticos detectados sobre `main` sin interrumpir el trabajo en curso en `develop`.
+
+Este esquema es adecuado para el proyecto porque separa los cambios del informe de los del sitio web, mantiene una versión pública limpia en `main`, y otorga estructura a los commits ya realizados sin exigir una adopción retroactiva perfecta.
+
+*Tabla. Correspondencia entre frentes de trabajo y ramas sugeridas*
+
+| Frente de trabajo | Rama sugerida |
+|---|---|
+| Reestructuración de segmentos objetivo | `feature/target-segments-rework` |
+| Actualización de needfinding | `feature/needfinding-update` |
+| Reescritura de User Stories | `feature/user-stories-rewrite` |
+| Priorización del Product Backlog | `feature/product-backlog-prioritization` |
+| Implementación de Landing Page AV1 | `feature/landing-page-av1` |
+| Implementación base de Web Application TB1 | `feature/webapp-tb1-core` |
+| Configuración de Fake API / JSON Server | `feature/json-fake-api` |
+| Evidencia de Sprint 2 | `feature/sprint-2-evidence` |
+| Limpieza final de entrega | `release/tb1-final` |
+| Corrección crítica de redacción o nombres | `hotfix/report-critical-wording` |
 
 En la práctica, `nexa-report` y `nexa-website` funcionan como dos flujos sincronizados: el primero preserva la justificación ingenieril y el segundo concentra la ejecución visible del MVP. Esta separación reduce ruido entre documentación y código y facilita relacionar commits, capturas Jira, artefactos de diseño y despliegue público dentro de un mismo sprint.
 
