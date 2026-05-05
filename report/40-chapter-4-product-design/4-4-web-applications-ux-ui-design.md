@@ -85,83 +85,47 @@ El detalle del pedido organiza la historia completa de una orden en una sola sup
 
 ### 4.4.2. Web Applications Wireflow Diagrams.
 
-El wireflow sintetiza cómo se conectan entre sí las superficies principales de la aplicación. A diferencia del wireframe, que se enfoca en la estructura interna de una vista, el wireflow muestra continuidad entre acceso, captura, validación, seguimiento y cierre. En Nexa, esta lectura es indispensable porque el valor del sistema depende precisamente de no romper el flujo entre áreas y estados.
+Un wireflow conecta pantallas y estados de UI relevantes según un user goal concreto. Se diferencia del diagrama de secuencia porque no describe intercambio técnico de mensajes entre objetos: describe cómo el usuario se mueve entre pantallas y estados de decisión como resultado de su interacción.
 
-#### Wireflow 1 — Pedido end-to-end
+#### Wireflow consolidado — tres superficies y personas
 
-- **User Goal:** Como coordinación comercial (Segmento 1) o comprador B2B (Segmento 3), necesito llevar un pedido desde el acceso hasta el cierre con evidencia sin perder continuidad entre áreas.
-- **Segmentos vinculados:** Segmento 1 (captura), Segmento 2 (logística y despacho), Segmento 3 (compra y seguimiento).
-- **Problema de dominio que atiende:** fragmentación entre captura, validación, despacho y cierre; hoy el pedido pierde estado al saltar entre WhatsApp, ERP y operación.
-- **Happy path:** login → dashboard/catálogo según rol → pedido asistido o autónomo → validación de stock y crédito OK → confirmación → seguimiento/ETA → POD y cierre.
-- **Unhappy path:** si la validación detecta bloqueo de crédito o stock insuficiente, el flujo se desvía a *Alerta y corrección* y vuelve a la captura; ningún pedido avanza a confirmación sin validación OK.
-
-*Wireflow del pedido Nexa desde acceso hasta cierre operativo*
-
-```mermaid
-graph LR
-    A[Login] --> B{Tipo de usuario}
-    B -->|Coordinacion interna| C[Dashboard operativo]
-    B -->|Cliente B2B| D[Portal catalogo y carrito]
-    C --> E[Pedido asistido]
-    D --> F[Pedido autonomo]
-    E --> G[Validacion de stock y credito]
-    F --> G
-    G -->|OK| H[Confirmacion del pedido]
-    G -->|Bloqueo| I[Alerta y correccion]
-    H --> J[Seguimiento y ETA]
-    J --> K[POD y cierre]
-```
-
-Elaboración propia. El flujo concentra la continuidad entre captura, validación, seguimiento y cierre, evitando que el pedido quede fragmentado en herramientas paralelas.
-
-#### Wireflow 2 — Captura asistida y validación comercial
-
-- **User Goal:** Como coordinación comercial (Segmento 1), quiero capturar un pedido en representación del cliente verificando stock y crédito antes de comprometerlo.
-- **Segmento priorizado:** Segmento 1 (captura y validación).
-- **Problema de dominio:** validación tardía de crédito y stock que deriva en promesas inviables y retrabajo.
-- **Happy path:** bandeja → pedido asistido → identificar cliente → condiciones comerciales → líneas de pedido → sin alertas → envío para confirmación → pedido listo para preparación.
-- **Unhappy path:** si aparecen alertas de stock o crédito, el flujo regresa a las líneas para corregir cantidades, SKU o condición comercial; si no se pueden resolver, el pedido se detiene y queda registrado como bloqueado.
-
-*Wireflow de captura asistida y validación comercial*
+El diagrama siguiente muestra la continuidad de pantallas por perfil de usuario desde el login hasta el cierre del ciclo operativo de cada segmento.
 
 ```mermaid
 flowchart LR
-    A["Bandeja de pedidos o Dashboard"] --> B["Abrir pedido asistido"]
-    B --> C["Identificar cliente"]
-    C --> D["Cargar condiciones comerciales"]
-    D --> E["Agregar productos y cantidades"]
-    E --> F{"¿Hay alertas de stock o crédito?"}
-    F -->|Sí| G["Corregir pedido o detener envío"]
-    G --> E
-    F -->|No| H["Enviar para confirmación"]
-    H --> I["Pedido listo para preparación"]
+    L["Login screen"] --> Role{"Profile selected"}
+    Role -->|"Valeria — S1"| S1D["Commercial dashboard"]
+    S1D --> C1["Clients screen"]
+    C1 --> C2["Client detail drawer"]
+    C2 --> O1["Create assisted order"]
+    O1 --> O2["Order detail"]
+    O2 --> O3["Orders list"]
+    O3 --> R1["Commercial reports"]
+    Role -->|"Roberto — S2"| S2D["Logistics dashboard"]
+    S2D --> I1["Inventory overview"]
+    I1 --> I2["Lot detail drawer"]
+    I2 --> D1["Dispatch board"]
+    D1 --> D2["POD mock modal"]
+    D2 --> R2["Operational reports"]
+    Role -->|"Lucía — S3"| P1["Portal home"]
+    P1 --> P2["Portal catalog"]
+    P2 --> P3["Cart / order submission"]
+    P3 --> P4["Portal orders"]
 ```
 
-Elaboración propia. Este wireflow muestra el recorrido interno de coordinación comercial, donde el valor está en detectar problemas antes de comprometer el pedido.
+Elaboración propia. El wireflow parte de la selección de perfil y ramifica en tres recorridos de pantallas según rol: coordinación comercial (S1), logística interna (S2) y comprador B2B (S3).
 
-#### Wireflow 3 — Cliente B2B desde acceso hasta seguimiento
+#### Tabla de wireflows por user goal
 
-- **User Goal:** Como comprador comercial B2B (Segmento 3), quiero comprar de forma autónoma, confirmar mi pedido y saber cuándo llegará sin tener que perseguir por WhatsApp al vendedor.
-- **Segmento priorizado:** Segmento 3 (compradores comerciales B2B y abastecimiento recurrente).
-- **Problema de dominio:** opacidad del abastecimiento y ausencia de ETA confiable.
-- **Happy path:** login → catálogo personalizado → detalle de producto → carrito → revisión → envío y confirmación → historial → seguimiento/ETA → cierre con evidencia visible.
-- **Unhappy path:** si el pedido no puede confirmarse por stock o crédito, el sistema muestra alerta explícita con motivo y acción sugerida (reducir cantidad, cambiar SKU o contactar soporte), evitando que el cliente quede en silencio.
+| Wireflow | User goal | Persona | Visual evidence |
+|---|---|---|---|
+| S1 Commercial Assisted Order | Crear y confirmar un pedido asistido validando cliente y stock | Valeria / Coordinación comercial | Pending: export from [FigJam board](https://www.figma.com/board/LjIjtyfoOpeYa5OCSJUYpD/Nexa-Ops-S1-S2-Userflow-Wireflow?node-id=0-1) |
+| S2 Logistics Operations | Revisar inventario FEFO, coordinar despacho y cerrar entrega con evidencia | Roberto / Jefatura logística | Pending: export from [FigJam board](https://www.figma.com/board/LjIjtyfoOpeYa5OCSJUYpD/Nexa-Ops-S1-S2-Userflow-Wireflow?node-id=0-1) |
+| S3 B2B Buyer Portal | Explorar catálogo, enviar pedido y consultar estado | Lucía / Comprador B2B | Pending: export from Figma portal prototype |
 
-*Wireflow del cliente B2B desde acceso hasta seguimiento*
-
-```mermaid
-flowchart LR
-    A["Log in"] --> B["Catálogo personalizado"]
-    B --> C["Detalle de producto"]
-    C --> D["Carrito o borrador"]
-    D --> E["Revisión del pedido"]
-    E --> F["Envío y confirmación"]
-    F --> G["Historial del pedido"]
-    G --> H["Seguimiento y ETA"]
-    H --> I["Cierre con evidencia visible"]
-```
-
-Elaboración propia. Aquí se resume el recorrido del cliente comercial cuando compra, revisa el estado del pedido y necesita entender cómo avanza la entrega.
+<!-- TODO: insert FigJam S1 wireflow export as image -->
+<!-- TODO: insert FigJam S2 wireflow export as image -->
+<!-- TODO: insert Figma S3 portal wireflow export as image -->
 
 ### 4.4.3. Web Applications Mock-ups.
 
