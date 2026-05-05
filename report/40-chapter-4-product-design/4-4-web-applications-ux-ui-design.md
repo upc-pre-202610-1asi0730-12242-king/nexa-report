@@ -360,3 +360,20 @@ Elaboración propia. Vista de inventario con información de lote, vencimiento y
 
 Elaboración propia. Módulo de despacho con modal de confirmación de evidencia de entrega.
 
+
+---
+
+### Tabla de cumplimiento con el enunciado del curso
+
+| Requisito del enunciado | Cobertura en 4.4 | Estado |
+|---|---|---|
+| Wireframes por experiencia de aplicación | Sprint 1 (10 vistas con tabla persona/goal) + TB1 (11 vistas con tabla persona) | Documentado |
+| Wireflows por user goal con explicación | Wireflow consolidado 3 personas en `flowchart` + tabla con user goal por wireflow | Documentado en Markdown |
+| Wireflow refleja cambio de pantalla por interacción | Nodos de pantalla con transiciones y estados de decisión | Documentado en Markdown |
+| User flows por user goal y persona | S1, S2 y S3 en `flowchart LR` separados con user goal declarado | Documentado en Markdown |
+| User flows consistentes con wireflows | Tabla de consistencia wireflow → user flow incluida | Documentado |
+| Happy path y rutas alternativas | S1: crédito/stock; S2: FEFO/POD; S3: pedido bloqueado | Documentado |
+| Sin diagramas de secuencia como user flow | `sequenceDiagram` eliminado; todos los flows usan `flowchart` | Cumplido |
+| Mock-ups / evidencia de diseño | Sprint 1 mockups (design-stage Figma) + TB1 screenshots | Documentado |
+| Exports visuales de Figma/FigJam como imagen | S1/S2 desde FigJam board, S3 desde Figma portal | Pendiente export |
+| Responsive evidence | Landing responsive en 4.3; webapp responsive pendiente screenshot export | Parcial |
