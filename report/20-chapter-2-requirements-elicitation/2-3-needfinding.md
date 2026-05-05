@@ -22,9 +22,7 @@ La tabla resume la relación entre evidencia cualitativa, arquetipo sintetizado 
 
 ### ***2.3.2. User Task Matrix***
 
-User Task Matrix: Frecuencia e Importancia por Arquetipo
-
-#### Tabla User Task Matrix
+#### User Task Matrix: Frecuencia e Importancia por Arquetipo
 
 | Tareas del Mundo Real                                     | Valeria (S1: Comercial) |             | Roberto (S2: Logística) |             | Hilda (S3: Bodeguera) |             | 
 |:----------------------------------------------------------|:------------------------|:------------|:------------------------|:------------|:----------------------|:------------|
