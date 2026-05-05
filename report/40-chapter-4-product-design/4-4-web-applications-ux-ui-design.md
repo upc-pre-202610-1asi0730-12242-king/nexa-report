@@ -4,29 +4,24 @@ Esta sección documenta el diseño UX/UI de las dos superficies autenticadas del
 
 Cada pantalla resuelve una pregunta concreta del dominio: qué pedido está en riesgo, qué producto necesita atención, qué validación bloquea la operación, qué unidad está en ruta y qué evidencia respalda el cierre. La documentación se organiza en wireframes, wireflows, mock-ups y user flows. Los artefactos se trabajaron colaborativamente en Figma y se complementan con evidencia de implementación del Sprint 2 (TB1).
 
-<!-- TODO Tanda 2: replace wireflow mermaid diagrams with screenshot-based wireflows from FigJam board. -->
-<!-- TODO Tanda 2: replace user flow sequence diagrams with proper user flow diagrams (flowchart, not sequenceDiagram). -->
-
 ### 4.4.1. Web Applications Wireframes.
 
-Los wireframes de la aplicación web fueron elaborados en Figma para ordenar la estructura funcional antes de entrar en alta fidelidad. Su valor no está en el acabado visual, sino en definir jerarquías, zonas de información, módulos persistentes y rutas de interacción. En Nexa, esta etapa fue clave porque el problema no consiste solo en “dibujar pantallas”, sino en traducir flujos complejos del dominio a superficies que puedan usarse bajo presión operativa.
+Los wireframes ordenan la estructura funcional antes de entrar en alta fidelidad. Su valor está en definir jerarquías, zonas de información y rutas de interacción por superficie y persona. La colección se organiza en dos grupos: wireframes de diseño del Sprint 1 (recorrido operativo completo en Figma) y wireframes TB1 (alineados al alcance implementado en Sprint 2).
 
-Las diez vistas siguientes cubren el recorrido principal del MVP transaccional: control general, gestión de órdenes, captura asistida, inventario, analítica FEFO, despacho, seguimiento, detalle de pedido y cierre con evidencia. Cada wireframe modela primero la lógica de trabajo y luego la visualización final.
+#### Sprint 1 — Wireframes de diseño
 
-*Cobertura funcional de wireframes de la web application*
-
-| Wireframe | Módulo | Decisión principal que habilita |
+| Wireframe | Persona / Segmento | User goal que habilita |
 |---|---|---|
-| Dashboard Operativo Total Control | Vista general del sistema | Priorizar alertas, revisar KPIs y detectar riesgos inmediatos |
-| B2B Orders Hub | Gestión de órdenes | Ordenar estados, filtrar pedidos y decidir acciones de seguimiento |
-| Creación de Pedido Asistido | Captura comercial | Registrar pedidos con validaciones antes del envío |
-| Inventory Management | Inventario | Revisar stock, riesgo térmico y rotación visible |
-| Confirmación de Despacho & Asignación de Flota | Despacho | Asignar transporte y liberar salida con contexto operativo |
-| FEFO Intelligence & Analytics | Analítica de rotación | Priorizar lotes y anticipar vencimientos |
-| Active Shipments & Routes | Seguimiento | Monitorear entregas activas e incidencias de ruta |
-| Cierre de Entrega (POD) & Certificación | Cierre operativo | Registrar evidencia y certificar cumplimiento |
-| Inventory Detail | Detalle de inventario | Profundizar en estado térmico y disponibilidad de un SKU |
-| Order Detail & Traceability | Trazabilidad por pedido | Reconstruir historial y validar cadena de custodia |
+| Dashboard Operativo Total Control | Valeria (S1), Roberto (S2) | Leer KPIs, alertas y accesos directos al iniciar sesión |
+| B2B Orders Hub | Valeria (S1) | Revisar bandeja de pedidos y priorizar acción |
+| Creación de Pedido Asistido | Valeria (S1) | Capturar un pedido con validación de cliente y stock |
+| Inventory Management | Roberto (S2) | Revisar disponibilidad, riesgo FEFO y rotación |
+| Confirmación de Despacho & Asignación de Flota | Roberto (S2) | Liberar salida y asignar unidad de transporte |
+| FEFO Intelligence & Analytics | Roberto (S2) | Priorizar lotes por vencimiento y riesgo de merma |
+| Active Shipments & Routes | Roberto (S2) | Monitorear unidades en tránsito y estado de ruta |
+| Cierre de Entrega (POD) & Certificación | Roberto (S2) | Registrar evidencia y cerrar entrega formalmente |
+| Inventory Detail | Roberto (S2) | Profundizar en estado de un SKU específico |
+| Order Detail & Traceability | Valeria (S1), Roberto (S2) | Reconstruir historial completo de un pedido |
 
 #### Dashboard Operativo Total Control
 
@@ -324,81 +319,65 @@ flowchart TD
 
 Elaboración propia. Este recorrido pone el foco en la necesidad de previsibilidad del cliente y en la forma en que una incidencia debe ser visible sin obligarlo a volver al canal informal.
 
-### 4.4.5. Web Applications Responsive Behavior.
+### 4.4.5. Implemented Screen Evidence.
 
-La webapp operativa fue diseñada con un enfoque desktop-first para estaciones de trabajo, pero contempla adaptación responsive para consulta en tablet y móvil (operarios de campo, conductores en ruta). El sidebar colapsa en pantallas menores a 768px, las tablas adoptan scroll horizontal o vista compacta, y los drawers se expanden a pantalla completa en mobile.
+Esta subsección consolida la evidencia de pantallas implementadas en TB1. Las imágenes corresponden a vistas web responsivas del webapp desplegado en GitHub Pages con datos mock; no son aplicaciones móviles nativas. La evidencia responsive de la landing page permanece en 4.3 — las imágenes en `mobile-browser/` pertenecen al sitio público, no a la webapp.
 
-<!-- TODO Tanda 2: add webapp-specific mobile wireframes and screenshots when available. The mobile evidence in /mobile-browser/ corresponds to the landing page, not to the webapp. -->
+#### Tabla de cobertura TB1
 
-### 4.4.5. Web Applications — Wireframes y Screenshots TB1 (Sprint 2)
+| Pantalla | Wireframe TB1 | Screenshot TB1 | Persona |
+|---|---|---|---|
+| Login / perfil | `web-app-wireframes/log-in-wireframe.png` | `web-app-screenshots/log-in.png` | Todos |
+| Dashboard operativo | `web-app-wireframes/dashboard-wireframe.png` | `web-app-screenshots/dashboard.png` | S1, S2 |
+| Catálogo de operación | `web-app-wireframes/catalog-wireframe.png` | `web-app-screenshots/catalog.png` | S1 |
+| Inventario (FEFO + drawer) | `web-app-wireframes/inventory-wireframe.png` | `web-app-screenshots/inventory.png` | S2 |
+| Clientes (drawer de ficha) | `web-app-wireframes/clients-wireframe.png` | `web-app-screenshots/clients.png` | S1 |
+| Creación de pedido asistido | `web-app-wireframes/new-order-wireframe.png` | `web-app-screenshots/create-order.png` | S1 |
+| Bandeja de órdenes | `web-app-wireframes/orders-wireframe.png` | `web-app-screenshots/orders.png` | S1, S2 |
+| Despacho y POD mock | `web-app-wireframes/dispatch-wireframe.png` | `web-app-screenshots/dispatch.png` | S2 |
+| Reportes operativos | `web-app-wireframes/reports-wireframe.png` | `web-app-screenshots/reports.png` | S1, S2 |
+| Perfil y preferencias | `web-app-wireframes/profile-wireframe.png` | `web-app-screenshots/profile.png` | Todos |
+| Configuración | `web-app-wireframes/settings-wireframe.png` | `web-app-screenshots/settings.png` | Todos |
+| Portal home | — | Pendiente: `web-app-screenshots/portal-home.png` | S3 |
+| Portal catálogo | — | Pendiente: `web-app-screenshots/portal-catalog.png` | S3 |
+| Portal checkout | — | Pendiente: `web-app-screenshots/portal-checkout.png` | S3 |
+| Portal órdenes | — | Pendiente: `web-app-screenshots/portal-orders.png` | S3 |
 
-Durante el Sprint 2 (TB1) se incorporaron dos colecciones nuevas de evidencia visual responsive web para la Web Application: una colección de **wireframes** alineados al alcance entregado en TB1 y una colección de **screenshots** reales del frontend con datos mock. Esta evidencia complementa los wireframes y mock-ups previos del Sprint 1 (sin reemplazarlos) y sustenta la sección §5.2.2.5 del Capítulo 5. Las imágenes corresponden a vistas web responsivas del webapp; no son aplicaciones móviles nativas.
+#### Screenshots representativos por flujo
 
-*Cobertura de wireframes y screenshots TB1*
-
-| Pantalla | Wireframe TB1 | Screenshot TB1 |
-| :--- | :--- | :--- |
-| Login | `../assets/images/web-app-wireframes/log-in-wireframe.png` | `../assets/images/web-app-screenshots/log-in.png` |
-| Dashboard operativo | `../assets/images/web-app-wireframes/dashboard-wireframe.png` | `../assets/images/web-app-screenshots/dashboard.png` |
-| Catálogo de operación | `../assets/images/web-app-wireframes/catalog-wireframe.png` | `../assets/images/web-app-screenshots/catalog.png` |
-| Inventario (FEFO + drawer) | `../assets/images/web-app-wireframes/inventory-wireframe.png` | `../assets/images/web-app-screenshots/inventory.png` |
-| Clientes (drawer de ficha) | `../assets/images/web-app-wireframes/clients-wireframe.png` | `../assets/images/web-app-screenshots/clients.png` |
-| Creación de pedido asistido | `../assets/images/web-app-wireframes/new-order-wireframe.png` | `../assets/images/web-app-screenshots/create-order.png` |
-| Bandeja de órdenes | `../assets/images/web-app-wireframes/orders-wireframe.png` | `../assets/images/web-app-screenshots/orders.png` |
-| Despacho y POD | `../assets/images/web-app-wireframes/dispatch-wireframe.png` | `../assets/images/web-app-screenshots/dispatch.png` |
-| Reportes operativos | `../assets/images/web-app-wireframes/reports-wireframe.png` | `../assets/images/web-app-screenshots/reports.png` |
-| Perfil y preferencias | `../assets/images/web-app-wireframes/profile-wireframe.png` | `../assets/images/web-app-screenshots/profile.png` |
-| Configuración (operación) | `../assets/images/web-app-wireframes/settings-wireframe.png` | `../assets/images/web-app-screenshots/settings.png` |
-
-#### Wireframes TB1 — Web Application
-
-![Wireframe TB1 — Login](../assets/images/web-app-wireframes/log-in-wireframe.png)
-
-![Wireframe TB1 — Dashboard](../assets/images/web-app-wireframes/dashboard-wireframe.png)
-
-![Wireframe TB1 — Catálogo](../assets/images/web-app-wireframes/catalog-wireframe.png)
-
-![Wireframe TB1 — Inventario](../assets/images/web-app-wireframes/inventory-wireframe.png)
-
-![Wireframe TB1 — Clientes](../assets/images/web-app-wireframes/clients-wireframe.png)
-
-![Wireframe TB1 — Nuevo Pedido](../assets/images/web-app-wireframes/new-order-wireframe.png)
-
-![Wireframe TB1 — Órdenes](../assets/images/web-app-wireframes/orders-wireframe.png)
-
-![Wireframe TB1 — Despacho](../assets/images/web-app-wireframes/dispatch-wireframe.png)
-
-![Wireframe TB1 — Reportes](../assets/images/web-app-wireframes/reports-wireframe.png)
-
-![Wireframe TB1 — Perfil](../assets/images/web-app-wireframes/profile-wireframe.png)
-
-![Wireframe TB1 — Configuración](../assets/images/web-app-wireframes/settings-wireframe.png)
-
-#### Screenshots TB1 — Web Application desplegada
+*Login — selección de perfil de demostración*
 
 ![Screenshot TB1 — Login](../assets/images/web-app-screenshots/log-in.png)
 
+Elaboración propia. Punto de entrada con selección de perfil que determina el rol y las rutas disponibles.
+
+*Dashboard operativo — vista S1/S2*
+
 ![Screenshot TB1 — Dashboard](../assets/images/web-app-screenshots/dashboard.png)
 
-![Screenshot TB1 — Catálogo](../assets/images/web-app-screenshots/catalog.png)
+Elaboración propia. Vista de entrada para usuarios internos con KPIs y accesos directos según rol.
 
-![Screenshot TB1 — Inventario](../assets/images/web-app-screenshots/inventory.png)
+*Clientes con drawer de ficha — S1*
 
 ![Screenshot TB1 — Clientes](../assets/images/web-app-screenshots/clients.png)
 
+Elaboración propia. Lista de clientes con drawer lateral que expone RUC, condición comercial y contacto.
+
+*Creación de pedido asistido — S1*
+
 ![Screenshot TB1 — Crear Pedido](../assets/images/web-app-screenshots/create-order.png)
 
-![Screenshot TB1 — Órdenes](../assets/images/web-app-screenshots/orders.png)
+Elaboración propia. Captura asistida con selección de cliente, productos y validación de condición.
+
+*Inventario con indicadores FEFO — S2*
+
+![Screenshot TB1 — Inventario](../assets/images/web-app-screenshots/inventory.png)
+
+Elaboración propia. Vista de inventario con información de lote, vencimiento y drawer de detalle.
+
+*Despacho y POD mock — S2*
 
 ![Screenshot TB1 — Despacho](../assets/images/web-app-screenshots/dispatch.png)
 
-![Screenshot TB1 — Reportes](../assets/images/web-app-screenshots/reports.png)
-
-![Screenshot TB1 — Perfil](../assets/images/web-app-screenshots/profile.png)
-
-![Screenshot TB1 — Configuración](../assets/images/web-app-screenshots/settings.png)
-
-> *Observación*: Las capturas `forbidden.png`, `portal-home.png`, `portal-catalog.png`, `portal-checkout.png`, `portal-success.png` y `portal-orders.png` se incorporarán con evidencia real; no se sustituyen por mockups.
-
-Elaboración propia. La evidencia TB1 es responsive web; corresponde al webapp desplegado en GitHub Pages con datos mock.
+Elaboración propia. Módulo de despacho con modal de confirmación de evidencia de entrega.
 
