@@ -1,8 +1,11 @@
 ## 4.4. Web Applications UX/UI Design.
 
-El diseño de la web application de Nexa debe leerse como la continuación operativa de la landing page pública. Mientras el sitio público comunica el problema y la propuesta de valor, la aplicación autenticada resuelve el trabajo cotidiano mediante módulos de pedidos, inventario, despacho, trazabilidad y cierre de entrega. Por ello, su UX/UI se construye sobre un criterio distinto al marketing: **claridad operativa, lectura rápida del estado del negocio y reducción de fricción en tareas repetitivas**.
+Esta sección documenta el diseño UX/UI de las dos superficies autenticadas del producto: la **webapp operativa interna (Ops)** para coordinación comercial (S1) y logística (S2), y el **portal B2B** para compradores comerciales (S3). Ambas superficies comparten el sistema visual definido en 4.1, pero operan con criterios de diseño distintos a la landing: aquí la prioridad es **claridad operativa, lectura rápida del estado del negocio y reducción de fricción en tareas repetitivas**.
 
-En esta capa del producto, la interfaz deja de priorizar la conversión comercial y pasa a enfocarse en la toma de decisiones operativas rápidas. Cada pantalla debe ayudar a responder una pregunta concreta del dominio: qué pedido está en riesgo, qué producto necesita atención, qué validación bloquea la operación, qué unidad está en ruta y qué evidencia respalda el cierre. Bajo esa lógica, la documentación se organiza en cuatro partes esenciales: wireframes, wireflows, mock-ups y user flows detallados. Los artefactos se trabajaron colaborativamente en Figma y luego se exportaron para documentar todo el recorrido funcional del MVP.
+Cada pantalla resuelve una pregunta concreta del dominio: qué pedido está en riesgo, qué producto necesita atención, qué validación bloquea la operación, qué unidad está en ruta y qué evidencia respalda el cierre. La documentación se organiza en wireframes, wireflows, mock-ups y user flows. Los artefactos se trabajaron colaborativamente en Figma y se complementan con evidencia de implementación del Sprint 2 (TB1).
+
+<!-- TODO Tanda 2: replace wireflow mermaid diagrams with screenshot-based wireflows from FigJam board. -->
+<!-- TODO Tanda 2: replace user flow sequence diagrams with proper user flow diagrams (flowchart, not sequenceDiagram). -->
 
 ### 4.4.1. Web Applications Wireframes.
 
@@ -231,6 +234,10 @@ El detalle de trazabilidad en alta fidelidad reconstruye el historial del pedido
 
 ### 4.4.4. Web Applications User Flow Diagrams.
 
+<!-- TODO Tanda 2: replace with S1 Commercial Assisted Order User Flow diagram (flowchart-based, not sequence diagram). -->
+<!-- TODO Tanda 2: replace with S2 Logistics Inventory and Dispatch User Flow diagram. -->
+<!-- TODO Tanda 2: add screenshot-based wireflow from FigJam reference. -->
+
 El user flow complementa wireframes y mock-ups porque modela la interacción secuencial entre usuario y sistema. En Nexa, el flujo crítico es el reabastecimiento B2B con validaciones de negocio, ya que ahí se expresa con más claridad la promesa central del producto: hacer visible lo que hoy se valida tarde o de forma dispersa.
 
 #### User Flow 1 — Reabastecimiento B2B con validación de negocio
@@ -317,35 +324,11 @@ flowchart TD
 
 Elaboración propia. Este recorrido pone el foco en la necesidad de previsibilidad del cliente y en la forma en que una incidencia debe ser visible sin obligarlo a volver al canal informal.
 
-### 4.4.5. Web Applications Mobile UX/UI Design.
+### 4.4.5. Web Applications Responsive Behavior.
 
-Para garantizar una experiencia verdaderamente ubicua y accesible para los usuarios en movimiento (como conductores y personal en planta), las interfaces principales de la aplicación web de Nexa se adaptaron bajo principios **mobile-first**. Todo este trabajo de diseño estructural y visual se llevó a cabo utilizando la herramienta **Figma**.
+La webapp operativa fue diseñada con un enfoque desktop-first para estaciones de trabajo, pero contempla adaptación responsive para consulta en tablet y móvil (operarios de campo, conductores en ruta). El sidebar colapsa en pantallas menores a 768px, las tablas adoptan scroll horizontal o vista compacta, y los drawers se expanden a pantalla completa en mobile.
 
-#### A. Mobile Wireframes
-
-Los wireframes para dispositivos móviles se diseñaron en Figma priorizando la densidad de información justa para pantallas compactas y reduciendo la complejidad visual sin comprometer la funcionalidad operativa.
-
-*Estructura base del diseño móvil en Figma*
-
-![Mobile Wireframes Overview](../assets/images/mobile-browser/landing-wireframes-mobile-overview.png)
-
-Elaboración propia. Los wireframes móviles simplifican la lectura y aseguran que los botones de acción principal estén al alcance del pulgar del usuario.
-
-#### B. Mobile Mock-ups
-
-Posteriormente, los mock-ups de alta fidelidad en Figma trasladaron el sistema de diseño definitivo a los flujos móviles clave, asegurando coherencia visual y usabilidad bajo condiciones de operación logística.
-
-*Mock-ups de alta fidelidad móviles en Figma*
-
-![Mobile Mockups Overview](../assets/images/mobile-browser/landing-mockups-mobile-overview.png)
-
-![Mobile Mockups Sections](../assets/images/mobile-browser/landing-mockups-mobile-sections.png)
-
-![Mobile Mockups Usage](../assets/images/mobile-browser/landing-mockups-mobile-usage.png)
-
-![Mobile Mockups CTA and Footer](../assets/images/mobile-browser/landing-mockups-mobile-cta-footer.png)
-
-Elaboración propia. Muestras de alta fidelidad móvil que validan la interfaz adaptativa para el MVP de Nexa.
+<!-- TODO Tanda 2: add webapp-specific mobile wireframes and screenshots when available. The mobile evidence in /mobile-browser/ corresponds to the landing page, not to the webapp. -->
 
 ### 4.4.5. Web Applications — Wireframes y Screenshots TB1 (Sprint 2)
 
