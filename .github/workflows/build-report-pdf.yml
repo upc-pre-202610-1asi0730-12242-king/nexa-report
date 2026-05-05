@@ -1,0 +1,27 @@
+name: Build Report PDF
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Pandoc and LaTeX
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended texlive-lang-spanish
+
+      - name: Build PDF
+        run: bash scripts/build-pdf.sh
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: nexa-report-pdf
+          path: dist/nexa-report.pdf
+          retention-days: 30

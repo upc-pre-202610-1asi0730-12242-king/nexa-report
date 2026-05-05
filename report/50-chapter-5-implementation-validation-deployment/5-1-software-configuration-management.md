@@ -33,8 +33,8 @@ El control de versiones se organiza bajo una convención GitFlow adaptada al alc
 
 | Repositorio | Propósito | Rama principal observable | Otras ramas observables | URL |
 |---|---|---|---|---|
-| `nexa-report` | Informe técnico, trazabilidad académica y narrativa del proyecto | `main` | `develop`, `release/v1.0.0`, ramas de respaldo locales | [nexa-report](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-report) |
-| `nexa-website` | Implementación del MVP público desplegado | `main` | `develop`, `release/v1.0.0` | [nexa-website](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website) |
+| `nexa-report` | Informe técnico, trazabilidad académica y narrativa del proyecto | `main` | `develop`, `release/tb1-final` | [nexa-report](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-report) |
+| `nexa-website` | Implementación del MVP público desplegado | `main` | `develop`, `release/tb1-final` | [nexa-website](https://github.com/upc-pre-202610-1asi0730-12242-king/nexa-website) |
 
 **GitFlow del Proyecto**
 

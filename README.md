@@ -63,13 +63,18 @@ nexa-report/
 
 ---
 
-## PDF export
+## Report PDF
+
+Generate locally (requires Pandoc + XeLaTeX):
 
 ```bash
 bash scripts/build-pdf.sh
 ```
 
-Requires [Pandoc](https://pandoc.org/) installed locally. Output is written to `dist/nexa-report.pdf`.
+Output is written to `dist/nexa-report.pdf`.
+
+The latest generated PDF can also be downloaded from GitHub Actions:
+**Actions → Build Report PDF → Artifacts → `nexa-report-pdf`**
 
 ---
 
