@@ -26,8 +26,8 @@ User Task Matrix: Frecuencia e Importancia por Arquetipo
 
 #### Tabla User Task Matrix
 
-| Tareas Identificadas (Tasks)                                                           | Segmento 1: Valeria (Ventas) |           | Segmento 2: Roberto (Logística) |       | Segmento 3: Elena (Comprador) |       |
-|                                                             | Frecuencia  |           | Importancia |       | Frecuencia |   Importancia    |
+|        Tareas Identificadas (Tasks)                                                           | Segmento 1: Valeria (Ventas) |           | Segmento 2: Roberto (Logística) |       | Segmento 3: Elena (Comprador) |       |
+|                                                          | Frecuencia  |           | Importancia |       | Frecuencia |   Importancia    |
 |:---------------------------------------------------------------------------------------|:-----------------------------|:----------|:--------------------------------|:------|:------------------------------|:------|
 | **Evaluar necesidades de abastecimiento e inventario local**                           | -                            | -         | -                               | -     | Alta                          | Alta  |
 | **Consultar y validar disponibilidad de stock (Catálogo/Cámara)**                      | Alta                         | Alta      | Alta                            | Alta  | Alta                          | Alta  |
