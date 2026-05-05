@@ -129,7 +129,14 @@ Elaboración propia. El wireflow parte de la selección de perfil y ramifica en 
 
 ### 4.4.3. Web Applications Mock-ups.
 
-Los mock-ups de la web application desarrollan en alta fidelidad la lógica ya probada en wireframes. Su función no es “decorar” el sistema, sino validar que la jerarquía visual, los componentes y la lectura operativa sigan siendo claros cuando se incorporan color, densidad informativa, estados y patrones definitivos de interfaz. En este proyecto, las diez capturas cubren el mismo recorrido funcional del MVP y permiten explicar cómo la solución se presentaría ante usuarios reales. También fueron consolidadas en Figma antes de documentarse en el informe.
+Los mock-ups de Sprint 1 desarrollan en alta fidelidad la lógica probada en wireframes de diseño. Su función es validar jerarquía visual, densidad informativa, estados y patrones definitivos de interfaz. Estas capturas corresponden a la fase de diseño en Figma y pueden diferir en detalles del estado actual de la webapp; la evidencia de implementación se documenta en 4.4.5.
+
+| Grupo de mockups | Decisión | Razón |
+|---|---|---|
+| Landing Page mockups | Se mantienen en 4.3 | Corresponden a la superficie pública; no son webapp |
+| Webapp Sprint 1 mockups | Se mantienen como design-stage | Representan el diseño Figma antes de TB1; válidos como evidencia de diseño |
+| Screenshots TB1 | Documentados en 4.4.5 | Reflejan la implementación desplegada con datos mock |
+| Exports FigJam/Figma finales | Pendiente | Se incorporarán cuando estén disponibles como imagen exportada |
 
 #### Dashboard Operativo Total Control
 
