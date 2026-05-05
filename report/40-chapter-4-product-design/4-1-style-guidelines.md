@@ -1,6 +1,6 @@
 # Capítulo IV: Product Design
 
-El Capítulo IV representa la transición técnica desde la fase de descubrimiento hacia la materialización visual y arquitectónica de la plataforma. En este apartado se documentan los criterios estéticos, las estructuras de información y las decisiones de diseño que permiten transformar los **Bounded Contexts** identificados en el dominio en una solución digital de grado empresarial (Enterprise B2B). Nexa no se construye como una interfaz tradicional, sino como un sistema operativo de decisiones logísticas.
+El Capítulo IV representa la transición técnica desde la fase de descubrimiento hacia la materialización visual y arquitectónica de la plataforma. En esta sección se documentan los criterios estéticos, las estructuras de información y las decisiones de diseño que permiten transformar los **Bounded Contexts** identificados en el dominio en una solución digital de grado empresarial (Enterprise B2B). Nexa no se construye como una interfaz tradicional, sino como un sistema operativo de decisiones logísticas.
 
 ---
 
