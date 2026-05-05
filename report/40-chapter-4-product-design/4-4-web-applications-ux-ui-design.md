@@ -193,95 +193,103 @@ El detalle de trazabilidad en alta fidelidad reconstruye el historial del pedido
 
 ### 4.4.4. Web Applications User Flow Diagrams.
 
-<!-- TODO Tanda 2: replace with S1 Commercial Assisted Order User Flow diagram (flowchart-based, not sequence diagram). -->
-<!-- TODO Tanda 2: replace with S2 Logistics Inventory and Dispatch User Flow diagram. -->
-<!-- TODO Tanda 2: add screenshot-based wireflow from FigJam reference. -->
+Un user flow se enfoca en las decisiones y caminos que sigue una persona para completar un user goal. Los diagramas siguientes usan notación `flowchart` e incluyen happy path y rutas alternativas. No se usan diagramas de secuencia: éstos describen intercambio técnico entre objetos, no recorridos de usuario.
 
-El user flow complementa wireframes y mock-ups porque modela la interacción secuencial entre usuario y sistema. En Nexa, el flujo crítico es el reabastecimiento B2B con validaciones de negocio, ya que ahí se expresa con más claridad la promesa central del producto: hacer visible lo que hoy se valida tarde o de forma dispersa.
+#### User Flow S1 — Coordinación comercial: pedido asistido
 
-#### User Flow 1 — Reabastecimiento B2B con validación de negocio
+**User Goal:** Como Valeria, coordinadora comercial (S1), quiero crear y confirmar un pedido asistido validando la condición del cliente y la disponibilidad de producto, de forma que el pedido quede trazable desde el origen.
 
-- **User Goal:** Como comprador B2B (Segmento 3) o coordinadora comercial (Segmento 1), quiero que la plataforma me deje confirmar el pedido solo cuando el sistema ya validó stock real, lote FEFO y crédito disponible.
-- **Segmento:** Segmento 3 (autonomía del comprador) + Segmento 1 (captura asistida).
-- **Problema atendido:** promesas comerciales inviables por falta de validación temprana.
-- **Happy path:** login → catálogo con contexto → carrito → consulta de stock y lotes → consulta de crédito/mora → reglas OK → confirmación con seguimiento activo.
-- **Unhappy path:** si mora o stock no dan, el sistema corta el flujo en la validación y devuelve un mensaje explícito con acción correctiva (ajustar cantidad, regularizar crédito o escalar a soporte).
-
-*User Flow del reabastecimiento B2B con validación de negocio*
+**Persona:** Valeria / Coordinación comercial. Accede a Dashboard, Clientes, Catálogo, Pedidos y Reportes. La ruta guard bloquea el acceso directo a Inventario y Despacho.
 
 ```mermaid
-sequenceDiagram
-    participant U as Cliente o Coordinadora
-    participant S as Sistema Nexa
-    participant I as Inventario
-    participant C as Reglas comerciales
-    U->>S: Inicia sesion o abre pedido asistido
-    S->>U: Muestra catalogo y contexto del cliente
-    U->>S: Agrega productos y cantidades
-    S->>I: Consulta stock y lotes disponibles
-    I-->>S: Stock real y restricciones
-    S->>C: Consulta credito, mora y condiciones
-    C-->>S: Reglas de aprobacion
-    alt Stock y credito validos
-        S->>U: Pedido listo para confirmar
-        U->>S: Confirma envio
-        S->>U: Estado Submitted y seguimiento activo
-    else Mora o Falta Crédito
-        S->>U: Alerta explicita y accion correctiva
-    end
+flowchart LR
+    A["Start"] --> B["Login — choose Valeria profile"]
+    B --> C["S1 Commercial dashboard"]
+    C --> D["Open clients screen"]
+    D --> E["Review client list"]
+    E --> F["Open client detail drawer\n(RUC, contact, condition)"]
+    F --> G["Create assisted order"]
+    G --> H["Select client"]
+    H --> I{"Client condition valid?"}
+    I -- "No" --> J["Show restriction or credit warning"]
+    J --> H
+    I -- "Yes" --> K["Select products from catalog"]
+    K --> L{"Quantity available?"}
+    L -- "No" --> M["Adjust quantity"]
+    M --> K
+    L -- "Yes" --> N["Enter delivery information"]
+    N --> O["Confirm order"]
+    O --> P["Order detail — createdBy Valeria"]
+    P --> Q["Orders follow-up"]
+    Q --> R["Commercial reports"]
+    R --> S["End"]
 ```
 
-Elaboración propia. El flujo refleja tanto la ruta esperada como la rama de bloqueo comercial, ambas necesarias para defender la lógica del MVP transaccional.
+Elaboración propia. El happy path avanza desde la revisión del cliente hasta el cierre trazable. Las ramas alternativas detectan restricción de crédito o falta de stock antes de comprometer el pedido.
 
-#### User Flow 2 — Coordinadora comercial con rama de corrección
+#### User Flow S2 — Jefatura logística: inventario, despacho y cierre
 
-- **User Goal:** Como coordinación comercial (Segmento 1), quiero corregir un pedido cuando la validación detecta inconsistencias, sin perder la información ya capturada.
-- **Segmento:** Segmento 1.
-- **Problema atendido:** retrabajo manual y pérdida de datos cuando el pedido se rechaza.
-- **Happy path:** pedido asistido → validación OK → confirmación.
-- **Unhappy path:** validación detecta problema → rama de corrección (ajustar SKU, cantidad, condición comercial) → revalidación → confirmación o bloqueo registrado.
+**User Goal:** Como Roberto, jefe de logística (S2), quiero revisar el estado del inventario y los indicadores FEFO, coordinar el despacho y cerrar una entrega con evidencia de conformidad, de forma que el ciclo operativo quede registrado.
 
-*User Flow de la coordinadora comercial con rama de corrección*
+**Persona:** Roberto / Jefatura logística. Tiene acceso extendido: Dashboard, Inventario, Despacho, Pedidos, Clientes y Reportes.
 
 ```mermaid
-flowchart TD
-    A["La coordinadora abre un pedido asistido"] --> B["Identifica al cliente"]
-    B --> C["Carga condiciones y selecciona productos"]
-    C --> D{"¿El sistema muestra una alerta?"}
-    D -->|Sí| E["Revisa stock, crédito o datos del pedido"]
-    E --> F["Corrige información y vuelve a validar"]
-    F --> D
-    D -->|No| G["Envía el pedido"]
-    G --> H["Recibe confirmación trazable"]
-    H --> I["Entrega el pedido a preparación"]
+flowchart LR
+    A["Start"] --> B["Login — choose Roberto profile"]
+    B --> C["S2 Logistics dashboard"]
+    C --> D["Open inventory overview\n(stock and warehouses)"]
+    D --> E["Review lot list and FEFO indicators"]
+    E --> F["Open lot detail drawer\n(expiry, stock, warehouse)"]
+    F --> G{"Risk detected?"}
+    G -- "Low stock or expiring lot" --> H["Prioritize operational review"]
+    G -- "No critical risk" --> I["Continue monitoring"]
+    H --> J["Open dispatch board"]
+    I --> J
+    J --> K{"Dispatch ready?"}
+    K -- "No user action" --> L["Dispatch remains ready or pending"]
+    K -- "Yes" --> M["Mark in route"]
+    M --> N["Open POD mock confirmation modal"]
+    N --> O{"POD checks complete?"}
+    O -- "No" --> P["Show pending evidence warning"]
+    P --> N
+    O -- "Yes" --> Q["Close delivery"]
+    Q --> R["Operational reports\n(FEFO, stock, dispatch)"]
+    R --> S["End"]
 ```
 
-Elaboración propia. Este user flow enfatiza el punto de corrección temprana, que es donde Nexa busca reducir retrabajo y promesas inviables.
+Elaboración propia. El happy path recorre inventario → despacho → cierre. La rama de riesgo FEFO activa revisión prioritaria. El POD mock muestra advertencia si la evidencia está incompleta.
 
-#### User Flow 3 — Cliente B2B con seguimiento e incidencia
+#### User Flow S3 — Comprador B2B: portal de compra
 
-- **User Goal:** Como comprador B2B (Segmento 3), quiero seguir mi pedido y reportar una incidencia sin tener que llamar ni escribir por WhatsApp.
-- **Segmento:** Segmento 3 con soporte del Segmento 2 (logística y despacho).
-- **Problema atendido:** falta de visibilidad del despacho y ausencia de canal formal para reportar incidencias.
-- **Happy path:** historial → seguimiento → ETA → entrega → cierre con POD disponible.
-- **Unhappy path:** si hay incidencia de ruta, el cliente recibe notificación automática, puede registrar reclamo formal y ver la bitácora del pedido con evidencia asociada.
+**User Goal:** Como Lucía, compradora B2B (S3), quiero explorar el catálogo del portal, enviar mi pedido y consultar su estado sin depender de comunicación informal.
 
-*User Flow del cliente B2B con seguimiento e incidencia*
+**Persona:** Lucía / Comprador B2B. Accede únicamente al Portal: inicio, catálogo, carrito, órdenes. La ruta guard bloquea el acceso a `/ops/*`.
 
 ```mermaid
-flowchart TD
-    A["El cliente inicia sesión"] --> B["Explora catálogo y arma su pedido"]
-    B --> C["Confirma el envío"]
-    C --> D["Recibe confirmación del pedido"]
-    D --> E["Consulta estado y ETA"]
-    E --> F{"¿Aparece una incidencia?"}
-    F -->|No| G["Espera la entrega"]
-    F -->|Sí| H["Revisa actualización o aviso"]
-    H --> E
-    G --> I["Recibe pedido y valida cierre"]
+flowchart LR
+    A["Start"] --> B["Login — choose Lucia profile"]
+    B --> C["Portal home"]
+    C --> D["Open portal catalog"]
+    D --> E["Review products"]
+    E --> F["Add products to cart"]
+    F --> G["Submit portal order"]
+    G --> H{"Order confirmed?"}
+    H -- "Yes" --> I["Order success screen"]
+    H -- "No / blocked" --> J["Show restriction message"]
+    J --> F
+    I --> K["Track portal orders"]
+    K --> L["End"]
 ```
 
-Elaboración propia. Este recorrido pone el foco en la necesidad de previsibilidad del cliente y en la forma en que una incidencia debe ser visible sin obligarlo a volver al canal informal.
+Elaboración propia. El happy path es lineal: catálogo → carrito → confirmación → seguimiento. La rama alternativa muestra el bloqueo cuando el pedido no puede confirmarse.
+
+#### Tabla de consistencia wireflows y user flows
+
+| User flow | Derivado del wireflow | Happy path | Alternativas | Evidencia visual |
+|---|---|---|---|---|
+| S1 Pedido asistido | S1 Commercial Assisted Order | Sí | Restricción de crédito, falta de stock | Markdown; export FigJam pendiente |
+| S2 Inventario, despacho y cierre | S2 Logistics Operations | Sí | Riesgo FEFO, evidencia POD incompleta | Markdown; export FigJam pendiente |
+| S3 Portal de compra | S3 B2B Buyer Portal | Sí | Pedido bloqueado | Markdown; export Figma pendiente |
 
 ### 4.4.5. Implemented Screen Evidence.
 
