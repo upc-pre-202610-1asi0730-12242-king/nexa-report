@@ -1,8 +1,11 @@
 ## 4.5. Web Applications Prototyping.
 
-El prototipado de la web application en Nexa debe leerse como la consolidación navegable de los artefactos ya desarrollados en la sección 4.4. Si los wireframes definieron estructura, los mock-ups resolvieron jerarquía visual y los user flows explicaron la lógica de interacción, el prototipo integra esas capas en una experiencia continua que permite revisar coherencia entre módulos, transiciones y puntos de decisión.
+El prototipado de Nexa consolida los artefactos de diseño en experiencias navegables que permiten revisar coherencia entre módulos, transiciones y puntos de decisión antes de la implementación. El producto cuenta con dos prototipos diferenciados:
 
-En esta etapa, el equipo articuló el prototipo en **Figma** y dejó además un recorrido audiovisual que permite revisar la navegación sin depender todavía de una implementación autenticada en producción. Por eso esta subsección funciona como evidencia de diseño integrado y de preparación funcional del producto.
+- **Landing page prototype**: recorrido público del sitio, documentado en la sección 4.3 con wireframes y mockups, y verificable en el despliegue de `nexa-website`.
+- **Webapp prototype**: recorrido operativo de la aplicación autenticada, articulado en Figma con frames conectados por rol y flujo de negocio.
+
+Además, el FigJam board de Userflow/Wireflow se utiliza como artefacto de trabajo para validación de rutas y flujos. Los wireflows finales basados en screenshots se consolidarán en la sección 4.4 en una iteración posterior.
 
 | Evidencia de prototipado | Propósito |
 |---|---|
@@ -10,6 +13,7 @@ En esta etapa, el equipo articuló el prototipo en **Figma** y dejó además un 
 | [Archivo Figma de la web application](https://www.figma.com/design/buDa5VZmYjPNokbl4FEJqx/Web-App?node-id=0-1) | Verificar la versión navegable y los frames conectados de la aplicación autenticada |
 | [Recorrido del prototipo (Web)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQC3ykPGDqn4Sra12gTSQKf4ATYJUS89I621TTxwWaqo81k?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1UDCU7) | Mostrar el recorrido principal del prototipo web como evidencia visual de navegación |
 | [Mobile Application Prototype - Video Evidence](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202323040_upc_edu_pe/IQDBP5iLNJedR6OhB8Sivc1rAaVCa4SDrxvranY5tTLbkPM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=QD00j7) | Evidencia audiovisual del prototipo de la aplicación móvil (mobile-first), mostrando la navegación desde dispositivo móvil |
+| [FigJam — Userflow y Wireflow S1/S2](https://www.figma.com/board/LjIjtyfoOpeYa5OCSJUYpD/Nexa-Ops-S1-S2-Userflow-Wireflow?node-id=0-1&t=F9ZnAAAzCUpiK4qs-1) | Board de trabajo para validación de rutas y flujos operativos de la webapp |
 
 La utilidad metodológica del prototipo es doble. Primero, permite revisar continuidad entre módulos sin depender todavía de desarrollo productivo. Segundo, ofrece una base defendible para explicar cómo evolucionará Nexa desde su capa pública hacia su capa transaccional. En otras palabras, el prototipo no sustituye al desarrollo, pero sí reduce el riesgo de que la implementación futura contradiga lo ya investigado, priorizado y diseñado.
 
