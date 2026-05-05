@@ -29,18 +29,21 @@ SOURCES=(
   $(find annexes -name "*.md" | sort)
 )
 
-# Concatenate all sources into one file, rewriting ../assets/ → assets/
-# All chapter files live one level below report/, so this normalises every
-# relative image reference to be correct when pandoc runs from report/.
+# Concatenate all sources into one file:
+# 1. Normalise ../assets/ → assets/ so paths resolve when running from report/
+# 2. Strip SVG image references — xelatex requires inkscape/rsvg to embed SVGs
+#    which is not always available; replace with bracketed alt text instead.
 > "$COMBINED"
 for f in "${SOURCES[@]}"; do
-  sed 's|\.\./assets/|assets/|g' "$f" >> "$COMBINED"
+  sed \
+    -e 's|\.\./assets/|assets/|g' \
+    -e 's|!\(\[[^]]*\]\)(assets/[^)]*\.svg)|\1|g' \
+    "$f" >> "$COMBINED"
   printf '\n\n' >> "$COMBINED"
 done
 
 # Note: Mermaid code blocks render as literal code in PDF (known limitation).
-# SVG images are replaced with alt text (xelatex does not support SVG).
-# PNG and JPEG images render normally.
+# PNG and JPEG images render normally. SVG references are stripped above.
 
 pandoc "$COMBINED" \
   --from=markdown-yaml_metadata_block+raw_html \

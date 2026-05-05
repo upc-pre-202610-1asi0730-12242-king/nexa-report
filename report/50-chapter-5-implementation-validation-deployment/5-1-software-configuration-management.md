@@ -52,7 +52,7 @@ La organización del control de versiones puede representarse mediante un GitFlo
 
 **Flujo de integración propuesto**
 
-```
+```text
 feature/* → develop → release/tb1-final → main → tag/release
 ```
 
