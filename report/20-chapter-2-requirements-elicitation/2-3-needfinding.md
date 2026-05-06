@@ -39,17 +39,19 @@ La tabla resume la relación entre evidencia cualitativa, arquetipo sintetizado 
 
 ### ***2.3.3. User Journey Mapping***
 
-*Journey Map — Segmento 1: Coordinación Comercial*
+Los Journey Maps describen la situación actual de cada segmento antes de Nexa. Representan el recorrido As-Is: cómo se realiza hoy cada proceso, qué fricciones aparecen en cada etapa y dónde se concentra el mayor estrés operativo. No describen la experiencia dentro de la plataforma propuesta.
+
+*Journey Map — Segmento 1: Coordinación Comercial (situación actual, As-Is)*
 ![Journey Map 1](../assets/images/journey-map-1.png)
-> *Nota:* Mapeo del proceso de captura y gestión de pedidos, identificando puntos de dolor en la transcripción manual. Elaboración propia.
+> *Nota:* Mapeo del proceso actual de captura y gestión de pedidos, identificando puntos de dolor en la transcripción manual y la dispersión de canales. Elaboración propia.
 
-*Journey Map — Segmento 2: Despacho y Entrega*
+*Journey Map — Segmento 2: Despacho y Entrega (situación actual, As-Is)*
 ![Journey Map 2](../assets/images/journey-map-2.png)
-> *Nota:* Mapeo de la ruta logística, enfatizando los cuellos de botella en la comunicación de incidencias. Elaboración propia.
+> *Nota:* Mapeo de la ruta logística actual, enfatizando los cuellos de botella en la comunicación de incidencias y la falta de trazabilidad operativa. Elaboración propia.
 
-*Journey Map — Segmento 3: Cliente Comercial B2B*
+*Journey Map — Segmento 3: Cliente Comercial B2B (situación actual, As-Is)*
 ![Journey Map 3](../assets/images/journey-map-3.png)
-> *Nota:* Mapeo de la experiencia de abastecimiento del cliente, destacando la incertidumbre en el seguimiento de entrega. Elaboración propia.
+> *Nota:* Mapeo de la experiencia actual de abastecimiento del cliente, destacando la incertidumbre en el seguimiento de entrega y la dependencia del vendedor. Elaboración propia.
 
 El principal valor del bloque no está en describir tres trayectos separados, sino en demostrar que el punto de dolor cambia de forma pero no de origen. En el Segmento 1 el problema aparece como ambigüedad y retrabajo; en el Segmento 2 como opacidad del abastecimiento e incertidumbre; y en el Segmento 3 como incidencias, demoras y cierre sin evidencia suficiente. Dicho de otro modo, los journeys confirman que el problema central no es una sola pantalla mal resuelta, sino una cadena de decisiones y validaciones que hoy pierde continuidad entre actores.
 
