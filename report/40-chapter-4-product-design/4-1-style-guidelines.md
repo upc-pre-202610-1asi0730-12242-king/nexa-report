@@ -34,7 +34,7 @@ La paleta se organiza en cinco grupos funcionales: marca primaria, base/superfic
 
 *Sistema de Colorimetría Nexa*
 
-![Colorimetry](../assets/images/style-guidelines/Colorimetry.jpeg)
+![Colorimetry](../assets/images/style-guidelines/style-colors.png)
 
 Especificación de Brand Colors, Text Colors y Status Colors. Elaboración propia.
 
@@ -42,7 +42,7 @@ Especificación de Brand Colors, Text Colors y Status Colors. Elaboración propi
 |---|---|---|---|---|
 | Primary Blue | Marca, CTAs, estados activos | Hero buttons, enlaces principales | Botones de acción, sidebar activo, badges | Misma familia cromática |
 | Warm Off-White | Fondo base, descanso visual | Background de secciones claras | Background de contenido principal | Base cálida compartida |
-| Neutral Grey | Texto secundario, bordes sutiles | Subtítulos, separadores | Labels, bordes de tabla, placeholders | Escalas similares |
+| Neutral Grey | Texto secundario, bordes sutiles | Subtítulos, separadores | Labels, bordes de tabla, texto guía | Escalas similares |
 | Dark Surface | Navbar, footer, contraste | Header y footer del sitio | Sidebar colapsado, overlays | Tono oscuro compartido |
 | Status: Optimal | Confirmación, éxito | Badges de disponibilidad | Stock OK, pedido confirmado, entrega exitosa | Verde semántico |
 | Status: Critical | Error, ruptura, alerta | — | Stock agotado, validación fallida, temperatura fuera de rango | Rojo semántico |
@@ -59,7 +59,7 @@ Nexa emplea **Inter** como familia tipográfica principal para interfaz y cuerpo
 
 *Sistema Tipográfico Nexa*
 
-![Typography](../assets/images/style-guidelines/Typography.jpeg)
+![Typography](../assets/images/style-guidelines/style-typography.png)
 
 Definición de jerarquías para Display, Headings, Body y Mono. Elaboración propia.
 
@@ -92,7 +92,7 @@ Variantes de botones primarios, secundarios y estados. Elaboración propia.
 | Botón primario | Fondo azul primario, texto blanco, border-radius consistente |
 | Botón secundario | Borde azul, fondo transparente o claro |
 | Cards / Surfaces | Fondo blanco, border-radius redondeado, sombra sutil |
-| Form fields | Borde gris, placeholder en gris medio, focus ring azul |
+| Form fields | Borde gris, texto guía en gris medio, focus ring azul |
 | Status badges | Color semántico + texto en contraste |
 
 #### Variaciones por superficie
@@ -130,9 +130,7 @@ Escala basada en múltiplos de 4px, desde 4px hasta 96px. Elaboración propia.
 - **Webapp**: diseñada primariamente para desktop/tablet en contexto de estación de trabajo; en mobile, el sidebar colapsa y las tablas adoptan scroll horizontal o vista de tarjeta compacta.
 - **Portal B2B**: responsive orientado a tablet y mobile para compradores que consultan desde dispositivo.
 
-Los componentes interactivos respetan una altura mínima de 44px en superficies táctiles, anticipando uso con guantes en entornos refrigerados.
-
-<!-- TODO: add responsive screenshots for landing mobile navigation and webapp compact data views -->
+Los componentes interactivos respetan una altura mínima de 44px en superficies táctiles, anticipando uso con guantes en entornos refrigerados. La evidencia visual se concentra en los paneles de estilo y en los artefactos de wireframes/mockups documentados en las secciones siguientes.
 
 ---
 
@@ -158,4 +156,3 @@ El sistema cumple con el estándar AA de WCAG 2.1 en ambas superficies:
 | 2.1.1 Keyboard Accessible | Navegación completa por tabulación en landing y webapp | Pass |
 | 2.4.4 Link Purpose | Uso de `aria-label` descriptivos en botones y enlaces | Pass |
 | 1.4.11 Non-text Contrast | Bordes y estados focales con ratio 3:1 mínimo | Pass |
-
