@@ -2,11 +2,11 @@
 
 Esta sección documenta el diseño UX/UI de las dos superficies autenticadas del producto: la **webapp operativa interna (Ops)** para coordinación comercial (S1) y logística (S2), y el **portal B2B** para compradores comerciales (S3). Ambas superficies comparten el sistema visual definido en 4.1, pero operan con criterios de diseño distintos a la landing: aquí la prioridad es **claridad operativa, lectura rápida del estado del negocio y reducción de fricción en tareas repetitivas**.
 
-Cada pantalla resuelve una pregunta concreta del dominio: qué pedido está en riesgo, qué producto necesita atención, qué validación bloquea la operación, qué unidad está en ruta y qué evidencia respalda el cierre. La documentación se organiza en wireframes, wireflows, mock-ups y user flows. Los artefactos se trabajaron colaborativamente en Figma y se complementan con evidencia de implementación del Sprint 2 (TB1).
+Cada pantalla resuelve una pregunta concreta del dominio: qué pedido está en riesgo, qué producto necesita atención, qué validación bloquea la operación, qué unidad está en ruta y qué evidencia respalda el cierre. La documentación se organiza en wireframes, wireflows, mock-ups y user flows como artefactos de diseño UX/UI.
 
 ### 4.4.1. Web Applications Wireframes.
 
-Los wireframes ordenan la estructura funcional antes de entrar en alta fidelidad. Su valor está en definir jerarquías, zonas de información y rutas de interacción por superficie y persona. La colección se organiza en dos grupos: wireframes de diseño del Sprint 1 (recorrido operativo completo en Figma) y wireframes TB1 (alineados al alcance implementado en Sprint 2).
+Los wireframes ordenan la estructura funcional antes de entrar en alta fidelidad. Su valor está en definir jerarquías, zonas de información y rutas de interacción por superficie y persona. La colección se organiza como recorrido operativo de diseño para S1 y S2, con pantallas suficientes para explicar dashboard, pedidos, inventario, despacho, POD mock y trazabilidad.
 
 #### Sprint 1 — Wireframes de diseño
 
@@ -63,7 +63,7 @@ El módulo FEFO fue planteado como una vista analítica especializada para conve
 
 ![Wireframe Active Shipments & Routes](../assets/images/webapp-wireframes/webapp-wireframe-active-shipments-routes.png)
 
-El seguimiento de rutas se diseñó como tablero de operación viva. Aquí la interfaz debe soportar lectura rápida de estado, ETA, incidencias y entregas activas, porque el usuario en esta fase necesita reaccionar y no navegar sin rumbo. La estructura apunta a reducir llamadas y mejorar visibilidad compartida entre operación, coordinación y cliente.
+El seguimiento de rutas se diseñó como tablero de operación viva. Aquí la interfaz debe soportar lectura rápida de estado estimado, incidencias y entregas activas, porque el usuario en esta fase necesita reaccionar y no navegar sin rumbo. La estructura apunta a reducir llamadas y mejorar visibilidad compartida entre operación, coordinación y cliente.
 
 #### Cierre de Entrega (POD) & Certificación
 
@@ -226,11 +226,11 @@ flowchart LR
     H --> J["Open dispatch board"]
     I --> J
     J --> K{"Dispatch ready?"}
-    K -- "No user action" --> L["Dispatch remains ready or pending"]
+    K -- "No user action" --> L["Dispatch remains ready or waiting"]
     K -- "Yes" --> M["Mark in route"]
     M --> N["Open POD mock confirmation modal"]
     N --> O{"POD checks complete?"}
-    O -- "No" --> P["Show pending evidence warning"]
+    O -- "No" --> P["Show incomplete evidence warning"]
     P --> N
     O -- "Yes" --> Q["Close delivery"]
     Q --> R["Operational reports<br/>FEFO, stock, dispatch"]
@@ -272,65 +272,3 @@ Elaboración propia. This flow is documented as a planning-level buyer-facing fl
 | S1 Pedido asistido | S1 Commercial Assisted Order | Sí | Credenciales inválidas, condición de cliente, cantidad disponible, guard de rol | Mermaid + mockups S1 seleccionados |
 | S2 Inventario, despacho y cierre | S2 Logistics Operations | Sí | Credenciales inválidas, riesgo FEFO, despacho sin acción, evidencia POD mock incompleta | Mermaid + mockups S2 seleccionados |
 | S3 Portal de compra | S3 B2B Buyer Portal | Sí | Validación de carrito o pedido | Mermaid de planificación portal |
-
-### 4.4.5. Implemented Screen Evidence.
-
-Esta subsección consolida evidencia representativa de pantallas implementadas en TB1. Las imágenes corresponden a vistas web responsivas del webapp desplegado con datos mock y Fake API; no documentan backend real, autenticación productiva, carga real de POD, firma real ni tracking en vivo.
-
-#### Tabla de evidencia implementada
-
-| Evidence group | Screens | Persona | Scope supported |
-|---|---|---|---|
-| Entry and role selection | Login, profile | Todos | Acceso por perfil de demostración y separación inicial de experiencia |
-| S1 commercial operation | Dashboard, clients, create order, orders, reports | Valeria / S1 | Pedido asistido, seguimiento y reportes comerciales con datos mock |
-| S2 logistics operation | Dashboard, inventory, dispatch, reports | Roberto / S2 | Inventario FEFO, despacho y POD mock con datos mock |
-| S3 portal planning | Portal flow Mermaid | Lucía / S3 | Recorrido comprador documentado a nivel de planificación |
-
-#### Screenshots representativos por flujo
-
-*Login — selección de perfil de demostración*
-
-![Screenshot TB1 — Login](../assets/images/web-app-screenshots/log-in.png)
-
-Elaboración propia. Punto de entrada con selección de perfil que determina el rol y las rutas disponibles.
-
-*Clientes con drawer de ficha — S1*
-
-![Screenshot TB1 — Clientes](../assets/images/web-app-screenshots/clients.png)
-
-Elaboración propia. Lista de clientes con drawer lateral que expone RUC, condición comercial y contacto.
-
-*Creación de pedido asistido — S1*
-
-![Screenshot TB1 — Crear Pedido](../assets/images/web-app-screenshots/create-order.png)
-
-Elaboración propia. Captura asistida con selección de cliente, productos y validación de condición.
-
-*Inventario con indicadores FEFO — S2*
-
-![Screenshot TB1 — Inventario](../assets/images/web-app-screenshots/inventory.png)
-
-Elaboración propia. Vista de inventario con información de lote, vencimiento y drawer de detalle.
-
-*Despacho y POD mock — S2*
-
-![Screenshot TB1 — Despacho](../assets/images/web-app-screenshots/dispatch.png)
-
-Elaboración propia. Módulo de despacho con modal de confirmación de evidencia de entrega simulada.
-
-The report uses representative screenshots and mockups to support the documented flows. Full step-by-step screen sequences are maintained in the design workspace and can be exported when needed.
-
----
-
-### Tabla de cumplimiento con el enunciado del curso
-
-| Requisito del enunciado | Cobertura en 4.4 | Estado |
-|---|---|---|
-| Wireframes por experiencia de aplicación | Sprint 1 con diez vistas y objetivos por persona | Documentado |
-| Wireflows por user goal con explicación | Wireflow consolidado S1/S2/S3 en `flowchart LR` | Documentado |
-| Wireflow refleja cambio de pantalla por interacción | Nodos de pantalla, decisiones, errores de login y guards por rol | Documentado |
-| User flows por user goal y persona | S1, S2 y S3 separados con user goal declarado | Documentado |
-| User flows consistentes con wireflows | Tabla de consistencia wireflow a user flow incluida | Documentado |
-| Happy path y rutas alternativas | S1: cliente/stock/guard; S2: FEFO/POD mock/despacho; S3: validación de pedido | Documentado |
-| Mock-ups / evidencia de diseño | Mockups actuales seleccionados desde ZIP para S1 y S2 | Documentado |
-| Evidencia implementada | Screenshots representativos TB1 con límites explícitos de alcance | Documentado |
