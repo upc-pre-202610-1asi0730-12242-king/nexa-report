@@ -486,6 +486,23 @@ El tramo final del flujo del pedido —despacho, seguimiento, incidencia y cierr
 - El estado del pedido debe mantenerse visible para el comprador, la coordinación comercial y la operación.
 - El cierre debe registrar una evidencia mínima consistente, suficiente para disminuir reclamos y ambigüedad posterior.
 
+**Contexto operativo complementario para análisis UX**
+
+Como complemento al análisis UX, el equipo registra los navegadores, dispositivos y canales más probables o declarados durante la interacción operativa. Cuando el dato no aparece de forma explícita en la entrevista, se considera como supuesto de diseño para orientar decisiones de compatibilidad y pruebas, no como respuesta literal de la persona entrevistada.
+
+| Entrevistado / segmento | Navegador considerado | Dispositivo principal | Canal de comunicación | Implicancia UX |
+| --- | --- | --- | --- | --- |
+| Lorena Silva / Coordinación comercial | Google Chrome como supuesto de análisis | Laptop durante gestión administrativa; móvil para coordinación en campo | WhatsApp declarado como canal operativo crítico; correo para formalidades | La captura de pedidos debe funcionar bien en Chrome y permitir consulta rápida sin depender de muchas ventanas. |
+| Cinthia Levano / Coordinación comercial | Google Chrome como supuesto de análisis | Computadora de oficina como contexto principal | WhatsApp, Trello y Excel declarados como herramientas de trabajo | El flujo debe centralizar información dispersa y reducir pasos repetidos entre sistemas. |
+| Celia Pérez / Ventas de ruta | Google Chrome como supuesto de análisis | Smartphone en campo; soporte administrativo posterior | Canales informales asociados al retorno desde aplicaciones lentas | La experiencia móvil debe ser liviana, rápida y tolerante a condiciones de conexión variables. |
+| Hilda Litano / Supervisión logística | Google Chrome como supuesto de análisis | Computadora de oficina para revisión documental | Coordinación interna y documentos operativos | La vista logística debe priorizar trazabilidad, certificados, stock y vencimientos en layouts de escritorio. |
+| Edith Taype / Operación en punto de venta | Google Chrome como supuesto de análisis | Dispositivo de trabajo compartido o consulta supervisada | Coordinación interna en piso y acceso mediado a información | El diseño debe contemplar permisos por rol y lectura clara para usuarios con acceso limitado al inventario. |
+| Jesica Sandoval / Supervisión Horeca | Safari como supuesto de análisis contextual; no declarado en entrevista | Dispositivo de escritorio o móvil según contexto de supervisión | Coordinación verbal con almacén para fechas de vencimiento y FEFO | Las pruebas deben cubrir Safari como navegador complementario y hacer visibles los criterios FEFO sin depender de llamadas. |
+| Pedro Puente / Comprador B2B | Google Chrome como supuesto de análisis | Móvil para pedidos rápidos; computadora para revisión si aplica | WhatsApp declarado para pedidos y coordinación | El portal debe ser entendible desde móvil, con confirmación y estado del pedido sin obligar a perseguir respuestas. |
+| Henrry García / Comprador B2B | Google Chrome como supuesto de análisis | Móvil para seguimiento y coordinación; computadora para revisión administrativa | Llamadas, WhatsApp y contacto humano para excepciones | El portal debe conservar una ruta de soporte humano y no convertir el autoservicio en una barrera de confianza. |
+
+> *Nota:* Esta tabla no agrega citas nuevas. Ordena información declarada en los resúmenes cuando existe evidencia y completa, como supuesto de análisis, los datos de navegador o dispositivo necesarios para orientar compatibilidad, responsive design y pruebas de UX.
+
 ### ***2.2.4. Síntesis Global de Hallazgos***
 
 Tras el análisis detallado de los ocho perfiles levantados y de la lectura conjunta de los tres segmentos del producto, se identifica una **brecha de trazabilidad integral**. Esta brecha se manifiesta en la desconexión entre la promesa comercial capturada por canales informales y la realidad operativa gestionada con sistemas fragmentados, validaciones manuales y visibilidad incompleta del despacho.
