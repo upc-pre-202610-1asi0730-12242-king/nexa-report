@@ -47,7 +47,7 @@ La webapp utiliza Vue Router con hash history (necesario para despliegue en GitH
 | Portal | `/portal/catalog` | Catálogo de productos | Lucía (S3) | Explorar y seleccionar productos |
 | Portal | `/portal/orders` | Mis pedidos | Lucía (S3) | Historial, seguimiento, recompra |
 
-Las rutas aplican guards basados en scope/rol: un comprador B2B (Lucía) no puede acceder a `/ops/*`, y un operador interno no ve `/portal/*`. Esta separación traduce la segmentación de user personas en restricciones de navegación concretas.
+La arquitectura distingue superficies por scope: un comprador B2B (Lucía) se orienta al grupo `/portal`, mientras que coordinación comercial y jefatura logística operan sobre `/ops`. Dentro de Ops, la navegación por responsabilidad organiza la visibilidad de módulos sin convertir esta sección en evidencia de permisos productivos.
 
 ### 4.2.3. Labeling Systems
 
@@ -132,4 +132,3 @@ Los módulos internos usan tabs y breadcrumbs para movimiento lateral sin perder
 #### Portal — navegación lineal de compra
 
 El portal ofrece una estructura de navegación simple: catálogo → detalle → carrito → confirmación → historial. El comprador siempre sabe en qué paso está y puede volver al catálogo sin perder estado.
-
