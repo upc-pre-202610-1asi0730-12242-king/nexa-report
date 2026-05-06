@@ -135,14 +135,14 @@ Cada problem statement articula un dominio de fricción, un segmento afectado, u
 
 - Creemos que nuestros clientes (empresas distribuidoras e importadoras) tienen una gran necesidad de digitalizar, centralizar y ordenar la recepción de pedidos B2B y la gestión de su catálogo de productos refrigerados/congelados.
 - El valor principal que un cliente quiere de nuestro servicio es la reducción de errores en la toma de pedidos y el ahorro de tiempo operativo en el cuadre diario de ventas y despachos.
-- El cliente también puede obtener valor de la trazabilidad básica de ETA y de contar con un historial de compras centralizado, abandonando el desorden de WhatsApp o Excel.
+- El cliente también puede obtener valor de la visibilidad básica del estado del despacho y de contar con un historial de compras centralizado, abandonando el desorden de WhatsApp o Excel.
 - Adquiriremos a la mayoría de nuestros clientes a través de ventas B2B directas, demostraciones guiadas del producto y referidos dentro del sector de distribución de alimentos.
 
 **Suposiciones sobre usuarios y comportamiento**
 
 - La coordinación comercial adoptará una herramienta nueva si reduce pasos manuales y hace visibles stock, crédito y estado del pedido.
 - El cliente comercial usará un portal B2B si este es más claro que el canal informal y mantiene opciones de soporte humano.
-- Nexa será su herramienta operativa principal durante su jornada laboral para revisar disponibilidad de productos perecibles, registrar compras y confirmar entregas.
+- Nexa podría convertirse en una herramienta operativa frecuente durante la jornada laboral para revisar disponibilidad de productos perecibles, registrar compras y consultar el avance de sus pedidos.
 - Los perfiles administrativos y clientes lo usarán preferentemente desde navegadores web en computadoras o tablets, mientras que el personal de despacho lo utilizará desde navegadores móviles en ruta.
 
 **Suposiciones de solución y alcance**
@@ -165,7 +165,7 @@ Cada problem statement articula un dominio de fricción, un segmento afectado, u
 
 **Adopción del comprador**
 
-- Creemos que [ofrecer un portal B2B de autogestión con catálogo y disponibilidad real] logrará [una mayor autonomía en los compradores comerciales mayoristas y minoristas].
+- Creemos que [ofrecer un portal B2B de autogestión con catálogo y disponibilidad consultable] logrará [una mayor autonomía en los compradores comerciales mayoristas y minoristas].
 - Sabremos que hemos tenido éxito cuando [al menos el 40% de nuestros clientes recurrentes empiecen a realizar sus pedidos directamente por la plataforma en lugar de usar canales informales].
 
 #### 1.2.2.4. Lean UX Canvas
@@ -184,4 +184,3 @@ Cada problem statement articula un dominio de fricción, un segmento afectado, u
 
 ---
 El proceso Lean UX anterior permitió identificar, desde la perspectiva de la solución, tres perfiles de usuario con fricciones diferenciadas: quien captura el pedido (Segmento 1), quien organiza la operación interna (Segmento 2) y quien abastece su negocio como comprador recurrente (Segmento 3). Esta distinción no es intuitiva ni arbitraria: se desprende directamente de la forma en que el flujo del pedido distribuye responsabilidades a lo largo de la cadena comercial.
-

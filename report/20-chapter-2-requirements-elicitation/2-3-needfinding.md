@@ -24,7 +24,7 @@ La tabla resume la relación entre evidencia cualitativa, arquetipo sintetizado 
 
 #### User Task Matrix: Frecuencia e Importancia por Arquetipo
 
-| Tareas del Mundo Real                                     | Valeria (S1: Comercial) |             | Roberto (S2: Logística) |             | Hilda (S3: Bodeguera) |             | 
+| Tareas del Mundo Real                                     | Valeria (S1: Comercial) |             | Roberto (S2: Logística) |             | Comprador B2B (S3) |             |
 |:----------------------------------------------------------|:------------------------|:------------|:------------------------|:------------|:----------------------|:------------|
 |                                                           | Frecuencia              | Importancia | Frecuencia              | Importancia | Frecuencia            | Importancia |
 | **Revisar lista de precios y stock disponible**           | Alta                    | Alta        | Media                   | Alta        | Alta                  | Alta        |
@@ -32,7 +32,7 @@ La tabla resume la relación entre evidencia cualitativa, arquetipo sintetizado 
 | **Revisar deudas y límite de crédito del comprador**      | Alta                    | Alta        | -                       | -           | Baja                  | Media       |
 | **Controlar fechas de caducidad de la mercadería**        | Media                   | Alta        | Alta                    | Alta        | Alta                  | Alta        |
 | **Preparar y organizar la carga física para el reparto**  | -                       | -           | Alta                    | Alta        | -                     | -           |
-| **Averiguar la ubicación y hora de llegada del camión**   | Alta                    | Media       | Alta                    | Alta        | Alta                  | Alta        |
+| **Consultar avance o momento estimado de entrega**        | Alta                    | Media       | Alta                    | Alta        | Alta                  | Alta        |
 | **Verificar y dar conformidad a la mercadería entregada** | -                       | -           | Alta                    | Alta        | Alta                  | Alta        |
 
 > *Nota:* Análisis de la carga de tareas manuales distribuidas a lo largo de la cadena de suministro refrigerada. Frecuencia e importancia determinadas mediante el análisis cualitativo de las entrevistas (Needfinding). Elaboración propia.
@@ -67,8 +67,8 @@ El recorrido del As-Is Scenario Map se estructura en seis etapas operativas, ali
 | **2. Captura del pedido** | S1: Coord. Comercial, S3: Compradores B2B | El pedido entra por WhatsApp, audio, foto de lista o llamada. S1 transcribe e interpreta al ERP/Excel. | Transcripción manual, ambigüedad de códigos, doble digitación, stock no confirmado en tiempo real. | Presión, retrabajo, miedo a equivocarse al transcribir. | Formulario estructurado con validación de SKU, precio, stock y crédito en un solo paso. |
 | **3. Validación de stock, crédito y FEFO** | S1: Coord. Comercial, S2: Jefatura Logística (ej. Roberto) | S1 consulta stock en ERP y por teléfono a almacén; revisa crédito en módulo separado. S2 confirma por lote/vencimiento. | Stock desactualizado en ERP, crédito fragmentado, rotación FEFO/FIFO coordinada verbalmente. | Desconfianza del sistema, interrupciones constantes entre áreas.                  | Vista única de stock real, crédito disponible y lotes priorizados por vencimiento. |
 | **4. Preparación y picking en almacén** | S2: Almacén y Jefatura Logística | Se imprime guía de remisión, se arman cajas/pallets manualmente, se valida visualmente temperatura y fecha. | Errores de picking, lote incorrecto, ruptura de cadena de frío no registrada, quiebres de stock descubiertos tarde. | Estrés por el tiempo, reclamos posteriores, riesgo de mermas.                      | Lista de picking digital con lote/vencimiento sugerido y checklist de temperatura integrado. |
-| **5. Despacho y tránsito** | S2: Jefatura logística | Cargan vehículo, salen con guía física, coordinan ruta por teléfono; el cliente llama a ventas para saber ETA. | "Ceguera logística": sin ETA visible para el cliente, sin trazabilidad en ruta, llamadas interrumpen al conductor. | Cansancio, llamadas invasivas cruzadas, ansiedad del cliente final.                  | ETA compartido, seguimiento de ruta ligero y registro mínimo de temperatura |
-| **6. Entrega y cierre** | S2: Jefatura logística, S3: Compradores B2B | Descarga, conteo manual, firma en guía física manchada o arrugada; reclamos por cantidades o vencimientos. | Cierre sin evidencia digital, disputas difíciles de resolver sobre quién rompió la cadena de frío, trazabilidad nula. | Frustración, desconfianza, reclamos post-entrega que afectan cobranzas.                     | Prueba de entrega digital (POD) con captura de firma, fotos, registro de temperatura y motivos de rechazo. |
+| **5. Despacho y tránsito** | S2: Jefatura logística | Cargan vehículo, salen con guía física, coordinan ruta por teléfono; el cliente llama a ventas para conocer el avance. | "Ceguera logística": sin estado visible para el cliente, sin trazabilidad operativa suficiente, llamadas interrumpen al conductor. | Cansancio, llamadas invasivas cruzadas, ansiedad del cliente final.                  | Estado compartido de despacho y registro operativo mínimo. |
+| **6. Entrega y cierre** | S2: Jefatura logística, S3: Compradores B2B | Descarga, conteo manual, firma en guía física manchada o arrugada; reclamos por cantidades o vencimientos. | Cierre sin evidencia digital, disputas difíciles de resolver sobre quién rompió la cadena de frío, trazabilidad nula. | Frustración, desconfianza, reclamos post-entrega que afectan cobranzas.                     | Evidencia de conformidad de entrega como capacidad planificada del flujo. |
 
 Estos puntos no se presentan como funciones implementadas de Nexa en su primera versión, sino como el mapa general de oportunidades que el producto pretende atacar mediante incrementos. La prioridad inicial será resolver la captura estructurada del pedido y devolver la visibilidad de estado (trazabilidad) entre el Segmento 1 (Ventas), el Segmento 2 (Logística) y el Segmento 3 (Comprador).
 
@@ -82,10 +82,8 @@ A continuación, se presentan los Empathy Maps desarrollados para cada segmento 
 
 *Empathy Map — Segmento 2: Despacho y Entrega*
 ![Empathy Map 2](../assets/images/empathy-map-2.png)
-> *Nota:* Exploración del entorno laboral y necesidades de soporte del personal en ruta. Elaboración propia.
+> *Nota:* Exploración del entorno laboral y necesidades de soporte de la jefatura logística y coordinación operativa. Elaboración propia.
 
 *Empathy Map — Segmento 3: Cliente Comercial B2B*
 ![Empathy Map 3](../assets/images/empathy-map-3.png)
-> *Nota:* Identificación de motivadores extrínsecos e intrínsecos para la digitalización del bodeguero. Elaboración propia.
-
-
+> *Nota:* Identificación de motivadores extrínsecos e intrínsecos para la digitalización del comprador comercial B2B. Elaboración propia.

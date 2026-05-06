@@ -58,7 +58,7 @@ El EventStorming se construyó como un ejercicio de síntesis del dominio a part
 | Entrega cerrada con evidencia | Chofer de reparto, cliente comercial, supervisión comercial / operación | El cierre débil deja reclamos abiertos y baja trazabilidad del servicio |
 | Pedido cancelado antes de despacho | Coordinación comercial, operación | La cancelación exige recuperar continuidad operativa y evitar compromisos inconsistentes |
 
-### ***2.4.4. Pain points y restricciones operativas identificadasv
+### ***2.4.4. Pain points y restricciones operativas identificadas***
 
 *Pain points y restricciones operativas identificadas*
 
@@ -82,9 +82,9 @@ A partir de los eventos y los pain points identificados, el Big Picture permite 
 | `ValidarPedido` (Segmento 1 / Segmento 2) | `PedidoValidado` o `PedidoBloqueado` | Si el stock real difiere del reservado, se notifica a coordinación y se re-valida | `VistaDeCréditoYMorosidad`, `StockRealPorSKU` |
 | `ConfirmarPedido` (Segmento 1) | `PedidoConfirmado` | Se genera orden de preparación y se notifica al comprador (Segmento 3) | `EstadoDelPedidoParaCliente` |
 | `PrepararPedido` (Segmento 2 — Almacén) | `PedidoEnPreparación`, `LoteAsignado` | Política FEFO: sugerir lote con vencimiento más próximo apto | `ListaDePickingFEFO` (SKU, lote, vencimiento, ubicación) |
-| `DespacharPedido` (Segmento 2 — Despacho) | `PedidoDespachado` | Se inicia el seguimiento de ruta y se habilita ETA para el cliente | `HojaDeRuta`, `ETAParaCliente` |
+| `DespacharPedido` (Segmento 2 — Despacho) | `PedidoDespachado` | Se actualiza el estado operativo de la entrega y se reduce la dependencia de llamadas | `HojaDeRuta`, `EstadoDeEntregaParaCliente` |
 | `RegistrarIncidenciaDeRuta` (Segmento 2) | `IncidenciaDeRutaRegistrada` | Notificación automática a coordinación comercial y al cliente | `BitácoraDeIncidenciasPorPedido` |
-| `CerrarEntrega` (Segmento 2) | `EntregaCerradaConEvidencia` | Se cierra el pedido y se archiva la evidencia de entrega (POD) | `PruebaDeEntrega` (firma, foto, temperatura, hora) |
+| `CerrarEntrega` (Segmento 2) | `EntregaCerradaConEvidencia` | Se cierra el pedido y se registra evidencia mínima de conformidad | `EvidenciaDeEntrega` |
 | `CancelarPedido` (Segmento 1 / Segmento 3) | `PedidoCancelado` | Liberación automática de stock reservado y ajuste de crédito | `EstadoDelPedidoParaCliente` |
 
 Los comandos expresan la intención del actor; los eventos confirman que el estado efectivamente cambió; las políticas capturan las reacciones automáticas que el dominio debe sostener (reservas, validaciones, notificaciones, FEFO, liberación de stock); y los read models son las vistas consolidadas que permiten al Segmento 1, al Segmento 2 y al Segmento 3 decidir con información consistente. Juntos, cierran la narrativa del Big Picture como una cadena de *intención → hecho → reacción → visibilidad*, no como pantallas aisladas.
@@ -109,4 +109,3 @@ Los comandos expresan la intención del actor; los eventos confirman que el esta
 Este modelado refuerza dos ideas centrales del proyecto: el problema principal no está en un único “módulo” aislado, sino en la transición entre captura, validación, disponibilidad, despacho y cierre; y las restricciones operativas del dominio siguen siendo decisivas para definir reglas y criterios de funcionamiento a lo largo del flujo.
 
 La principal contribución del EventStorming al capítulo no es solo ordenar nombres de eventos, sino mostrar que el valor del sistema depende de sostener continuidad entre estados. Si el pedido cambia de mano entre actores, pero el sistema no conserva reglas, evidencia y visibilidad comunes, el problema persiste aunque existan interfaces nuevas. En ese sentido, el modelado confirma que la unidad real de diseño no es una pantalla aislada, sino el tránsito completo del pedido entre el Segmento 1, el Segmento 2, el Segmento 3 y las restricciones definidas por la operación.
-

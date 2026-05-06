@@ -334,7 +334,7 @@ Captura de sesión de entrevista. Elaboración propia.
 
 **Resumen de la Entrevista**
 
-Pedro Puente es un distribuidor cuya mayor frustración es la incertidumbre logística. Realiza pedidos por WhatsApp, pero la falta de visibilidad sobre la ETA (tiempo estimado de llegada) le impide coordinar con sus propios clientes finales. Reporta que los proveedores suelen priorizar a las grandes cadenas, dejando a los minoristas con quiebres de stock que impactan directamente en su rentabilidad.
+Pedro Puente es un distribuidor cuya mayor frustración es la incertidumbre logística. Realiza pedidos por WhatsApp, pero la falta de visibilidad sobre el momento estimado de llegada le impide coordinar con sus propios clientes finales. Reporta que los proveedores suelen priorizar a las grandes cadenas, dejando a los minoristas con quiebres de stock que impactan directamente en su rentabilidad.
 
 **Entrevistado 2**
 
@@ -461,7 +461,7 @@ El análisis de Pedro Puente y Henrry García muestra un patrón consistente: el
 **Problemas más comunes:**
 
 - **Quiebres de stock inesperados:** Ambos entrevistados reportan haber enfrentado cancelaciones o faltantes por visibilidad insuficiente del stock antes de la entrega.
-- **Opacidad del ETA (Estimated Time of Arrival):** La falta de seguimiento de ruta obliga a esperar con alta incertidumbre la llegada del pedido y dificulta preparar la recepción.
+- **Opacidad del momento de llegada:** La falta de actualización del estado de despacho obliga a esperar con alta incertidumbre la llegada del pedido y dificulta preparar la recepción.
 - **Asimetría competitiva:** En la muestra aparece la percepción de que los clientes pequeños quedan en desventaja frente a cuentas grandes cuando el stock o la capacidad de entrega se tensionan.
 
 **Hallazgos clave para el Segmento 3:**
@@ -472,12 +472,12 @@ El análisis de Pedro Puente y Henrry García muestra un patrón consistente: el
 
 **Implicancias de diseño operativo para el flujo de despacho y entrega**
 
-El tramo final del flujo del pedido —despacho, seguimiento, incidencia y cierre con evidencia— forma parte de las responsabilidades del Segmento 2 (Jefatura logística y coordinación operativa). A partir de los hallazgos sobre visibilidad de entrega, necesidad de ETA comunicable, cierre defendible y carga operativa durante la ruta, se identifican las siguientes implicancias de diseño que complementan la caracterización del Segmento 2.
+El tramo final del flujo del pedido —despacho, seguimiento, incidencia y cierre con evidencia— forma parte de las responsabilidades del Segmento 2 (Jefatura logística y coordinación operativa). A partir de los hallazgos sobre visibilidad de entrega, necesidad de estado comunicable, cierre defendible y carga operativa durante la ruta, se identifican las siguientes implicancias de diseño que complementan la caracterización del Segmento 2.
 
 **Evidencia que sustenta estas implicancias:**
 
 - Desde la evidencia del Segmento 2, aparece la necesidad de contar con trazabilidad documental y cierre defendible frente a incidencias.
-- Desde el Segmento 3 (compradores), aparece la necesidad de una ETA comunicable, menor opacidad del despacho y confirmación confiable de entrega.
+- Desde el Segmento 3 (compradores), aparece la necesidad de un estado de despacho comunicable, menor opacidad operativa y confirmación confiable de entrega.
 - Desde el flujo del dominio, el cierre del pedido exige estados claros, registro de incidencias y prueba de entrega, lo que forma parte del alcance operativo que el Segmento 2 debe gestionar.
 
 **Implicancias de diseño para el tramo de despacho y entrega:**
@@ -512,7 +512,7 @@ Tras el análisis detallado de los ocho perfiles levantados y de la lectura conj
 - **6 de 8 entrevistados (75%)** mencionan a WhatsApp como canal operativo principal para coordinar pedidos o urgencias logísticas.
 - **7 de 8 entrevistados (88%)** reportan fragmentación de información entre sistemas formales (ERP), hojas de cálculo y canales informales.
 - **6 de 8 entrevistados (75%)** identifican re-digitación o validaciones manuales como fuente recurrente de retrabajo.
-- **5 de 8 entrevistados (63%)** señalan falta de visibilidad logística sobre stock real, ETA o estado del pedido.
+- **5 de 8 entrevistados (63%)** señalan falta de visibilidad logística sobre stock real, avance de despacho o estado del pedido.
 - **4 de 8 entrevistados (50%)** describen inestabilidad, lentitud o cierres inesperados del software actualmente usado.
 - **8 de 8 entrevistados (100%)** expresan apertura a adoptar una herramienta digital siempre que reduzca pasos, no añada complejidad y responda en entornos móviles.
 

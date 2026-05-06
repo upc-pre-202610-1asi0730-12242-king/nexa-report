@@ -229,7 +229,7 @@ Debe garantizar cumplimiento operativo, pero muchas veces recibe información co
 
 El Segmento 2 necesita herramientas que ofrezcan visibilidad y control. Puede usar hojas de cálculo, sistemas internos, registros de inventario, grupos de mensajería y documentación física o digital. Sin embargo, cuando estos recursos no están conectados, el seguimiento del pedido se vuelve manual.
 
-Para este segmento, Nexa debe funcionar como una capa de coordinación operativa. No basta con mostrar pedidos: debe ayudar a entender qué está pendiente, qué se puede preparar, qué requiere validación y qué incidencias deben atenderse.
+Para este segmento, Nexa debe funcionar como una capa de coordinación operativa. No basta con mostrar pedidos: debe ayudar a entender qué queda por atender, qué se puede preparar, qué requiere validación y qué incidencias deben atenderse.
 
 *Tabla. Implicancias tecnológicas para el Segmento 2*
 
@@ -244,7 +244,7 @@ Para este segmento, Nexa debe funcionar como una capa de coordinación operativa
 
 ##### Plano de valor esperado
 
-El valor esperado para el Segmento 2 se relaciona con control operativo. Nexa debe permitir que la jefatura logística vea pedidos pendientes, valide disponibilidad, organice preparación, identifique incidencias y mantenga trazabilidad entre lo solicitado, lo preparado y lo comunicado.
+El valor esperado para el Segmento 2 se relaciona con control operativo. Nexa debe permitir que la jefatura logística vea pedidos por revisar, valide disponibilidad, organice preparación, identifique incidencias y mantenga trazabilidad entre lo solicitado, lo preparado y lo comunicado.
 
 *Tabla. Dolores, respuesta esperada y métricas sugeridas para el Segmento 2*
 

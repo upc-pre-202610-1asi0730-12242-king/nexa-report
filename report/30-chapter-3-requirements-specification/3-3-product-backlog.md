@@ -1,6 +1,6 @@
 ## 3.3. Product Backlog
 
-El Product Backlog de Nexa organiza las User Stories definidas en la sección 3.1 según valor de negocio, prioridad de entrega y dependencia funcional. La priorización inicia con los flujos internos implementados para coordinación comercial y jefatura logística, continúa con el portal B2B y el sitio público, y deja para menor prioridad las capacidades administrativas, de persistencia real o de evolución posterior.
+El Product Backlog de Nexa organiza las User Stories definidas en la sección 3.1 según valor de negocio, prioridad de entrega y dependencia funcional. La priorización inicia con los flujos internos priorizados para coordinación comercial y jefatura logística, continúa con el portal B2B y el sitio público, y deja para menor prioridad las capacidades administrativas, de persistencia real o de evolución posterior.
 
 La estimación utiliza la escala de **1, 2, 3, 5 y 8 Story Points**. **1 SP** representa contenido muy pequeño o información estática simple; **2 SP**, historias simples de baja interacción; **3 SP**, interacciones estándar o reglas de negocio simples; **5 SP**, flujos de varios pasos, validaciones o visibilidad entre áreas; y **8 SP**, historias complejas con trazabilidad, sincronización, continuidad, evidencia, FEFO o dependencia operativa fuerte.
 
@@ -24,12 +24,12 @@ La estimación utiliza la escala de **1, 2, 3, 5 y 8 Story Points**. **1 SP** re
 | 14 | US53 | Aplicar criterio FEFO en preparación | Como jefatura logística, quiero considerar primero los productos con vencimiento más cercano, para preparar pedidos respetando una rotación adecuada. | 5 |
 | 15 | US54 | Revisar condición de conservación del producto | Como jefatura logística, quiero consultar la condición de conservación de cada producto, para evitar preparar o despachar productos bajo condiciones incorrectas. | 5 |
 | 16 | US55 | Registrar ajuste de disponibilidad | Como jefatura logística, quiero registrar ajustes de disponibilidad cuando se detecten diferencias, para mantener la información operativa lo más confiable posible. | 8 |
-| 17 | US58 | Priorizar productos críticos del día | Como jefatura logística, quiero identificar productos que concentran riesgo operativo por baja disponibilidad, vencimiento cercano o demanda pendiente, para priorizar la revisión antes de confirmar nuevos pedidos. | 5 |
+| 17 | US58 | Priorizar productos críticos del día | Como jefatura logística, quiero identificar productos que concentran riesgo operativo por baja disponibilidad, vencimiento cercano o demanda no atendida, para priorizar la revisión antes de confirmar nuevos pedidos. | 5 |
 | 18 | US62 | Identificar pedidos listos para despacho | Como responsable de despacho, quiero identificar pedidos listos para entrega, para organizar la distribución del día con información confiable. | 5 |
 | 19 | US64 | Actualizar avance de despacho | Como responsable de despacho, quiero actualizar el avance de una entrega, para que comercial, logística y cliente conozcan el estado del pedido. | 5 |
 | 20 | US66 | Confirmar entrega con evidencia | Como responsable de despacho, quiero registrar evidencia de entrega, para respaldar que el pedido fue atendido correctamente. | 8 |
 | 21 | US68 | Consultar resumen operativo del día | Como jefatura logística, quiero consultar un resumen operativo del día, para priorizar pedidos, preparación, despacho e incidencias. | 5 |
-| 22 | US69 | Revisar pedidos por estado | Como coordinadora comercial, quiero revisar pedidos agrupados por estado, para dar seguimiento a solicitudes pendientes, aprobadas, observadas o entregadas. | 3 |
+| 22 | US69 | Revisar pedidos por estado | Como coordinadora comercial, quiero revisar pedidos agrupados por estado, para dar seguimiento a solicitudes por revisar, aprobadas, observadas o entregadas. | 3 |
 | 23 | US71 | Consultar productos con mayor movimiento | Como coordinadora comercial, quiero identificar productos con mayor movimiento, para entender mejor la demanda de clientes B2B y anticipar necesidades comerciales. | 3 |
 | 24 | US76 | Mantener estados sincronizados entre áreas | Como jefatura logística, quiero que los estados de los pedidos se mantengan actualizados para comercial y compradores, para evitar respuestas contradictorias durante la atención. | 8 |
 | 25 | US77 | Registrar trazabilidad de acciones relevantes | Como administrador, quiero que las acciones importantes queden registradas, para auditar cambios críticos en pedidos, clientes, disponibilidad o despacho. | 8 |
@@ -57,8 +57,8 @@ La estimación utiliza la escala de **1, 2, 3, 5 y 8 Story Points**. **1 SP** re
 | 47 | US09 | Identificar valor para operadores de almacenamiento frío | Como responsable de operación en frío, quiero identificar cómo Nexa apoya el control de productos sensibles, para evaluar si mejora la visibilidad sobre inventario, preparación e incidencias. | 2 |
 | 48 | US10 | Reconocer capacidades centrales antes del acceso | Como visitante comercial, quiero reconocer las capacidades centrales de Nexa antes de ingresar a la aplicación, para decidir si la solución merece una revisión más detallada. | 2 |
 | 49 | US11 | Resolver dudas frecuentes antes del contacto | Como visitante comercial, quiero consultar respuestas a dudas frecuentes, para decidir si necesito contactar al equipo o continuar evaluando Nexa por mi cuenta. | 2 |
-| 50 | US12 | Solicitar contacto comercial | Como visitante comercial, quiero enviar una solicitud de contacto con mis datos básicos, para iniciar una conversación con el equipo de King. | 3 |
-| 51 | US13 | Indicar contexto de empresa interesada | Como visitante comercial, quiero indicar el tipo de empresa o contexto operativo al que pertenezco, para que el equipo de King interprete mejor mi solicitud. | 2 |
+| 50 | US12 | Solicitar contacto comercial | Como visitante comercial, quiero enviar una solicitud de contacto con mis datos básicos, para iniciar una conversación con el equipo de Nexa. | 3 |
+| 51 | US13 | Indicar contexto de empresa interesada | Como visitante comercial, quiero indicar el tipo de empresa o contexto operativo al que pertenezco, para que el equipo de Nexa interprete mejor mi solicitud. | 2 |
 | 52 | US14 | Compartir necesidad operativa principal | Como visitante comercial, quiero describir brevemente el problema operativo que busco resolver, para que la conversación comercial se enfoque en una necesidad concreta. | 2 |
 | 53 | US15 | Evaluar acompañamiento para adopción inicial | Como representante de empresa interesada, quiero saber si Nexa contempla acompañamiento durante la adopción inicial, para evaluar si mi equipo podría empezar a usar la solución sin una transición brusca. | 2 |
 | 54 | US16 | Revisar tratamiento de datos de contacto | Como visitante comercial, quiero revisar cómo se tratarán los datos que comparto, para decidir con mayor claridad si envío una solicitud. | 2 |
@@ -70,7 +70,7 @@ La estimación utiliza la escala de **1, 2, 3, 5 y 8 Story Points**. **1 SP** re
 | 60 | US06 | Encontrar información complementaria de confianza | Como visitante comercial, quiero encontrar información complementaria sobre la empresa, contacto y condiciones básicas, para evaluar la seriedad de Nexa antes de compartir datos. | 1 |
 | 61 | US21 | Recuperar acceso a la cuenta | Como usuario autorizado, quiero recuperar el acceso a mi cuenta mediante un proceso controlado, para volver a usar Nexa sin depender de coordinaciones informales. | 5 |
 | 62 | US24 | Entender estado de cuenta no disponible | Como usuario autorizado, quiero saber cuándo mi cuenta requiere atención, para entender por qué no puedo continuar y qué acción corresponde. | 3 |
-| 63 | US45 | Consultar pedidos pendientes de revisión | Como jefatura logística, quiero consultar los pedidos pendientes de revisión, para organizar la validación operativa sin depender de mensajes dispersos. | 5 |
+| 63 | US45 | Consultar pedidos por revisar | Como jefatura logística, quiero consultar los pedidos por revisar, para organizar la validación operativa sin depender de mensajes dispersos. | 5 |
 | 64 | US46 | Revisar detalle operativo de un pedido | Como jefatura logística, quiero revisar el detalle completo de un pedido, para decidir si puede prepararse, observarse o rechazarse. | 5 |
 | 65 | US47 | Cambiar estado de revisión del pedido | Como jefatura logística, quiero actualizar el estado de revisión de un pedido, para que coordinación comercial y comprador sepan si la solicitud avanza, requiere ajuste o no puede atenderse. | 5 |
 | 66 | US48 | Registrar motivo de observación o rechazo | Como jefatura logística, quiero registrar el motivo por el que un pedido queda observado o rechazado, para que comercial pueda comunicarlo al cliente con claridad. | 5 |
@@ -85,7 +85,7 @@ La estimación utiliza la escala de **1, 2, 3, 5 y 8 Story Points**. **1 SP** re
 | 75 | US72 | Administrar usuarios internos | Como administrador, quiero registrar y mantener usuarios internos autorizados, para que cada persona trabaje con una cuenta identificable dentro de Nexa. | 5 |
 | 76 | US73 | Asignar responsabilidades por rol | Como administrador, quiero asignar responsabilidades según rol, para que cada usuario acceda solo a funciones necesarias para su trabajo. | 5 |
 | 77 | US74 | Mantener preferencias básicas del perfil | Como usuario interno autorizado, quiero actualizar información básica de mi perfil, para mantener datos de contacto y preferencias de trabajo actualizadas. | 3 |
-| 78 | US78 | Registrar oportunidades de mejora desde validación | Como miembro del equipo de King, quiero registrar oportunidades de mejora encontradas durante validaciones con usuarios, para priorizar ajustes futuros sin perder trazabilidad del aprendizaje. | 3 |
+| 78 | US78 | Registrar oportunidades de mejora desde validación | Como miembro del equipo de Nexa, quiero registrar oportunidades de mejora encontradas durante validaciones con usuarios, para priorizar ajustes futuros sin perder trazabilidad del aprendizaje. | 3 |
 
 Total: 78 User Stories.
 
