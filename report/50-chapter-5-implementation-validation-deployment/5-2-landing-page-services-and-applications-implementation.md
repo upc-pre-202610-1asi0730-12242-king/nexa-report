@@ -586,6 +586,8 @@ Durante la revisión del rango 25 de abril al 5 de mayo de 2026, identificamos 2
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
+Para TB1, la integración funcional de la Web Application se validó mediante una Fake API con datos mock, lo que permitió comprobar consumo de datos, navegación y estados principales sin presentar aún el servicio RESTful definitivo. La documentación OpenAPI/Swagger corresponde al alcance de Web Services cuando se implemente el backend interno en ASP.NET Core.
+
 En TB1, la evidencia de servicios es preparatoria y simulada. La webapp consume datos mediante Fake API/JSON Server y servicios cliente separados por contexto. Esta decisión permite validar flujos sin afirmar servicios productivos.
 
 | Capa | Estado TB1 | Evidencia | Nota de alcance |
