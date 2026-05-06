@@ -188,7 +188,7 @@ Además de las capturas integradas en el informe, el archivo audiovisual origina
 
 *Evidencia de entrevista: Lorena Silva*
 
-![Lorena](../assets/images/pruebas-entrevistas/Lorena.jpeg)
+![Lorena](../assets/images/interviews/lorena-silva.jpeg)
 
 Captura de sesión de entrevista. Elaboración propia.
 
@@ -211,7 +211,7 @@ A nivel técnico, reporta fricciones severas con el sistema actual (Fontana), el
 
 *Evidencia de entrevista: Cinthia Levano*
 
-![Cinthia](../assets/images/pruebas-entrevistas/Paola.jpeg)
+![Cinthia](../assets/images/interviews/cinthia-levano.jpeg)
 
 Captura de sesión de entrevista. Elaboración propia.
 
@@ -234,7 +234,7 @@ Cinthia enfatiza la necesidad de simplicidad. Describe su flujo actual como una 
 
 *Evidencia de entrevista: Celia Pérez*
 
-![Celia](../assets/images/pruebas-entrevistas/Celia.jpeg)
+![Celia](../assets/images/interviews/celia-perez.jpeg)
 
 Captura de sesión de entrevista. Elaboración propia.
 
@@ -259,7 +259,7 @@ Su testimonio confirma que, para el personal en ruta, la estabilidad de la conex
 
 *Evidencia de entrevista: Hilda Litano*
 
-![Hilda](../assets/images/pruebas-entrevistas/Hilda.jpeg)
+![Hilda](../assets/images/interviews/hilda-litano.jpeg)
 
 Captura de sesión de entrevista. Elaboración propia.
 
@@ -280,7 +280,7 @@ Hilda Litano supervisa procesos de importación y cumplimiento sanitario. Su enf
 
 *Evidencia de entrevista: Edith Taype*
 
-![Edith](../assets/images/pruebas-entrevistas/Edith.jpeg)
+![Edith](../assets/images/interviews/edith-taype.jpeg)
 
 Captura de sesión de entrevista. Elaboración propia.
 
@@ -301,7 +301,7 @@ Edith Taype opera en el punto de venta (supermercados), donde la manipulación y
 
 *Evidencia de entrevista: Jesica Sandoval*
 
-![Jesica](../assets/images/pruebas-entrevistas/Jesica.jpeg)
+![Jesica](../assets/images/interviews/jesica-sandoval.jpeg)
 
 Captura de sesión de entrevista. Elaboración propia.
 
@@ -324,7 +324,7 @@ Jesica Sandoval, supervisora de ventas Horeca, subraya el riesgo de la transcrip
 
 *Evidencia de entrevista: Pedro Puente*
 
-![Pedro](../assets/images/pruebas-entrevistas/Pedro.jpeg)
+![Pedro](../assets/images/interviews/pedro-puente.jpeg)
 
 Captura de sesión de entrevista. Elaboración propia.
 
@@ -345,7 +345,7 @@ Pedro Puente es un distribuidor cuya mayor frustración es la incertidumbre log�
 
 *Evidencia de entrevista: Henrry García*
 
-![Henry](../assets/images/pruebas-entrevistas/Henry.jpeg)
+![Henry](../assets/images/interviews/henrry-garcia.jpeg)
 
 Captura de sesión de entrevista. Elaboración propia.
 
@@ -525,4 +525,3 @@ graph TD
 > *Nota:* Mapeo analítico construido a partir de la recurrencia de temas mencionados en las entrevistas; los porcentajes deben leerse como aproximaciones de frecuencia dentro de la muestra, no como mediciones estadísticas del mercado. Elaboración propia.
 
 En conclusión, Nexa no solo debe resolver la toma de pedidos, sino articular de forma consistente los tres segmentos del producto: quien captura y valida el pedido (Segmento 1: Vendedoras y coordinación comercial), quien coordina logística, inventario, preparación y despacho (Segmento 2: Jefatura logística y coordinación operativa), y quien se abastece y necesita previsibilidad (Segmento 3: Compradores comerciales B2B). Las reglas, restricciones y criterios de control del dominio acompañan ese flujo completo, y la segmentación del informe se organiza en esos tres tramos del producto.
-
