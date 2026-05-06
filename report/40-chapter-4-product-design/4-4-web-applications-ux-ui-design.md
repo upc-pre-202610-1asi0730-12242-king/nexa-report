@@ -85,126 +85,98 @@ El detalle del pedido organiza la historia completa de una orden en una sola sup
 
 ### 4.4.2. Web Applications Wireflow Diagrams.
 
-Un wireflow conecta pantallas y estados de UI relevantes según un user goal concreto. Se diferencia del diagrama de secuencia porque no describe intercambio técnico de mensajes entre objetos: describe cómo el usuario se mueve entre pantallas y estados de decisión como resultado de su interacción.
+Un wireflow conecta pantallas, decisiones y estados de UI según un user goal concreto. En esta sección, los wireflows documentan cambios de pantalla, alternativas y restricciones de rol para las tres superficies principales: S1 comercial, S2 logística y S3 portal B2B.
 
-#### Wireflow consolidado — tres superficies y personas
+#### Wireflow consolidado — S1, S2 y S3
 
-El diagrama siguiente muestra la continuidad de pantallas por perfil de usuario desde el login hasta el cierre del ciclo operativo de cada segmento.
+El diagrama siguiente muestra la continuidad de pantallas por perfil de usuario desde el acceso inicial hasta el cierre del objetivo principal de cada segmento.
 
 ```mermaid
 flowchart LR
-    L["Login screen"] --> Role{"Profile selected"}
-    Role -->|"Valeria — S1"| S1D["Commercial dashboard"]
-    S1D --> C1["Clients screen"]
-    C1 --> C2["Client detail drawer"]
-    C2 --> O1["Create assisted order"]
-    O1 --> O2["Order detail"]
-    O2 --> O3["Orders list"]
-    O3 --> R1["Commercial reports"]
-    Role -->|"Roberto — S2"| S2D["Logistics dashboard"]
-    S2D --> I1["Inventory overview"]
-    I1 --> I2["Lot detail drawer"]
-    I2 --> D1["Dispatch board"]
-    D1 --> D2["POD mock modal"]
-    D2 --> R2["Operational reports"]
-    Role -->|"Lucía — S3"| P1["Portal home"]
-    P1 --> P2["Portal catalog"]
-    P2 --> P3["Cart / order submission"]
-    P3 --> P4["Portal orders"]
+    A["Start: user opens Nexa Webapp"] --> B["Login screen: choose demo profile"]
+    B --> C{"Profile selected?"}
+    C -- "Invalid credentials" --> X["Show login error and stay on login"]
+    C -- "Valeria - Coordinación comercial" --> S1D["S1 Dashboard comercial"]
+    S1D --> S1Clients["Clientes: review client list"]
+    S1Clients --> S1Detail["Client detail drawer: RUC, contact, address, condition"]
+    S1Detail --> S1Order["Create assisted order"]
+    S1D -. "commercial role guard hides inventory and dispatch" .-> S1Blocked["Blocked: inventory or dispatch direct URL redirects"]
+    C -- "Roberto - Jefatura logística" --> S2D["S2 Dashboard logística"]
+    S2D --> S2Inventory["Inventory overview: stock and warehouses"]
+    S2Inventory --> S2Lots["Lot list and FEFO indicators"]
+    S2Lots --> S2Detail["Lot detail drawer: expiry, stock, warehouse"]
+    S2D -. "logistics role has extended access" .-> S2Access["Can access clients, orders, inventory, dispatch, reports"]
+    C -- "Lucía - Comprador B2B" --> S3Home["Portal home"]
+    S3Home --> S3Catalog["Portal catalog"]
+    S3Catalog --> S3Cart["Cart / order submission"]
+    S3Cart --> S3Orders["Portal orders"]
 ```
 
-Elaboración propia. El wireflow parte de la selección de perfil y ramifica en tres recorridos de pantallas según rol: coordinación comercial (S1), logística interna (S2) y comprador B2B (S3).
+Elaboración propia. Este wireflow es de nivel pantalla. Separa los roles internos Ops del comprador del portal, incluye error de login y estados de protección por rol, y mantiene S1/S2 alineados al tablero FigJam de recorrido operativo. S3 se incorpora como flujo comprador de planificación para la superficie portal.
 
 #### Tabla de wireflows por user goal
 
-| Wireflow | User goal | Persona | Visual evidence |
+| Wireflow | Persona | User goal | Evidencia visual |
 |---|---|---|---|
-| S1 Commercial Assisted Order | Crear y confirmar un pedido asistido validando cliente y stock | Valeria / Coordinación comercial | Pending: export from [FigJam board](https://www.figma.com/board/LjIjtyfoOpeYa5OCSJUYpD/Nexa-Ops-S1-S2-Userflow-Wireflow?node-id=0-1) |
-| S2 Logistics Operations | Revisar inventario FEFO, coordinar despacho y cerrar entrega con evidencia | Roberto / Jefatura logística | Pending: export from [FigJam board](https://www.figma.com/board/LjIjtyfoOpeYa5OCSJUYpD/Nexa-Ops-S1-S2-Userflow-Wireflow?node-id=0-1) |
-| S3 B2B Buyer Portal | Explorar catálogo, enviar pedido y consultar estado | Lucía / Comprador B2B | Pending: export from Figma portal prototype |
+| S1 Commercial Assisted Order | Valeria / Coordinación comercial | Crear y rastrear un pedido asistido validando condición del cliente y disponibilidad de producto | Mermaid en Markdown + mockups S1 seleccionados |
+| S2 Logistics Operations | Roberto / Jefatura logística | Monitorear stock y riesgo FEFO, coordinar despacho y cerrar POD mock | Mermaid en Markdown + mockups S2 seleccionados |
+| S3 B2B Buyer Portal | Lucía / Comprador B2B | Explorar catálogo, enviar pedido y consultar estado | Mermaid en Markdown como flujo portal de planificación |
 
-<!-- TODO: insert FigJam S1 wireflow export as image -->
-<!-- TODO: insert FigJam S2 wireflow export as image -->
-<!-- TODO: insert Figma S3 portal wireflow export as image -->
+La evidencia visual se documenta en Markdown mediante notación `flowchart` y se mantiene en el tablero FigJam como artefacto colaborativo de diseño. El reporte incluye la estructura completa del flujo y mockups representativos; no replica todas las pantallas del tablero como galería.
 
 ### 4.4.3. Web Applications Mock-ups.
 
-Los mock-ups de Sprint 1 desarrollan en alta fidelidad la lógica probada en wireframes de diseño. Su función es validar jerarquía visual, densidad informativa, estados y patrones definitivos de interfaz. Estas capturas corresponden a la fase de diseño en Figma y pueden diferir en detalles del estado actual de la webapp; la evidencia de implementación se documenta en 4.4.5.
+Los mockups representan pantallas seleccionadas de alta fidelidad para la dirección actual de la webapp. Se agrupan por segmento y user goal para mostrar evidencia visual sin convertir el capítulo en una galería extensa. El tablero completo contiene más pantallas; este reporte incluye solo vistas representativas que sostienen los recorridos S1 y S2, mientras que S3 permanece documentado como flujo portal de planificación en esta iteración.
 
-| Grupo de mockups | Decisión | Razón |
-|---|---|---|
-| Landing Page mockups | Se mantienen en 4.3 | Corresponden a la superficie pública; no son webapp |
-| Webapp Sprint 1 mockups | Se mantienen como design-stage | Representan el diseño Figma antes de TB1; válidos como evidencia de diseño |
-| Screenshots TB1 | Documentados en 4.4.5 | Reflejan la implementación desplegada con datos mock |
-| Exports FigJam/Figma finales | Pendiente | Se incorporarán cuando estén disponibles como imagen exportada |
+| Mockup group | Segment | User goal | Included screens | Purpose |
+|---|---|---|---|---|
+| S1 Commercial assisted order | Valeria / S1 | Crear y seguir un pedido asistido | Login, dashboard, cliente, pedido, detalle, reportes | Evidenciar captura comercial guiada, validaciones y trazabilidad |
+| S2 Logistics operations | Roberto / S2 | Controlar inventario, despacho y POD mock | Dashboard, inventario, lote, despacho, POD mock, reportes | Evidenciar monitoreo FEFO, operación logística y cierre simulado |
+| S3 Portal buyer flow | Lucía / S3 | Comprar desde portal B2B | Flujo Mermaid de portal | Documentar alcance comprador sin inventar capturas no disponibles |
 
-#### Dashboard Operativo Total Control
+#### S1 — Commercial assisted order mockups
 
-![Mock-up Dashboard Operativo Total Control](../assets/images/webapp-mockups/webapp-dashboard-operativo-total-control.png)
+![S1 Login Valeria selected](../assets/images/webapp-mockups-current/s1-01-login-valeria-selected.png)
 
-La versión de alta fidelidad del dashboard confirma que la pantalla puede operar como centro de mando del sistema. KPIs, alertas y bloques operativos comparten una composición que privilegia lectura rápida, con énfasis en desviaciones críticas y accesos inmediatos. Visualmente, esta vista sostiene la promesa de centralización que en el proceso actual se pierde entre múltiples herramientas.
+![S1 Commercial dashboard](../assets/images/webapp-mockups-current/s1-02-dashboard-commercial.png)
 
-#### B2B Orders Hub
+![S1 Client detail drawer](../assets/images/webapp-mockups-current/s1-04-client-detail-drawer.png)
 
-![Mock-up B2B Orders Hub](../assets/images/webapp-mockups/webapp-b2b-orders-hub.png)
+![S1 Assisted order products step](../assets/images/webapp-mockups-current/s1-07-assisted-order-products-step.png)
 
-El mock-up del hub de órdenes transforma la bandeja de pedidos en una vista ejecutiva y accionable. El uso de estados, filtros y tarjetas permite identificar con rapidez qué pedidos requieren seguimiento, corrección o continuidad. Su principal aporte es hacer visible que el pedido deja de ser un mensaje informal y se convierte en un objeto gestionable.
+![S1 Order detail created by Valeria](../assets/images/webapp-mockups-current/s1-10-order-detail-created-by-valeria.png)
 
-#### Creación de Pedido Asistido
+![S1 Commercial reports](../assets/images/webapp-mockups-current/s1-12-commercial-reports.png)
 
-![Mock-up Creación de Pedido Asistido](../assets/images/webapp-mockups/webapp-creacion-pedido-asistido.png)
+Elaboración propia. Este grupo muestra el recorrido comercial desde la selección de perfil hasta la evidencia de pedido y reportes. Las pantallas se eligieron porque cubren los puntos decisivos del user goal: acceso por rol, lectura de estado, revisión de cliente, armado de pedido, trazabilidad por creador y análisis comercial.
 
-Esta pantalla demuestra cómo la captura asistida puede combinar contexto de cliente, catálogo y validación sin saturar al usuario. La alta fidelidad deja ver mejor la separación entre datos del cliente, líneas de pedido y retroalimentación del sistema, reduciendo el riesgo de error. El resultado esperado es una experiencia comercial guiada, pero todavía ágil.
+#### S2 — Logistics operations mockups
 
-#### Inventory Management
+![S2 Logistics dashboard](../assets/images/webapp-mockups-current/s2-02-dashboard-logistics.png)
 
-![Mock-up Inventory Management](../assets/images/webapp-mockups/webapp-inventory-management.png)
+![S2 Inventory overview](../assets/images/webapp-mockups-current/s2-03-inventory-overview.png)
 
-En alta fidelidad, la gestión de inventario se vuelve una vista de control operacional con mayor riqueza de lectura: disponibilidad, clasificación, indicadores y señales de riesgo. Esto es importante porque el inventario en Nexa no es un backoffice aislado, sino una pieza que alimenta la promesa comercial y la trazabilidad del pedido. El mock-up refuerza esa conexión entre stock visible y decisión de negocio.
+![S2 Lot detail drawer](../assets/images/webapp-mockups-current/s2-05-lot-detail-drawer.png)
 
-#### Confirmación de Despacho & Asignación de Flota
+![S2 Dispatch board](../assets/images/webapp-mockups-current/s2-07-dispatch-board.png)
 
-![Mock-up Confirmación de Despacho y Asignación de Flota](../assets/images/webapp-mockups/webapp-confirmacion-despacho-asignacion-flota.png)
+![S2 POD mock modal](../assets/images/webapp-mockups-current/s2-09-pod-mock-modal.png)
 
-La pantalla de despacho aterriza el momento donde la orden deja el estado interno y pasa a ejecución física. La composición hace visibles unidades, asignación y condiciones de salida en una misma vista, reduciendo dependencias externas para destrabar la operación. Así, el mock-up traduce una coordinación históricamente manual en una acción estructurada dentro del sistema.
+![S2 Operational reports](../assets/images/webapp-mockups-current/s2-12-operational-reports.png)
 
-#### FEFO Intelligence & Analytics
+Elaboración propia. Este grupo resume el recorrido logístico desde monitoreo hasta cierre simulado de entrega. Las pantallas seleccionadas cubren dashboard, inventario, lote, despacho, POD mock y reportes operativos, que son las evidencias visuales más representativas del flujo S2.
 
-![Mock-up FEFO Intelligence & Analytics](../assets/images/webapp-mockups/webapp-fefo-intelligence-analytics.png)
+#### S3 — Portal buyer planning flow
 
-La analítica FEFO muestra cómo Nexa podría convertir vencimientos y rotación en una capa de inteligencia operativa. La alta fidelidad ayuda a leer prioridades, tendencias y alertas sin necesidad de interpretar datos dispersos. Su valor argumental es demostrar que la plataforma no solo registra inventario, sino que ayuda a protegerlo.
-
-#### Active Shipments & Routes
-
-![Mock-up Active Shipments & Routes](../assets/images/webapp-mockups/webapp-active-shipments-routes.png)
-
-El seguimiento en ruta mantiene el mismo principio del wireframe, pero ahora con mayor densidad visual y mejor señalización de estados. Esta vista está orientada a monitoreo vivo, por lo que la jerarquía de colores, incidentes y estados en tránsito cumple una función operativa clara. El mock-up respalda la idea de visibilidad compartida durante despacho.
-
-#### Cierre de Entrega (POD) & Certificación
-
-![Mock-up Cierre de Entrega POD y Certificación](../assets/images/webapp-mockups/webapp-cierre-entrega-pod-certificacion.png)
-
-La captura final del cierre muestra cómo la evidencia de entrega se integra a una interfaz formal y defendible. Firma, conformidad y certificación aparecen como parte del flujo normal y no como anexos improvisados. Esto fortalece la propuesta de Nexa en un punto donde hoy suelen aparecer reclamos, debilidad documental y cierre inconsistente.
-
-#### Inventory Detail Premium Artisan Organic Milk
-
-![Mock-up Inventory Detail Premium Artisan Organic Milk](../assets/images/webapp-mockups/webapp-inventory-detail-premium-artisan-organic-milk.png)
-
-Esta pantalla profundiza en un producto concreto para mostrar que el sistema puede bajar de la visión agregada a la condición específica del SKU. La alta fidelidad expone mejor variables como temperatura, capacidad, riesgo y vencimiento, todas relevantes para cadena de frío. Su inclusión es importante porque demuestra que el diseño no se queda en tableros generales.
-
-#### Order Detail & Traceability
-
-![Mock-up Order Detail & Traceability](../assets/images/webapp-mockups/webapp-order-detail-traceability.png)
-
-El detalle de trazabilidad en alta fidelidad reconstruye el historial del pedido como una narrativa operativa completa. La vista combina eventos, estado, evidencia y contexto de la orden, reforzando la idea de continuidad entre captura, despacho y cierre. En términos de valor, esta pantalla es una de las más importantes para sostener trazabilidad y respuesta ante incidencias.
+El portal B2B se documenta como flujo comprador de planificación. En esta entrega no se agregan capturas S3 porque el ZIP de mockups recibido contiene material S1 y S2, no pantallas portal. Para evitar rutas inventadas, la evidencia visual del portal queda representada por el user flow Mermaid de Lucía y por su separación explícita respecto a los roles internos Ops.
 
 ### 4.4.4. Web Applications User Flow Diagrams.
 
-Un user flow se enfoca en las decisiones y caminos que sigue una persona para completar un user goal. Los diagramas siguientes usan notación `flowchart` e incluyen happy path y rutas alternativas. No se usan diagramas de secuencia: éstos describen intercambio técnico entre objetos, no recorridos de usuario.
+Un user flow se enfoca en las decisiones y caminos que sigue una persona para completar un user goal. Los diagramas siguientes usan notación `flowchart`, declaran persona y meta, e incluyen happy path y rutas alternativas.
 
 #### User Flow S1 — Coordinación comercial: pedido asistido
 
-**User Goal:** Como Valeria, coordinadora comercial (S1), quiero crear y confirmar un pedido asistido validando la condición del cliente y la disponibilidad de producto, de forma que el pedido quede trazable desde el origen.
+**User Goal:** As Valeria, a commercial coordinator, the goal is to create and track an assisted B2B order while validating client condition and product availability.
 
 **Persona:** Valeria / Coordinación comercial. Accede a Dashboard, Clientes, Catálogo, Pedidos y Reportes. La ruta guard bloquea el acceso directo a Inventario y Despacho.
 
@@ -214,7 +186,7 @@ flowchart LR
     B --> C["S1 Commercial dashboard"]
     C --> D["Open clients screen"]
     D --> E["Review client list"]
-    E --> F["Open client detail drawer\n(RUC, contact, condition)"]
+    E --> F["Open client detail drawer<br/>RUC, contact, address, condition"]
     F --> G["Create assisted order"]
     G --> H["Select client"]
     H --> I{"Client condition valid?"}
@@ -229,14 +201,15 @@ flowchart LR
     O --> P["Order detail — createdBy Valeria"]
     P --> Q["Orders follow-up"]
     Q --> R["Commercial reports"]
-    R --> S["End"]
+    R --> S["End: order traceable through Fake API"]
+    C -. "Commercial role guard" .-> T["Inventory or dispatch direct URL redirects"]
 ```
 
-Elaboración propia. El happy path avanza desde la revisión del cliente hasta el cierre trazable. Las ramas alternativas detectan restricción de crédito o falta de stock antes de comprometer el pedido.
+Elaboración propia. El happy path avanza desde cliente hasta pedido trazable. Las alternativas bloquean avance cuando la condición comercial o cantidad disponible no soportan el pedido.
 
 #### User Flow S2 — Jefatura logística: inventario, despacho y cierre
 
-**User Goal:** Como Roberto, jefe de logística (S2), quiero revisar el estado del inventario y los indicadores FEFO, coordinar el despacho y cerrar una entrega con evidencia de conformidad, de forma que el ciclo operativo quede registrado.
+**User Goal:** As Roberto, a logistics lead, the goal is to monitor stock and FEFO risks, coordinate dispatch, close a POD mock confirmation and review operational reports.
 
 **Persona:** Roberto / Jefatura logística. Tiene acceso extendido: Dashboard, Inventario, Despacho, Pedidos, Clientes y Reportes.
 
@@ -244,9 +217,9 @@ Elaboración propia. El happy path avanza desde la revisión del cliente hasta e
 flowchart LR
     A["Start"] --> B["Login — choose Roberto profile"]
     B --> C["S2 Logistics dashboard"]
-    C --> D["Open inventory overview\n(stock and warehouses)"]
+    C --> D["Open inventory overview<br/>stock and warehouses"]
     D --> E["Review lot list and FEFO indicators"]
-    E --> F["Open lot detail drawer\n(expiry, stock, warehouse)"]
+    E --> F["Open lot detail drawer<br/>expiry, stock, warehouse"]
     F --> G{"Risk detected?"}
     G -- "Low stock or expiring lot" --> H["Prioritize operational review"]
     G -- "No critical risk" --> I["Continue monitoring"]
@@ -260,67 +233,58 @@ flowchart LR
     O -- "No" --> P["Show pending evidence warning"]
     P --> N
     O -- "Yes" --> Q["Close delivery"]
-    Q --> R["Operational reports\n(FEFO, stock, dispatch)"]
-    R --> S["End"]
+    Q --> R["Operational reports<br/>FEFO, stock, dispatch"]
+    R --> S["Optional: create or review assisted order"]
+    S --> T["End: operational cycle persisted in Fake API"]
+    C -. "Logistics role has extended access" .-> U["Can access clients, orders, inventory, dispatch, reports"]
 ```
 
-Elaboración propia. El happy path recorre inventario → despacho → cierre. La rama de riesgo FEFO activa revisión prioritaria. El POD mock muestra advertencia si la evidencia está incompleta.
+Elaboración propia. El happy path recorre inventario, riesgo FEFO, despacho, POD mock y reportes. Las alternativas mantienen visible el riesgo operativo y la advertencia de evidencia incompleta sin afirmar integración logística real.
 
 #### User Flow S3 — Comprador B2B: portal de compra
 
-**User Goal:** Como Lucía, compradora B2B (S3), quiero explorar el catálogo del portal, enviar mi pedido y consultar su estado sin depender de comunicación informal.
+**User Goal:** As Lucía, a B2B buyer, the goal is to browse the portal catalog, submit an order and review order status from the buyer-facing portal.
 
-**Persona:** Lucía / Comprador B2B. Accede únicamente al Portal: inicio, catálogo, carrito, órdenes. La ruta guard bloquea el acceso a `/ops/*`.
+**Persona:** Lucía / Comprador B2B. Accede a Portal home, catálogo, carrito y órdenes. El portal queda separado de las rutas internas Ops.
 
 ```mermaid
 flowchart LR
-    A["Start"] --> B["Login — choose Lucia profile"]
+    A["Start"] --> B["Login — choose Lucía profile"]
     B --> C["Portal home"]
     C --> D["Open portal catalog"]
     D --> E["Review products"]
     E --> F["Add products to cart"]
-    F --> G["Submit portal order"]
-    G --> H{"Order confirmed?"}
-    H -- "Yes" --> I["Order success screen"]
-    H -- "No / blocked" --> J["Show restriction message"]
-    J --> F
-    I --> K["Track portal orders"]
-    K --> L["End"]
+    F --> G{"Order can be submitted?"}
+    G -- "No" --> H["Show cart or validation message"]
+    H --> D
+    G -- "Yes" --> I["Submit portal order"]
+    I --> J["Order success"]
+    J --> K["Portal orders tracking"]
+    K --> L["End: buyer order registered in Fake API"]
 ```
 
-Elaboración propia. El happy path es lineal: catálogo → carrito → confirmación → seguimiento. La rama alternativa muestra el bloqueo cuando el pedido no puede confirmarse.
+Elaboración propia. This flow is documented as a planning-level buyer-facing flow for the portal surface. The internal S1/S2 flows remain the main validation focus of this iteration.
 
 #### Tabla de consistencia wireflows y user flows
 
 | User flow | Derivado del wireflow | Happy path | Alternativas | Evidencia visual |
 |---|---|---|---|---|
-| S1 Pedido asistido | S1 Commercial Assisted Order | Sí | Restricción de crédito, falta de stock | Markdown; export FigJam pendiente |
-| S2 Inventario, despacho y cierre | S2 Logistics Operations | Sí | Riesgo FEFO, evidencia POD incompleta | Markdown; export FigJam pendiente |
-| S3 Portal de compra | S3 B2B Buyer Portal | Sí | Pedido bloqueado | Markdown; export Figma pendiente |
+| S1 Pedido asistido | S1 Commercial Assisted Order | Sí | Credenciales inválidas, condición de cliente, cantidad disponible, guard de rol | Mermaid + mockups S1 seleccionados |
+| S2 Inventario, despacho y cierre | S2 Logistics Operations | Sí | Credenciales inválidas, riesgo FEFO, despacho sin acción, evidencia POD mock incompleta | Mermaid + mockups S2 seleccionados |
+| S3 Portal de compra | S3 B2B Buyer Portal | Sí | Validación de carrito o pedido | Mermaid de planificación portal |
 
 ### 4.4.5. Implemented Screen Evidence.
 
-Esta subsección consolida la evidencia de pantallas implementadas en TB1. Las imágenes corresponden a vistas web responsivas del webapp desplegado en GitHub Pages con datos mock; no son aplicaciones móviles nativas. La evidencia responsive de la landing page permanece en 4.3 — las imágenes en `mobile-browser/` pertenecen al sitio público, no a la webapp.
+Esta subsección consolida evidencia representativa de pantallas implementadas en TB1. Las imágenes corresponden a vistas web responsivas del webapp desplegado con datos mock y Fake API; no documentan backend real, autenticación productiva, carga real de POD, firma real ni tracking en vivo.
 
-#### Tabla de cobertura TB1
+#### Tabla de evidencia implementada
 
-| Pantalla | Wireframe TB1 | Screenshot TB1 | Persona |
+| Evidence group | Screens | Persona | Scope supported |
 |---|---|---|---|
-| Login / perfil | `web-app-wireframes/log-in-wireframe.png` | `web-app-screenshots/log-in.png` | Todos |
-| Dashboard operativo | `web-app-wireframes/dashboard-wireframe.png` | `web-app-screenshots/dashboard.png` | S1, S2 |
-| Catálogo de operación | `web-app-wireframes/catalog-wireframe.png` | `web-app-screenshots/catalog.png` | S1 |
-| Inventario (FEFO + drawer) | `web-app-wireframes/inventory-wireframe.png` | `web-app-screenshots/inventory.png` | S2 |
-| Clientes (drawer de ficha) | `web-app-wireframes/clients-wireframe.png` | `web-app-screenshots/clients.png` | S1 |
-| Creación de pedido asistido | `web-app-wireframes/new-order-wireframe.png` | `web-app-screenshots/create-order.png` | S1 |
-| Bandeja de órdenes | `web-app-wireframes/orders-wireframe.png` | `web-app-screenshots/orders.png` | S1, S2 |
-| Despacho y POD mock | `web-app-wireframes/dispatch-wireframe.png` | `web-app-screenshots/dispatch.png` | S2 |
-| Reportes operativos | `web-app-wireframes/reports-wireframe.png` | `web-app-screenshots/reports.png` | S1, S2 |
-| Perfil y preferencias | `web-app-wireframes/profile-wireframe.png` | `web-app-screenshots/profile.png` | Todos |
-| Configuración | `web-app-wireframes/settings-wireframe.png` | `web-app-screenshots/settings.png` | Todos |
-| Portal home | — | Pendiente: `web-app-screenshots/portal-home.png` | S3 |
-| Portal catálogo | — | Pendiente: `web-app-screenshots/portal-catalog.png` | S3 |
-| Portal checkout | — | Pendiente: `web-app-screenshots/portal-checkout.png` | S3 |
-| Portal órdenes | — | Pendiente: `web-app-screenshots/portal-orders.png` | S3 |
+| Entry and role selection | Login, profile | Todos | Acceso por perfil de demostración y separación inicial de experiencia |
+| S1 commercial operation | Dashboard, clients, create order, orders, reports | Valeria / S1 | Pedido asistido, seguimiento y reportes comerciales con datos mock |
+| S2 logistics operation | Dashboard, inventory, dispatch, reports | Roberto / S2 | Inventario FEFO, despacho y POD mock con datos mock |
+| S3 portal planning | Portal flow Mermaid | Lucía / S3 | Recorrido comprador documentado a nivel de planificación |
 
 #### Screenshots representativos por flujo
 
@@ -329,12 +293,6 @@ Esta subsección consolida la evidencia de pantallas implementadas en TB1. Las i
 ![Screenshot TB1 — Login](../assets/images/web-app-screenshots/log-in.png)
 
 Elaboración propia. Punto de entrada con selección de perfil que determina el rol y las rutas disponibles.
-
-*Dashboard operativo — vista S1/S2*
-
-![Screenshot TB1 — Dashboard](../assets/images/web-app-screenshots/dashboard.png)
-
-Elaboración propia. Vista de entrada para usuarios internos con KPIs y accesos directos según rol.
 
 *Clientes con drawer de ficha — S1*
 
@@ -358,8 +316,9 @@ Elaboración propia. Vista de inventario con información de lote, vencimiento y
 
 ![Screenshot TB1 — Despacho](../assets/images/web-app-screenshots/dispatch.png)
 
-Elaboración propia. Módulo de despacho con modal de confirmación de evidencia de entrega.
+Elaboración propia. Módulo de despacho con modal de confirmación de evidencia de entrega simulada.
 
+The report uses representative screenshots and mockups to support the documented flows. Full step-by-step screen sequences are maintained in the design workspace and can be exported when needed.
 
 ---
 
@@ -367,13 +326,11 @@ Elaboración propia. Módulo de despacho con modal de confirmación de evidencia
 
 | Requisito del enunciado | Cobertura en 4.4 | Estado |
 |---|---|---|
-| Wireframes por experiencia de aplicación | Sprint 1 (10 vistas con tabla persona/goal) + TB1 (11 vistas con tabla persona) | Documentado |
-| Wireflows por user goal con explicación | Wireflow consolidado 3 personas en `flowchart` + tabla con user goal por wireflow | Documentado en Markdown |
-| Wireflow refleja cambio de pantalla por interacción | Nodos de pantalla con transiciones y estados de decisión | Documentado en Markdown |
-| User flows por user goal y persona | S1, S2 y S3 en `flowchart LR` separados con user goal declarado | Documentado en Markdown |
-| User flows consistentes con wireflows | Tabla de consistencia wireflow → user flow incluida | Documentado |
-| Happy path y rutas alternativas | S1: crédito/stock; S2: FEFO/POD; S3: pedido bloqueado | Documentado |
-| Sin diagramas de secuencia como user flow | `sequenceDiagram` eliminado; todos los flows usan `flowchart` | Cumplido |
-| Mock-ups / evidencia de diseño | Sprint 1 mockups (design-stage Figma) + TB1 screenshots | Documentado |
-| Exports visuales de Figma/FigJam como imagen | S1/S2 desde FigJam board, S3 desde Figma portal | Pendiente export |
-| Responsive evidence | Landing responsive en 4.3; webapp responsive pendiente screenshot export | Parcial |
+| Wireframes por experiencia de aplicación | Sprint 1 con diez vistas y objetivos por persona | Documentado |
+| Wireflows por user goal con explicación | Wireflow consolidado S1/S2/S3 en `flowchart LR` | Documentado |
+| Wireflow refleja cambio de pantalla por interacción | Nodos de pantalla, decisiones, errores de login y guards por rol | Documentado |
+| User flows por user goal y persona | S1, S2 y S3 separados con user goal declarado | Documentado |
+| User flows consistentes con wireflows | Tabla de consistencia wireflow a user flow incluida | Documentado |
+| Happy path y rutas alternativas | S1: cliente/stock/guard; S2: FEFO/POD mock/despacho; S3: validación de pedido | Documentado |
+| Mock-ups / evidencia de diseño | Mockups actuales seleccionados desde ZIP para S1 y S2 | Documentado |
+| Evidencia implementada | Screenshots representativos TB1 con límites explícitos de alcance | Documentado |
