@@ -42,7 +42,7 @@ El control de versiones se organiza bajo una convención GitFlow adaptada al alc
 
 **GitFlow del Proyecto**
 
-La organización del control de versiones puede representarse mediante un GitFlow adaptado al alcance real del proyecto: un informe técnico en Docs-as-Code, una landing page pública y una web application. Se propone un flujo deliberadamente ligero que prioriza trazabilidad sobre complejidad procedimental, y que resulta manejable para un equipo de cinco personas trabajando en tres frentes simultáneos.
+La organización del control de versiones se representa mediante un GitFlow adaptado al alcance real del proyecto: un informe técnico en Docs-as-Code, una landing page pública y una web application. Establecimos un flujo deliberadamente ligero que prioriza trazabilidad sobre complejidad procedimental, y que resulta manejable para un equipo de cinco personas trabajando en tres frentes simultáneos.
 
 *Tabla. Convención de ramas y ejemplos aplicados en Nexa*
 
@@ -54,24 +54,24 @@ La organización del control de versiones puede representarse mediante un GitFlo
 | `release/*` | Congelamiento de entrega para revisión final | `release/tb1-final` |
 | `hotfix/*` | Corrección urgente sobre versión estable | `hotfix/report-critical-wording` |
 
-**Flujo de integración propuesto**
+**Flujo de integración establecido**
 
 ```text
 feature/* → develop → release/tb1-final → main → tag/release
 ```
 
-Para efectos de trazabilidad, se establece como flujo de trabajo el ciclo en que cada unidad de trabajo parte de una rama `feature/*`, se integra en `develop` una vez revisada, avanza a `release/tb1-final` cuando el equipo congela el contenido para revisión, y finalmente se incorpora a `main` con un tag de versión semántica que identifica el hito entregado. Este flujo soporta cuatro funciones prácticas para el proyecto:
+Para efectos de trazabilidad, adoptamos como flujo de trabajo el ciclo en que cada unidad de trabajo parte de una rama `feature/*`, se integra en `develop` una vez revisada, avanza a `release/tb1-final` cuando congelamos el contenido para revisión, y finalmente se incorpora a `main` con un tag de versión semántica que identifica el hito entregado. Este flujo soporta cuatro funciones prácticas para el proyecto:
 
 - **Trazabilidad:** permite relacionar cada cambio con su autor, su alcance y el contexto de sprint en que se produjo.
 - **Control de integración:** evita que cambios parciales o no revisados alcancen la versión pública antes de pasar por `develop`.
 - **Estabilización de entrega:** la rama `release/*` actúa como zona de congelamiento donde solo se permiten ajustes menores antes del corte académico.
 - **Corrección urgente:** `hotfix/*` permite atender errores críticos detectados sobre `main` sin interrumpir el trabajo en curso en `develop`.
 
-Este esquema es adecuado para el proyecto porque separa los cambios del informe de los del sitio web, mantiene una versión pública limpia en `main`, y otorga estructura a los commits ya realizados sin exigir una adopción retroactiva perfecta.
+Este esquema es adecuado para el proyecto porque separa los cambios del informe de los del sitio web, mantiene una versión pública limpia en `main`, y otorga estructura a los commits ya realizados. La adopción fue gradual y no se afirma una implementación retroactiva perfecta desde el inicio del proyecto.
 
-*Tabla. Correspondencia entre frentes de trabajo y ramas sugeridas*
+*Tabla. Correspondencia entre frentes de trabajo y ramas establecidas*
 
-| Frente de trabajo | Rama sugerida |
+| Frente de trabajo | Rama establecida |
 |---|---|
 | Reestructuración de segmentos objetivo | `feature/target-segments-rework` |
 | Actualización de needfinding | `feature/needfinding-update` |

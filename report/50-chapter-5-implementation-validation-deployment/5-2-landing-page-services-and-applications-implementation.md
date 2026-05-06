@@ -458,7 +458,7 @@ La lectura del Sprint Backlog 2 se organiza por frentes reales de trabajo, no po
 
 #### 5.2.2.4. Development Evidence for Sprint Review
 
-La consulta de commits para el rango 25/04/2026–05/05/2026 devuelve 214 commits: 115 en `nexa-report`, 18 en `nexa-website`, 80 en `nexa-webapp` y 1 en `nexa-platform`. Por volumen, la tabla lista commits canónicos y agrupa cambios menores de documentación o assets; todos los hashes son reales y verificables en los repositorios remotos.
+Durante la revisión del rango 25 de abril al 5 de mayo de 2026, identificamos 214 commits entre los repositorios del proyecto. Para mantener legibilidad documental, el reporte presenta una selección canónica de commits representativos, agrupados por repositorio y tipo de aporte. Esta selección evidencia la evolución de TB1 sin convertir el informe en un log completo de Git. Todos los hashes son reales y verificables en los repositorios remotos.
 
 | Repositorio | Commits en rango | Lectura TB1 |
 |---|---:|---|
