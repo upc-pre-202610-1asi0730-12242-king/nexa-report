@@ -39,7 +39,7 @@
 | AV1 V1.3.0 | 21/04/2026 | Yucra Sandoval, Diego Sebastian | Nutrición estadística del Capítulo I con gráficos sobre madurez digital y contexto del canal tradicional |
 | AV1 V1.4.0 | 21/04/2026 | Yucra Sandoval, Diego Sebastian | Integración de evidencias visuales del Capítulo II; fix de links rotos y normalización de activos en la sección de arquitectura DDD (4.6) |
 | AV1 V1.5.0 | 21/04/2026 | Yucra Sandoval, Diego Sebastian | Formalización académica de carátula, expansión de Student Outcome (ABET 5) y actualización de perfiles con fotos integradas |
-| AV1 V1.6.0 | 21/04/2026 | Yucra Sandoval, Diego Sebastian | Reescritura del Capítulo V con integración de evidencias Jira, planificación de Sprint 1 y explicitación de pendientes formales de AV1 |
+| AV1 V1.6.0 | 21/04/2026 | Yucra Sandoval, Diego Sebastian | Reescritura del Capítulo V con integración de evidencias Jira, planificación de Sprint 1 y explicitación de puntos formales de cierre AV1 |
 | AV1 V1.6.1 | 21/04/2026 | Yucra Sandoval, Diego Sebastian | Actualización del enlace oficial de Jira, incorporación de enlaces audiovisuales OneDrive para las entrevistas y ajuste de trazabilidad de validación |
 | AV1 V1.6.2 | 21/04/2026 | Yucra Sandoval, Diego Sebastian | Reestructuración del alcance AV1 del Capítulo V al formato Sprint 1 requerido por la rúbrica, fortalecimiento de Web Applications Design y redacción de conclusiones |
 | AV1 V1.6.3 | 21/04/2026 | Yucra Sandoval, Diego Sebastian | Integración de verificación completa Jira-Sprint-Backlog con capturas, registro del archivo Figma real de la web application y creación de anexos guía para evidencias de coordinación |
@@ -48,16 +48,12 @@
 | AV1 V1.6.6 | 22/04/2026 | Yucra Sandoval, Diego Sebastian | Cierre estructural de front matter y coherencia técnica: actualización de la tabla de contenido, refinamiento del Student Outcome según rúbricas ABET/Logro y corrección de consistencia en DDD, OOD y Database Design |
 | AV1 V1.6.7 | 22/04/2026 | Yucra Sandoval, Diego Sebastian | Limpieza final de AV1: normalización de segmentos a S1-S2-S3, ajuste del Product Backlog, mejora de wireflows y user flows en Mermaid, refuerzo del bloque de prototipado y vaciado formal de 5.3 y 5.4 |
 | AV1 V1.6.8 | 22/04/2026 | Yucra Sandoval, Diego Sebastian | Reencuadre del Capítulo V al alcance real de AV1: foco en `nexa-report` y `nexa-website`, ajuste del lenguaje sobre capas futuras y limpieza del bloque de implementación, servicios y despliegue |
-| TB1 Sprint 2 V0.1 | 02/05/2026 | Yucra Sandoval, Diego Sebastian | Web Applications Implementation: incorporación de wireframes y screenshots TB1 del webapp en `report/assets/images/web-app-screenshots/` y `report/assets/images/web-app-wireframes/`; actualización de §4.4 con cobertura visual responsive web del Sprint 2 |
-| TB1 Sprint 2 V0.2 | 02/05/2026 | Yucra Sandoval, Diego Sebastian | Sprint 2 Evidence Update: adición de US65-US69 (redirección por rol, forbidden, ruteo seguro landing→webapp, reportes operativos y disclosure mock) y refinamiento de escenarios para US23/27/30/34/37/38/41/44/45/49 en §3.1 |
-| TB1 Sprint 2 V0.3 | 02/05/2026 | Yucra Sandoval, Diego Sebastian | Sprint 2 Evidence Update: mirror del Sprint 2 en §3.3 y bloque AV2/TB2 backlog futuro consolidado |
-| TB1 Sprint 2 V0.4 | 02/05/2026 | Yucra Sandoval, Diego Sebastian | Web Applications Implementation: redacción completa de §5.2.2 (Sprint Planning 2, Aspect Leaders, Sprint Backlog 2, Development/Execution/Services/Deployment/Collaboration Evidence) con tablas de commits reales de los tres repositorios |
-| TB1 Sprint 2 V0.5 | 02/05/2026 | Yucra Sandoval, Diego Sebastian | Sprint 2 Evidence Update: creación del anexo Annex – Jira Sprint 2 Import Plan con 9 épicas, 5 historias nuevas, 20 tareas y 60 subtareas en estado In Progress, más CSV de importación |
-| TB1 Sprint 2 V0.6 | 02/05/2026 | Yucra Sandoval, Diego Sebastian | Sprint 2 Evidence Update: actualización de la tabla de contenidos con anclas para §5.2.2.1 a §5.2.2.8 y registro de versiones del Sprint 2 |
+| TB1 Sprint 2 V0.1 | 02/05/2026 | Yucra Sandoval, Diego Sebastian | Inicio documental del Sprint 2: registro de evidencia de web application, rutas TB1, mock data y estructura de Sprint 2 en Capítulo 5 |
+| TB1 Sprint 2 V0.2 | 02/05/2026 | Equipo Nexa | Consolidación inicial de commits reales en `nexa-report`, `nexa-website` y `nexa-webapp` para evidenciar continuidad landing → webapp |
+| TB1 Sprint 2 V0.3 | 03/05/2026 | Equipo Nexa | Revisión de segmentos, personas, needfinding, backlog e impacto para alinear la documentación con el alcance S1/S2/S3 vigente |
+| TB1 Sprint 2 V0.4 | 04/05/2026 | Yucra Sandoval, Diego Sebastian | Refuerzo de trazabilidad Docs-as-Code: GitFlow ligero, scripts de build PDF, terminología de alcance y notas de arquitectura TB1 |
+| TB1 Sprint 2 V0.5 | 05/05/2026 | Equipo Nexa | Rework de UX/UI webapp: wireflows Mermaid, user flows por persona, mockups actuales, eliminación de evidencia implementada desfasada y limpieza de assets antiguos |
+| TB1 Sprint 2 V0.6 | 05/05/2026 | Yucra Sandoval, Diego Sebastian | Actualización de style guidelines con nuevos assets, limpieza de Ch1–Ch4, mapeo Fake API vs ERD objetivo y validación de imágenes/Markdown/PDF |
+| TB1 Sprint 2 V0.7 | 05/05/2026 | Yucra Sandoval, Diego Sebastian | Actualización de Version History, Student Outcome ABET 5 y Capítulo 5 para separar Sprint 1 baseline de Sprint 2/TB1 con evidencia basada en commits reales |
 
-La tabla documenta los cambios significativos y las contribuciones individuales realizadas al informe a lo largo del ciclo del proyecto, asegurando la trazabilidad de su evolución. Elaboración propia.
-| TB2 V1.0.0 | 02/05/2026 | Yucra Sandoval, Diego Sebastian | Apertura del ciclo TB2: actualización del historial de versiones, registro inicial del Sprint 2 e incorporación de referencias al despliegue activo de `nexa-webapp` |
-| TB2 V1.0.1 | 02/05/2026 | Marín Cueva, César Fernando | Actualización de la tabla de configuración de despliegue con el estado activo de `nexa-webapp` en TB2 |
-| TB2 V1.0.2 | 02/05/2026 | Torrejón De Los Santos, Gino Rodrigo | Actualización del README con indicador de estado TB2 Active |
-| TB2 V1.0.3 | 02/05/2026 | Verde Bueno, Joaquín Francisco | Adición de párrafo de conclusiones preliminares de la entrega TB2 |
-| TB2 V1.0.4 | 02/05/2026 | Rojas Mancilla, Gerard Gianpier | Sincronización del historial de versiones con todos los aportes del equipo en TB2 |
+La tabla documenta cambios significativos del informe y conserva AV1 como línea base histórica. Las filas TB1 registran incrementos posteriores con foco en Sprint 2, web application, documentación Docs-as-Code y coherencia con el alcance real del producto. Elaboración propia.
