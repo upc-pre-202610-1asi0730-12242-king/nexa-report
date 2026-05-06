@@ -37,7 +37,7 @@ This repository contains the full academic documentation for the Nexa project, s
 
 ## Repository structure
 
-```
+```text
 nexa-report/
 │
 └── report/
