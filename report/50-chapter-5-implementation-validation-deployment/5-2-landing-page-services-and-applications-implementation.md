@@ -185,7 +185,7 @@ La evidencia de desarrollo del Sprint 1 abarca cuatro repositorios activos dentr
 
 Documentación académica del proyecto, construida de forma incremental.
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on |
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `e1826fd` | `chore(repo): initialize repository structure and base readme` | | 01/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-report` | `main` | `4761937` | `docs(front-matter): add cover page` | | 02/04/2026 |
@@ -233,7 +233,7 @@ Documentación académica del proyecto, construida de forma incremental.
 
 Implementación real del Landing Page desplegado en GitHub Pages.
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on |
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `3b97299` | `Initial commit` | | 14/04/2026 |
 | `upc-pre-202610-1asi0730-12242-king/nexa-website` | `main` | `a175f4c` | `chore: set up initial repository structure and project documentation` | | 17/04/2026 |
@@ -266,7 +266,7 @@ Implementación real del Landing Page desplegado en GitHub Pages.
 
 Inicialización del repositorio base para el portal transaccional.
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on |
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `upc-pre-202610-1asi0730-12242-king/nexa-platform` | `main` | `520138d` | `Initial commit` | | 15/04/2026 |
 
@@ -274,7 +274,7 @@ Inicialización del repositorio base para el portal transaccional.
 
 Inicialización del repositorio base para la Web Application.
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on |
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | `upc-pre-202610-1asi0730-12242-king/nexa-webapp` | `main` | `f374393` | `Initial commit` | | 15/04/2026 |
 
@@ -458,119 +458,54 @@ La lectura del Sprint Backlog 2 se organiza por frentes reales de trabajo, no po
 
 #### 5.2.2.4. Development Evidence for Sprint Review
 
-Durante la revisión del rango 25 de abril al 5 de mayo de 2026, identificamos 214 commits entre los repositorios del proyecto. Para mantener legibilidad documental, el reporte presenta una selección canónica de commits representativos, agrupados por repositorio y tipo de aporte. Esta selección evidencia la evolución de TB1 sin convertir el informe en un log completo de Git. Todos los hashes son reales y verificables en los repositorios remotos.
+La siguiente tabla resume una selección canónica de commits representativos del trabajo realizado durante TB1. La evidencia completa se mantiene en los historiales de GitHub de cada repositorio; el reporte incluye una selección para mantener legibilidad y trazabilidad con los productos de Sprint 2.
 
-| Repositorio | Commits en rango | Lectura TB1 |
-|---|---:|---|
-| `nexa-report` | 115 | Limpieza de Capítulos 1–4, UX/UI webapp, mockups, evidencia Sprint 2, Student Outcome y Docs-as-Code |
-| `nexa-website` | 18 | Continuidad de landing, CTAs hacia webapp, SEO, favicon y copy TB1 |
-| `nexa-webapp` | 80 | Webapp TB1: auth demo, roles, dashboard, clients, orders, inventory, dispatch, reports, portal y Fake API |
-| `nexa-platform` | 1 | Repositorio de plataforma mantenido en alcance planificado |
-
-| Fecha | Repositorio | Commit | Autor | Cambio documentado | Relación con Sprint 2 |
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
 |---|---|---|---|---|---|
-| 2026-04-28 | `nexa-webapp` | `37aa34e` | Diego Y. Sandoval | style: align auth UI with landing visual language | Acceso demo, roles y navegación protegida |
-| 2026-04-28 | `nexa-webapp` | `64a331e` | Diego Y. Sandoval | fix: router base path for GitHub Pages deployment | Despliegue y rutas GitHub Pages |
-| 2026-04-28 | `nexa-webapp` | `7b179e4` | Diego Y. Sandoval | docs(readme): add view live link to deployed webapp | Despliegue y rutas GitHub Pages |
-| 2026-04-28 | `nexa-webapp` | `898a1ba` | Diego Y. Sandoval | docs(readme): add live site link for nexa-website landing page | Despliegue y rutas GitHub Pages |
-| 2026-04-28 | `nexa-webapp` | `97f6555` | Diego Y. Sandoval | docs(readme): fix course name and add missing related repositories | Webapp TB1 |
-| 2026-04-28 | `nexa-webapp` | `a7ccf07` | Diego Y. Sandoval | fix: fill viewport on auth and ops layouts by adding flex:1 to containers | Acceso demo, roles y navegación protegida |
-| 2026-04-28 | `nexa-webapp` | `b1fe4ed` | Torrejon De Los Santos, Gino Rodrigo | fix(a11y): add title and rel attrs to back-to-site link in AuthLayout | Acceso demo, roles y navegación protegida |
-| 2026-04-28 | `nexa-website` | `22a715c` | Diego Y. Sandoval | feat: connect login button to nexa-webapp GitHub Pages | Continuidad landing a webapp |
-| 2026-04-28 | `nexa-website` | `316d355` | Marin Cueva, Cesar Fernando | feat(seo): add og:url and og:site_name to company page | SEO y metadatos públicos |
-| 2026-04-28 | `nexa-website` | `73b7c62` | Verde Bueno, Joaquin Francisco | feat(seo): add og:url and og:site_name to platform and faq pages | SEO y metadatos públicos |
-| 2026-04-28 | `nexa-website` | `c301fc2` | Verde Bueno, Joaquin Francisco | style: align landing visual tokens with webapp design system | Continuidad landing a webapp |
-| 2026-04-28 | `nexa-website` | `e804da1` | Torrejon De Los Santos, Gino Rodrigo | style(tokens): align text, border, surface and easing tokens with webapp design system | Continuidad landing a webapp |
-| 2026-04-28 | `nexa-website` | `f21754c` | Rojas Mancilla, Gerard Gianpier | feat(seo): add og:url and og:site_name to landing homepage | SEO y metadatos públicos |
-| 2026-04-29 | `nexa-webapp` | `02976fe` | Diego Y. Sandoval | fix(shared): use real date for FEFO expiry calculation | Inventario y FEFO |
-| 2026-04-29 | `nexa-webapp` | `0f1c08b` | Diego Y. Sandoval | feat(clients): replace toast stub with full client profile drawer | Webapp TB1 |
-| 2026-04-29 | `nexa-webapp` | `0ff014d` | César Marín | feat(portal): build B2B portal home, catalog, and orders views | Pedidos asistidos y portal B2B |
-| 2026-04-29 | `nexa-webapp` | `1a6b417` | Verde Bueno, Joaquin Francisco | fix(auth): enforce scope guard and clean logout | Acceso demo, roles y navegación protegida |
-| 2026-04-29 | `nexa-webapp` | `283c03c` | Verde Bueno, Joaquin Francisco | fix(auth): show forbidden scope state | Acceso demo, roles y navegación protegida |
-| 2026-04-29 | `nexa-webapp` | `3a9d049` | Rojas Mancilla, Gerard Gianpier | feat(clients): build client list with credit usage bars and contact actions | Webapp TB1 |
-| 2026-04-29 | `nexa-webapp` | `463f5c7` | Torrejon De Los Santos, Gino Rodrigo | feat(portal): add product detail modal in B2B catalog | Webapp TB1 |
-| 2026-04-29 | `nexa-webapp` | `5b53e6e` | Marin Cueva, Cesar Fernando | feat(portal): add order success screen after B2B checkout | Pedidos asistidos y portal B2B |
-| 2026-04-29 | `nexa-webapp` | `5ca8ff2` | Verde Bueno, Joaquin Francisco | feat(orders): persist new order to store and navigate to its detail on confirm | Pedidos asistidos y portal B2B |
-| 2026-04-29 | `nexa-webapp` | `6053d18` | Rojas Mancilla, Gerard Gianpier | feat(portal): close B2B order loop — cart checkout persists to store, orders filtered by client | Pedidos asistidos y portal B2B |
-| 2026-04-29 | `nexa-webapp` | `666293e` | Diego Y. Sandoval | chore(settings,dashboard): disable invite action; replace hardcoded date with dynamic label | Dashboard y reportes operativos |
-| 2026-04-29 | `nexa-webapp` | `6db2e58` | Marin Cueva, Cesar Fernando | fix(auth): add clientId to portal user; expose nextOrderId/addOrder helpers in data store | Acceso demo, roles y navegación protegida |
-| 2026-04-29 | `nexa-webapp` | `7a7b6b5` | Joaquin Verde | feat(settings): build company info and user role management settings view | Acceso demo, roles y navegación protegida |
-| 2026-04-29 | `nexa-webapp` | `9f5b791` | Marin Cueva, Cesar Fernando | fix(demo): refresh dates and add favicon | Acceso demo, roles y navegación protegida |
-| 2026-04-29 | `nexa-webapp` | `a076e6a` | Torrejon De Los Santos, Gino Rodrigo | fix(dispatch): sync order status on route/delivery events; fix dead order detail button | Despacho y cierre mock |
-| 2026-04-29 | `nexa-webapp` | `b73e13d` | Rodrigo Alva | feat(portal-layout): build portal topbar with cart drawer, ARIA labels, and terms footer | Pedidos asistidos y portal B2B |
-| 2026-04-29 | `nexa-webapp` | `c891bb8` | Torrejon De Los Santos, Gino Rodrigo | chore(ui): add product detail modal in ops catalog; disable unfinished actions | Webapp TB1 |
-| 2026-04-29 | `nexa-webapp` | `d692ed6` | Marin Cueva, Cesar Fernando | feat(reports): add operational reports screen with KPIs, status breakdown, and FEFO alerts | Inventario y FEFO |
-| 2026-04-29 | `nexa-webapp` | `dc80775` | Verde Bueno, Joaquin Francisco | feat(inventory): add lot detail drawer with movement history | Inventario y FEFO |
-| 2026-04-29 | `nexa-webapp` | `de1e440` | Rojas Mancilla, Gerard Gianpier | feat(orders): show commercial conditions in assisted order flow | Pedidos asistidos y portal B2B |
-| 2026-04-29 | `nexa-webapp` | `e2b3c15` | Rojas Mancilla, Gerard Gianpier | fix(orders): align status flow and order guards | Acceso demo, roles y navegación protegida |
-| 2026-04-29 | `nexa-website` | `9c57146` | Marin Cueva, Cesar Fernando | fix(website): align TB1 links and roadmap copy | Landing TB1 |
-| 2026-04-30 | `nexa-webapp` | `7c06512` | Verde Bueno, Joaquin Francisco | feat(profile): scaffold profile bounded context with model and service layer | Fake API y arquitectura frontend por contexto |
-| 2026-04-30 | `nexa-webapp` | `9f69572` | Joaquin Verde | feat(profile): add profile Pinia store with language persistence and auth sync | Acceso demo, roles y navegación protegida |
-| 2026-05-02 | `nexa-webapp` | `10d0e81` | Diego Y. Sandoval | fix(copy): clarify mock data and planned backend | Webapp TB1 |
-| 2026-05-02 | `nexa-webapp` | `3292315` | Diego Y. Sandoval | fix(webapp): harden portal data boundaries | Webapp TB1 |
-| 2026-05-02 | `nexa-webapp` | `340f8d6` | Verde Bueno, Joaquin Francisco | fix(reports): apply i18n keys to page header, section titles, and table labels | Dashboard y reportes operativos |
-| 2026-05-02 | `nexa-webapp` | `39d4627` | Torrejon De Los Santos, Gino Rodrigo | feat(i18n): add reports section with operational KPI and table labels | Dashboard y reportes operativos |
-| 2026-05-02 | `nexa-webapp` | `41c2f0f` | Diego Y. Sandoval | chore(brand): use official nexa logo in webapp | Webapp TB1 |
-| 2026-05-02 | `nexa-webapp` | `93387ba` | Diego Y. Sandoval | ci: add GitHub Actions workflow for Vite build and Pages deployment | Despliegue y rutas GitHub Pages |
-| 2026-05-02 | `nexa-webapp` | `d86c46f` | Diego Y. Sandoval | fix(router): support github pages webapp routes | Despliegue y rutas GitHub Pages |
-| 2026-05-02 | `nexa-webapp` | `e4600b6` | Marin Cueva, Cesar Fernando | fix(i18n): add missing cancelled and rejected order status translations | Pedidos asistidos y portal B2B |
-| 2026-05-02 | `nexa-webapp` | `fd4ce25` | Gerard Rojas | docs: update README with implemented modules, tech stack, and bounded contexts | Fake API y arquitectura frontend por contexto |
-| 2026-05-02 | `nexa-website` | `13ea635` | Diego Y. Sandoval | fix(landing): align ctas with webapp routes | Continuidad landing a webapp |
-| 2026-05-02 | `nexa-website` | `1883c50` | Marin Cueva, Cesar Fernando | fix(seo): add robots and theme-color meta to landing homepage | SEO y metadatos públicos |
-| 2026-05-02 | `nexa-website` | `4951d66` | Diego Y. Sandoval | fix(landing): add favicon and tighten tb1 copy | Landing TB1 |
-| 2026-05-02 | `nexa-website` | `8f0119b` | Rojas Mancilla, Gerard Gianpier | fix(seo): add robots and theme-color meta to company page | SEO y metadatos públicos |
-| 2026-05-02 | `nexa-website` | `972c842` | Verde Bueno, Joaquin Francisco | fix(seo): add robots and theme-color meta to all solution subpages | SEO y metadatos públicos |
-| 2026-05-02 | `nexa-website` | `aa9b1f1` | Torrejon De Los Santos, Gino Rodrigo | fix(seo): add robots and theme-color meta to platform and faq pages | SEO y metadatos públicos |
-| 2026-05-03 | `nexa-platform` | `53a8069` | Diego Y. Sandoval | chore(platform): reset repository to tb1 planned scope | Alcance planificado de plataforma |
-| 2026-05-03 | `nexa-report` | `78f3b61` | Diego Y. Sandoval | docs(report): integrate final tb1 requirements sections | Documentación TB1 |
-| 2026-05-03 | `nexa-report` | `9123fb6` | Gino Torrejon | docs(ch3) updated 3-2-impact-mapping | Backlog y requisitos TB1 |
-| 2026-05-03 | `nexa-report` | `c2a20e3` | Gino Torrejon | docs(ch3) updated 3-3-product-backlog | Backlog y requisitos TB1 |
-| 2026-05-03 | `nexa-report` | `c2c66dd` | JoaquinVB115 | doc(report): revise user personas, journey maps, and empathy maps | Investigación y consistencia de dominio |
-| 2026-05-03 | `nexa-report` | `ef6fc15` | JoaquinVB115 | docs(report): correct user persona segment labels in needfinding.md | Investigación y consistencia de dominio |
-| 2026-05-03 | `nexa-website` | `4b52f67` | Diego Y. Sandoval | chore(repo): clean presentation for tb1 delivery | Landing TB1 |
-| 2026-05-03 | `nexa-website` | `a6b9e3b` | Diego Y. Sandoval | fix(readme): restore website presentation style | Continuidad visual |
-| 2026-05-04 | `nexa-report` | `14d4c13` | Diego Y. Sandoval | docs(architecture): clarify tb1 scope and target architecture | Arquitectura y alcance Fake API |
-| 2026-05-04 | `nexa-webapp` | `4aa2812` | Diego Y. Sandoval | chore(mock-api): add json-server fake api | Fake API y arquitectura frontend por contexto |
-| 2026-05-04 | `nexa-webapp` | `6bffa73` | Diego Y. Sandoval | docs(readme): document fake api workflow | Fake API y arquitectura frontend por contexto |
-| 2026-05-04 | `nexa-webapp` | `7b9bf07` | Diego Y. Sandoval | refactor(api): add axios services by bounded context | Fake API y arquitectura frontend por contexto |
-| 2026-05-04 | `nexa-webapp` | `dbee8ed` | Diego Y. Sandoval | refactor(stores): connect stores to application layer | Fake API y arquitectura frontend por contexto |
-| 2026-05-05 | `nexa-report` | `04e9df9` | Diego Y. Sandoval | fix(ci): harden pdf workflow and fix svg crash | Documentación TB1 |
-| 2026-05-05 | `nexa-report` | `16fb09f` | César Marín | docs(ch4): add architecture scope note for TB1 fake API context | Documentación UX/UI TB1 |
-| 2026-05-05 | `nexa-report` | `1b72e80` | Gino Torrejon | docs(ch3): updated 3-2-impact-mapping | Backlog y requisitos TB1 |
-| 2026-05-05 | `nexa-report` | `1d38510` | Diego Y. Sandoval | chore(report): organize interview image assets | Investigación y consistencia de dominio |
-| 2026-05-05 | `nexa-report` | `207a75c` | Diego Y. Sandoval | docs(glossary): align terms with Nexa domain | Investigación y consistencia de dominio |
-| 2026-05-05 | `nexa-report` | `22efcb2` | Diego Y. Sandoval | docs(ch4): add current webapp mockup selections | Documentación UX/UI TB1 |
-| 2026-05-05 | `nexa-report` | `27b3dd0` | JoaquinVB115 | docs(report): fix image reference in impact mapping section | Backlog y requisitos TB1 |
-| 2026-05-05 | `nexa-report` | `3c655fd` | Diego Y. Sandoval | docs(ch2): add interview technology context | Investigación y consistencia de dominio |
-| 2026-05-05 | `nexa-report` | `43c8cea` | JoaquinVB115 | docs(report): update B2B buyer persona from Lucía to Elena | Investigación y consistencia de dominio |
-| 2026-05-05 | `nexa-report` | `49c47f0` | César Marín | docs(ch4): align landing design narrative with product continuity | Documentación UX/UI TB1 |
-| 2026-05-05 | `nexa-report` | `5ce6cab` | Diego Y. Sandoval | docs(ch4): update style guideline evidence assets | Documentación UX/UI TB1 |
-| 2026-05-05 | `nexa-report` | `64b2667` | Diego Y. Sandoval | docs(readme): fix markdownlint code fence | Documentación TB1 |
-| 2026-05-05 | `nexa-report` | `67ed336` | Diego Y. Sandoval | chore(report): remove unused old webapp mockups | Documentación UX/UI TB1 |
-| 2026-05-05 | `nexa-report` | `6f7ab39` | JoaquinVB115 | docs(report): update 3-2-impact-mapping.md | Backlog y requisitos TB1 |
-| 2026-05-05 | `nexa-report` | `afbacbf` | JoaquinVB115 | docs(report): fix image path in impact mapping documentation | Backlog y requisitos TB1 |
-| 2026-05-05 | `nexa-report` | `b554dd8` | JoaquinVB115 | docs(report): delete report/assets/images/impact-map1.png | Backlog y requisitos TB1 |
-| 2026-05-05 | `nexa-report` | `b6f31f4` | Diego Y. Sandoval | docs(ch4): restructure style guidelines as shared visual system | Documentación UX/UI TB1 |
-| 2026-05-05 | `nexa-report` | `b89c9de` | Diego Y. Sandoval | docs(ch4): clarify webapp architecture scope | Documentación UX/UI TB1 |
-| 2026-05-05 | `nexa-report` | `c325167` | Diego Y. Sandoval | docs(ch4): remove implemented evidence subsection | Documentación UX/UI TB1 |
-| 2026-05-05 | `nexa-report` | `d1ec5e3` | Gino Torrejon | feat(assets): added impact-map image | Backlog y requisitos TB1 |
-| 2026-05-05 | `nexa-report` | `d6943db` | JoaquinVB115 | docs(report): revise impact mapping and update goals and actors | Backlog y requisitos TB1 |
-| 2026-05-05 | `nexa-report` | `d86f138` | César Marín | docs(ch4): replace outdated webapp mockups intro with evidence strategy | Documentación UX/UI TB1 |
-| 2026-05-05 | `nexa-report` | `e8e7afa` | Diego Y. Sandoval | docs(ch4): align webapp flows with user goals | Documentación UX/UI TB1 |
-| 2026-05-05 | `nexa-report` | `e8facb6` | Diego Y. Sandoval | docs(ch4): clarify prototype evidence and add FigJam reference | Documentación UX/UI TB1 |
-| 2026-05-05 | `nexa-report` | `ec6c63c` | Gino Torrejón | docs(ch4): replace webapp user flows with proper flowcharts per persona | Documentación UX/UI TB1 |
-| 2026-05-05 | `nexa-report` | `f1d3098` | Diego Y. Sandoval | docs(ch3): align backlog with user stories | Backlog y requisitos TB1 |
-| 2026-05-05 | `nexa-report` | `f3e6296` | Joaquín Verde | docs(ch4): update webapp wireflow documentation with three-persona flow | Documentación UX/UI TB1 |
-| 2026-05-05 | `nexa-report` | `f5506f2` | Joaquín Verde | docs(ch4): update information architecture with webapp and portal IA | Documentación UX/UI TB1 |
-| 2026-05-05 | `nexa-report` | `f6de96c` | Diego Y. Sandoval | docs(ch4): rebuild webapp ux section structure and wireframe tables | Documentación UX/UI TB1 |
-| 2026-05-05 | `nexa-report` | `fe0b62c` | Diego Y. Sandoval | docs(ch4): add webapp ux compliance checklist | Documentación UX/UI TB1 |
-| 2026-05-05 | `nexa-webapp` | `2ed5dc7` | Diego Y. Sandoval | feat(orders): record assisted order origin and display creator | Pedidos asistidos y portal B2B |
-| 2026-05-05 | `nexa-webapp` | `40c7c32` | Diego Y. Sandoval | fix(ops): guard logistics routes by role | Acceso demo, roles y navegación protegida |
-| 2026-05-05 | `nexa-webapp` | `8c9617b` | Diego Y. Sandoval | fix(ops): clean role-specific reports and settings scope | Acceso demo, roles y navegación protegida |
-| 2026-05-05 | `nexa-webapp` | `ad68f8c` | Diego Y. Sandoval | feat(login): add demo profile selector for quick role access | Acceso demo, roles y navegación protegida |
-| 2026-05-05 | `nexa-webapp` | `b008b68` | Diego Y. Sandoval | fix(dispatch): persist mock dispatch and order status updates | Despacho y cierre mock |
-| 2026-05-05 | `nexa-webapp` | `ca38d05` | Diego Y. Sandoval | feat(auth): add internal demo roles for S1 and S2 segments | Acceso demo, roles y navegación protegida |
-| 2026-05-05 | `nexa-webapp` | `d6696c8` | Diego Y. Sandoval | feat(ops): adapt navigation and dashboard by role | Acceso demo, roles y navegación protegida |
+| upc-pre-202610-1asi0730-12242-king/nexa-report | main | `f6de96c` | docs(ch4): rebuild webapp ux section structure and wireframe tables | - | 2026-05-05 |
+| upc-pre-202610-1asi0730-12242-king/nexa-report | main | `e8e7afa` | docs(ch4): align webapp flows with user goals | - | 2026-05-05 |
+| upc-pre-202610-1asi0730-12242-king/nexa-report | main | `f3e6296` | docs(ch4): update webapp wireflow documentation with three-persona flow | - | 2026-05-05 |
+| upc-pre-202610-1asi0730-12242-king/nexa-report | main | `ec6c63c` | docs(ch4): replace webapp user flows with proper flowcharts per persona | - | 2026-05-05 |
+| upc-pre-202610-1asi0730-12242-king/nexa-report | main | `22efcb2` | docs(ch4): add current webapp mockup selections | - | 2026-05-05 |
+| upc-pre-202610-1asi0730-12242-king/nexa-report | main | `b7c7ac9` | docs(ch5): document sprint two tb1 evidence | - | 2026-05-05 |
+| upc-pre-202610-1asi0730-12242-king/nexa-report | main | `1193a5f` | docs(ch4): clarify buyer portal scope in ux flows | Update 4.4 intro paragraph to explicitly distinguish webapp Ops S1/S2 from portal B2B S3. | 2026-05-06 |
+| upc-pre-202610-1asi0730-12242-king/nexa-report | main | `7677b49` | docs(ch5): clarify fake api and service documentation scope | Add explicit note to 5.2.2.6: TB1 functional integration validated via Fake API with mock data. | 2026-05-06 |
+| upc-pre-202610-1asi0730-12242-king/nexa-website | main | `22a715c` | feat: connect login button to nexa-webapp GitHub Pages | Commit body documents replacement of the previous toast state with navigation to the webapp GitHub Pages URL. | 2026-04-28 |
+| upc-pre-202610-1asi0730-12242-king/nexa-website | main | `c301fc2` | style: align landing visual tokens with webapp design system | Typography and tokens aligned with webapp visual system. | 2026-04-28 |
+| upc-pre-202610-1asi0730-12242-king/nexa-website | main | `13ea635` | fix(landing): align ctas with webapp routes | - | 2026-05-02 |
+| upc-pre-202610-1asi0730-12242-king/nexa-website | main | `4951d66` | fix(landing): add favicon and tighten tb1 copy | - | 2026-05-02 |
+| upc-pre-202610-1asi0730-12242-king/nexa-website | main | `a6b9e3b` | fix(readme): restore website presentation style | - | 2026-05-03 |
+| upc-pre-202610-1asi0730-12242-king/nexa-webapp | main | `ca38d05` | feat(auth): add internal demo roles for S1 and S2 segments | Add role-aware users to Fake API and fix auth store to reject invalid credentials. | 2026-05-05 |
+| upc-pre-202610-1asi0730-12242-king/nexa-webapp | main | `ad68f8c` | feat(login): add demo profile selector for quick role access | Show Valeria and Roberto as quick-access cards on the login view. | 2026-05-05 |
+| upc-pre-202610-1asi0730-12242-king/nexa-webapp | main | `d6696c8` | feat(ops): adapt navigation and dashboard by role | Filter sidebar and mobile nav items by roleKey; reports vary by role. | 2026-05-05 |
+| upc-pre-202610-1asi0730-12242-king/nexa-webapp | main | `0f1c08b` | feat(clients): replace toast stub with full client profile drawer | Clicking a client row opens a right drawer with contact info, conditions and recent orders. | 2026-04-29 |
+| upc-pre-202610-1asi0730-12242-king/nexa-webapp | main | `dc80775` | feat(inventory): add lot detail drawer with movement history | Lot rows open detail with metadata, stock movements and FEFO context. | 2026-04-29 |
+| upc-pre-202610-1asi0730-12242-king/nexa-webapp | main | `a076e6a` | fix(dispatch): sync order status on route/delivery events; fix dead order detail button | markInRoute sets order.status to dispatched; submitPod sets delivered. | 2026-04-29 |
+| upc-pre-202610-1asi0730-12242-king/nexa-webapp | main | `d692ed6` | feat(reports): add operational reports screen with KPIs, status breakdown, and FEFO alerts | New ReportsView with KPI row, status table, category bars and expiring lots. | 2026-04-29 |
+| upc-pre-202610-1asi0730-12242-king/nexa-webapp | main | `4aa2812` | chore(mock-api): add json-server fake api | - | 2026-05-04 |
+| upc-pre-202610-1asi0730-12242-king/nexa-webapp | main | `7b9bf07` | refactor(api): add axios services by bounded context | - | 2026-05-04 |
+| upc-pre-202610-1asi0730-12242-king/nexa-webapp | main | `dbee8ed` | refactor(stores): connect stores to application layer | - | 2026-05-04 |
+| upc-pre-202610-1asi0730-12242-king/nexa-webapp | main | `b008b68` | fix(dispatch): persist mock dispatch and order status updates | Mark-in-route and POD closure PATCH the Fake API via application layer. | 2026-05-05 |
+| upc-pre-202610-1asi0730-12242-king/nexa-webapp | main | `91caab8` | refactor(webapp): align context structure with course architecture | - | 2026-05-05 |
+| upc-pre-202610-1asi0730-12242-king/nexa-platform | main | `53a8069` | chore(platform): reset repository to tb1 planned scope | - | 2026-05-03 |
+
+Las siguientes capturas son evidencia visual complementaria. La tabla anterior conserva el formato solicitado por el statement; las capturas no sustituyen la tabla ni representan screenshots por cada commit.
+
+![TB1 GitHub report commit evidence](../assets/images/tb1-commit-evidence/report-commits-tb1.png)
+
+Figura. Evidencia visual complementaria de commits registrados en `nexa-report` durante TB1.
+
+![TB1 GitHub website commit evidence](../assets/images/tb1-commit-evidence/website-commits-tb1.png)
+
+Figura. Evidencia visual complementaria de commits registrados en `nexa-website` durante TB1.
+
+![TB1 GitHub webapp commit evidence](../assets/images/tb1-commit-evidence/webapp-commits-tb1.png)
+
+Figura. Evidencia visual complementaria de commits registrados en `nexa-webapp` durante TB1.
+
+![TB1 GitHub pulse evidence](../assets/images/tb1-commit-evidence/github-insights-tb1.png)
+
+Figura. Evidencia visual complementaria de actividad y contribución en GitHub durante TB1.
 
 
 #### 5.2.2.5. Execution Evidence for Sprint Review
