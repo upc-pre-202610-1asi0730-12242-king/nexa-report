@@ -124,6 +124,26 @@ Elaboración propia. Este wireflow es de nivel pantalla. Separa los roles intern
 
 La evidencia visual se documenta en Markdown mediante notación `flowchart` y se mantiene en el tablero FigJam como artefacto colaborativo de diseño. El reporte incluye la estructura completa del flujo y mockups representativos; no replica todas las pantallas del tablero como galería.
 
+#### Evidencia visual Lucidchart — Userflows S1/S2
+
+El user flow del Segmento 1 representa el recorrido de Valeria, responsable de coordinación comercial, desde el acceso al sistema hasta la creación y seguimiento de un pedido asistido. El flujo incluye validaciones de condición comercial, disponibilidad de productos y rutas alternativas para restricciones de cliente o cantidad insuficiente.
+
+[Ver userflow S1 en Lucidchart](https://lucid.app/lucidchart/8f6d6af2-f229-47f8-ba02-86b27cdc6fed/edit?invitationId=inv_09391266-7e11-4614-8edf-12cf979cdabf)
+
+![S1 Commercial Userflow](../assets/images/userflows/s1-commercial-userflow-lucid.png)
+
+Figura. User flow visual para el Segmento 1 — coordinación comercial.
+
+El user flow del Segmento 2 representa el recorrido de Roberto, responsable logístico, desde la revisión de inventario y lotes con criterio FEFO hasta la gestión de despacho y cierre con POD simulado. El flujo incluye rutas alternativas para riesgo operativo, despacho no listo y evidencia incompleta.
+
+[Ver userflow S2 en Lucidchart](https://lucid.app/lucidchart/b91c8e98-a38b-456a-92e5-f942be7e8439/edit?invitationId=inv_5c030713-67e5-4e84-90bf-661b26cef528)
+
+![S2 Logistics Userflow](../assets/images/userflows/s2-logistics-userflow-lucid.png)
+
+Figura. User flow visual para el Segmento 2 — jefatura logística.
+
+Para el Segmento 3, el flujo del comprador B2B se mantiene como alcance parcial de TB1. Se documenta a nivel de planificación para conectar catálogo, pedido y seguimiento, sin presentar evidencia completa de mockups finales en esta entrega.
+
 ### 4.4.3. Web Applications Mock-ups.
 
 Los mockups representan pantallas seleccionadas de alta fidelidad para la dirección actual de la webapp. Se agrupan por segmento y user goal para mostrar evidencia visual sin convertir el capítulo en una galería extensa. El tablero completo contiene más pantallas; este reporte incluye solo vistas representativas que sostienen los recorridos S1 y S2, mientras que S3 permanece documentado como flujo portal de planificación en esta iteración.
@@ -288,7 +308,7 @@ flowchart LR
     K --> L["End: buyer order registered in Fake API"]
 ```
 
-Elaboración propia. This flow is documented as a planning-level buyer-facing flow for the portal surface. The internal S1/S2 flows remain the main validation focus of this iteration.
+Elaboración propia. Este flujo se documenta como recorrido de planificación para la superficie del portal comprador. Los flujos internos S1/S2 se mantienen como foco principal de validación en esta iteración.
 
 #### Tabla de consistencia: User Goals, wireflows y user flows
 
